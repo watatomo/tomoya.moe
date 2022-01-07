@@ -1,0 +1,28 @@
+.fill {
+    .msr-line {
+        p {
+            background: var(--fill-mode, #737373);
+            color: #fff;
+
+            &:nth-child(2)::before {
+                background: var(--fill-mode, #737373);
+            }
+        }
+    }
+
+    &[unknown] {
+        .msr-line {
+            p {
+                background: #737373;
+
+                &:nth-child(2)::before {
+                    background: #737373;
+                }
+            }
+        }
+    }
+
+    .thought {
+        color: #e9efff;
+    }
+}

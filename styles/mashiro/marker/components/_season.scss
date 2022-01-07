@@ -1,0 +1,40 @@
+@use "core";
+
+.msr-season {
+    @include core.grid-center;
+    grid-template: 1fr / 24px 1fr;
+    border-radius: 5px;
+    padding: 8px;
+    border: solid 1px;
+
+    p {
+        margin: 0;
+    }
+
+    &::before {
+        content: "\f076";
+        @include core.marker-icon;
+        font-size: 18px;
+    }
+}
+
+[s="Winter"] {
+    border-color: hsl(221, 27%, 80%);
+    background: hsl(221, 27%, 92%);
+}
+
+[s="Spring"] {
+    border-color: hsl(341, 100%, 83%);
+    background: hsl(341, 100%, 95%);
+}
+
+[s="Summer"] {
+    border-color: hsl(210, 100%, 83%);
+    background: hsl(210, 100%, 95%);
+}
+
+[s="Fall"],
+[s="Autumn"] {
+    border-color: hsl(29, 100%, 83%);
+    background: hsl(29, 100%, 95%);
+}

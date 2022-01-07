@@ -1,0 +1,25 @@
+@use "core";
+
+.msr-narration {
+    @include core.grid-center;
+    grid-template: 1fr / var(--msr-icon-size) 1fr;
+    gap: 10px;
+
+    p {
+        background: unset;
+        color: unset;
+        padding: unset;
+        margin: 0;
+        border-radius: unset;
+        transition: all 0.2s ease;
+
+        &:first-child::before {
+            content: none;
+        }
+    }
+
+    &::before {
+        @include core.marker-line;
+        transition: all 0.2s ease;
+    }
+}
