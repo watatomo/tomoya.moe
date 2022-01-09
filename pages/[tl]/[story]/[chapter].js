@@ -13,7 +13,7 @@ import {
 } from "../../../lib/api";
 import PostTitle from "../../../components/post-title";
 import Head from "next/head";
-import { CMS_NAME } from "../../../lib/constants";
+import { SITE_TITLE } from "../../../lib/constants";
 import config from "../../../mako.config";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import { serialize } from "next-mdx-remote/serialize";
@@ -38,7 +38,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
                 <Head>
                     <title>
-                        {post.title} | Next.js Blog Example with {CMS_NAME}
+                        {post.title} | {SITE_TITLE}
                     </title>
                     {/* <meta property="og:image" content={post.ogImage.url} /> */}
                 </Head>
@@ -49,7 +49,7 @@ export default function Post({ post, morePosts, preview }) {
                             <div className="toolbar__section">color</div>
                             <div className="toolbar__section">index</div>
                             <div className="toolbar__section">text</div>
-                            <div className="toolbar__section">next</div>
+                            <div className="toolbar__section">{post.next}</div>
                         </div>
                     </div>
                     <div className="mashiro">
@@ -79,6 +79,11 @@ export async function getStaticProps({ params }) {
         "slug",
         "author",
         "content",
+        "color",
+        "colorRGB",
+        "colorH",
+        "colorS",
+        "colorL",
     ]);
     // const content = await markdownToHtml(post.content || "");
     const content = await serialize(post.content || "");

@@ -5,11 +5,11 @@ story: sanctuary
 chapter: 1
 previous: false
 next: 2
-storyColor: "#965e7d"
-storyColor-rgb: "150,94,125"
-storyColor-h: "326.8"
-storyColor-s: "23%"
-storyColor-l: "47.8%"
+color: 965e7d
+colorRGB: 150,94,125
+colorH: 326.8
+colorS: 23%
+colorL: 47.8%
 ---
 
 <Season s="Winter"/>
