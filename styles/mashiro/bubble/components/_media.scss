@@ -5,10 +5,6 @@
 }
 
 @media (max-width: 650px) {
-    .msr-unit {
-        margin-bottom: var(--msr-unit-marginSmall);
-    }
-
     .msr-icon__wrapper {
         width: var(--msr-icon-sizeSmall);
         height: var(--msr-icon-sizeSmall);

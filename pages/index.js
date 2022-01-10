@@ -43,6 +43,9 @@ export default function Home({}) {
                             ren・he/him・eighteen
                         </div>
                         <div className="home__txt-sub">se asian・aquarius</div>
+                        <div className="home__txt-sub">
+                            演劇部P + 東雲担当 + りあむP
+                        </div>
                         <div className="home__txt-extra">page is a wip...</div>
                     </div>
                 </div>

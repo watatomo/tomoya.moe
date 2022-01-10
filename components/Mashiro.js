@@ -40,7 +40,7 @@ export function Thought({ children }) {
 
 export function Season({ s }) {
     return (
-        <div class="msr-season" s={s}>
+        <div className="msr-season" s={s}>
             <p>
                 <span>
                     <b>Season:</b> {s}
@@ -52,7 +52,7 @@ export function Season({ s }) {
 
 export function Location({ children }) {
     return (
-        <div class="msr-location">
+        <div className="msr-location">
             <p>
                 <span>
                     <b>Location:</b> {children}
