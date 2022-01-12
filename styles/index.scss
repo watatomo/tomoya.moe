@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    font-size: 16px;
 }
 
 .home__ {
@@ -11,35 +12,103 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
+        min-width: 100vw;
         background-image: linear-gradient(0deg, #d3e8ee 0%, #f3e5cf 75%);
+        font-family: "Quicksand", sans-serif;
+
+        .width-wrapper {
+            width: 30rem;
+        }
+    }
+
+    &banner {
+        background: linear-gradient(
+                    90deg,
+                    #ffffff 10%,
+                    rgba(255, 255, 255, 0.004) 80%
+                )
+                center/cover,
+            url("/img/banner.png") center/cover;
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+
+        .inner-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .column- {
+            &one {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            &two {
+                flex: 1;
+            }
+        }
     }
 
     &container {
         &-main {
-            display: block;
-            text-align: center;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 10px;
+            gap: 10px;
+
+            .side-image {
+                display: block;
+                flex: 1;
+                height: 300px;
+                overflow: hidden;
+                border-radius: 5px;
+                background: url("/img/card_rectangle4_2888_evolution.png")
+                    center/cover;
+            }
+
+            .box {
+                flex: 2;
+                display: block;
+                text-align: center;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+            }
         }
     }
+}
 
-    &icon {
-        overflow: hidden;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
     }
+    .home__ {
+        &wrapper {
+            .width-wrapper {
+                width: 24rem;
+            }
+        }
+    }
+}
 
-    &txt {
-        margin-top: 1em;
-        text-align: center;
-
-        &-extra {
-            font-size: smaller;
-            margin-top: 2em;
+@media (max-width: 400px) {
+    .home__ {
+        &wrapper {
+            .width-wrapper {
+                width: 90%;
+            }
         }
     }
 }
