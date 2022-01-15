@@ -1,5 +1,4 @@
 import styles from "./StarBG.module.scss";
-import styled from "styled-components";
 
 export function StarBG() {
     return (

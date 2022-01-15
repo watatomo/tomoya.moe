@@ -1,3 +1,5 @@
+// https://codepen.io/saransh/pen/BKJun
+
 // n is number of stars required
 @function multiple-box-shadow($n) {
     $value: "#{random(2000)}px #{random(2000)}px #FFF";
@@ -13,6 +15,11 @@ $shadows-small: multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
 
+@mixin starEffects {
+    border-radius: 50%;
+    filter: blur(1px);
+}
+
 .star-bg {
     min-height: 100vh;
 }
@@ -23,6 +30,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-small;
     animation: animStar 200s linear infinite;
+    @include starEffects;
 
     &:after {
         content: " ";
@@ -32,6 +40,7 @@ $shadows-big: multiple-box-shadow(100);
         height: 1px;
         background: transparent;
         box-shadow: $shadows-small;
+        @include starEffects;
     }
 }
 
@@ -41,6 +50,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-medium;
     animation: animStar 400s linear infinite;
+    @include starEffects;
 
     &:after {
         content: " ";
@@ -50,6 +60,7 @@ $shadows-big: multiple-box-shadow(100);
         height: 2px;
         background: transparent;
         box-shadow: $shadows-medium;
+        @include starEffects;
     }
 }
 
@@ -59,6 +70,7 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-big;
     animation: animStar 600s linear infinite;
+    @include starEffects;
 
     &:after {
         content: " ";
@@ -68,6 +80,7 @@ $shadows-big: multiple-box-shadow(100);
         height: 3px;
         background: transparent;
         box-shadow: $shadows-big;
+        @include starEffects;
     }
 }
 

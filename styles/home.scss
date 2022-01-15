@@ -1,17 +1,13 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-}
-
-$icon-size-normal: 125px;
+$icon-size-normal: 7.8125em;
+$icon-size-small: 6.8em;
 $icon-border-radius: 50%;
-$icon-padding: 8px;
+$icon-padding: 0.5em;
 $text-color: #f1f3f7;
 $highlight-color: #f2dea8;
 
 .home__wrapper {
     position: relative;
+    overflow: hidden;
     min-height: 100vh;
     min-width: 100vw;
     background: radial-gradient(ellipse at bottom, #21294c 0%, #090a0f 100%)
@@ -41,15 +37,16 @@ $highlight-color: #f2dea8;
 
     .container01 {
         display: flex;
+        transition: all 0.2s linear;
         align-items: center;
-        column-gap: 25px;
+        column-gap: 1.5625em;
 
         hr {
             border: 1px solid $text-color;
             margin: 0.5em 0 0.35em;
         }
 
-        .icon {
+        .icon > div {
             display: block;
             position: relative;
             width: $icon-size-normal;
@@ -58,6 +55,7 @@ $highlight-color: #f2dea8;
             overflow: hidden;
             border: 1px solid $text-color;
             padding: $icon-padding;
+            transition: all 0.2s linear;
 
             .wrapper {
                 &::after {
@@ -68,7 +66,7 @@ $highlight-color: #f2dea8;
                     width: $icon-size-normal;
                     height: $icon-size-normal;
                     border-radius: $icon-border-radius;
-                    background: rgb(39 30 114 / 20%);
+                    background: rgb(39 30 114 / 18%);
                     transition: all 0.2s linear;
                 }
 
@@ -78,8 +76,14 @@ $highlight-color: #f2dea8;
 
                 img {
                     transition: all 0.2s linear;
-                    filter: saturate(85%);
+                    filter: saturate(80%);
                     border-radius: 50%;
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
 
                     &:hover {
                         filter: saturate(100%);
@@ -106,22 +110,29 @@ $highlight-color: #f2dea8;
             }
         }
     }
-}
 
-@media (max-width: 768px) {
-    body {
-    }
-    .home__wrapper {
-        .width-wrapper {
-            // width: 24rem;
-        }
+    .nav-bar {
+        margin-top: 2em;
+        font-size: smaller;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .home__wrapper {
-        .width-wrapper {
-            width: 90%;
+        font-size: 12px;
+
+        .container01 {
+            width: 83%;
+
+            .icon > div {
+                width: $icon-size-small;
+                height: $icon-size-small;
+
+                .wrapper::after {
+                    width: $icon-size-small;
+                    height: $icon-size-small;
+                }
+            }
         }
     }
 }

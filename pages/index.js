@@ -27,7 +27,7 @@ export default function Home({}) {
                 <meta property="twitter:title" content={SITE_TITLE} />
                 <meta property="twitter:description" content={TWITTER_UN} />
                 <meta property="twitter:image" content={splash.src} />
-                <meta name="theme-color" content="#f1c755" />
+                <meta name="theme-color" content="#eedcb3" />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
                     rel="stylesheet"
@@ -42,12 +42,14 @@ export default function Home({}) {
                 <div className="home-content">
                     <div className="container01">
                         <div className="icon">
-                            <div className="wrapper">
-                                <Image
-                                    src={Icon}
-                                    quality="100"
-                                    objectFit="fill"
-                                />
+                            <div>
+                                <div className="wrapper">
+                                    <Image
+                                        src={Icon}
+                                        quality="100"
+                                        objectFit="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="text">
@@ -65,6 +67,9 @@ export default function Home({}) {
                                 </span>
                             </div>
                         </div>
+                    </div>
+                    <div className="nav-bar">
+                        <span>page is a wip...</span>
                     </div>
                 </div>
             </div>
