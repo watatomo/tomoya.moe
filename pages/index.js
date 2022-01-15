@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StarBG from "../components/star-bg";
+import StarBG from "../components/StarBG";
 import Head from "next/head";
 import Image from "next/image";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
@@ -37,9 +37,9 @@ export default function Home({}) {
                     rel="stylesheet"
                 />
             </Head>
-            <StarBG />
             <div className="home__wrapper">
-                <div className="width-wrapper">
+                <StarBG />
+                <div className="home-content">
                     <div className="container01">
                         <div className="icon">
                             <div className="wrapper">
