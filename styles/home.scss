@@ -11,10 +11,7 @@ $text-color: #f1f3f7;
 $highlight-color: #f2dea8;
 
 .home__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     min-height: 100vh;
     min-width: 100vw;
     background: radial-gradient(ellipse at bottom, #21294c 0%, #090a0f 100%)
@@ -30,8 +27,16 @@ $highlight-color: #f2dea8;
         color: $highlight-color;
     }
 
-    .width-wrapper {
-        // width: 30rem;
+    .home-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .container01 {
