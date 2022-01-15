@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+$icon-size-normal: 125px;
+$icon-border-radius: 50%;
+$icon-padding: 8px;
+$text-color: #f1f3f7;
+$highlight-color: #f2dea8;
+
+.home__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: radial-gradient(ellipse at bottom, #21294c 0%, #090a0f 100%)
+        no-repeat;
+    font-family: "Quicksand", "M PLUS 2", sans-serif;
+    color: $text-color;
+
+    .jp-text {
+        font-weight: 600;
+    }
+
+    .highlight {
+        color: $highlight-color;
+    }
+
+    .width-wrapper {
+        // width: 30rem;
+    }
+
+    .container01 {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+
+        hr {
+            border: 1px solid $text-color;
+            margin: 0.5em 0 0.35em;
+        }
+
+        .icon {
+            display: block;
+            position: relative;
+            width: $icon-size-normal;
+            height: $icon-size-normal;
+            border-radius: $icon-border-radius;
+            overflow: hidden;
+            border: 1px solid $text-color;
+            padding: $icon-padding;
+
+            .wrapper {
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: $icon-padding;
+                    width: $icon-size-normal;
+                    height: $icon-size-normal;
+                    border-radius: $icon-border-radius;
+                    background: rgb(39 30 114 / 20%);
+                    transition: all 0.2s linear;
+                }
+
+                &:hover::after {
+                    background: none;
+                }
+
+                img {
+                    transition: all 0.2s linear;
+                    filter: saturate(85%);
+                    border-radius: 50%;
+
+                    &:hover {
+                        filter: saturate(100%);
+                    }
+                }
+            }
+        }
+
+        .text {
+            flex-grow: 1;
+
+            .part01 {
+                h1 {
+                    font-size: 1.7em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: normal;
+                    margin: 0 0 0.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+    }
+    .home__wrapper {
+        .width-wrapper {
+            // width: 24rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home__wrapper {
+        .width-wrapper {
+            width: 90%;
+        }
+    }
+}

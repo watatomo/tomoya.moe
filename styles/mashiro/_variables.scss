@@ -7,7 +7,7 @@
     );
 }
 
-:root {
+.mashiro {
     @extend %story-dark;
 
     --storyColor-bright-l: calc(var(--storyColor-l) + 20%);
@@ -32,12 +32,12 @@
     --msr-tippy-bg: rgba(0, 0, 0, 0.75);
 
     --msr-marker-lineColor: #bbb;
-}
 
-[character] {
-    --light-mode: hsl(var(--hue), 54%, 93%);
-    --dark-mode: hsl(var(--hue), 12%, 25%);
-    --fill-mode: hsl(var(--hue), 25%, 42%);
+    [character] {
+        --light-mode: hsl(var(--hue), 54%, 93%);
+        --dark-mode: hsl(var(--hue), 12%, 25%);
+        --fill-mode: hsl(var(--hue), 25%, 42%);
+    }
 }
 
 .preview-wrapper,

@@ -1,15 +1,12 @@
 import styled from "styled-components";
+import StarBG from "../components/star-bg";
 import Head from "next/head";
 import Image from "next/image";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
 import splash from "../public/img/tl/transparency and masks/still_1677_normal.webp";
-import Icon from "../public/img/icon.png";
-import SideImg from "../public/img/card_rectangle4_2888_evolution.png";
+import Icon from "../public/img/home_icon.png";
 
-const StyledWrapper = styled.div`
-    .home__wrapper {
-    }
-`;
+const StyledWrapper = styled.div``;
 
 export default function Home({}) {
     return (
@@ -32,44 +29,41 @@ export default function Home({}) {
                 <meta property="twitter:image" content={splash.src} />
                 <meta name="theme-color" content="#f1c755" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+                    rel="stylesheet"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&subset=japanese&display=swap"
                     rel="stylesheet"
                 />
             </Head>
-
+            <StarBG />
             <div className="home__wrapper">
                 <div className="width-wrapper">
-                    <div className="home__banner">
-                        <div className="inner-wrapper">
-                            <div className="column-one">
-                                <p>ren・he/him・eighteen</p>
-                                <p>se asian・aquarius</p>
+                    <div className="container01">
+                        <div className="icon">
+                            <div className="wrapper">
+                                <Image
+                                    src={Icon}
+                                    quality="100"
+                                    objectFit="fill"
+                                />
                             </div>
-                            <div className="column-two"> </div>
                         </div>
-                    </div>
-                    <div className="home__container-main">
-                        <div className="side-image"></div>
-                        <div className="box">
-                            <p>
-                                an average college student with an interest in
-                                code, translation, and art. <br />
-                                also likes boba, maids, and rabbits.
-                            </p>
-                            <p>
-                                i like tomowata a normal amount.
-                                <br />
-                                <a href="https://ensemble-stars.jp/characters/mashiro_tomoya">
-                                    tomoya mashiro
-                                </a>{" "}
-                                kins me btw.
-                            </p>
-                            <p>
-                                riamuP | drastarsP
-                                <br />
-                                drama clubP | shinonome fan (pjsk)
-                            </p>
-                            <p>page still a wip...</p>
+                        <div className="text">
+                            <div className="part01">
+                                <span className="jp-text highlight">
+                                    普通で真面目が取り柄
+                                </span>
+                                <hr />
+                                <h1>
+                                    <span className="highlight">ren.</span> 18.
+                                </h1>
+                                <h2>se asian. he/him.</h2>
+                                <span>
+                                    "translator," "developer," "artist."
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

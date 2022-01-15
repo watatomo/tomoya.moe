@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import styles from "../styles/mashiro.module.scss";
 import styled from "styled-components";
 import markdownToHtml from "../lib/markdownToHtml";
 
@@ -72,8 +73,8 @@ export function Narration({ children }) {
         });
     });
     return (
-        <div class="msr-narration">
-            <div class="msr-line">
+        <div className="msr-narration">
+            <div className="msr-line">
                 <p dangerouslySetInnerHTML={{ __html: narration }}></p>
             </div>
         </div>
@@ -82,8 +83,8 @@ export function Narration({ children }) {
 
 export function Cw({ children }) {
     return (
-        <div class="msr-cw">
-            <span class="cw-header">Content Warning</span>
+        <div className="msr-cw">
+            <span className="cw-header">Content Warning</span>
             {children}
         </div>
     );

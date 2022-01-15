@@ -1,17 +1,11 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import Container from "../../../components/container";
-import PostBody from "../../../components/post-body";
-import Header from "../../../components/header";
-import PostHeader from "../../../components/post-header";
-import Layout from "../../../components/layout";
 import {
     getPostBySlug,
     getStoryChapter,
     getAllPosts,
     getAllChapters,
 } from "../../../lib/api";
-import PostTitle from "../../../components/post-title";
 import Head from "next/head";
 import { SITE_TITLE } from "../../../lib/constants";
 import config from "../../../mako.config";
@@ -25,7 +19,7 @@ import {
     Location,
     Narration,
     Cw,
-} from "../../../components/Mashiro";
+} from "../../../components/mashiro";
 import Image from "next/image";
 
 export default function Post({ post, morePosts, preview }) {
@@ -37,9 +31,7 @@ export default function Post({ post, morePosts, preview }) {
         <>
             <article>
                 <Head>
-                    <title>
-                        {post.title} | {SITE_TITLE}
-                    </title>
+                    <title>{post.title}</title>
                     {/* <meta property="og:image" content={post.ogImage.url} /> */}
                 </Head>
                 <div className="chapter-wrapper">
