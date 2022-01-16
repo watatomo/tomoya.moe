@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import StarBG from "../components/StarBG";
+import StarBG from "../components/index/StarBG";
 import Head from "next/head";
 import Image from "next/image";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
@@ -8,8 +7,6 @@ import Icon from "../public/img/home_icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
-
-const StyledWrapper = styled.div``;
 
 export default function Home({}) {
     return (
@@ -84,8 +81,9 @@ export default function Home({}) {
                             </div>
                         </div>
                         <div className="home__nav">
-                            <span>page is a wip...</span>
+                            <a href="#">page is a wip...</a>
                         </div>
+                        <div class="container02"></div>
                     </div>
                 </div>
             </div>
