@@ -1,5 +1,5 @@
 $icon-size-normal: 7.8125em;
-$icon-size-small: 6.8em;
+$icon-size-small: 7em;
 $icon-border-radius: 50%;
 $icon-padding: 0.5em;
 $text-color: #f1f3f7;
@@ -15,6 +15,13 @@ $highlight-color: #f2dea8;
     font-family: "Quicksand", "M PLUS 2", sans-serif;
     color: $text-color;
 
+    .width-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        gap: 1em;
+    }
+
     .jp-text {
         font-weight: 600;
     }
@@ -24,12 +31,12 @@ $highlight-color: #f2dea8;
     }
 
     .home-content {
+        display: flex;
         position: absolute;
         top: 0;
         left: 0;
         min-height: 100vh;
         min-width: 100vw;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -39,63 +46,68 @@ $highlight-color: #f2dea8;
         display: flex;
         transition: all 0.2s linear;
         align-items: center;
-        column-gap: 1.5625em;
+        justify-content: center;
+        gap: 1.5625em;
 
         hr {
             border: 1px solid $text-color;
             margin: 0.5em 0 0.35em;
         }
 
-        .icon > div {
-            display: block;
-            position: relative;
-            width: $icon-size-normal;
-            height: $icon-size-normal;
-            border-radius: $icon-border-radius;
-            overflow: hidden;
-            border: 1px solid $text-color;
-            padding: $icon-padding;
-            transition: all 0.2s linear;
+        .icon {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
-            .wrapper {
-                &::after {
-                    content: "";
+            > div {
+                display: block;
+                width: $icon-size-normal;
+                height: $icon-size-normal;
+                border-radius: $icon-border-radius;
+                border: 1px solid $text-color;
+                padding: $icon-padding;
+                transition: all 0.2s linear;
+
+                .wrapper {
                     display: block;
-                    position: absolute;
-                    top: $icon-padding;
-                    width: $icon-size-normal;
-                    height: $icon-size-normal;
+                    position: relative;
                     border-radius: $icon-border-radius;
-                    background: rgb(39 30 114 / 18%);
-                    transition: all 0.2s linear;
-                }
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
 
-                &:hover::after {
-                    background: none;
-                }
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        width: $icon-size-normal;
+                        height: $icon-size-normal;
+                        background: rgb(39 30 114 / 18%);
+                        transition: all 0.2s linear;
+                    }
 
-                img {
-                    transition: all 0.2s linear;
-                    filter: saturate(80%);
-                    border-radius: 50%;
-                    -webkit-touch-callout: none;
-                    -webkit-user-select: none;
-                    -khtml-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
+                    &:hover::after {
+                        background: none;
+                    }
 
-                    &:hover {
-                        filter: saturate(100%);
+                    img {
+                        transition: all 0.2s linear;
+                        filter: saturate(80%);
+
+                        &:hover {
+                            filter: saturate(100%);
+                        }
                     }
                 }
             }
         }
 
         .text {
-            flex-grow: 1;
-
-            .part01 {
+            .section01 {
                 h1 {
                     font-size: 1.7em;
                     font-weight: bold;
@@ -105,15 +117,44 @@ $highlight-color: #f2dea8;
                 h2 {
                     font-size: 1.5em;
                     font-weight: normal;
-                    margin: 0 0 0.5em;
+                    margin: 0 0 0.4em;
                 }
             }
         }
     }
 
-    .nav-bar {
-        margin-top: 2em;
-        font-size: smaller;
+    .home__links {
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+
+        a {
+            display: inline-block;
+            color: #fff;
+            transition: all 0.15s linear;
+
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+
+        .svg-inline--fa {
+            vertical-align: -0.125em;
+        }
+
+        svg.svg-inline--fa {
+            display: block;
+            vertical-align: -2px;
+            font-size: 1.75em;
+            width: 1em;
+            margin: 0;
+        }
+    }
+
+    .home__nav {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.9em;
     }
 }
 
@@ -121,9 +162,11 @@ $highlight-color: #f2dea8;
     .home__wrapper {
         font-size: 12px;
 
-        .container01 {
+        .width-wrapper {
             width: 83%;
+        }
 
+        .container01 {
             .icon > div {
                 width: $icon-size-small;
                 height: $icon-size-small;

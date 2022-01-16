@@ -5,6 +5,9 @@ import Image from "next/image";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
 import splash from "../public/img/tl/transparency and masks/still_1677_normal.webp";
 import Icon from "../public/img/home_icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const StyledWrapper = styled.div``;
 
@@ -40,36 +43,49 @@ export default function Home({}) {
             <div className="home__wrapper">
                 <StarBG />
                 <div className="home-content">
-                    <div className="container01">
-                        <div className="icon">
-                            <div>
-                                <div className="wrapper">
-                                    <Image
-                                        src={Icon}
-                                        quality="100"
-                                        objectFit="fill"
-                                    />
+                    <div className="width-wrapper">
+                        <div className="container01">
+                            <div className="icon">
+                                <div>
+                                    <div className="wrapper">
+                                        <Image
+                                            src={Icon}
+                                            quality="100"
+                                            objectFit="fill"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text">
+                                <div className="section01">
+                                    <span className="jp-text highlight">
+                                        普通で真面目が取り柄
+                                    </span>
+                                    <hr />
+                                    <h1>
+                                        <span className="highlight">ren.</span>{" "}
+                                        18.
+                                    </h1>
+                                    <h2>se asian. he/him.</h2>
+                                    <div className="home__links">
+                                        <a href="https://twitter.com/riamuyumemi">
+                                            <FontAwesomeIcon icon={faTwitter} />
+                                        </a>
+                                        <a href="https://github.com/watatomo">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                        <a href="mailto:ren@tomoya.moe">
+                                            <FontAwesomeIcon
+                                                icon={faEnvelope}
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="text">
-                            <div className="part01">
-                                <span className="jp-text highlight">
-                                    普通で真面目が取り柄
-                                </span>
-                                <hr />
-                                <h1>
-                                    <span className="highlight">ren.</span> 18.
-                                </h1>
-                                <h2>se asian. he/him.</h2>
-                                <span>
-                                    "translator," "developer," "artist."
-                                </span>
-                            </div>
+                        <div className="home__nav">
+                            <span>page is a wip...</span>
                         </div>
-                    </div>
-                    <div className="nav-bar">
-                        <span>page is a wip...</span>
                     </div>
                 </div>
             </div>
