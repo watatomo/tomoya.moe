@@ -9,6 +9,8 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import {
     Bubble,
+    BubbleHidden,
+    BubbleUnknown,
     Thought,
     Season,
     Location,
@@ -44,6 +46,8 @@ export default function Post({ post, morePosts, preview }) {
                             {...post.content}
                             components={{
                                 Bubble,
+                                BubbleHidden,
+                                BubbleUnknown,
                                 Thought,
                                 Season,
                                 Location,
