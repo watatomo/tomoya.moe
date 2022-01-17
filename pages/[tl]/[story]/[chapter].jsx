@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { getStoryChapter, getAllChapters } from "../../../lib/api";
+import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
 import Head from "next/head";
 import { SITE_TITLE } from "../../../lib/constants";
 import config from "../../../mako.config";
@@ -64,7 +64,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-    const post = getStoryChapter(params.story, params.chapter, [
+    const post = getChapterStaticProps(params.story, params.chapter, [
         "title",
         "date",
         "slug",
@@ -89,19 +89,15 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getAllChapters(["story", "chapter"]);
+    const paths = getChapterStaticPaths(["story", "chapter"]);
 
     return {
-        paths: posts.map((post) => {
-            // console.log(post);
+        paths: paths.map((paths) => {
             return {
                 params: {
                     tl: config.translationsPath || "tl",
-                    story: post.story,
-                    chapter:
-                        typeof post.chapter === "number"
-                            ? post.chapter.toString()
-                            : post.chapter,
+                    story: paths.story,
+                    chapter: String(paths.chapter),
                 },
             };
         }),
