@@ -1,11 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import {
-    getPostBySlug,
-    getStoryChapter,
-    getAllPosts,
-    getAllChapters,
-} from "../../../lib/api";
+import { getStoryChapter, getAllChapters } from "../../../lib/api";
 import Head from "next/head";
 import { SITE_TITLE } from "../../../lib/constants";
 import config from "../../../mako.config";
@@ -90,7 +85,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = getAllChapters(["story", "chapter"]);
+    const posts = await getAllChapters(["story", "chapter"]);
 
     return {
         paths: posts.map((post) => {
