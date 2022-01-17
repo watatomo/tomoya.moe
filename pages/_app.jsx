@@ -16,11 +16,11 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <Component {...pageProps} />
             {/* <!-- Cloudflare Web Analytics --> */}
-            <script
+            {/* <script
                 defer
                 src="https://static.cloudflareinsights.com/beacon.min.js"
                 data-cf-beacon='{"token": "089ceca5d79842a499fda95ac9e0751c"}'
-            />
+            /> */}
             {/* <!-- End Cloudflare Web Analytics --> */}
         </>
     );
