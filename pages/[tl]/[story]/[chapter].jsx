@@ -18,7 +18,8 @@ import {
     Season,
     Location,
     Narration,
-    Cw
+    Cw,
+    Hold
 } from "../../../components/mashiro";
 
 export default function Post({ post }) {
@@ -45,6 +46,7 @@ export default function Post({ post }) {
                             Location,
                             Narration,
                             Cw,
+                            Hold,
                             Image
                         }}
                     />
