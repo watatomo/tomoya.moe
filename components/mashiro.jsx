@@ -10,7 +10,6 @@ export function Bubble({ children, character }) {
                     <div className="msr-icon__base" />
                 </div>
             </div>
-
             <div className="msr-line">
                 <div className="msr-name" />
                 {children}
@@ -27,7 +26,6 @@ export function BubbleHidden({ children, character }) {
                     <div className="msr-icon__base" />
                 </div>
             </div>
-
             <div className="msr-line">
                 <div className="msr-name" />
                 {children}
@@ -44,7 +42,6 @@ export function BubbleUnknown({ children, character }) {
                     <div className="msr-icon__base" />
                 </div>
             </div>
-
             <div className="msr-line">
                 <div className="msr-name" />
                 {children}
@@ -56,10 +53,8 @@ export function BubbleUnknown({ children, character }) {
 export function Thought({ children }) {
     const [thought, setThought] = useState("");
     useEffect(() => {
-        // console.log(children);
         markdownToHtml(children || "").then((response) => {
             setThought(response.slice(3, -5));
-            // console.log(response);
         });
     });
     return (
@@ -99,10 +94,8 @@ export function Location({ children }) {
 export function Narration({ children }) {
     const [narration, setNarration] = useState("");
     useEffect(() => {
-        // console.log(children);
         markdownToHtml(children || "").then((response) => {
             setNarration(response.slice(3, -5));
-            // console.log(response);
         });
     });
     return (
@@ -121,4 +114,14 @@ export function Cw({ children }) {
             {children}
         </div>
     );
+}
+
+export function Hold({ children }) {
+    const [hold, setHold] = useState("");
+    useEffect(() => {
+        markdownToHtml(children || "").then((response) => {
+            setHold(response.slice(3, -5));
+        });
+    });
+    return <span className="hold" dangerouslySetInnerHTML={{ __html: hold }} />;
 }

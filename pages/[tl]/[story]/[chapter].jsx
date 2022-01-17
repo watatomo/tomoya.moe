@@ -35,15 +35,6 @@ export default function Post({ post, morePosts, preview }) {
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <div className="chapter-wrapper">
-                <div className="toolbar-wrapper">
-                    <div className="toolbar">
-                        <div className="toolbar__section">back</div>
-                        <div className="toolbar__section">color</div>
-                        <div className="toolbar__section">index</div>
-                        <div className="toolbar__section">text</div>
-                        <div className="toolbar__section">{post.next}</div>
-                    </div>
-                </div>
                 <div className="mashiro">
                     <MDXRemote
                         {...post.content}
@@ -71,12 +62,7 @@ export async function getStaticProps({ params }) {
         "date",
         "slug",
         "author",
-        "content",
-        "color",
-        "colorRGB",
-        "colorH",
-        "colorS",
-        "colorL"
+        "content"
     ]);
     // const content = await markdownToHtml(post.content || "");
     const content = await serialize(post.content || "");

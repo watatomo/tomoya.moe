@@ -1,6 +1,6 @@
 import styles from "./StarBG.module.scss";
 
-export function StarBG() {
+function StarBG() {
     return (
         <div className={styles.starry}>
             <div className={styles.stars1} />
