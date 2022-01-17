@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 // import styles from "../styles/mashiro.module.scss";
-import styled from "styled-components";
 import markdownToHtml from "../lib/markdownToHtml";
 
 export function Bubble({ children, character }) {
@@ -8,12 +7,12 @@ export function Bubble({ children, character }) {
         <div className="msr-unit" character={character}>
             <div className="msr-icon">
                 <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base"></div>
+                    <div className="msr-icon__base" />
                 </div>
             </div>
 
             <div className="msr-line">
-                <div className="msr-name"></div>
+                <div className="msr-name" />
                 {children}
             </div>
         </div>
@@ -25,12 +24,12 @@ export function BubbleHidden({ children, character }) {
         <div className="msr-unit hidden" character={character}>
             <div className="msr-icon">
                 <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base"></div>
+                    <div className="msr-icon__base" />
                 </div>
             </div>
 
             <div className="msr-line">
-                <div className="msr-name"></div>
+                <div className="msr-name" />
                 {children}
             </div>
         </div>
@@ -42,12 +41,12 @@ export function BubbleUnknown({ children, character }) {
         <div className="msr-unit unknown" character={character}>
             <div className="msr-icon">
                 <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base"></div>
+                    <div className="msr-icon__base" />
                 </div>
             </div>
 
             <div className="msr-line">
-                <div className="msr-name"></div>
+                <div className="msr-name" />
                 {children}
             </div>
         </div>
@@ -68,7 +67,7 @@ export function Thought({ children }) {
             <span
                 className="thought"
                 dangerouslySetInnerHTML={{ __html: thought }}
-            ></span>
+            />
         </p>
     );
 }
@@ -109,7 +108,7 @@ export function Narration({ children }) {
     return (
         <div className="msr-narration">
             <div className="msr-line">
-                <p dangerouslySetInnerHTML={{ __html: narration }}></p>
+                <p dangerouslySetInnerHTML={{ __html: narration }} />
             </div>
         </div>
     );
