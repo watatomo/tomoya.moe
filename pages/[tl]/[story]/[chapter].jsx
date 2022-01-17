@@ -9,9 +9,7 @@ import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
 import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
-import { SITE_TITLE } from "../../../lib/constants";
 import config from "../../../mako.config";
-import markdownToHtml from "../../../lib/markdownToHtml";
 import {
     Bubble,
     BubbleHidden,
@@ -23,7 +21,7 @@ import {
     Cw
 } from "../../../components/mashiro";
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post }) {
     const router = useRouter();
     if (!router.isFallback && !post?.slug) {
         return <ErrorPage statusCode={404} />;
@@ -80,11 +78,11 @@ export async function getStaticPaths() {
     const paths = getChapterStaticPaths(["story", "chapter"]);
 
     return {
-        paths: paths.map((paths) => ({
+        paths: paths.map((path) => ({
             params: {
                 tl: config.translationsPath || "tl",
-                story: paths.story,
-                chapter: String(paths.chapter)
+                story: path.story,
+                chapter: String(path.chapter)
             }
         })),
         fallback: false
