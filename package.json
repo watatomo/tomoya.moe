@@ -29,6 +29,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.2.1",
+        "eslint": "^7.32.0",
         "file-loader": "^6.2.0",
         "path": "^0.12.7",
         "postcss": "^8.2.4",
