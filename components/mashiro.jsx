@@ -115,13 +115,3 @@ export function Cw({ children }) {
         </div>
     );
 }
-
-/* export function Hold({ children }) {
-    const [hold, setHold] = useState("");
-    useEffect(() => {
-        markdownToHtml(children || "").then((response) => {
-            setHold(response.slice(3, -5));
-        });
-    });
-    return <span className="hold" dangerouslySetInnerHTML={{ __html: hold }} />;
-} */
