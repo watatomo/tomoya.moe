@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-[unknown] {
+.msr-unit.unknown {
     .msr-icon {
         &__base {
             background: #b3b3b3;
@@ -46,7 +46,7 @@
     }
 }
 
-[hidden] {
+.msr-unit.hidden {
     .msr-icon__wrapper::after {
         @extend %icon-silhouette;
     }

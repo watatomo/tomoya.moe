@@ -9,6 +9,8 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import {
     Bubble,
+    BubbleHidden,
+    BubbleUnknown,
     Thought,
     Season,
     Location,
@@ -44,6 +46,8 @@ export default function Post({ post, morePosts, preview }) {
                             {...post.content}
                             components={{
                                 Bubble,
+                                BubbleHidden,
+                                BubbleUnknown,
                                 Thought,
                                 Season,
                                 Location,
@@ -85,15 +89,15 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = getChapterStaticPaths(["story", "chapter"]);
+    const paths = getChapterStaticPaths(["story", "chapter"]);
 
     return {
-        paths: posts.map((post) => {
+        paths: paths.map((paths) => {
             return {
                 params: {
                     tl: config.translationsPath || "tl",
-                    story: post.story,
-                    chapter: String(post.chapter),
+                    story: paths.story,
+                    chapter: String(paths.chapter),
                 },
             };
         }),

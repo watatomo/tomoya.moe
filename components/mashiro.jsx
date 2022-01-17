@@ -20,6 +20,40 @@ export function Bubble({ children, character }) {
     );
 }
 
+export function BubbleHidden({ children, character }) {
+    return (
+        <div className="msr-unit hidden" character={character}>
+            <div className="msr-icon">
+                <div className="msr-icon__wrapper">
+                    <div className="msr-icon__base"></div>
+                </div>
+            </div>
+
+            <div className="msr-line">
+                <div className="msr-name"></div>
+                {children}
+            </div>
+        </div>
+    );
+}
+
+export function BubbleUnknown({ children, character }) {
+    return (
+        <div className="msr-unit unknown" character={character}>
+            <div className="msr-icon">
+                <div className="msr-icon__wrapper">
+                    <div className="msr-icon__base"></div>
+                </div>
+            </div>
+
+            <div className="msr-line">
+                <div className="msr-name"></div>
+                {children}
+            </div>
+        </div>
+    );
+}
+
 export function Thought({ children }) {
     const [thought, setThought] = useState("");
     useEffect(() => {
