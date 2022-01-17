@@ -1,14 +1,15 @@
-import StarBG from "../components/index/StarBG";
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import Image from "next/image";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
 import splash from "../public/img/tl/transparency and masks/still_1677_normal.webp";
 import Icon from "../public/img/home_icon.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import StarBG from "../components/index/StarBG";
 
-export default function Home({}) {
+export default function Home() {
     return (
         <>
             <Head>
@@ -49,6 +50,7 @@ export default function Home({}) {
                                             src={Icon}
                                             quality="100"
                                             objectFit="fill"
+                                            alt="icon"
                                         />
                                     </div>
                                 </div>
@@ -81,9 +83,9 @@ export default function Home({}) {
                             </div>
                         </div>
                         <div className="home__nav">
-                            <a href="#">page is a wip...</a>
+                            <a href="#1">page is a wip...</a>
                         </div>
-                        <div class="container02"></div>
+                        <div className="container02" />
                     </div>
                 </div>
             </div>

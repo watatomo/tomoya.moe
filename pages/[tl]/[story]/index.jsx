@@ -8,8 +8,8 @@ export default function StoryIndex({ story }) {
 export async function getStaticProps({ params }) {
     return {
         props: {
-            story: params.story,
-        },
+            story: params.story
+        }
     };
 }
 
@@ -17,14 +17,12 @@ export async function getStaticPaths() {
     const indexes = getStoryIndexStaticPaths(["story"]);
 
     return {
-        paths: indexes.map((post) => {
-            return {
-                params: {
-                    tl: config.translationsPath || "tl",
-                    story: post.story,
-                },
-            };
-        }),
-        fallback: false,
+        paths: indexes.map((post) => ({
+            params: {
+                tl: config.translationsPath || "tl",
+                story: post.story
+            }
+        })),
+        fallback: false
     };
 }

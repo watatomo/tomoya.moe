@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable no-unused-vars */
 import Head from "next/head";
 import "normalize.css/normalize.css";
 import "../styles/index.scss";
@@ -18,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
                 defer
                 src="https://static.cloudflareinsights.com/beacon.min.js"
                 data-cf-beacon='{"token": "089ceca5d79842a499fda95ac9e0751c"}'
-            ></script>
+            />
             {/* <!-- End Cloudflare Web Analytics --> */}
         </>
     );
