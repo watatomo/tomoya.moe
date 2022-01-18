@@ -2,19 +2,19 @@
 
 .msr-season {
     @include core.grid-center;
+    justify-items: center;
     grid-template: 1fr / 24px 1fr;
     border-radius: 5px;
     padding: 8px;
     border: solid 1px;
 
-    p {
-        margin: 0;
+    svg {
+        font-size: 1.2em;
     }
 
-    &::before {
-        content: "\f076";
-        @include core.marker-icon;
-        font-size: 18px;
+    p {
+        margin: 0;
+        justify-self: flex-start;
     }
 }
 

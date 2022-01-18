@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-/* import {
-    faTemperatureHalf,
-    faLocationDot
+import {
+    faMapMarkerAlt,
+    faExclamationTriangle
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ThermometerHalf } from "./svgicon";
 import markdownToHtml from "../lib/markdownToHtml";
 
 export function Bubble({ children, character }) {
@@ -74,6 +75,7 @@ export function Thought({ children }) {
 export function Season({ s }) {
     return (
         <div className="msr-season" s={s}>
+            <ThermometerHalf />
             <p>
                 <span>
                     <b>Season:</b> {s}
@@ -87,6 +89,7 @@ export function Location({ children }) {
     return (
         <div className="msr-location">
             <p>
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
                 <span>
                     <b>Location:</b> {children}
                 </span>
@@ -114,8 +117,9 @@ export function Narration({ children }) {
 export function Cw({ children }) {
     return (
         <div className="msr-cw">
+            <FontAwesomeIcon icon={faExclamationTriangle} />
             <span className="cw-header">Content Warning</span>
-            {children}
+            <p>{children}</p>
         </div>
     );
 }

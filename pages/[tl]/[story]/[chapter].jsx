@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
+/* eslint-disable @next/next/no-page-custom-font */
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { MDXRemote } from "next-mdx-remote";
@@ -20,6 +21,7 @@ import {
     Narration,
     Cw
 } from "../../../components/mashiro";
+import Toolbar from "../../../components/tl/Toolbar";
 
 export default function Post({ post }) {
     const router = useRouter();
@@ -31,8 +33,17 @@ export default function Post({ post }) {
             <Head>
                 <title>{post.title}</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-1..0,100..900&display=swap"
+                    rel="stylesheet"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&subset=japanese&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
             <div className="chapter-wrapper">
+                <Toolbar />
                 <div className="mashiro">
                     <MDXRemote
                         {...post.content}

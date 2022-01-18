@@ -3,11 +3,6 @@
     align-items: center;
 }
 
-@mixin marker-icon {
-    font-family: "Material Icons Rounded";
-    justify-self: center;
-}
-
 @mixin marker-line {
     content: "";
     height: 0.1em;

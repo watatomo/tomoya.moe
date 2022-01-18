@@ -33,6 +33,8 @@ module.exports = {
                 functions: "never"
             }
         ],
-        "react/no-danger": 0
+        "react/no-danger": 0,
+        "no-console": 0,
+        "import/prefer-default-export": 0
     }
 };
