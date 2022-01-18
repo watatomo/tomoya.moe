@@ -12,7 +12,7 @@ $highlight-color: #f2dea8;
     min-width: 100vw;
     background: radial-gradient(ellipse at bottom, #21294c 0%, #090a0f 100%)
         no-repeat;
-    font-family: "Quicksand", "M PLUS 2", sans-serif;
+    font-family: "Quicksand", "M PLUS Rounded 1c", sans-serif;
     color: $text-color;
 
     .width-wrapper {
@@ -23,7 +23,7 @@ $highlight-color: #f2dea8;
     }
 
     .jp-text {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .highlight {
@@ -85,7 +85,7 @@ $highlight-color: #f2dea8;
                         top: 0;
                         width: $icon-size-normal;
                         height: $icon-size-normal;
-                        background: rgb(39 30 114 / 18%);
+                        background: rgb(39 30 114 / 15%);
                         transition: background-color 0.2s linear;
                     }
 
@@ -158,7 +158,7 @@ $highlight-color: #f2dea8;
 
         a {
             position: relative;
-            color: #fff;
+            color: $text-color;
             text-decoration: none;
             line-height: 1.35;
 

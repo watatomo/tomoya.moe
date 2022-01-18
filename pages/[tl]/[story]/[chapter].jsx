@@ -9,6 +9,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
+import { THEME_COLOR } from "../../../lib/constants";
 import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
 import config from "../../../mako.config";
 import {
@@ -32,33 +33,28 @@ export default function Post({ post }) {
         <article>
             <Head>
                 <title>{post.title}</title>
+                <meta name="theme-color" content={THEME_COLOR} />
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-1..0,100..900&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&subset=japanese&display=swap"
-                    rel="stylesheet"
-                />
             </Head>
-            <div className="chapter-wrapper">
-                <Toolbar />
-                <div className="mashiro">
-                    <MDXRemote
-                        {...post.content}
-                        components={{
-                            Bubble,
-                            BubbleHidden,
-                            BubbleUnknown,
-                            Thought,
-                            Season,
-                            Location,
-                            Narration,
-                            Cw,
-                            Image
-                        }}
-                    />
+            <div className="chapter__wrapper">
+                <div className="mashiro__wrapper">
+                    <Toolbar />
+                    <div className="mashiro">
+                        <MDXRemote
+                            {...post.content}
+                            components={{
+                                Bubble,
+                                BubbleHidden,
+                                BubbleUnknown,
+                                Thought,
+                                Season,
+                                Location,
+                                Narration,
+                                Cw,
+                                Image
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </article>

@@ -7,7 +7,7 @@
     );
 }
 
-.mashiro {
+:root {
     @extend %story-dark;
 
     --storyColor-bright-l: calc(var(--storyColor-l) + 20%);
@@ -24,12 +24,15 @@
     --msr-icon-size: 60px;
     --msr-icon-sizeSmall: 45px;
     --msr-name-case: uppercase;
+    --msr-text-color: #1e2022;
+    --msr-bubble-color: #222;
+    --msr-bubble-thought-color: #4d80e4;
     // --msr-line-filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.05)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
     --msr-line-border: 8px;
     --msr-line-size: 1em;
     --msr-line-gap: 2.5px;
 
-    --msr-tippy-bg: rgba(0, 0, 0, 0.75);
+    // --msr-tippy-bg: rgba(0, 0, 0, 0.75);
 
     --msr-marker-lineColor: #bbb;
 

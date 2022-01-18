@@ -1,42 +1,82 @@
+@use "fonts";
 @use "mashiro";
 @use "home";
 
+$chapter-bg-color: #f0f5f9;
+$chapter-inner-bg-color: #fff;
+$chapter-link-color: var(--StoryColor, #eedcb3);
+
 body {
     margin: 0;
-    font-family: sans-serif;
     font-size: 16px;
+    line-height: 1.2;
+}
+
+html {
+    font-family: "Inter", "M PLUS Rounded 1c", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
+    }
 }
 
 /* Pages */
 
-.chapter-wrapper {
+.chapter__wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 60%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "Inter", "M PLUS Rounded 1c", sans-serif;
+    color: var(--msr-text-color);
+    background-color: $chapter-bg-color;
+
+    .footnotes {
+        a {
+            background: linear-gradient(
+                to bottom,
+                $chapter-link-color 0%,
+                $chapter-link-color 100%
+            );
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            background-size: 3px 3px;
+            color: #000;
+            text-decoration: none;
+            transition: background-size 0.3s;
+
+            &.footnote-backref {
+                background: none;
+
+                &:hover {
+                    @extend .footnote-backref;
+                }
+            }
+
+            &:hover {
+                background-size: 3px 50px;
+            }
+        }
+    }
+}
+
+.mashiro__wrapper {
+    background-color: $chapter-inner-bg-color;
+    width: 65%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
 }
 
 .mashiro {
-    margin: 0 10px;
+    margin: 0 1.5em;
     display: flex;
     flex-direction: column;
     row-gap: 1em;
-    font-family: "Inter", "M PLUS 2", sans-serif;
 
     img {
         border-radius: 5px;
-    }
-}
-
-@media (max-width: 900px) {
-    .chapter-wrapper {
-        width: auto;
-    }
-}
-
-@media (min-width: 1600px) {
-    .chapter-wrapper {
-        width: 75%;
     }
 }
 
@@ -45,5 +85,17 @@ body {
         vertical-align: unset;
         font-size: unset;
         top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .mashiro__wrapper {
+        width: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .mashiro__wrapper {
+        width: 80rem;
     }
 }

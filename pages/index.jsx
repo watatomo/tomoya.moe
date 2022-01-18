@@ -4,7 +4,7 @@ import Image from "next/image";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
+import { TWITTER_UN, SITE_TITLE, THEME_COLOR } from "../lib/constants";
 import splash from "../public/img/tl/transparency and masks/still_1677_normal.webp";
 import Icon from "../public/img/home_icon.png";
 import StarBG from "../components/index/StarBG";
@@ -28,15 +28,7 @@ export default function Home() {
                 <meta property="twitter:title" content={SITE_TITLE} />
                 <meta property="twitter:description" content={TWITTER_UN} />
                 <meta property="twitter:image" content={splash.src} />
-                <meta name="theme-color" content="#eedcb3" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&subset=japanese&display=swap"
-                    rel="stylesheet"
-                />
+                <meta name="theme-color" content={THEME_COLOR} />
             </Head>
             <div className="home__wrapper">
                 <StarBG />
