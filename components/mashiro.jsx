@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import styles from "../styles/mashiro.module.scss";
+/* import {
+    faTemperatureHalf,
+    faLocationDot
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; */
 import markdownToHtml from "../lib/markdownToHtml";
 
 export function Bubble({ children, character }) {
