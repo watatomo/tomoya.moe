@@ -9,7 +9,6 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { THEME_COLOR } from "../../../lib/constants";
 import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
 import config from "../../../mako.config";
 import {
@@ -23,6 +22,7 @@ import {
     Cw
 } from "../../../components/mashiro";
 import Toolbar from "../../../components/tl/Toolbar";
+import Meta from "../../../components/meta";
 
 export default function Post({ post }) {
     const router = useRouter();
@@ -33,7 +33,7 @@ export default function Post({ post }) {
         <article>
             <Head>
                 <title>{post.title}</title>
-                <meta name="theme-color" content={THEME_COLOR} />
+                <Meta />
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <div className="chapter__wrapper">
@@ -67,6 +67,9 @@ export async function getStaticProps({ params }) {
         "date",
         "slug",
         "author",
+        "story",
+        "previous",
+        "next",
         "content"
     ]);
     // const content = await markdownToHtml(post.content || "");
