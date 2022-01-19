@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "tomoya.moe",
     "short_name": "",
     "icons": [
         {
@@ -14,6 +14,6 @@
         }
     ],
     "theme_color": "#eedcb3",
-    "background_color": "#ffffff",
+    "background_color": "#eedcb3",
     "display": "standalone"
 }

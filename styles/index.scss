@@ -4,7 +4,7 @@
 
 $chapter-bg-color: #f0f5f9;
 $chapter-inner-bg-color: #fff;
-$chapter-link-color: var(--StoryColor, #eedcb3);
+$chapter-link-color: rgb(238 220 179 / 60%);
 
 body {
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-    font-family: "Inter", "M PLUS Rounded 1c", sans-serif;
+    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
@@ -30,23 +30,25 @@ html {
     align-items: center;
     align-content: center;
     justify-content: center;
-    font-family: "Inter", "M PLUS Rounded 1c", sans-serif;
+    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
     background-color: $chapter-bg-color;
 
     .footnotes {
         a {
-            background: linear-gradient(
-                to bottom,
-                $chapter-link-color 0%,
-                $chapter-link-color 100%
-            );
-            background-position: 0 100%;
-            background-repeat: repeat-x;
-            background-size: 3px 3px;
             color: #000;
+            background: linear-gradient(
+                    $chapter-link-color,
+                    $chapter-link-color
+                )
+                left bottom no-repeat;
+            background-position: 100% 1em;
+            transition: background 0.2s ease;
             text-decoration: none;
-            transition: background-size 0.3s;
+
+            &:hover {
+                background-position: bottom;
+            }
 
             &.footnote-backref {
                 background: none;
@@ -54,10 +56,6 @@ html {
                 &:hover {
                     @extend .footnote-backref;
                 }
-            }
-
-            &:hover {
-                background-size: 3px 50px;
             }
         }
     }
