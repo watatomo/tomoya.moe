@@ -34,6 +34,17 @@ export default function Post({ post }) {
             <Head>
                 <title>{post.title}</title>
                 <Meta />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+                    rel="stylesheet"
+                />
+                <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <div className="chapter__wrapper">

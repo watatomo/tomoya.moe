@@ -29,6 +29,16 @@ export default function Home() {
                 <meta property="twitter:title" content={SITE_TITLE} />
                 <meta property="twitter:description" content={TWITTER_UN} />
                 <meta property="twitter:image" content={splash.src} />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Quicksand:wght@300..700&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
             <div className="home__wrapper">
                 <StarBG />
