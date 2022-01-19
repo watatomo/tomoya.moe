@@ -12,16 +12,6 @@ body {
     line-height: 1.2;
 }
 
-html {
-    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    }
-}
-
 /* Pages */
 
 .chapter__wrapper {
