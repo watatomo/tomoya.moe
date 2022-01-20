@@ -19,26 +19,35 @@ function Toolbar({ post }) {
                             <FontAwesomeIcon icon={faChevronLeft} />
                         </a>
                     </div>
-                ) : null}
+                ) : (
+                    <div className="toolbar__section" />
+                )}
 
                 <div className="toolbar__section">
                     <FontAwesomeIcon icon={faFillDrip} />
                 </div>
-                <div className="toolbar__section">
-                    <a href={`/${tl}/${post.story}`}>
-                        <FontAwesomeIcon icon={faCrown} />
-                    </a>
-                </div>
+
+                {post.story ? (
+                    <div className="toolbar__section">
+                        <a href={`/${tl}/${post.story}`}>
+                            <FontAwesomeIcon icon={faCrown} />
+                        </a>
+                    </div>
+                ) : null}
+
                 <div className="toolbar__section">
                     <TextSize />
                 </div>
+
                 {post.next ? (
                     <div className="toolbar__section">
                         <a href={`/${tl}/${post.story}/${post.next}`}>
                             <FontAwesomeIcon icon={faChevronRight} />
                         </a>
                     </div>
-                ) : null}
+                ) : (
+                    <div className="toolbar__section" />
+                )}
             </div>
         </div>
     );

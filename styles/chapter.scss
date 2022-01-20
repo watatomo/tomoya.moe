@@ -1,0 +1,138 @@
+$chapter-bg-color: #f0f5f9;
+$chapter-inner-bg-color: #fff;
+$chapter-link-color: rgb(238 220 179 / 75%);
+
+.chapter__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
+    color: var(--msr-text-color);
+    background-color: $chapter-bg-color;
+
+    .footnotes {
+        a {
+            color: #000;
+            background: linear-gradient(
+                    $chapter-link-color,
+                    $chapter-link-color
+                )
+                left bottom no-repeat;
+            background-position: 100% 1em;
+            transition: background 0.2s ease;
+            text-decoration: none;
+
+            &:hover {
+                background-position: bottom;
+            }
+
+            &.footnote-backref {
+                background: none;
+
+                &:hover {
+                    @extend .footnote-backref;
+                }
+            }
+        }
+    }
+
+    .mashiro__wrapper {
+        background-color: $chapter-inner-bg-color;
+        width: 90%;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    }
+
+    .mashiro {
+        margin: 1.5em;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+
+        img {
+            border-radius: 5px;
+        }
+
+        .footnotes > ol {
+            margin: 1em 1em 0;
+
+            > li:not(:last-of-type) {
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+
+    .msr-unit {
+        sup {
+            vertical-align: unset;
+            font-size: unset;
+            top: 0;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+
+        + p {
+            margin: 0;
+
+            + p {
+                margin: 0;
+
+                + p {
+                    margin: 0;
+
+                    + p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .chapter__wrapper {
+        .mashiro__wrapper {
+            width: 97%;
+        }
+
+        .mashiro {
+            margin: 1.5em 1em;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .chapter__wrapper {
+        .mashiro__wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .chapter__wrapper {
+        .mashiro__wrapper {
+            width: 60rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .chapter__wrapper {
+        .mashiro__wrapper {
+            width: 80rem;
+        }
+    }
+}

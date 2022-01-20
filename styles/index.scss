@@ -1,90 +1,11 @@
 // @use "fonts";
 @use "mashiro";
 @use "home";
-
-$chapter-bg-color: #f0f5f9;
-$chapter-inner-bg-color: #fff;
-$chapter-link-color: rgb(238 220 179 / 60%);
+@use "chapter";
 
 body {
     font-family: sans-serif;
     margin: 0;
     font-size: 16px;
     line-height: 1.2;
-}
-
-/* Pages */
-
-.chapter__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    color: var(--msr-text-color);
-    background-color: $chapter-bg-color;
-
-    .footnotes {
-        a {
-            color: #000;
-            background: linear-gradient(
-                    $chapter-link-color,
-                    $chapter-link-color
-                )
-                left bottom no-repeat;
-            background-position: 100% 1em;
-            transition: background 0.2s ease;
-            text-decoration: none;
-
-            &:hover {
-                background-position: bottom;
-            }
-
-            &.footnote-backref {
-                background: none;
-
-                &:hover {
-                    @extend .footnote-backref;
-                }
-            }
-        }
-    }
-}
-
-.mashiro__wrapper {
-    background-color: $chapter-inner-bg-color;
-    width: 65%;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
-}
-
-.mashiro {
-    margin: 1.5em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-
-    img {
-        border-radius: 5px;
-    }
-}
-
-.msr-unit {
-    sup {
-        vertical-align: unset;
-        font-size: unset;
-        top: 0;
-    }
-}
-
-@media (max-width: 900px) {
-    .mashiro__wrapper {
-        width: auto;
-    }
-}
-
-@media (min-width: 1600px) {
-    .mashiro__wrapper {
-        width: 80rem;
-    }
 }
