@@ -5,7 +5,7 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
-import splash from "../public/img/tl/transparency and masks/still_1677_normal.webp";
+import banner from "../public/img/home_banner.png";
 import Icon from "../public/img/home_icon.png";
 import Meta from "../components/meta";
 import StarBG from "../components/index/StarBG";
@@ -23,12 +23,12 @@ export default function Home() {
                 <meta property="og:url" content="https://tomoya.moe/" />
                 <meta property="og:title" content={SITE_TITLE} />
                 <meta property="og:description" content={TWITTER_UN} />
-                <meta property="og:image" content={splash.src} />
+                <meta property="og:image" content={banner.src} />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://tomoya.moe/" />
                 <meta property="twitter:title" content={SITE_TITLE} />
                 <meta property="twitter:description" content={TWITTER_UN} />
-                <meta property="twitter:image" content={splash.src} />
+                <meta property="twitter:image" content={banner.src} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"
@@ -36,7 +36,7 @@ export default function Home() {
                     crossOrigin
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Quicksand:wght@300..700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Quicksand:wght@300..700&display=swap"
                     rel="stylesheet"
                 />
             </Head>
