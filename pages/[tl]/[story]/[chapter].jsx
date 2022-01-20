@@ -49,7 +49,7 @@ export default function Post({ post }) {
             </Head>
             <div className="chapter__wrapper">
                 <div className="mashiro__wrapper">
-                    <Toolbar />
+                    <Toolbar post={post} />
                     <div className="mashiro">
                         <MDXRemote
                             {...post.content}

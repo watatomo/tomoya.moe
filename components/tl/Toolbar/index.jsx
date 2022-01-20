@@ -6,32 +6,39 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TextSize } from "../../svgicon";
+import config from "../../../mako.config";
 
-function Toolbar() {
+function Toolbar({ post }) {
+    const tl = config.translationsPath || "tl";
     return (
         <div className="toolbar__wrapper">
             <div className="toolbar">
-                <div className="toolbar__section">
-                    <a href="previous">
-                        <FontAwesomeIcon icon={faChevronLeft} />
-                    </a>
-                </div>
+                {post.previous ? (
+                    <div className="toolbar__section">
+                        <a href={`/${tl}/${post.story}/${post.previous}`}>
+                            <FontAwesomeIcon icon={faChevronLeft} />
+                        </a>
+                    </div>
+                ) : null}
+
                 <div className="toolbar__section">
                     <FontAwesomeIcon icon={faFillDrip} />
                 </div>
                 <div className="toolbar__section">
-                    <a href="home">
+                    <a href={`/${tl}/${post.story}`}>
                         <FontAwesomeIcon icon={faCrown} />
                     </a>
                 </div>
                 <div className="toolbar__section">
                     <TextSize />
                 </div>
-                <div className="toolbar__section">
-                    <a href="next">
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </a>
-                </div>
+                {post.next ? (
+                    <div className="toolbar__section">
+                        <a href={`/${tl}/${post.story}/${post.next}`}>
+                            <FontAwesomeIcon icon={faChevronRight} />
+                        </a>
+                    </div>
+                ) : null}
             </div>
         </div>
     );
