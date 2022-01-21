@@ -35,6 +35,7 @@ module.exports = {
         ],
         "react/no-danger": 0,
         "no-console": 0,
-        "import/prefer-default-export": 0
+        "import/prefer-default-export": 0,
+        "@next/next/no-page-custom-font": 0
     }
 };

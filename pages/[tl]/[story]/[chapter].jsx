@@ -2,7 +2,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
-/* eslint-disable @next/next/no-page-custom-font */
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { MDXRemote } from "next-mdx-remote";

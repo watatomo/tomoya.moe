@@ -8,7 +8,7 @@ export default function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta
                     name="viewport"
                     content="initial-scale=1, width=device-width"
