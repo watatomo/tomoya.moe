@@ -1,5 +1,6 @@
 ---
 title: "Cinderella Burning at the Stake's Stage"
+description: "Wataru: Tomoya-kun, Tomoya-kun. Is that my dove you have there? It looks absolutely exhausted… What happened?"
 ---
 
 <Season s="Summer"/>

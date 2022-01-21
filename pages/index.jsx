@@ -4,7 +4,7 @@ import Image from "next/image";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TWITTER_UN, SITE_TITLE } from "../lib/constants";
+import { TWITTER_UN, SITE_URL, SITE_TITLE, META_DESC } from "../lib/constants";
 import banner from "../public/img/home_banner.png";
 import Icon from "../public/img/home_icon.png";
 import Meta from "../components/meta";
@@ -16,24 +16,24 @@ export default function Home() {
             <Head>
                 <title>{SITE_TITLE}</title>
                 <Meta />
-                <meta name="description" content={TWITTER_UN} />
                 <meta name="title" content={SITE_TITLE} />
-                <meta name="description" content={TWITTER_UN} />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://tomoya.moe/" />
+                <meta name="description" content={META_DESC} />
+                <meta property="og:type" content="profile" />
+                <meta property="og:url" content={SITE_URL} />
                 <meta property="og:title" content={SITE_TITLE} />
-                <meta property="og:description" content={TWITTER_UN} />
+                <meta property="og:description" content={META_DESC} />
                 <meta property="og:image" content={banner.src} />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://tomoya.moe/" />
+                <meta property="twitter:url" content={SITE_URL} />
                 <meta property="twitter:title" content={SITE_TITLE} />
-                <meta property="twitter:description" content={TWITTER_UN} />
+                <meta property="twitter:description" content={META_DESC} />
                 <meta property="twitter:image" content={banner.src} />
+                <meta property="twitter:creator" content={TWITTER_UN} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
-                    crossOrigin="true"
+                    crossOrigin="anonymous"
                 />
                 <link
                     href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Quicksand:wght@300..700&display=swap"

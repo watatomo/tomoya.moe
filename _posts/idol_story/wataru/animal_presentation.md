@@ -1,5 +1,6 @@
 ---
 title: "Animal Presentation"
+description: "Subaru: How d'you take doves on walks, though? Do you just put 'em on your shoulders?"
 ---
 
 <Season s="Summer"/>
@@ -160,7 +161,7 @@ Huh? There's something moving in your shirt, Tomoya-kun.
 
 <Bubble character="Tomoya">
 
-Eh— Eeek!? When did a dove get in here?
+Eh— Eeek?! When did a dove get in here?
 
 </Bubble>
 

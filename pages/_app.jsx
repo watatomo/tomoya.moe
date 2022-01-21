@@ -2,15 +2,18 @@
 import Head from "next/head";
 import "normalize.css/normalize.css";
 import "../styles/index.scss";
+import { THEME_COLOR } from "../lib/constants";
 
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
+                <meta charset="utf-8" />
                 <meta
                     name="viewport"
                     content="initial-scale=1, width=device-width"
                 />
+                <meta name="theme-color" content={THEME_COLOR} />
             </Head>
             <Component {...pageProps} />
             {/* <!-- Cloudflare Web Analytics --> */}

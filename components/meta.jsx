@@ -4,7 +4,6 @@ export default function Meta() {
     return (
         <>
             <link rel="icon" href="/favicon.ico?v=2" />
-            <meta name="theme-color" content={THEME_COLOR} />
             <link
                 rel="apple-touch-icon"
                 sizes="180x180"
