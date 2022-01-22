@@ -8,8 +8,8 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
-import config from "../../../mako.config";
+import { getChapterStaticProps, getChapterStaticPaths } from "../../lib/api";
+import config from "../../mako.config";
 import {
     Bubble,
     BubbleHidden,
@@ -19,10 +19,10 @@ import {
     Location,
     Narration,
     Cw
-} from "../../../components/mashiro";
-import Toolbar from "../../../components/tl/Toolbar";
-import Meta from "../../../components/meta";
-import { TWITTER_UN } from "../../../lib/constants";
+} from "../../components/mashiro";
+import Toolbar from "../../components/tl/Toolbar";
+import Meta from "../../components/meta";
+import { TWITTER_UN } from "../../lib/constants";
 
 export default function Post({ post }) {
     const router = useRouter();
@@ -88,7 +88,8 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-    const post = getChapterStaticProps(params.story, params.chapter, [
+    console.log("params", params);
+    const post = getChapterStaticProps(params.slug, [
         "title",
         "description",
         "date",
@@ -99,6 +100,7 @@ export async function getStaticProps({ params }) {
         "next",
         "content"
     ]);
+    console.log("post", post);
     // const content = await markdownToHtml(post.content || "");
     const content = await serialize(post.content || "");
     return {
@@ -112,14 +114,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getChapterStaticPaths(["story", "chapter"]);
+    const paths = getChapterStaticPaths(["slug"]);
 
     return {
         paths: paths.map((path) => ({
             params: {
                 tl: config.translationsPath || "tl",
-                story: path.story,
-                chapter: String(path.chapter)
+                slug: path.slug.split("/")
             }
         })),
         fallback: false

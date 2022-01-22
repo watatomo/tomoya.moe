@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { getStoryIndexStaticPaths } from "../../../lib/api";
-import config from "../../../mako.config";
-import Meta from "../../../components/meta";
-import { TWITTER_UN } from "../../../lib/constants";
+import { getStoryIndexStaticPaths } from "../../lib/api";
+import config from "../../mako.config";
+import Meta from "../../components/meta";
+import { TWITTER_UN } from "../../lib/constants";
 
 export default function StoryIndex({ story }) {
     return (
