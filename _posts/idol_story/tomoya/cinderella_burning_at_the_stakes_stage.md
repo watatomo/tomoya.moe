@@ -332,3 +332,5 @@ Additionally, the real Jeanne d'Arc was burned at the stake by her own people: t
 Tl;dr: Jeanne d'Arc = Cinderella = Wataru.
 
 The Cinderella of _Ensemble Stars_ was Wataru all along, not Tomoya (despite him getting the role). It's kinda like a subtle way of Wataru asking Tomoya to become a prince that can save him (which he ends up becoming in _Transparency and Masks_)—the prince that will follow him to the end of the world and beyond.
+
+<Credits tl="<a href='https://tomoya.moe'>Ren</a>" tlc="<a href='https://310mc.github.io'>310mc</a>" qc="<a href='https://twitter.com/subahokke'>En</a>" />

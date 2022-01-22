@@ -21,6 +21,7 @@ import {
     Cw
 } from "../../../components/mashiro";
 import Toolbar from "../../../components/tl/Toolbar";
+import Credits from "../../../components/tl/Credits";
 import Meta from "../../../components/meta";
 import { TWITTER_UN } from "../../../lib/constants";
 
@@ -77,7 +78,8 @@ export default function Post({ post }) {
                                 Location,
                                 Narration,
                                 Cw,
-                                Image
+                                Image,
+                                Credits
                             }}
                         />
                     </div>

@@ -1,7 +1,7 @@
 import {
     faChevronLeft,
     faChevronRight,
-    faCrown,
+    faStar,
     faFillDrip
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,7 +30,7 @@ function Toolbar({ post }) {
                 {post.story ? (
                     <div className="toolbar__section">
                         <a href={`/${tl}/${post.story}`}>
-                            <FontAwesomeIcon icon={faCrown} />
+                            <FontAwesomeIcon icon={faStar} />
                         </a>
                     </div>
                 ) : null}
