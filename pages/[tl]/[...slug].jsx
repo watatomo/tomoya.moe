@@ -8,7 +8,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { getChapterStaticProps, getChapterStaticPaths } from "../../lib/api";
+import { getAllPostSlugs, getPostFieldsBySlug } from "../../lib/api";
 import config from "../../mako.config";
 import {
     Bubble,
@@ -89,7 +89,7 @@ export default function Post({ post }) {
 
 export async function getStaticProps({ params }) {
     console.log("params", params);
-    const post = getChapterStaticProps(params.slug, [
+    const post = getPostFieldsBySlug(params.slug.join("/"), [
         "title",
         "description",
         "date",
@@ -100,8 +100,6 @@ export async function getStaticProps({ params }) {
         "next",
         "content"
     ]);
-    console.log("post", post);
-    // const content = await markdownToHtml(post.content || "");
     const content = await serialize(post.content || "");
     return {
         props: {
@@ -114,15 +112,23 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getChapterStaticPaths(["slug"]);
-
-    return {
-        paths: paths.map((path) => ({
+    const slugs = getAllPostSlugs();
+    const posts = slugs.map((slug) => getPostFieldsBySlug(slug, ["slug"]));
+    const paths = posts.map((post) => {
+        const slugSegments = post.slug.split("/");
+        if (slugSegments[slugSegments.length - 1].toLowerCase() === "index") {
+            slugSegments.pop();
+        }
+        return {
             params: {
                 tl: config.translationsPath || "tl",
-                slug: path.slug.split("/")
+                slug: slugSegments
             }
-        })),
+        };
+    });
+
+    return {
+        paths,
         fallback: false
     };
 }
