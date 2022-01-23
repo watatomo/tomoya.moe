@@ -8,7 +8,11 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { getAllPostSlugs, getPostFieldsBySlug } from "../../lib/api";
+import {
+    getAllPostFilePaths,
+    getPostFieldsByPath,
+    getActualFilePathForSlug
+} from "../../lib/api";
 import config from "../../mako.config";
 import {
     Bubble,
@@ -90,8 +94,12 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-    console.log("params", params);
-    const post = getPostFieldsBySlug(params.slug.join("/"), [
+    const { slug } = params;
+
+    // Slugs for index posts
+    const path = await getActualFilePathForSlug(slug.join("/"));
+
+    const post = getPostFieldsByPath(path, [
         "title",
         "description",
         "date",
@@ -114,10 +122,11 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const slugs = getAllPostSlugs();
-    const posts = slugs.map((slug) => getPostFieldsBySlug(slug, ["slug"]));
+    const slugs = getAllPostFilePaths();
+    const posts = slugs.map((slug) => getPostFieldsByPath(slug, ["slug"]));
     const paths = posts.map((post) => {
         const slugSegments = post.slug.split("/");
+        // Prefer URLs that look like /tl/sanctuary instead of /tl/sanctuary/index
         if (slugSegments[slugSegments.length - 1].toLowerCase() === "index") {
             slugSegments.pop();
         }
