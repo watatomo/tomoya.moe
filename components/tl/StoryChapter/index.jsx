@@ -2,6 +2,7 @@
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Head from "next/head";
+import Fn from "../Footnotes";
 import {
     Bubble,
     BubbleHidden,
@@ -61,6 +62,7 @@ function StoryChapter({ post }) {
                                 Bubble,
                                 BubbleHidden,
                                 BubbleUnknown,
+                                Fn,
                                 Thought,
                                 Season,
                                 Location,

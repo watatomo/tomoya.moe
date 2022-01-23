@@ -1,6 +1,7 @@
 $chapter-bg-color: #f0f5f9;
 $chapter-inner-bg-color: #fff;
 $chapter-link-color: rgb(238 220 179 / 75%);
+$credits-bg-color: #eef1f3;
 
 .chapter__wrapper {
     display: flex;
@@ -12,7 +13,19 @@ $chapter-link-color: rgb(238 220 179 / 75%);
     color: var(--msr-text-color);
     background-color: $chapter-bg-color;
 
-    .footnotes {
+    hr {
+        border: 1px solid #d7dcdf;
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    ol:last-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 0;
+        margin: 0 0 0 20px;
+
         a {
             color: #000;
             background: linear-gradient(
@@ -28,13 +41,13 @@ $chapter-link-color: rgb(238 220 179 / 75%);
                 background-position: bottom;
             }
 
-            &.footnote-backref {
+            /* &.footnote-backref {
                 background: none;
 
                 &:hover {
                     @extend .footnote-backref;
                 }
-            }
+            } */
         }
     }
 
@@ -102,6 +115,7 @@ $chapter-link-color: rgb(238 220 179 / 75%);
     .credits__wrapper {
         text-align: center;
         margin-top: 1em;
+        line-height: 1;
 
         a {
             position: relative;
@@ -143,8 +157,8 @@ $chapter-link-color: rgb(238 220 179 / 75%);
                 display: flex;
                 flex-direction: column;
                 justify-items: center;
-                gap: 1px;
-                background-color: #eef1f3;
+                gap: 2px;
+                background-color: $credits-bg-color;
                 padding: 10px;
                 border-radius: 5px;
             }

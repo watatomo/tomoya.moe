@@ -1,6 +1,7 @@
 .msr-unit {
     display: grid;
     grid-template-columns: auto 1fr;
+    line-height: 1.2;
     column-gap: 12px;
     row-gap: 1px;
     font-size: var(--msr-line-size);

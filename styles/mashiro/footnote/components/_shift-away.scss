@@ -2,18 +2,18 @@
     opacity: 0;
 
     &[data-placement^="top"] {
-        transform: translateY(10px);
+        transform: translateY(7px);
     }
 
     &[data-placement^="bottom"] {
-        transform: translateY(-10px);
+        transform: translateY(-7px);
     }
 
     &[data-placement^="left"] {
-        transform: translateX(10px);
+        transform: translateX(7px);
     }
 
     &[data-placement^="right"] {
-        transform: translateX(-10px);
+        transform: translateX(-7px);
     }
 }

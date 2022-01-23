@@ -1,4 +1,5 @@
-a.footnote-ref {
+.tooltip {
+    cursor: help;
     vertical-align: middle;
     text-decoration: none;
     margin: 0 2px;
@@ -16,7 +17,7 @@ a.footnote-ref {
     }
 }
 
-.footnotes {
+/* .footnotes {
     > ol {
         padding-left: 0;
         margin-left: 20px;
@@ -34,4 +35,4 @@ a.footnote-ref {
             }
         }
     }
-}
+} */
