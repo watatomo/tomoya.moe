@@ -3,7 +3,11 @@
 }
 
 .thought {
-    color: var(--msr-bubble-thought-color);
+    display: inherit;
+
+    p {
+        color: var(--msr-bubble-thought-color);
+    }
 }
 
 .spell {

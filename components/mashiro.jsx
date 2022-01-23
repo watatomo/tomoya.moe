@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
 import {
     faMapMarkerAlt,
     faExclamationTriangle
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ThermometerHalf } from "./svgicon";
-import markdownToHtml from "../lib/markdownToHtml";
 
 export function Bubble({ children, character }) {
     return (
@@ -56,19 +56,13 @@ export function BubbleUnknown({ children, character }) {
 }
 
 export function Thought({ children }) {
-    const [thought, setThought] = useState("");
-    useEffect(() => {
-        markdownToHtml(children || "").then((response) => {
-            setThought(response.slice(3, -5));
-        });
-    });
     return (
-        <p>
-            <span
-                className="thought"
-                dangerouslySetInnerHTML={{ __html: thought }}
-            />
-        </p>
+        <ReactMarkdown
+            remarkPlugins={[remarkGfm, { singleTilde: false }]}
+            className="thought"
+        >
+            {children}
+        </ReactMarkdown>
     );
 }
 
@@ -99,16 +93,14 @@ export function Location({ children }) {
 }
 
 export function Narration({ children }) {
-    const [narration, setNarration] = useState("");
-    useEffect(() => {
-        markdownToHtml(children || "").then((response) => {
-            setNarration(response.slice(3, -5));
-        });
-    });
     return (
         <div className="msr-narration">
             <div className="msr-line">
-                <p dangerouslySetInnerHTML={{ __html: narration }} />
+                <ReactMarkdown
+                    remarkPlugins={[remarkGfm, { singleTilde: false }]}
+                >
+                    {children}
+                </ReactMarkdown>
             </div>
         </div>
     );
