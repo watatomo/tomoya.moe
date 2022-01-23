@@ -1,9 +1,23 @@
 /* eslint-disable react/jsx-props-no-spreading */
+import { MDXRemote } from "next-mdx-remote";
+import Image from "next/image";
 import Head from "next/head";
+import {
+    Bubble,
+    BubbleHidden,
+    BubbleUnknown,
+    Thought,
+    Season,
+    Location,
+    Narration,
+    Cw
+} from "../../mashiro";
+import Toolbar from "../Toolbar";
+import Credits from "../Credits";
 import Meta from "../../meta";
 import { TWITTER_UN } from "../../../lib/constants";
 
-function StoryIndex({ post }) {
+function StoryChapter({ post }) {
     return (
         <article>
             <Head>
@@ -37,15 +51,30 @@ function StoryIndex({ post }) {
                 />
                 <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
-            <div className="storyIndex__wrapper">
+            <div className="chapter__wrapper">
                 <div className="mashiro__wrapper">
-                    <div className="mashiro">testing...</div>
-                    <div className="mashiro">{post.title} Index</div>
-                    <div className="mashiro">{post.description}</div>
+                    <Toolbar post={post} />
+                    <div className="mashiro">
+                        <MDXRemote
+                            {...post.content}
+                            components={{
+                                Bubble,
+                                BubbleHidden,
+                                BubbleUnknown,
+                                Thought,
+                                Season,
+                                Location,
+                                Narration,
+                                Cw,
+                                Image,
+                                Credits
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </article>
     );
 }
 
-export default StoryIndex;
+export default StoryChapter;
