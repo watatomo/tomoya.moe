@@ -287,4 +287,4 @@ Woaaah! Don't jump onto the balloon while carrying meee! P-Put me down\~!
 
 [^1]: A reference to Tomoya's Idol Story from !, <em><a href="/tl/idol_story/cinderella_burning_at_the_stakes_stage">Cinderella Burning at Stake's Stage</a>.</em> Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.
 
-<Credits tl="<a href="<a href='https://twitter.com/haranami_'>haranami</a>, <a href='https://tomoya.moe'>Ren</a>" />
+<Credits tl="<a href='<a href='https://twitter.com/haranami_'>haranami</a>, <a href='https://tomoya.moe'>Ren</a>" />
