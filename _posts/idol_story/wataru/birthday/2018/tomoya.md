@@ -26,3 +26,5 @@ The recording's "perfect"? Ah, and those tears were fake?!
 Dammit... I just let my guard down because it's your birthday\~!
 
 </Bubble>
+
+<Credits tl="<a href='https://tomoya.moe'>Ren</a>" tlc="<a href='https://twitter.com/gebokuism'>Koi</a>" />

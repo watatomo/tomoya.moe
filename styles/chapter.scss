@@ -40,7 +40,7 @@ $chapter-link-color: rgb(238 220 179 / 75%);
 
     .mashiro__wrapper {
         background-color: $chapter-inner-bg-color;
-        width: 90%;
+        width: 52rem;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
     }
 
@@ -98,9 +98,75 @@ $chapter-link-color: rgb(238 220 179 / 75%);
     h2 {
         margin-top: 0.5em;
     }
+
+    .credits__wrapper {
+        text-align: center;
+        margin-top: 1em;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: var(--msr-text-color);
+
+            &:hover {
+                &::before {
+                    transform: scaleX(1);
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color: var(--msr-text-color);
+                transform: scaleX(0);
+                transition: transform 0.2s ease;
+            }
+        }
+
+        .credits {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: stretch;
+            gap: 5px;
+
+            b {
+                font-size: 0.85em;
+            }
+
+            .tl,
+            .tlc,
+            .qc {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                gap: 1px;
+                background-color: #eef1f3;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .tl {
+                grid-row: 1;
+                grid-column: 1/3;
+            }
+
+            .tlc {
+                grid-row: 2;
+            }
+
+            .qc {
+                grid-row: 2;
+            }
+        }
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .chapter__wrapper {
         .mashiro__wrapper {
             width: 97%;
@@ -115,24 +181,10 @@ $chapter-link-color: rgb(238 220 179 / 75%);
 
 @media (max-width: 600px) {
     .chapter__wrapper {
+        font-size: 12px;
+
         .mashiro__wrapper {
             width: 100%;
-        }
-    }
-}
-
-@media (min-width: 1024px) {
-    .chapter__wrapper {
-        .mashiro__wrapper {
-            width: 60rem;
-        }
-    }
-}
-
-@media (min-width: 1600px) {
-    .chapter__wrapper {
-        .mashiro__wrapper {
-            width: 80rem;
         }
     }
 }

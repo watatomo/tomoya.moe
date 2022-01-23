@@ -26,3 +26,5 @@ The rose petals on the cake? Hehehe, no need to fret. I assure you that they're 
 There's more than just flowers waiting for you, so please accept them—every last one♪
 
 </Bubble>
+
+<Credits tl="<a href='https://tomoya.moe'>Ren</a>" tlc="<a href='https://twitter.com/haranami_'>haranami</a>" />

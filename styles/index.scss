@@ -9,3 +9,17 @@ body {
     font-size: 16px;
     line-height: 1.2;
 }
+
+svg {
+    shape-rendering: geometricPrecision;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .msr-season,
+    .msr-location,
+    .msr-narration,
+    .msr-unit,
+    .chapter__wrapper .mashiro img {
+        margin: 1em 0;
+    }
+}
