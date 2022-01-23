@@ -130,8 +130,7 @@ $chapter-link-color: rgb(238 220 179 / 75%);
 
         .credits {
             display: grid;
-            grid-template-columns: 50% 50%;
-            justify-items: stretch;
+            grid-template-columns: 1fr 1fr;
             gap: 5px;
 
             b {
