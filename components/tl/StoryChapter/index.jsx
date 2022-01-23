@@ -1,15 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-shadow */
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
-import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { getChapterStaticProps, getChapterStaticPaths } from "../../../lib/api";
-import config from "../../../mako.config";
 import {
     Bubble,
     BubbleHidden,
@@ -19,17 +11,13 @@ import {
     Location,
     Narration,
     Cw
-} from "../../../components/mashiro";
-import Toolbar from "../../../components/tl/Toolbar";
-import Credits from "../../../components/tl/Credits";
-import Meta from "../../../components/meta";
+} from "../../mashiro";
+import Toolbar from "../Toolbar";
+import Credits from "../Credits";
+import Meta from "../../meta";
 import { TWITTER_UN } from "../../../lib/constants";
 
-export default function Post({ post }) {
-    const router = useRouter();
-    if (!router.isFallback && !post?.slug) {
-        return <ErrorPage statusCode={404} />;
-    }
+function StoryChapter({ post }) {
     return (
         <article>
             <Head>
@@ -89,41 +77,4 @@ export default function Post({ post }) {
     );
 }
 
-export async function getStaticProps({ params }) {
-    const post = getChapterStaticProps(params.story, params.chapter, [
-        "title",
-        "description",
-        "date",
-        "slug",
-        "author",
-        "story",
-        "previous",
-        "next",
-        "content"
-    ]);
-    // const content = await markdownToHtml(post.content || "");
-    const content = await serialize(post.content || "");
-    return {
-        props: {
-            post: {
-                ...post,
-                content
-            }
-        }
-    };
-}
-
-export async function getStaticPaths() {
-    const paths = getChapterStaticPaths(["story", "chapter"]);
-
-    return {
-        paths: paths.map((path) => ({
-            params: {
-                tl: config.translationsPath || "tl",
-                story: path.story,
-                chapter: String(path.chapter)
-            }
-        })),
-        fallback: false
-    };
-}
+export default StoryChapter;
