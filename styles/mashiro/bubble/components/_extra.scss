@@ -2,12 +2,8 @@
     display: inline-block;
 }
 
-.thought {
-    display: inherit;
-
-    p {
-        color: var(--msr-bubble-thought-color);
-    }
+p.thought {
+    color: var(--msr-bubble-thought-color);
 }
 
 .spell {

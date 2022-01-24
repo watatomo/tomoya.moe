@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unstable-nested-components */
+/* eslint-disable react/jsx-props-no-spreading */
 import {
     faMapMarkerAlt,
     faExclamationTriangle
@@ -59,7 +61,9 @@ export function Thought({ children }) {
     return (
         <ReactMarkdown
             remarkPlugins={[remarkGfm, { singleTilde: false }]}
-            className="thought"
+            components={{
+                p: ({ node, ...props }) => <p className="thought" {...props} />
+            }}
         >
             {children}
         </ReactMarkdown>
