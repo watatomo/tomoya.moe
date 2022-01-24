@@ -1,11 +1,11 @@
-import styled from "styled-components";
+// import styled from "styled-components";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 // import "tippy.js/themes/translucent.css";
 // import ReactMarkdown from "react-markdown";
 // import remarkGfm from "remark-gfm";
 
-const StyledWrapper = styled.span`
+/* const StyledWrapper = styled.span`
     .tippy-box[data-animation="shift-away"][data-state="hidden"] {
         opacity: 0;
 
@@ -75,33 +75,34 @@ const StyledWrapper = styled.span`
             }
         }
     }
-`;
+`; */
 
 function Fn({ num, children }) {
     return (
-        <StyledWrapper>
-            <Tippy
-                content={children}
-                interactive
-                theme="translucent"
-                animation="shift-away"
-                arrow={false}
-                offset={[0, 5]}
-                placement="top"
-                popperOptions={{
-                    modifiers: [
-                        {
-                            name: "flip",
-                            options: {
-                                allowedAutoPlacements: "top"
-                            }
+        // <StyledWrapper>
+        <Tippy
+            content={children}
+            interactive
+            theme="translucent"
+            animation="shift-away"
+            arrow={false}
+            offset={[0, 5]}
+            placement="top"
+            appendTo={() => document.body}
+            /* popperOptions={{
+                modifiers: [
+                    {
+                        name: "flip",
+                        options: {
+                            allowedAutoPlacements: "top"
                         }
-                    ]
-                }}
-            >
-                <span className="tooltip">{num}</span>
-            </Tippy>
-        </StyledWrapper>
+                    }
+                ]
+            }} */
+        >
+            <span className="tooltip">{num}</span>
+        </Tippy>
+        // </StyledWrapper>
     );
 }
 

@@ -1,3 +1,23 @@
+.tippy-box[data-animation="shift-away"][data-state="hidden"] {
+    opacity: 0;
+
+    &[data-placement^="top"] {
+        transform: translateY(7px);
+    }
+
+    &[data-placement^="bottom"] {
+        transform: translateY(-7px);
+    }
+
+    &[data-placement^="left"] {
+        transform: translateX(7px);
+    }
+
+    &[data-placement^="right"] {
+        transform: translateX(-7px);
+    }
+}
+
 .tippy-box[data-theme~="translucent"] {
     background-color: var(--msr-tippy-bg);
     font-size: 0.9em;

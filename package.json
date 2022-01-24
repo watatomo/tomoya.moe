@@ -20,6 +20,7 @@
         "cosmiconfig": "^7.0.1",
         "date-fns": "2.16.1",
         "gray-matter": "4.0.2",
+        "markdown-to-jsx": "^7.1.6",
         "next": "latest",
         "next-mdx-remote": "^3.0.8",
         "normalize.css": "^8.0.1",
@@ -30,7 +31,7 @@
         "remark": "13.0.0",
         "remark-gfm": "^3.0.1",
         "remark-html": "13.0.1",
-        "remark-mdx": "^1.6.22",
+        "remark-mdx": "^2.0.0-rc.2",
         "styled-components": "^5.3.3",
         "tippy.js": "^6.3.7"
     },
