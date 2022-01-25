@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 // import { MDXRemote } from "next-mdx-remote";
 import Head from "next/head";
 import Meta from "../../meta";
@@ -8,6 +9,8 @@ import { TWITTER_UN } from "../../../lib/constants";
 // import banner from "../../../public/img/tl/sanctuary/assets/card_still_full1_2887_normal.webp";
 
 function StoryIndex({ post }) {
+    const firstChapter = `${post.actualStory}/1`;
+
     return (
         <article>
             <Head>
@@ -57,7 +60,7 @@ function StoryIndex({ post }) {
                             <h1 className="title-en">{post.title}</h1>
                             <h2 className="title-jp">{post.titleJp}</h2>
                             <div className="title-start">
-                                <a href="1">Start Reading</a>
+                                <a href={firstChapter}>Start Reading</a>
                             </div>
                         </div>
                         <div className="info__wrapper">
@@ -77,7 +80,7 @@ function StoryIndex({ post }) {
                                 </div>
                                 <div className="info-item writer">
                                     <div className="label">Writer</div>
-                                    <div className="value">{post.akira}</div>
+                                    <div className="value">{post.writer}</div>
                                 </div>
                                 <div className="info-item characters">
                                     <div className="label">Characters</div>
@@ -95,7 +98,7 @@ function StoryIndex({ post }) {
                                     </div>
                                 </div>
                                 <div className="info-item tl">
-                                    <div className="label">Translators</div>
+                                    <div className="label">Translation</div>
                                     <div className="value">
                                         <a href="https://maonuis.tumblr.com">
                                             Nui
@@ -104,7 +107,7 @@ function StoryIndex({ post }) {
                                     </div>
                                 </div>
                                 <div className="info-item pr">
-                                    <div className="label">Proofreaders</div>
+                                    <div className="label">Proofreading</div>
                                     <div className="value">
                                         <a href="https://honeyspades.tumblr.com">
                                             honeyspades
@@ -115,6 +118,316 @@ function StoryIndex({ post }) {
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="extra-area">
+                                <div className="tab-header">
+                                    <div className="tab-header__name">
+                                        Extra Information
+                                    </div>
+                                </div>
+                                <div className="tab-content">
+                                    <div className="tab-item">
+                                        <div className="label">Event</div>
+                                        <div className="value">
+                                            SS Arc／6th Stage: Sanctuary
+                                        </div>
+                                    </div>
+                                    <div className="tab-item">
+                                        <div className="label">
+                                            Event Duration
+                                        </div>
+                                        <div className="value">
+                                            9/15/2021 (15:00 JST) - 9/23/2021
+                                            (22:00 JST)
+                                        </div>
+                                    </div>
+                                    <div className="tab-item">
+                                        <div className="label">
+                                            Related Stories
+                                        </div>
+                                        <div className="value">
+                                            Phantom Thieves vs. Detectives,
+                                            Transparency and Masks{" "}
+                                            <a href="https://twitter.com/ensemble_stars/status/1439471818126004226">
+                                                ➹
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="tab-item">
+                                        <div className="label">
+                                            Special Thanks
+                                        </div>
+                                        <div className="value">
+                                            <a href="https://twitter.com/bluefilaments">
+                                                Ciel
+                                            </a>
+                                            ,{" "}
+                                            <a href="https://twitter.com/dapporock">
+                                                Simon
+                                            </a>
+                                            : Moral support and other members of
+                                            the Sanctuary GC! You can read their
+                                            translation of the story{" "}
+                                            <a href="https://twitter.com/bluefilaments/status/1439284645657448456">
+                                                here
+                                            </a>
+                                            .<br />
+                                            <a href="https://twitter.com/kogadouVEVO">
+                                                Koi
+                                            </a>
+                                            ,{" "}
+                                            <a href="https://twitter.com/milkyshiffon">
+                                                Lala
+                                            </a>
+                                            : For helping me out with phrasing
+                                            and smoothing things out!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="comment-area">
+                                <div className="tab-header">
+                                    <div className="tab-header__name">
+                                        Voice Actors`&apos Comments
+                                    </div>
+                                </div>
+                                <div className="tab-content">
+                                    <div className="tab-item">
+                                        you know this pair is gonna make someone
+                                        cry
+                                        <div className="source">
+                                            <a href="https://twitter.com/NOT_TAKASAKA/status/1436937514602811400">
+                                                Tomoya Kousaka [@NOT_TAKASAKA].
+                                                September 12, 2021.
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="tab-item">
+                                        I&aposm late but 😭
+                                        <br />
+                                        This pair is just so 😭
+                                        fuckfuckfuckfuckfuck 😭
+                                        <br />
+                                        They look so good too 🌞 I have no words
+                                        🙇‍♂️
+                                        <div className="source">
+                                            <a href="https://twitter.com/shun_shuuuun/status/1437298813119590402">
+                                                Shunya Hiruma [@shun_shuuuun].
+                                                September 13, 2021.
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="cg-gallery">
+                                <div className="tab-header">
+                                    <div className="tab-header__name">
+                                        CG Gallery
+                                    </div>
+                                </div>
+                                <div className="tab-content">
+                                    <div className="gallery">
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2887_normal.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Polluted Paradise (5)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2887_evolution.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Epilogue (5)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2888_normal.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Circuit of Happiness (12)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2888_evolution.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Epilogue (5)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2889_normal.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Circuit of Happiness (14)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2889_evolution.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Epilogue (4)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2890_normal.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Polluted Paradise (1)
+                                            </div>
+                                        </div>
+                                        <div className="gallery-item">
+                                            <div className="image">
+                                                <img src="/img/tl/sanctuary/assets/card_still_full1_2890_evolution.webp" />
+                                            </div>
+                                            <div className="caption">
+                                                Epilogue (4)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="chapters__wrapper">
+                            <div className="chapters">
+                                <ul>
+                                    <li>
+                                        <a href="1">Prologue</a>
+                                    </li>
+                                    <li>
+                                        <span>Polluted Paradise</span>{" "}
+                                        <a href="2">1</a> <a href="3">2</a>{" "}
+                                        <a href="4">3</a> <a href="5">4</a>{" "}
+                                        <a href="6">5</a> <a href="7">6</a>{" "}
+                                        <a href="8">7</a> <a href="9">8</a>{" "}
+                                        <a href="10">9</a> <a href="11">10</a>{" "}
+                                        <a href="12">11</a> <a href="13">12</a>
+                                    </li>
+                                    <li>
+                                        <span>Circuit of Happiness</span>{" "}
+                                        <a href="14">1</a> <a href="15">2</a>{" "}
+                                        <a href="16" id="none">
+                                            3
+                                        </a>{" "}
+                                        <a href="17" id="none">
+                                            4
+                                        </a>{" "}
+                                        <a href="18" id="none">
+                                            5
+                                        </a>{" "}
+                                        <a href="19" id="none">
+                                            6
+                                        </a>{" "}
+                                        <a href="20" id="none">
+                                            7
+                                        </a>{" "}
+                                        <a href="21" id="none">
+                                            8
+                                        </a>{" "}
+                                        <a href="22" id="none">
+                                            9
+                                        </a>{" "}
+                                        <a href="23" id="none">
+                                            10
+                                        </a>{" "}
+                                        <a href="24" id="none">
+                                            11
+                                        </a>{" "}
+                                        <a href="25" id="none">
+                                            12
+                                        </a>{" "}
+                                        <a href="26" id="none">
+                                            13
+                                        </a>{" "}
+                                        <a href="27" id="none">
+                                            14
+                                        </a>{" "}
+                                        <a href="28" id="none">
+                                            15
+                                        </a>{" "}
+                                        <a href="29" id="none">
+                                            16
+                                        </a>{" "}
+                                        <a href="30" id="none">
+                                            17
+                                        </a>{" "}
+                                        <a href="31" id="none">
+                                            18
+                                        </a>{" "}
+                                        <a href="32" id="none">
+                                            19
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Epilogue</span>{" "}
+                                        <a href="33" id="none">
+                                            1
+                                        </a>{" "}
+                                        <a href="34" id="none">
+                                            2
+                                        </a>{" "}
+                                        <a href="35" id="none">
+                                            3
+                                        </a>{" "}
+                                        <a href="36" id="none">
+                                            4
+                                        </a>{" "}
+                                        <a href="37" id="none">
+                                            5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="mini-talks">
+                                Mini Talks
+                                <ul>
+                                    <li>
+                                        <span>Wataru Hibiki</span>
+
+                                        <a href="mini_talk/wataru/1" id="none">
+                                            1
+                                        </a>
+                                        <a href="mini_talk/wataru/2">2</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>Tomoya Mashiro</span>
+                                        <a href="mini_talk/tomoya/1" id="none">
+                                            1
+                                        </a>
+                                        <a href="mini_talk/tomoya/2">2</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>Tori Himemiya</span>
+                                        <a href="mini_talk/tori/1" id="none">
+                                            1
+                                        </a>
+                                        <a href="mini_talk/tori/2" id="none">
+                                            2
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>Nazuna Nito</span>
+                                        <a href="mini_talk/nazuna/1" id="none">
+                                            1
+                                        </a>
+                                        <a href="mini_talk/nazuna/2" id="none">
+                                            2
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

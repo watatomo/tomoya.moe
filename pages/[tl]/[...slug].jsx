@@ -33,6 +33,7 @@ const PostFieldsForPostType = {
     ],
     [PostType.Index]: [
         "title",
+        "actualStory",
         "description",
         "banner",
         "titleJp",
