@@ -7,7 +7,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import Markdown from "markdown-to-jsx";
 import { ThermometerHalf } from "./svgicon";
 import Fn from "./tl/Footnotes";
 
@@ -61,17 +60,15 @@ export function BubbleUnknown({ children, character }) {
 
 export function Thought({ children }) {
     return (
-        <Markdown
-            options={{
-                overrides: {
-                    Fn: {
-                        component: Fn
-                    }
-                }
+        <ReactMarkdown
+            remarkPlugins={[remarkGfm, { singleTilde: false }]}
+            components={{
+                p: ({ node, ...props }) => <p className="thought" {...props} />,
+                Fn
             }}
         >
-            <p className="thought">{children}</p>
-        </Markdown>
+            {children}
+        </ReactMarkdown>
     );
 }
 

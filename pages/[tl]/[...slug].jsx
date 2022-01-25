@@ -25,13 +25,24 @@ const PostFieldsForPostType = {
         "description",
         "date",
         "slug",
-        "author",
+        "previewimg",
         "story",
         "previous",
         "next",
         "content"
     ],
-    [PostType.Index]: ["title", "description", "slug"]
+    [PostType.Index]: [
+        "title",
+        "description",
+        "banner",
+        "titleJp",
+        "descriptionFull",
+        "cover",
+        "season",
+        "chapterTotal",
+        "writer",
+        "slug"
+    ]
 };
 
 export default function Post({ post, postType }) {

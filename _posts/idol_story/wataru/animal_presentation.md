@@ -191,7 +191,7 @@ By the way, Tomoya-kun. Do you have any recollection of that dove you're holding
 
 <Bubble character="Tomoya">
 
-"Recollection"... Ah, is this Jeanne d'Arc?<Fn num="1">A reference to Tomoya&#39;s Idol Story from !, <em><a href="/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage">Cinderella Burning at Stake&#39;s Stage</a>.</em> Tomoya rescues Jeanne d&#39;Arc, who passed out on the side of a street. She&#39;s quite fond of him.</Fn>
+"Recollection"... Ah, is this Jeanne d'Arc?<Fn num="1">A reference to Tomoya's Idol Story from !, <em><a href="/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage">Cinderella Burning at Stake's Stage</a>.</em> Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.</Fn>
 
 </Bubble>
 

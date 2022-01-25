@@ -23,12 +23,12 @@
     font-size: 0.9em;
 
     a {
-        color: var(--storyColor-bright);
+        color: inherit;
         border-bottom: 0;
         text-decoration: underline;
 
         &:hover {
-            color: var(--storyColor);
+            color: inherit;
         }
     }
 

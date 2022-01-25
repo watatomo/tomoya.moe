@@ -30,7 +30,7 @@ function StoryChapter({ post }) {
                 {/* <meta property="og:url" content={SITE_URL} /> */}
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.description} />
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                <meta property="og:image" content={post.previewimg} />
                 <meta property="twitter:card" content="summary" />
                 {/* <meta property="twitter:url" content= /> */}
                 <meta property="twitter:title" content={post.title} />
@@ -38,7 +38,7 @@ function StoryChapter({ post }) {
                     property="twitter:description"
                     content={post.description}
                 />
-                {/* <meta property="twitter:image" content={post.ogImage.url} /> */}
+                <meta property="twitter:image" content={post.previewimg} />
                 <meta property="twitter:creator" content={TWITTER_UN} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
