@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
@@ -68,21 +69,21 @@ function StoryIndex({ post }) {
                                 {post.descriptionFull}
                             </div>
                             <div className="info">
-                                <div className="info-item season">
+                                <div className="item season">
                                     <div className="label">Season</div>
                                     <div className="value">{post.season}</div>
                                 </div>
-                                <div className="info-item chapters">
+                                <div className="item chapters">
                                     <div className="label">Chapters</div>
                                     <div className="value">
                                         {post.chapterTotal}
                                     </div>
                                 </div>
-                                <div className="info-item writer">
+                                <div className="item writer">
                                     <div className="label">Writer</div>
                                     <div className="value">{post.writer}</div>
                                 </div>
-                                <div className="info-item characters">
+                                <div className="item characters">
                                     <div className="label">Characters</div>
                                     <div className="value">
                                         <span character="Hajime" />{" "}
@@ -97,7 +98,7 @@ function StoryIndex({ post }) {
                                         <span character="Gatekeeper" />
                                     </div>
                                 </div>
-                                <div className="info-item tl">
+                                <div className="item tl">
                                     <div className="label">Translation</div>
                                     <div className="value">
                                         <a href="https://maonuis.tumblr.com">
@@ -106,7 +107,7 @@ function StoryIndex({ post }) {
                                         , <a href="https://tomoya.moe">Ren</a>
                                     </div>
                                 </div>
-                                <div className="info-item pr">
+                                <div className="item pr">
                                     <div className="label">Proofreading</div>
                                     <div className="value">
                                         <a href="https://honeyspades.tumblr.com">
@@ -119,20 +120,18 @@ function StoryIndex({ post }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="extra-area">
-                                <div className="tab-header">
-                                    <div className="tab-header__name">
-                                        Extra Information
-                                    </div>
+                            <div className="extra">
+                                <div className="collapsible-header">
+                                    <span>Extra Information</span>
                                 </div>
-                                <div className="tab-content">
-                                    <div className="tab-item">
+                                <div className="collapsible-body">
+                                    <div className="item">
                                         <div className="label">Event</div>
                                         <div className="value">
                                             SS Arc／6th Stage: Sanctuary
                                         </div>
                                     </div>
-                                    <div className="tab-item">
+                                    <div className="item">
                                         <div className="label">
                                             Event Duration
                                         </div>
@@ -141,7 +140,7 @@ function StoryIndex({ post }) {
                                             (22:00 JST)
                                         </div>
                                     </div>
-                                    <div className="tab-item">
+                                    <div className="item">
                                         <div className="label">
                                             Related Stories
                                         </div>
@@ -153,7 +152,7 @@ function StoryIndex({ post }) {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="tab-item">
+                                    <div className="item">
                                         <div className="label">
                                             Special Thanks
                                         </div>
@@ -185,14 +184,14 @@ function StoryIndex({ post }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="comment-area">
-                                <div className="tab-header">
-                                    <div className="tab-header__name">
-                                        Voice Actors`&apos Comments
-                                    </div>
+                            <div className="comments">
+                                <div className="collapsible-header">
+                                    <span>
+                                        Voice Actors' Comments
+                                    </span>
                                 </div>
-                                <div className="tab-content">
-                                    <div className="tab-item">
+                                <div className="collapsible-body">
+                                    <div className="item">
                                         you know this pair is gonna make someone
                                         cry
                                         <div className="source">
@@ -202,8 +201,8 @@ function StoryIndex({ post }) {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="tab-item">
-                                        I&aposm late but 😭
+                                    <div className="item">
+                                        I'm late but 😭
                                         <br />
                                         This pair is just so 😭
                                         fuckfuckfuckfuckfuck 😭
@@ -219,15 +218,13 @@ function StoryIndex({ post }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="cg-gallery">
-                                <div className="tab-header">
-                                    <div className="tab-header__name">
-                                        CG Gallery
-                                    </div>
+                            <div className="gallery">
+                                <div className="collapsible-header">
+                                    <span>CG Gallery</span>
                                 </div>
-                                <div className="tab-content">
-                                    <div className="gallery">
-                                        <div className="gallery-item">
+                                <div className="collapsible-body">
+                                    <div className="gallery__wrapper">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2887_normal.webp" />
                                             </div>
@@ -235,7 +232,7 @@ function StoryIndex({ post }) {
                                                 Polluted Paradise (5)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2887_evolution.webp" />
                                             </div>
@@ -243,7 +240,7 @@ function StoryIndex({ post }) {
                                                 Epilogue (5)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2888_normal.webp" />
                                             </div>
@@ -251,7 +248,7 @@ function StoryIndex({ post }) {
                                                 Circuit of Happiness (12)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2888_evolution.webp" />
                                             </div>
@@ -259,7 +256,7 @@ function StoryIndex({ post }) {
                                                 Epilogue (5)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2889_normal.webp" />
                                             </div>
@@ -267,7 +264,7 @@ function StoryIndex({ post }) {
                                                 Circuit of Happiness (14)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2889_evolution.webp" />
                                             </div>
@@ -275,7 +272,7 @@ function StoryIndex({ post }) {
                                                 Epilogue (4)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2890_normal.webp" />
                                             </div>
@@ -283,7 +280,7 @@ function StoryIndex({ post }) {
                                                 Polluted Paradise (1)
                                             </div>
                                         </div>
-                                        <div className="gallery-item">
+                                        <div className="item">
                                             <div className="image">
                                                 <img src="/img/tl/sanctuary/assets/card_still_full1_2890_evolution.webp" />
                                             </div>
