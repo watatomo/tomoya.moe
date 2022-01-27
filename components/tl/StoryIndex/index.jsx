@@ -3,14 +3,18 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 // import { MDXRemote } from "next-mdx-remote";
+// import styled from "styled-components";
 import Head from "next/head";
 import Meta from "../../meta";
-// import Banner from "../Banner";
 import { TWITTER_UN } from "../../../lib/constants";
-// import banner from "../../../public/img/tl/sanctuary/assets/card_still_full1_2887_normal.webp";
 
 function StoryIndex({ post }) {
     const firstChapter = `${post.actualStory}/1`;
+    // const colorHex = `${post.storyColor}`;
+    // const colorRGB = `${post.storyColorRGB}`;
+    // const colorHue = `${post.storyColorH}`;
+    // const colorSaturation = `${post.storyColorS}`;
+    // const colorLightness = `${post.storyColorL}`;
 
     return (
         <article>
@@ -46,10 +50,7 @@ function StoryIndex({ post }) {
                 <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
             <div className="index__wrapper">
-                <div
-                    className="banner"
-                    style={{ backgroundImage: `url(${post.banner})` }}
-                />
+                <div className="banner" style={{ backgroundImage: `url(${post.banner})` }} />
                 <div className="index-container__wrapper">
                     <div className="index-container">
                         <div className="cover">
@@ -286,6 +287,255 @@ function StoryIndex({ post }) {
                                             </div>
                                             <div className="caption">
                                                 Epilogue (4)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="story-cards">
+                                <div className="collapsible-header">
+                                    <div className="tab-header__name">Associated Cards</div>
+                                </div>
+                                <div className="collapsible-body">
+                                    <div className="cards">
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2887_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2887_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Secret Sanctuary] Wataru Hibiki</div>
+                                                <div className="card__jp">[秘匿サンクチュアリ] 日々樹 渉</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary That Came into Being*</div>
+                                                            <div className="desc">Increase all stats of Flash cards by 50%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Grand Stage</div>
+                                                            <div className="desc">Increases score by 40% for 5 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Back Alley of Loss</div>
+                                                            <div className="desc">Increases the amount that the Ensemble Time gauge rises.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2888_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2888_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Sanctuary of Great Improvement] Tomoya Mashiro</div>
+                                                <div className="card__jp">[飛躍サンクチュアリ] 真白 友也</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary for Those Who Believe</div>
+                                                            <div className="desc">Increases the Dance of Glitter cards by 120%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Jumping into Trouble</div>
+                                                            <div className="desc">Increases the score by 40% for 5 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Quietly Lurking in a Room</div>
+                                                            <div className="desc">Decreases the amount that Voltage lowers.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2889_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2889_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Sanctuary of Confusion] Tori Himemiya</div>
+                                                <div className="card__jp">[戸惑いサンクチュアリ] 姫宮 桃李</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary of Bottled Up Feelings</div>
+                                                            <div className="desc">Increases all stats of Glitter cards by 35%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">One's Determination</div>
+                                                            <div className="desc">Increases score by 26% for 8 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Park Guide</div>
+                                                            <div className="desc">Decreases the amount that Voltage lowers.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2890_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2890_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Distant Sanctuary] Nazuna Nito</div>
+                                                <div className="card__jp">[遠隔サンクチュアリ] 仁兎 なずな</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary That Is Protected</div>
+                                                            <div className="desc">Increases the Dance of Sparkle cards by 80%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Old-Fashioned Method</div>
+                                                            <div className="desc">Increases the score by 16% for 12 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Marching into a Room</div>
+                                                            <div className="desc">Increases the amount that the Ensemble Time gauge rises.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2891_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2891_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Sanctuary of Realization] Eichi Tenshouin</div>
+                                                <div className="card__jp">[実現サンクチュアリ] 天祥院 英智</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary That Is Opened</div>
+                                                            <div className="desc">Increases all stats of Sparkle cards by 35%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Ideal System</div>
+                                                            <div className="desc">Increases score by 20% for 5 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Silent Scheme</div>
+                                                            <div className="desc">Slightly increases the amount that the Ensemble Time gauge rises.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2892_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2892_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Sanctuary of Progression] Yuzuru Fushimi</div>
+                                                <div className="card__jp">[進行サンクチュアリ] 伏見 弓弦</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary Before One's Eyes</div>
+                                                            <div className="desc">Increases the Vocal of Brilliant cards by 80%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Inspiring Encouragement</div>
+                                                            <div className="desc">Increases score by 14% for 8 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Exposition of Attraction</div>
+                                                            <div className="desc">Slightly decreases the amount that Voltage lowers.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2893_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2893_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Slowed-Down Sanctuary] Mitsuru Tenma</div>
+                                                <div className="card__jp">[減速サンクチュアリ] 天満 光</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary That Is Free</div>
+                                                            <div className="desc">Increases the stats of all Brilliant cards by 35%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Positive Mindset</div>
+                                                            <div className="desc">Increase score by 8% for 12 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Frustrating Habitat</div>
+                                                            <div className="desc">Slightly decreases the amount that Voltage lowers.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="item">
+                                            <div className="image">
+                                                <div className="single unbloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2894_normal.webp" />
+                                                </div>
+                                                <div className="single bloomed">
+                                                    <img src="/img/tl/sanctuary/assets/card_rectangle2_2894_evolution.webp" />
+                                                </div>
+                                            </div>
+                                            <div className="lightbox">
+                                                <div className="card__name">[Sanctuary of Honest Effort] Hajime Shino</div>
+                                                <div className="card__jp">[地道サンクチュアリ] 紫之 創</div>
+                                                <div className="skills">
+                                                    <ul>
+                                                        <li id="center">
+                                                            <div className="name">Sanctuary of My Special Someone</div>
+                                                            <div className="desc">Increases the Dance of Flash cards by 80%.</div>
+                                                        </li>
+                                                        <li id="live">
+                                                            <div className="name">Loose Support</div>
+                                                            <div className="desc">Increases score by 20% for 5 seconds.</div>
+                                                        </li>
+                                                        <li id="support">
+                                                            <div className="name">Organizing Feelings and Words</div>
+                                                            <div className="desc">Slightly increases the amount that the Ensemble Time gauge rises.</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

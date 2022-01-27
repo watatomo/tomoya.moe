@@ -42,6 +42,11 @@ const PostFieldsForPostType = {
         "season",
         "chapterTotal",
         "writer",
+        "storyColor",
+        "storyColorRGB",
+        "storyColorH",
+        "storyColorS",
+        "storyColorL",
         "slug"
     ]
 };

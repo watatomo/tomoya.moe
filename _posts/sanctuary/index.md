@@ -10,4 +10,9 @@ descriptionFull: "Ra*bits and fine were participating in the Kanto qualifying ro
 season: "Winter"
 chapterTotal: 37
 writer: "Akira"
+storyColor: "#67c0d0"
+storyColorRGB: "103,192,208"
+storyColorH: "189.1"
+storyColorS: "52.8"
+storyColorL: "61"
 ---
