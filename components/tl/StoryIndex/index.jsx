@@ -2,47 +2,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import Head from "next/head";
-import Meta from "../../meta";
+import IndexMeta from "./IndexMeta";
 import Banner from "./Banner";
 import Cover from "./Cover";
 import Title from "./Title";
-import { TWITTER_UN, SITE_URL } from "../../../lib/constants";
 
 function StoryIndex({ post }) {
     return (
         <article>
-            <Head>
-                <title>{post.title}</title>
-                <Meta />
-                <meta name="title" content={post.title} />
-                <meta name="description" content={post.description} />
-                <meta property="og:type" content="article" />
-                <meta property="og:url" content={`${SITE_URL}tl/${post.actualStory}`} />
-                <meta property="og:title" content={post.title} />
-                <meta property="og:description" content={post.description} />
-                <meta property="og:image" content={`${SITE_URL}img/tl/${post.actualStory}/assets/${post.cover}`} />
-                <meta property="twitter:card" content="summary" />
-                <meta property="twitter:url" content={`${SITE_URL}tl/${post.actualStory}`} />
-                <meta property="twitter:title" content={post.title} />
-                <meta
-                    property="twitter:description"
-                    content={post.description}
-                />
-                <meta property="twitter:image" content={post.cover} />
-                <meta property="twitter:creator" content={TWITTER_UN} />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin="anonymous"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
-                    rel="stylesheet"
-                />
-                <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
-            </Head>
+            <IndexMeta post={post} />
             <div className="index__wrapper">
                 <Banner post={post} />
                 <div className="index-container__wrapper">

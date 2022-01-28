@@ -7,7 +7,7 @@ description: "Wataru: Tomoya-kun, Tomoya-kun. Is that my dove you have there? It
 
 <Location>Drama Clubroom</Location>
 
-<Image src="/img/tl/idol story/tomoya/cinderella on the stake's stage/1.jpg" layout="responsive" width="1280" height="720" quality="100" />
+<Image src="/img/tl/idol_story/tomoya/cinderella_on_the_stakes_stage/1.jpg" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Hokuto">
 
@@ -127,7 +127,7 @@ How mysterious! Aah, there are still so many _amazing_ things hidden in this wor
 
 </Bubble>
 
-<Image src="/img/tl/idol story/tomoya/cinderella on the stake's stage/2.jpg" layout="responsive" width="1280" height="720" quality="100" />
+<Image src="/img/tl/idol_story/tomoya/cinderella_on_the_stakes_stage/2.jpg" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Tomoya">
 
@@ -307,7 +307,7 @@ Let this be a lesson to you, to avoid repeating the same tragedy.
 
 </Bubble>
 
-<Image src="/img/tl/idol story/tomoya/cinderella on the stake's stage/3.jpg" layout="responsive" width="1280" height="720" quality="100" />
+<Image src="/img/tl/idol_story/tomoya/cinderella_on_the_stakes_stage/3.jpg" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Wataru">
 
