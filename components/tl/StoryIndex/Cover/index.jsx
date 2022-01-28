@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import config from "../../../../mako.config";
 
-const tl = config.translationsPath || "tl";
-
 function deriveCoverImage({ slug, tl, newSegment }) {
     const slugSegments = slug.split("/");
     slugSegments[slugSegments.length - 1] = newSegment;
     return `/img/${tl}/${slugSegments.join("/assets/")}`;
 }
+
+const tl = config.translationsPath || "tl";
 
 function Cover({ post }) {
     return (
