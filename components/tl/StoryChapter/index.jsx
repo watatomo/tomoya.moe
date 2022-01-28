@@ -15,8 +15,22 @@ import {
 } from "../../mashiro";
 import Toolbar from "../Toolbar";
 import Credits from "../Credits";
+import MiniTalk from "../MiniTalk";
 import Meta from "../../meta";
-import { TWITTER_UN } from "../../../lib/constants";
+import { TWITTER_UN, SITE_URL } from "../../../lib/constants";
+import config from "../../../mako.config";
+
+function deriveChapterURL({ slug, tl }) {
+    const slugSegments = slug.split("/");
+    return `${SITE_URL}${tl}/${slugSegments.join("/")}`;
+}
+
+function deriveChapterImage({ slug, tl }) {
+    const slugSegments = slug.split("/");
+    return `${SITE_URL}img/${tl}/${slugSegments.join("/")}/1.jpg`;
+}
+
+const tl = config.translationsPath || "tl";
 
 function StoryChapter({ post }) {
     return (
@@ -27,18 +41,30 @@ function StoryChapter({ post }) {
                 <meta name="title" content={post.title} />
                 <meta name="description" content={post.description} />
                 <meta property="og:type" content="article" />
-                {/* <meta property="og:url" content={SITE_URL} /> */}
+                <meta property="og:url" content={deriveChapterURL({
+                    slug: post.slug,
+                    tl
+                })} />
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.description} />
-                <meta property="og:image" content={post.previewimg} />
+                <meta property="og:image" content={deriveChapterImage({
+                    slug: post.slug,
+                    tl
+                })} />
                 <meta property="twitter:card" content="summary" />
-                {/* <meta property="twitter:url" content= /> */}
+                <meta property="twitter:url" content={deriveChapterURL({
+                    slug: post.slug,
+                    tl
+                })} />
                 <meta property="twitter:title" content={post.title} />
                 <meta
                     property="twitter:description"
                     content={post.description}
                 />
-                <meta property="twitter:image" content={post.previewimg} />
+                <meta property="twitter:image" content={deriveChapterImage({
+                    slug: post.slug,
+                    tl
+                })} />
                 <meta property="twitter:creator" content={TWITTER_UN} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
@@ -69,7 +95,8 @@ function StoryChapter({ post }) {
                                 Narration,
                                 Cw,
                                 Image,
-                                Credits
+                                Credits,
+                                MiniTalk
                             }}
                         />
                     </div>

@@ -2,20 +2,14 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-// import { MDXRemote } from "next-mdx-remote";
-// import styled from "styled-components";
 import Head from "next/head";
 import Meta from "../../meta";
-import { TWITTER_UN } from "../../../lib/constants";
+import Banner from "./Banner";
+import Cover from "./Cover";
+import Title from "./Title";
+import { TWITTER_UN, SITE_URL } from "../../../lib/constants";
 
 function StoryIndex({ post }) {
-    const firstChapter = `${post.actualStory}/1`;
-    // const colorHex = `${post.storyColor}`;
-    // const colorRGB = `${post.storyColorRGB}`;
-    // const colorHue = `${post.storyColorH}`;
-    // const colorSaturation = `${post.storyColorS}`;
-    // const colorLightness = `${post.storyColorL}`;
-
     return (
         <article>
             <Head>
@@ -24,12 +18,12 @@ function StoryIndex({ post }) {
                 <meta name="title" content={post.title} />
                 <meta name="description" content={post.description} />
                 <meta property="og:type" content="article" />
-                {/* <meta property="og:url" content={SITE_URL} /> */}
+                <meta property="og:url" content={`${SITE_URL}tl/${post.actualStory}`} />
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.description} />
-                <meta property="og:image" content={post.cover} />
+                <meta property="og:image" content={`${SITE_URL}img/tl/${post.actualStory}/assets/${post.cover}`} />
                 <meta property="twitter:card" content="summary" />
-                {/* <meta property="twitter:url" content= /> */}
+                <meta property="twitter:url" content={`${SITE_URL}tl/${post.actualStory}`} />
                 <meta property="twitter:title" content={post.title} />
                 <meta
                     property="twitter:description"
@@ -50,21 +44,11 @@ function StoryIndex({ post }) {
                 <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
             <div className="index__wrapper">
-                <div className="banner" style={{ backgroundImage: `url(${post.banner})` }} />
+                <Banner post={post} />
                 <div className="index-container__wrapper">
                     <div className="index-container">
-                        <div className="cover">
-                            <div>
-                                <img src={post.cover} alt="Story cover" />
-                            </div>
-                        </div>
-                        <div className="title__wrapper">
-                            <h1 className="title-en">{post.title}</h1>
-                            <h2 className="title-jp">{post.titleJp}</h2>
-                            <div className="title-start">
-                                <a href={firstChapter}>Start Reading</a>
-                            </div>
-                        </div>
+                        <Cover post={post} />
+                        <Title post={post} />
                         <div className="info__wrapper">
                             <div className="synopsis">
                                 {post.descriptionFull}
@@ -147,10 +131,7 @@ function StoryIndex({ post }) {
                                         </div>
                                         <div className="value">
                                             Phantom Thieves vs. Detectives,
-                                            Transparency and Masks{" "}
-                                            <a href="https://twitter.com/ensemble_stars/status/1439471818126004226">
-                                                ➹
-                                            </a>
+                                            Transparency and Masks
                                         </div>
                                     </div>
                                     <div className="item">

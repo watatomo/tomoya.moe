@@ -25,7 +25,6 @@ const PostFieldsForPostType = {
         "description",
         "date",
         "slug",
-        "previewimg",
         "story",
         "previous",
         "next",
@@ -33,6 +32,7 @@ const PostFieldsForPostType = {
     ],
     [PostType.Index]: [
         "title",
+        "story",
         "actualStory",
         "description",
         "banner",
