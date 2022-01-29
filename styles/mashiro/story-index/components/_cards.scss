@@ -1,72 +1,70 @@
-.index__wrapper {
-    .story-cards {
-        > .collapsible-body > .cards {
-            display: grid;
-            grid-template-columns: repeat(5, minmax(auto, 1fr));
-            gap: 0.4em 1em;
-        }
+.index__wrapper .story-cards {
+    > .collapsible-body > .cards {
+         display: grid;
+        grid-template-columns: repeat(5, minmax(auto, 1fr));
+        gap: 0.4em 1em;
+    }
 
-        .single {
-            transition: transform 0.2s ease;
-            position: relative;
-            display: inline-block;
-            filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
+    .single {
+        transition: transform 0.2s ease;
+        position: relative;
+        display: inline-block;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
+    
+        img {
+            display: block;
+            max-width: 100%;
+            object-fit: contain;
+            width: 100%;
+            margin: 0 !important;
+        }
+    }
+
+    .item > .lightbox {
+        display: none;
+    }
         
-            img {
-                display: block;
-                max-width: 100%;
-                object-fit: contain;
+    .image {
+        position: relative;
+        
+        .single {
+            &.unbloomed {
+                z-index: 2;
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        
+            &.bloomed {
+                z-index: 1;
+                top: 0;
+                left: 0;
+                transform: translateX(5%) scale(0.95) rotate(2deg);
+                filter: brightness(70%);
+                position: absolute;
                 width: 100%;
-                margin: 0 !important;
+                height: 100%;
             }
         }
-
-        .item > .lightbox {
-            display: none;
-        }
         
-        .image {
-            position: relative;
-        
+        &:hover {
             .single {
-                &.unbloomed {
+                &.bloomed {
                     z-index: 2;
-                    transform: scale(1);
+                    transform: translateX(0%) scale(1) rotate(0deg);
                     filter: brightness(100%);
                 }
-        
-                &.bloomed {
-                    z-index: 1;
-                    top: 0;
-                    left: 0;
-                    transform: translateX(5%) scale(0.95) rotate(2deg);
-                    filter: brightness(70%);
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        
-            &:hover {
-                .single {
-                    &.bloomed {
-                        z-index: 2;
-                        transform: translateX(0%) scale(1) rotate(0deg);
-                        filter: brightness(100%);
-                    }
-        
-                    &.unbloomed {
-                        z-index: 1;
-                        transform: translateX(-5%) scale(0.95) rotate(-2deg);
-                        filter: brightness(70%);
-                    }
-                }
     
+                &.unbloomed {
+                    z-index: 1;
+                    transform: translateX(-5%) scale(0.95) rotate(-2deg);
+                    filter: brightness(70%);
+                }
             }
+
         }
+    }
         
-        .item > .image {
-            cursor: zoom-in;
-        }
+    .item > .image {
+        cursor: zoom-in;
     }
 }

@@ -48,7 +48,16 @@ const PostFieldsForPostType = {
         "storyColorS",
         "storyColorL",
         "slug",
-        "content"
+        "content",
+        "characters",
+        "extra",
+        "images",
+        "minitalk",
+        "chapters",
+        "cards",
+        "newEra",
+        "translator",
+        "proofreader"
     ]
 };
 
