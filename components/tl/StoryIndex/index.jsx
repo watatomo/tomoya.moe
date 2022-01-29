@@ -19,7 +19,7 @@ function StoryIndex({ post }) {
                         <Title post={post} />
                         <div className="info__wrapper">
                             <div className="synopsis">
-                                {post.descriptionFull}
+                                {post.description}
                             </div>
                             <div className="info">
                                 <div className="item season">

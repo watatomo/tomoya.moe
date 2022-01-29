@@ -13,6 +13,12 @@ function deriveChapterImage({ slug, tl }) {
     return `${SITE_URL}img/${tl}/${slugSegments.join("/")}/1.jpg`;
 }
 
+function deriveChapterImageSpecial({ slug, tl, newSegment }) {
+    const slugSegments = slug.split("/");
+    slugSegments[slugSegments.length - 1] = newSegment;
+    return `${SITE_URL}img/${tl}/${slugSegments.join("/")}`;
+}
+
 const tl = config.translationsPath || "tl";
 
 function ChapterMeta({ post }) {
@@ -29,10 +35,18 @@ function ChapterMeta({ post }) {
             })} />
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.description} />
-            <meta property="og:image" content={deriveChapterImage({
-                slug: post.slug,
-                tl
-            })} />
+            {post.previewImg ? (
+                <meta property="og:image" content={deriveChapterImageSpecial({
+                    slug: post.slug,
+                    tl,
+                    newSegment: post.previewImg
+                })} />
+            ) : 
+                <meta property="og:image" content={deriveChapterImage({
+                    slug: post.slug,
+                    tl
+                })} />
+            }
             <meta property="twitter:card" content="summary" />
             <meta property="twitter:url" content={deriveChapterURL({
                 slug: post.slug,
@@ -43,10 +57,18 @@ function ChapterMeta({ post }) {
                 property="twitter:description"
                 content={post.description}
             />
-            <meta property="twitter:image" content={deriveChapterImage({
-                slug: post.slug,
-                tl
-            })} />
+            {post.previewImg ? (
+                <meta property="twitter:image" content={deriveChapterImageSpecial({
+                    slug: post.slug,
+                    tl,
+                    newSegment: post.previewImg
+                })} />
+            ) : 
+                <meta property="twitter:image" content={deriveChapterImage({
+                    slug: post.slug,
+                    tl
+                })} />
+            }
             <meta property="twitter:creator" content={TWITTER_UN} />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link

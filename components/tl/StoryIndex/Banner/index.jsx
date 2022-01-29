@@ -1,23 +1,17 @@
-import config from "../../../../mako.config";
-
-function deriveBannerImage({ slug, tl, newSegment }) {
+function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
-    slugSegments[slugSegments.length - 1] = newSegment;
-    return `/img/${tl}/${slugSegments.join("/assets/")}`;
+    slugSegments.pop();
+    return `${slugSegments.join("/")}`;
 }
-
-const tl = config.translationsPath || "tl";
 
 function Banner({ post }) {
     return (
         <div
             className="banner"
             style={{ 
-                backgroundImage: deriveBannerImage({
-                    slug: post.slug,
-                    tl,
-                    newSegment: post.banner
-                })
+                backgroundImage: `
+                    url(/img/tl/${actualSlug(post)}/assets/${post.banner})
+                ` 
             }}
         />
     );

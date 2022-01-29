@@ -28,7 +28,8 @@ const PostFieldsForPostType = {
         "story",
         "previous",
         "next",
-        "content"
+        "content",
+        "previewImg"
     ],
     [PostType.Index]: [
         "title",
@@ -37,7 +38,6 @@ const PostFieldsForPostType = {
         "description",
         "banner",
         "titleJp",
-        "descriptionFull",
         "cover",
         "season",
         "chapterTotal",
@@ -47,7 +47,8 @@ const PostFieldsForPostType = {
         "storyColorH",
         "storyColorS",
         "storyColorL",
-        "slug"
+        "slug",
+        "content"
     ]
 };
 
