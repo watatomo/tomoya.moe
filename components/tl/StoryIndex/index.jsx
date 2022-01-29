@@ -30,7 +30,7 @@ function StoryIndex({ post }) {
                             </div>
                             <InfoBox post={post} />
                             <ExtraInfo post={post} />
-                            <div className="comments">
+                            {/* <div className="comments">
                                 <div className="collapsible-header">
                                     <span>
                                         Voice Actors' Comments
@@ -63,7 +63,7 @@ function StoryIndex({ post }) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <Gallery post={post} />
                             { post.newEra ? (
                                 <Cards2 post={post} />

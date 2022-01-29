@@ -17,10 +17,13 @@ characters:
     - Keito
     - Wataru
 translator:
-    - "<a href='https://twitter.com/yoroshikilled'>Peace</a>"
-    - "<a href='https://tomoya.moe'>Ren</a>"
+    - name: Peace
+      href: "https://twitter.com/yoroshikilled" 
+    - name: Ren
+      href: "https://tomoya.moe" 
 proofreader:
-    - "<a href='https://twitter.com/haranami_'>haranami</a>"
+    - name: haranami
+      href: "https://twitter.com/haranami_" 
 extra:
     - label: "Gacha"
       value: "Feature Scout: Tomoya Edition"

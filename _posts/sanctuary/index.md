@@ -21,11 +21,15 @@ characters:
     - "Nazuna"
     - "Gatekeeper"
 translator:
-    - "<a href='https://maonuis.tumblr.com'>Nui</a>"
-    - "<a href='https://tomoya.moe'>Ren</a>"
+    - name: "Nui"
+      href: "https://maonuis.tumblr.com" 
+    - name: "Ren"
+      href: "https://tomoya.moe" 
 proofreader:
-    - "<a href='https://honeyspades.tumblr.com'>honeyspades</a>"
-    - "<a href='https://twitter.com/trystofstarrs'>remi</a>"
+    - name: "honeyspades"
+      href: "https://honeyspades.tumblr.com" 
+    - name: "remi"
+      href: "https://twitter.com/trystofstarrs" 
 extra:
     - label: "Event"
       value: "SS Arc／6th Stage: Sanctuary"
@@ -33,8 +37,6 @@ extra:
       value: "9/15/2021 (15:00 JST) - 9/23/2021 (22:00 JST)"
     - label: "Related Stories"
       value: "Phantom Thieves vs. Detectives, Transparency and Masks"
-    - label: "Special Thanks"
-      value: "<a href='https://twitter.com/bluefilaments'>Ciel</a>, <a href='https://twitter.com/dapporock'>Simon</a>: Moral support and other members of the Sanctuary GC! You can read their translation of the story <a href='https://twitter.com/bluefilaments/status/1439284645657448456'>here</a>.<br><a href='https://twitter.com/kogadouVEVO'>Koi</a>, <a href='https://twitter.com/milkyshiffon'>Lala</a>: For helping me out with phrasing and smoothing things out!"
 images:
     - src: "/img/tl/sanctuary/assets/card_still_full1_2887_normal.webp"
       caption: "Polluted Paradise (5)"
@@ -135,9 +137,10 @@ cards:
       supportDesc: "Slightly increases the amount that the Ensemble Time gauge rises."
 chapters:
     - section: Prologue
+      label: Prologue
       href: 1
 minitalks:
-    - label: "Tomoya"
+    - Character: Tomoya
       href: 1
 
 storyColor: "#67c0d0"

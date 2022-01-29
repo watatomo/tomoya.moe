@@ -20,13 +20,19 @@ characters:
     - Kanata
     - Nazuna
 translator:
-    - "<a href='https://moricchiichan.tumblr.com/'>moricchiichan</a>"
-    - "<a href='https://nazunyan427.dreamwidth.org/'>nazunyan427</a>"
-    - "<a href='https://tomoya.moe'>Ren</a>"
+    - name: morichiichan
+      href: "https://moricchiichan.tumblr.com"
+    - name: nazunyan427
+      href: "https://nazunyan427.dreamwidth.org"
+    - name: Ren
+      href: "https://tomoya.moe"
 proofreader:
-    - "<a href='https://allegiantheart.dreamwidth.org/'>allegiantheart</a>"
-    - "<a href='https://tomoya.moe'>Ren</a>"
-    - "<a href='https://twitter.com/spoonbutt'>Spoon</a>"
+    - name: allegiantheart
+      href: "https://allegiantheart.dreamwidth.org"
+    - name: Ren
+      href: "https://tomoya.moe"
+    - name: Spoon
+      href: "https://twitter.com/spoonbutt"
 extra:
     - label: "Gacha"
       value: "Scout! RELOADED"

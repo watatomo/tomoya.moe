@@ -15,21 +15,26 @@ characters:
     - Wataru
     - Mayoi
 translator:
-    - "<a href='https://tomoya.moe'>Ren</a>"
-    - "<a href='https://whisperscrawls.dreamwidth.org/'>Whisper</a>"
+    - name: Ren
+      href: "https://tomoya.moe"
+    - name: Whisper
+      href: "https://whisperscrawls.dreamwidth.org"
 proofreader:
-    - "<a href='https://twitter.com/haranami_'>haranami</a>"
-    - "<a href='https://holistar.dreamwidth.org/'>Holi</a>"
-    - "<<a href='https://twitter.com/Czar_Ramzy'>Sheep</a>"
+    - name: haranami
+      href: "https://twitter.com/haranami_"
+    - name: Holi
+      href: "https://holistar.dreamwidth.org"
+    - name: Sheep
+      href: "https://twitter.com/Czar_Ramzy"
 extra:
     - label: "Gacha"
       value: "Scout! Dead End Land"
     - label: "Gacha Duration"
       value: "7/30/2020 (15:00 JST) - 8/14/2020 (15:00 JST)"
 images:
-    - src: "/img/tl/reloaded/assets/card_still_full1_2484_normal.webp"
+    - src: "/img/tl/dead_end_land/assets/card_still_full1_2484_normal.webp"
       caption: "Epilogue (2)"
-    - src: "/img/tl/reloaded/assets/card_still_full1_2485_normal.webp"
+    - src: "/img/tl/dead_end_land/assets/card_still_full1_2485_normal.webp"
       caption: "Dead End Street (7)"
 cards:
     - name: "[Coward's Dead End] Mayoi Ayase"

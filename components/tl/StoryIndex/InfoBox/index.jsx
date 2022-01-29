@@ -1,8 +1,5 @@
 function InfoBox({ post }) {
-    const {characters} = post;
-    const storyCharacters = characters.map((v) => (
-        <span character={v} key={v} />
-    ));
+    const {characters, translator, proofreader} = post;
 
     return (
         <div className="info">
@@ -23,19 +20,25 @@ function InfoBox({ post }) {
             <div className="item characters">
                 <div className="label">Characters</div>
                 <div className="value">
-                    {storyCharacters}
+                    {characters.map((v) => (
+                        <span character={v} key={v} />
+                    ))}
                 </div>
             </div>
             <div className="item tl">
                 <div className="label">Translation</div>
                 <div className="value">
-                    {post.translator}
+                    {translator.map((t) => (
+                        <a href={t.href} key={t}>{t.name}</a>
+                    ))}
                 </div>
             </div>
             <div className="item pr">
                 <div className="label">Proofreading</div>
                 <div className="value">
-                    {post.proofreader}
+                    {proofreader.map((p) => (
+                        <a href={p.href} key={p}>{p.name}</a>
+                    ))}
                 </div>
             </div>
         </div>

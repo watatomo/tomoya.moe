@@ -20,7 +20,8 @@ characters:
     - Nazuna
     - Jin
 translator:
-    - '<a href="https://tomoya.moe">Ren</a>'
+    - name: Ren
+      href: "https://tomoya.moe" 
 proofreader:
     - TBA
 extra:
