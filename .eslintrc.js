@@ -20,7 +20,10 @@ module.exports = {
             {
                 ignoreComments: true,
                 ignoreStrings: true,
-                ignoreUrls: true
+                ignoreUrls: true,
+                ignoreTemplateLiterals: true,
+                ignoreRegExpLiterals: true,
+                ignorePattern: true
             }
         ],
         "comma-dangle": [

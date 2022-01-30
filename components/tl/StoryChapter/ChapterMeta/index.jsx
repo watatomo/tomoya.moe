@@ -1,25 +1,11 @@
 import Head from "next/head";
 import Meta from "../../../meta";
 import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
-import config from "../../../../mako.config";
 
-function deriveChapterURL({ slug, tl }) {
+function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
-    return `${SITE_URL}${tl}/${slugSegments.join("/")}`;
+    return `${slugSegments.join("/")}`;
 }
-
-function deriveChapterImage({ slug, tl }) {
-    const slugSegments = slug.split("/");
-    return `${SITE_URL}img/${tl}/${slugSegments.join("/")}/1.jpg`;
-}
-
-function deriveChapterImageSpecial({ slug, tl, newSegment }) {
-    const slugSegments = slug.split("/");
-    slugSegments[slugSegments.length - 1] = newSegment;
-    return `${SITE_URL}img/${tl}/${slugSegments.join("/")}`;
-}
-
-const tl = config.translationsPath || "tl";
 
 function ChapterMeta({ post }) {
     return (
@@ -29,45 +15,25 @@ function ChapterMeta({ post }) {
             <meta name="title" content={post.title} />
             <meta name="description" content={post.description} />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content={deriveChapterURL({
-                slug: post.slug,
-                tl
-            })} />
+            <meta property="og:url" content={`${SITE_URL}tl/${actualSlug(post)}`} />
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.description} />
             {post.previewImg ? (
-                <meta property="og:image" content={deriveChapterImageSpecial({
-                    slug: post.slug,
-                    tl,
-                    newSegment: post.previewImg
-                })} />
+                <meta property="og:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/${post.previewImg}`} />
             ) : 
-                <meta property="og:image" content={deriveChapterImage({
-                    slug: post.slug,
-                    tl
-                })} />
+                <meta property="og:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
             }
             <meta property="twitter:card" content="summary" />
-            <meta property="twitter:url" content={deriveChapterURL({
-                slug: post.slug,
-                tl
-            })} />
+            <meta property="twitter:url" content={`${SITE_URL}tl/${actualSlug(post)}`} />
             <meta property="twitter:title" content={post.title} />
             <meta
                 property="twitter:description"
                 content={post.description}
             />
             {post.previewImg ? (
-                <meta property="twitter:image" content={deriveChapterImageSpecial({
-                    slug: post.slug,
-                    tl,
-                    newSegment: post.previewImg
-                })} />
+                <meta property="twitter:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/${post.previewImg}`} />
             ) : 
-                <meta property="twitter:image" content={deriveChapterImage({
-                    slug: post.slug,
-                    tl
-                })} />
+                <meta property="twitter:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
             }
             <meta property="twitter:creator" content={TWITTER_UN} />
             <link rel="preconnect" href="https://fonts.googleapis.com" />

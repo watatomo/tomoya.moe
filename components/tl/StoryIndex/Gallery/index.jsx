@@ -1,4 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+function actualSlug({ slug }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    return `${slugSegments.join("/")}`;
+}
+
 function Gallery({ post }) {
     const {images} = post;
 
@@ -16,7 +22,7 @@ function Gallery({ post }) {
                         >
                             <div className="image">
                                 <img
-                                    src={v.src}
+                                    src={`/img/tl/${actualSlug(post)}/assets/${v.src}`}
                                     alt={v.caption}
                                 />
                             </div>

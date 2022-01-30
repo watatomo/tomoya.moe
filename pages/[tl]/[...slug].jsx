@@ -57,7 +57,12 @@ const PostFieldsForPostType = {
         "cards",
         "newEra",
         "translator",
-        "proofreader"
+        "proofreader",
+        "miniTalkSections",
+        "commentVA",
+        "commentVAs",
+        "commentWriter",
+        "commentTN"
     ]
 };
 

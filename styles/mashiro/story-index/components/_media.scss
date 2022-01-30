@@ -34,6 +34,18 @@
     
         .info__wrapper {
             grid-column: 1/3;
+
+            .info .item {
+                padding: 5px 6px;
+
+                &.characters > .value {
+                    span {
+                        height: 35px;
+                        width: 35px;
+                        margin-bottom: -3px;
+                    }
+                }
+            }
         }
     
         .chapters__wrapper {
@@ -41,47 +53,22 @@
             grid-row: 3;
             font-size: 0.9em;
         }
-    
-        .characters > .value span {
-            height: 35px;
-            width: 35px;
-            margin-bottom: -3px;
-        }
-    
-        .lightbox {
-            &__dim {
-                font-size: 0.9em;
-    
-                .skills li {
-                    grid-template-columns: 50px 1fr;
-                }
+        
+
+        .gallery .collapsible-body {
+            .item .caption {
+                width: calc(100% - 16px);
+                padding: 30px 8px 6px;
             }
-    
-            &-content {
-                padding: 15px;
-                gap: 15px;
+
+            .gallery__wrapper {
+                grid-template-columns: repeat(2, minmax(auto, 2fr));
             }
         }
+        
     
-        .card {
-            &__name {
-                font-size: 1em;
-            }
-    
-            &__jp {
-                font-size: 0.9em;
-            }
-        }
-    
-        .skills {
-            li::before {
-                font-size: 0.7em;
-            }
-    
-            .name,
-            .desc {
-                font-size: 0.88em;
-            }
+        .story-cards > .collapsible-body > .cards {
+            gap: .2em .7em;
         }
     }
 }

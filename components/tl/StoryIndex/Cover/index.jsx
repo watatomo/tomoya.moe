@@ -1,24 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import config from "../../../../mako.config";
-
-function deriveCoverImage({ slug, tl, newSegment }) {
+function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
-    slugSegments[slugSegments.length - 1] = newSegment;
-    return `/img/${tl}/${slugSegments.join("/assets/")}`;
+    slugSegments.pop();
+    return `${slugSegments.join("/")}`;
 }
-
-const tl = config.translationsPath || "tl";
 
 function Cover({ post }) {
     return (
         <div className="cover">
             <div>
                 <img 
-                    src={deriveCoverImage({
-                        slug: post.slug,
-                        tl,
-                        newSegment: post.cover
-                    })}
+                    src={`/img/tl/${actualSlug(post)}/assets/${post.cover}`}
                     alt="Story cover" 
                 />
             </div>

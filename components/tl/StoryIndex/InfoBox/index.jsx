@@ -1,3 +1,5 @@
+import Markdown from "markdown-to-jsx";
+
 function InfoBox({ post }) {
     const {characters, translator, proofreader} = post;
 

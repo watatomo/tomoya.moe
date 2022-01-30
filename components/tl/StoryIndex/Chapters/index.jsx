@@ -1,6 +1,13 @@
+/* eslint-disable no-nested-ternary */
+function deriveIndex({ slug }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    return `/tl/${slugSegments.join("/")}/`;
+}
+
 function Chapters({ post }) {
     const { chapterSections } = post;
-    console.log(chapterSections);
+    
     return (
         <div className="chapters">
             <ul>
@@ -8,9 +15,22 @@ function Chapters({ post }) {
                     <li key={JSON.stringify(section)}>
                         {section.chapters.map((c) =>
                             c.href ? (
-                                <a key={c} href={c.href}>
-                                    {c.label}
-                                </a>
+                                c.none ? ( 
+                                    <a 
+                                        key={c}
+                                        id="none"
+                                        href={`${deriveIndex(post)}${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a> 
+                                ) : (
+                                    <a
+                                        key={c}
+                                        href={`${deriveIndex(post)}${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a>
+                                )
                             ) : (
                                 <span key={c}>{c.label}</span>
                             )

@@ -1,4 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+function actualSlug({ slug }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    return `${slugSegments.join("/")}`;
+}
+
 export function Cards1({ post }) {
     const {cards} = post;
 
@@ -17,13 +23,13 @@ export function Cards1({ post }) {
                             <div className="image">
                                 <div className="single unbloomed">
                                     <img
-                                        src={v.src1}
+                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src1}`}
                                         alt={v.name}
                                     />
                                 </div>
                                 <div className="single bloomed">
                                     <img
-                                        src={v.src2}
+                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src2}`}
                                         alt={v.name}
                                     />
                                 </div>
@@ -78,13 +84,13 @@ export function Cards2({ post }) {
                             <div className="image">
                                 <div className="single unbloomed">
                                     <img
-                                        src={v.src1}
+                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src1}`}
                                         alt={v.name}
                                     />
                                 </div>
                                 <div className="single bloomed">
                                     <img
-                                        src={v.src2}
+                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src2}`}
                                         alt={v.name}
                                     />
                                 </div>

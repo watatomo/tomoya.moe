@@ -1,29 +1,43 @@
-function MiniTalks({ post }) {
-    const {minitalks} = post;
+/* eslint-disable no-nested-ternary */
+function deriveIndex({ slug }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    return `/tl/${slugSegments.join("/")}/mini_talk/`;
+}
 
+function MiniTalks({ post }) {
+    const { miniTalkSections } = post;
     return (
         <div className="mini-talks">
-            Mini Talks
-            {minitalks.map((character) => (
-                <ul key={character}>
-                    <li>
-                        {character.chapters.map((c) =>
+            <span>Mini Talks</span>
+            <ul>
+                {miniTalkSections.map((section) => (
+                    <li key={JSON.stringify(section)}>
+                        {section.miniTalks.map((c) =>
                             c.href ? (
-                                <a
-                                    key={c}
-                                    href={c.href}
-                                >
-                                    {c.label}
-                                </a>
+                                c.none ? ( 
+                                    <a 
+                                        key={c}
+                                        id="none"
+                                        href={`${deriveIndex(post)}${section.name}/${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a> 
+                                ) : (
+                                    <a
+                                        key={c}
+                                        href={`${deriveIndex(post)}${section.name}/${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a>
+                                )
                             ) : (
-                                <span key={c}>
-                                    {c.label}
-                                </span>
+                                <span key={c}>{c.label}</span>
                             )
                         )}
                     </li>
-                </ul>
-            ))}
+                ))}
+            </ul>
         </div>
     );
 }

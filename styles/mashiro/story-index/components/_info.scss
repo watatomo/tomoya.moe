@@ -4,9 +4,20 @@
     flex-direction: column;
     gap: .7em;
 
+    a {
+        color: var(--storyColor);
+        transition: 0.2s ease-in-out;
+        border-bottom: none;
+
+        &:hover {
+            color: var(--storyColor-dark);
+        }
+    }
+
     .label {
         font-weight: 700;
         font-size: 0.9em;
+        line-height: 1.2;
     }
 
     .info {
@@ -16,7 +27,7 @@
 
         .item {
             padding: 5px 10px;
-            border: solid 2px #f0f1f2;
+            border: solid 2px rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
             border-radius: 5px;
 
             &.season {
@@ -36,11 +47,16 @@
 
             &.characters {
                 grid-column: 1/5;
-                padding: 5px 10px 0;
                 
                 .value {
+                    display: inline-flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
                     span {
                         display: inline-block;
+                        position: relative;
                         background: var(--charahead) 0 0 / cover;
                         height: 40px;
                         width: 40px;
@@ -54,6 +70,8 @@
 
                 a:not(:last-of-type)::after {
                     content: ",\0020";
+                    color: initial;
+                    cursor: initial;
                 }
             }
 
@@ -62,6 +80,8 @@
 
                 a:not(:last-of-type)::after {
                     content: ",\0020";
+                    color: initial;
+                    cursor: initial;
                 }
             }
         }
@@ -69,7 +89,7 @@
 
     .collapsible {
         &-header {
-            background-color: #f0f1f2;
+            background: rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;
@@ -79,13 +99,17 @@
         }
 
         &-body {
-            padding: 0.45em 0.45em 0;
+            padding: 0.7em 0.45em 0;
         }
     }
 
     .extra, .comments {
         .item {
-            &:first-child {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+
+            &:first-child:not(:only-child) {
                 padding: 0 0 8px 0;
             }
         
@@ -94,18 +118,27 @@
                 padding: 8px 0;
             }
         
-            &:last-child {
+            &:last-child:not(:only-child) {
                 padding: 8px 0 0 0;
             }
-                
+            
+            .label {
+                line-height: 1;
+            }
+            
             .value {
                 margin-left: 10px;
             }
+        }
 
-            .source {
-                font-size: 0.9em;
-                text-align: right;
-            }
+        ul, ol {
+            margin: 0 0 0 20px;
+            padding: 0;
+        }
+
+        .source {
+            font-size: 0.9em;
+            text-align: right;
         }
     }
 }

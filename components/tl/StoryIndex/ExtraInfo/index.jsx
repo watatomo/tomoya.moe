@@ -1,3 +1,5 @@
+import Markdown from "markdown-to-jsx";
+
 function ExtraInfo({ post }) {
     const {extra} = post;
 
@@ -13,7 +15,7 @@ function ExtraInfo({ post }) {
                             {v.label}
                         </div>
                         <div className="value">
-                            {v.value}
+                            <Markdown>{v.value}</Markdown>
                         </div>
                     </div>
                 ))}

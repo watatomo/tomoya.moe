@@ -2,8 +2,8 @@
     .collapsible-body {
         .gallery__wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-            gap: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+            gap: 5px;
         }
 
         .item {
