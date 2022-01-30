@@ -72,8 +72,8 @@ function StoryIndex({ post }) {
                             }
                         </div>
                         <div className="chapters__wrapper">
-                            {/* <Chapters post={post} /> 
-                            <MiniTalks post={post} /> */}
+                            <Chapters post={post} /> 
+                            {/* <MiniTalks post={post} /> */}
                         </div>
                     </div>
                 </div>

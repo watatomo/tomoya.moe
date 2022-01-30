@@ -12,9 +12,9 @@ import {
     Narration,
     Cw
 } from "../../mashiro";
-import Toolbar from "../Toolbar";
-import Credits from "../Credits";
-import MiniTalk from "../MiniTalk";
+import Toolbar from "./Toolbar";
+import Credits from "./Credits";
+import MiniTalk from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta"
 
 function StoryChapter({ post }) {

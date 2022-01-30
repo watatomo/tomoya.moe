@@ -5,8 +5,8 @@ import {
     faFillDrip
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TextSize } from "../../svgicon";
-import config from "../../../mako.config";
+import { TextSize } from "../../../svgicon";
+import config from "../../../../mako.config";
 
 function derivePreviousNextURL({ slug, tl, newSegment }) {
     const slugSegments = slug.split("/");

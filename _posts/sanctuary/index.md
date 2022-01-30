@@ -136,11 +136,25 @@ cards:
       supportName: "Organizing Feelings and Words"
       supportDesc: "Slightly increases the amount that the Ensemble Time gauge rises."
 chapters:
-    - section: Prologue
-      label: Prologue
-      href: 1
+    - label: Prologue
+      href: "/1"
+chapters:
+    - label: Polluted Paradise
+    - label: 1
+      href: "/2"
+    - label: 2
+      href: "/3"
+    - label: 3
+      href: "/4"
+    - label: 4
+      href: "/5"
+    - label: 5
+      href: "/6"
+    - label: 6
+      href: "/7"
+
 minitalks:
-    - Character: Tomoya
+    - character: Tomoya
       href: 1
 
 storyColor: "#67c0d0"
