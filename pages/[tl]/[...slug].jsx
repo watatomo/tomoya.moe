@@ -53,7 +53,7 @@ const PostFieldsForPostType = {
         "extra",
         "images",
         "minitalk",
-        "chapters",
+        "chapterSections",
         "cards",
         "newEra",
         "translator",

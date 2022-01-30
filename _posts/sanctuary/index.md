@@ -22,14 +22,14 @@ characters:
     - "Gatekeeper"
 translator:
     - name: "Nui"
-      href: "https://maonuis.tumblr.com" 
+      href: "https://maonuis.tumblr.com"
     - name: "Ren"
-      href: "https://tomoya.moe" 
+      href: "https://tomoya.moe"
 proofreader:
     - name: "honeyspades"
-      href: "https://honeyspades.tumblr.com" 
+      href: "https://honeyspades.tumblr.com"
     - name: "remi"
-      href: "https://twitter.com/trystofstarrs" 
+      href: "https://twitter.com/trystofstarrs"
 extra:
     - label: "Event"
       value: "SS Arc／6th Stage: Sanctuary"
@@ -135,23 +135,26 @@ cards:
       liveDesc: "Increases score by 20% for 5 seconds."
       supportName: "Organizing Feelings and Words"
       supportDesc: "Slightly increases the amount that the Ensemble Time gauge rises."
-chapters:
-    - label: Prologue
-      href: "/1"
-chapters:
-    - label: Polluted Paradise
-    - label: 1
-      href: "/2"
-    - label: 2
-      href: "/3"
-    - label: 3
-      href: "/4"
-    - label: 4
-      href: "/5"
-    - label: 5
-      href: "/6"
-    - label: 6
-      href: "/7"
+
+chapterSections:
+    - chapters:
+          - label: Prologue
+            href: "/1"
+    - name: Polluted Paradise
+      chapters:
+          - label:
+          - label: 1
+            href: "/2"
+          - label: 2
+            href: "/3"
+          - label: 3
+            href: "/4"
+          - label: 4
+            href: "/5"
+          - label: 5
+            href: "/6"
+          - label: 6
+            href: "/7"
 
 minitalks:
     - character: Tomoya
@@ -163,4 +166,3 @@ storyColorH: "189.1"
 storyColorS: "52.8"
 storyColorL: "61"
 ---
-
