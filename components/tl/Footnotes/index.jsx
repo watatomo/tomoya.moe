@@ -2,8 +2,8 @@
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 // import "tippy.js/themes/translucent.css";
-// import ReactMarkdown from "react-markdown";
-// import remarkGfm from "remark-gfm";
+// import { compiler } from "markdown-to-jsx";
+// import ReactMarkdown  from "react-markdown";
 
 /* const StyledWrapper = styled.span`
     .tippy-box[data-animation="shift-away"][data-state="hidden"] {
@@ -28,7 +28,7 @@ import "tippy.js/dist/tippy.css";
 
     .tippy-box[data-theme~="translucent"] {
         background-color: var(--msr-tippy-bg);
-        font-size: 0.9em;
+        font-size: 0.85em;
 
         a {
             color: var(--storyColor-bright);
@@ -78,9 +78,13 @@ import "tippy.js/dist/tippy.css";
 `; */
 
 function Fn({ num, children }) {
+    // const parsedNote = compiler(`${children}`, { wrapper: null });
+    // const parsedNote = <ReactMarkdown>{children}</ReactMarkdown>;
+
     return (
         // <StyledWrapper>
         <Tippy
+            // content={parsedNote}
             content={children}
             interactive
             theme="translucent"
@@ -100,7 +104,7 @@ function Fn({ num, children }) {
                 ]
             }} */
         >
-            <span className="tooltip">{num}</span>
+            <span className="tooltip" id={`fnref:${num}`}>{num}</span>
         </Tippy>
         // </StyledWrapper>
     );

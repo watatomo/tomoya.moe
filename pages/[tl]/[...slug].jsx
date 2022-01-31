@@ -29,7 +29,8 @@ const PostFieldsForPostType = {
         "previous",
         "next",
         "content",
-        "previewImg"
+        "previewImg",
+        "miniTalk"
     ],
     [PostType.Index]: [
         "title",

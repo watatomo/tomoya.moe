@@ -22,7 +22,7 @@ function deriveIndexURL({ slug, tl }) {
 
 function Toolbar({ post }) {
     const tl = config.translationsPath || "tl";
-    const isStandaloneChapter = !post.previous && !post.next;
+    const isStandaloneChapter = !post.previous && !post.next && !post.miniTalk;
 
     return (
         <div className="toolbar__wrapper">
