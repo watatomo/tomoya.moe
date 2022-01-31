@@ -2,7 +2,8 @@
 title: "Dead End Land"
 titleJp: "デッドエンドランド"
 description: "The Ninja Association was asked to help out at a theme restaurant. However, Mayoi—who can't stand crowds—runs off..."
-eraNew: true
+descSource: "https://twitter.com/ensemble_stars/status/1287991176339968001"
+newEra: true
 story: "dead_end_land"
 banner: "card_still_full1_2484_normal.webp"
 cover: "card_rectangle4_2484_evolution.webp"
@@ -26,16 +27,19 @@ proofreader:
       href: "https://holistar.dreamwidth.org"
     - name: Sheep
       href: "https://twitter.com/Czar_Ramzy"
+
 extra:
     - label: "Gacha"
       value: "Scout! Dead End Land"
     - label: "Gacha Duration"
       value: "7/30/2020 (15:00 JST) - 8/14/2020 (15:00 JST)"
+
 images:
     - src: "card_still_full1_2484_normal.webp"
       caption: "Epilogue (2)"
     - src: "card_still_full1_2485_normal.webp"
       caption: "Dead End Street (7)"
+
 cards:
     - name: "[Coward's Dead End] Mayoi Ayase"
       nameJp: "[臆病者のデッドエンド] 礼瀬 マヨイ"
@@ -77,6 +81,7 @@ cards:
       liveDesc: "Increase score by 8% for 12 seconds."
       supportName: "Roles and Responsibilities"
       supportDesc: "Increases the drop rate of small Blue Pieces by 1.3."
+
 chapterSections:
     - name: Dead End Street
       chapters:
@@ -101,11 +106,6 @@ chapterSections:
             href: 8
           - label: 2
             href: 9 
-storyColor: "#703f82"
-storyColorRGB: "112,63,130"
-storyColorH: "282.9"
-storyColorS: "34.7%"
-storyColorL: "37.8%"
 
 commentWriter:
     - comment: > 
@@ -114,4 +114,10 @@ commentWriter:
 commentTN:
     - comment: >
         <ol><li>"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</li></ol>
+
+storyColor: "#703f82"
+storyColorRGB: "112,63,130"
+storyColorH: "282.9"
+storyColorS: "34.7%"
+storyColorL: "37.8%"
 ---

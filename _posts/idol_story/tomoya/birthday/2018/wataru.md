@@ -7,7 +7,7 @@ description: "Wataru: The rose petals on the cake? Hehehe, no need to fret. I as
 
 <Location>Birthday Venue</Location>
 
-<Image src="/img/tl/idol_story/tomoya/birthday/2018/wataru/1.jpg" layout="responsive" width="1560" height="720" quality="100" />
+<Image src="/img/tl/idol_story/tomoya/birthday/2018/wataru/1.jpg" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Wataru">
 
@@ -27,4 +27,4 @@ There's more than just flowers waiting for you, so please accept them—every la
 
 </Bubble>
 
-<Credits tl="<a href='https://tomoya.moe'>Ren</a>" tlc="<a href='https://twitter.com/haranami_'>haranami</a>" />
+<Credits tl="[Ren](https://tomoya.moe)" tlc="[haranami](https://twitter.com/haranami_)" />

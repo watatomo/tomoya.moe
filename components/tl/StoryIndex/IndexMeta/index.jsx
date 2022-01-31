@@ -10,7 +10,7 @@ function actualSlug({ slug }) {
 
 function IndexMeta({ post }) {
     const storyColorStyle = `
-        :root{ 
+        :root { 
             --storyColor: ${post.storyColor};
             --storyColor-rgb: ${post.storyColorRGB};
             --storyColor-h: ${post.storyColorH};

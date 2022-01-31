@@ -7,6 +7,12 @@ function actualSlug({ slug }) {
     return `${slugSegments.join("/")}`;
 }
 
+function getPreviewImage({ slug }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    return `${slugSegments.join("/")}`;
+}
+
 function ChapterMeta({ post }) {
     return (
         <Head>
@@ -19,7 +25,7 @@ function ChapterMeta({ post }) {
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.description} />
             {post.previewImg ? (
-                <meta property="og:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/${post.previewImg}`} />
+                <meta property="og:image" content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${post.previewImg}`} />
             ) : 
                 <meta property="og:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
             }
@@ -31,7 +37,7 @@ function ChapterMeta({ post }) {
                 content={post.description}
             />
             {post.previewImg ? (
-                <meta property="twitter:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/${post.previewImg}`} />
+                <meta property="twitter:image" content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${post.previewImg}`} />
             ) : 
                 <meta property="twitter:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
             }

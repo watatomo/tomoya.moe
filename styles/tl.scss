@@ -1,6 +1,7 @@
 $chapter-bg-color: #f0f5f9;
 $chapter-inner-bg-color: #fff;
 $chapter-link-color: rgb(238 220 179 / 75%);
+$chapter-arrow-color: #6E85B2;
 $credits-bg-color: #f0f1f2;
 
 .chapter__wrapper {
@@ -19,7 +20,7 @@ $credits-bg-color: #f0f1f2;
         margin: 0.5em 0;
     }
 
-    ol:last-of-type {
+    ol:last-of-type, ul:last-of-type {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -28,6 +29,7 @@ $credits-bg-color: #f0f1f2;
 
         a {
             color: #000;
+            padding: 1px;
             background: linear-gradient(
                     $chapter-link-color,
                     $chapter-link-color
@@ -40,14 +42,16 @@ $credits-bg-color: #f0f1f2;
             &:hover {
                 background-position: bottom;
             }
+        }
 
-            /* &.footnote-backref {
+        a[href*="fnref"] {
+            background: none;
+            color: $chapter-arrow-color;
+
+            &:hover {
                 background: none;
-
-                &:hover {
-                    @extend .footnote-backref;
-                }
-            } */
+                color: $chapter-arrow-color;
+            }
         }
     }
 
@@ -84,32 +88,13 @@ $credits-bg-color: #f0f1f2;
         }
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        margin: 0;
-
-        + p {
-            margin: 0;
-
-            + p {
-                margin: 0;
-
-                + p {
-                    margin: 0;
-
-                    + p {
-                        margin: 0;
-                    }
-                }
-            }
+    .tln {
+        h3, h4 {
+            margin: 0 0 0.25em;
         }
-    }
-
-    h2 {
-        margin-top: 0.5em;
+        p {
+            margin: 0.5em 0 0.5em;
+        }
     }
 
     .credits__wrapper {

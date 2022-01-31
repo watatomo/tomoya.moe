@@ -1,3 +1,4 @@
+import Markdown from "markdown-to-jsx";
 import IndexMeta from "./IndexMeta";
 import Banner from "./Banner";
 import Cover from "./Cover";
@@ -22,10 +23,15 @@ function StoryIndex({ post }) {
                         <Title post={post} />
                         <div className="info__wrapper">
                             <div className="synopsis">
-                                {post.description}
+                                <Markdown>{post.description}</Markdown>
+                                { post.descSource ? (
+                                    <a href={post.descSource}>➹</a>
+                                ) : null }
                             </div>
                             <InfoBox post={post} />
-                            <ExtraInfo post={post} />
+                            { post.extra ? (
+                                <ExtraInfo post={post} />
+                            ) : null }
                             { post.commentWriter ? (
                                 <CommentWriter post={post} />
                             ) : null }
@@ -35,18 +41,18 @@ function StoryIndex({ post }) {
                             { post.commentTN ? (
                                 <CommentTN post={post} />
                             ) : null }
-                            <Gallery post={post} />
+                            { post.images ? (
+                                <Gallery post={post} />
+                            ) : null }
                             { post.newEra ? (
                                 <Cards2 post={post} />
-                            )
-                                : <Cards1 post={post} />
-                            }
+                            ) : ( <Cards1 post={post} /> )}
                         </div>
                         <div className="chapters__wrapper">
                             <Chapters post={post} /> 
                             { post.miniTalkSections ? (
                                 <MiniTalks post={post} />
-                            ) : null}
+                            ) : null }
                         </div>
                     </div>
                 </div>

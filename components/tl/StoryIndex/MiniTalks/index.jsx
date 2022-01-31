@@ -1,4 +1,10 @@
 /* eslint-disable no-nested-ternary */
+import React from "react";
+// import Collapse from "@kunukn/react-collapse";
+// import cx from "classnames";
+// import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function deriveIndex({ slug }) {
     const slugSegments = slug.split("/");
     slugSegments.pop();
@@ -7,6 +13,10 @@ function deriveIndex({ slug }) {
 
 function MiniTalks({ post }) {
     const { miniTalkSections } = post;
+    // const [isOpen, setIsOpen] = React.useState(false);
+    // const onToggle = () => setIsOpen(s => !s);
+    // const onChange = props => console.log(props);
+
     return (
         <div className="mini-talks">
             <span>Mini Talks</span>
@@ -33,6 +43,7 @@ function MiniTalks({ post }) {
                                 )
                             ) : (
                                 <span key={c}>{c.label}</span>
+                                
                             )
                         )}
                     </li>

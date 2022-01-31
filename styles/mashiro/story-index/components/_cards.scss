@@ -1,8 +1,9 @@
 .index__wrapper .story-cards {
     > .collapsible-body > .cards {
-         display: grid;
+        display: grid;
         grid-template-columns: repeat(5, minmax(auto, 1fr));
-        gap: 0.4em 1em;
+        gap: 0.4em 1.25em;
+        padding-right: 0.6em;
     }
 
     .single {
@@ -20,8 +21,14 @@
         }
     }
 
-    .item > .lightbox {
-        display: none;
+    .item {
+        > .lightbox {
+            display: none;
+        }
+
+        > .image {
+            cursor: zoom-in;
+        }
     }
         
     .image {
@@ -62,9 +69,5 @@
             }
 
         }
-    }
-        
-    .item > .image {
-        cursor: zoom-in;
     }
 }

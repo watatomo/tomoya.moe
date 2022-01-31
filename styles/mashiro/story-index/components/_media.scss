@@ -3,14 +3,14 @@
         font-size: 12px;
 
         .banner {
-            height: 150px;
+            height: 125px;
         }
 
         .index-container {
             grid-template-columns: auto [col-start] 1fr [last];
             grid-template-rows: auto;
             margin: -50px 0 0;
-            padding: 5.2em 1.5em 1.5em;
+            padding: 5.2em 1.25em 1.5em;
             grid-gap: 1em;
     
             .cover {
@@ -68,6 +68,7 @@
         
     
         .story-cards > .collapsible-body > .cards {
+            padding-right: 0.3em;
             gap: .2em .7em;
         }
     }

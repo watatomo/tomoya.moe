@@ -1,8 +1,9 @@
 ---
 title: "RELOADED"
 story: "reloaded"
-eraNew: true
+newEra: true
 description: "Due to particular circumstances, Izumi and Tomoya are skulking around, wary to avoid the eyes of others. However, when Nazuna and Kanata bear witness they panic and hide. Handcuffed together, they..."
+descSource: "https://twitter.com/ensemble_stars/status/1376096730366627841"
 banner: "card_still_full1_2749_normal.webp"
 cover: "card_rectangle4_2749_evolution.webp"
 season: "Summer"
@@ -38,11 +39,13 @@ extra:
       value: "Scout! RELOADED"
     - label: "Gacha Duration"
       value: "3/30/2021 (15:00 JST) - 4/14/2021 (15:00 JST)"
+
 images:
     - src: "card_still_full1_2749_normal.webp"
       caption: "Idol of the Dead (2)"
     - src: "card_still_full1_2750_normal.webp"
       caption: "Epilogue"
+
 cards:
     - name: "[Desperate Blow] Tomoya Mashiro"
       nameJp: "[絶体絶命の一撃] 真白 友也"
@@ -110,6 +113,7 @@ chapterSections:
     - chapters:
           - label: Epilogue
             href: 10
+
 storyColor: "#d7ac4a"
 storyColorRGB: "215,172,74"
 storyColorH: "41.7"

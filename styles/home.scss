@@ -144,7 +144,6 @@ $highlight-color: #f2dea8;
 
         svg.svg-inline--fa {
             display: block;
-            vertical-align: -2px;
             font-size: 1.75em;
             width: 1em;
             margin: 0;
@@ -157,8 +156,12 @@ $highlight-color: #f2dea8;
         gap: 1em;
         font-size: 1em;
 
-        a {
+        button {
             position: relative;
+            background: unset;
+            border: unset;
+            padding: 1px;
+            cursor: pointer;
             color: $text-color;
             text-decoration: none;
             line-height: 1.35;
@@ -184,6 +187,10 @@ $highlight-color: #f2dea8;
                 transition: transform 0.2s ease;
             }
         }
+    }
+
+    .container02 {
+        transition: height 400ms ease-in-out, padding 400ms ease-in-out;
     }
 }
 

@@ -2,7 +2,8 @@
 title: "To the Deutzia-Colored You"
 titleJp: "卯の花色の君へ"
 description: "Tomoya is worried about what direction to take for his personalized outfit. Unable to figure out what he wants to be, Tomoya tries on various outfits. But Hokuto, who's accompanying him, only gives the same response each time."
-eraNew: true
+descSource: "https://twitter.com/ensemble_stars/status/1314445489908011008"
+newEra: true
 story: "to_the_deutzia-colored_you"
 banner: "card_still_full1_2553_normal.webp"
 cover: "card_rectangle4_2553_evolution.webp"

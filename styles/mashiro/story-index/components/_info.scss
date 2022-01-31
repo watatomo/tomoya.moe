@@ -93,13 +93,28 @@
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            padding: 8px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding: 8px 10px;
+            
+            .arrow {
+                transition: 400ms all ease;
+            }
+
+            &.active {
+                .arrow {
+                    transform: rotate(180deg);
+                }
+            }
         }
 
         &-body {
-            padding: 0.7em 0.45em 0;
+            padding: 0 0.45em 0;
+            transition: height 400ms ease-in-out, padding 400ms ease-in-out;
+
+            &.active {
+                padding: 0.7em 0.45em 0;
+            }
         }
     }
 

@@ -7,7 +7,7 @@ description: "Tomoya: Woah, why are you crying?! Uh, you want me to say it with 
 
 <Location>Birthday Venue</Location>
 
-<Image src="/img/tl/idol story/wataru/birthday/2018/tomoya/1.jpg" layout="responsive" width="1560" height="720" quality="100" />
+<Image src="/img/tl/idol story/wataru/birthday/2018/tomoya/1.jpg" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Tomoya">
 
@@ -27,4 +27,4 @@ Dammit... I just let my guard down because it's your birthday\~!
 
 </Bubble>
 
-<Credits tl="<a href='https://tomoya.moe'>Ren</a>" tlc="<a href='https://twitter.com/gebokuism'>Koi</a>" />
+<Credits tl="[Ren](https://tomoya.moe)" tlc="[Koi](https://twitter.com/gebokuism)" />

@@ -1,6 +1,7 @@
 ---
 title: "Sanctuary"
 description: "Ra*bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
+descSource: "https://twitter.com/ensemble_stars/status/1436932590632677442"
 story: "sanctuary"
 newEra: true
 titleJp: "サンクチュアリ"
@@ -40,8 +41,6 @@ extra:
     - label: "Special Thanks"
       value: "[Ciel](https://twitter.com/bluefilaments), [Simon](https://twitter.com/dapporock): Moral support and other members of the Sanctuary GC! You can read their translation of the story [here](https://twitter.com/bluefilaments/status/1439284645657448456).<br>[Koi](https://twitter.com/kogadouVEVO), [Lala](https://twitter.com/milkyshiffon): For helping me out with phrasing and smoothing things out! And extra moral support."
 
-
-
 images:
     - src: "card_still_full1_2887_normal.webp"
       caption: "Polluted Paradise (5)"
@@ -59,6 +58,7 @@ images:
       caption: "Polluted Paradise (1)"
     - src: "card_still_full1_2890_evolution.webp"
       caption: "Epilogue (4)"
+
 cards:
     - name: "[Secret Sanctuary] Wataru Hibiki"
       nameJp: "[秘匿サンクチュアリ] 日々樹 渉"
