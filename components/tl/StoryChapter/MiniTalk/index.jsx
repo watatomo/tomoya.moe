@@ -16,9 +16,6 @@ export function MiniTalk({ character, children }) {
                         },
                         Thought: {
                             component: Thought
-                        },
-                        Option: {
-                            component: Option
                         }
                     }
                 }}
@@ -33,51 +30,48 @@ export function Option({ children, option, character }) {
     return (
         <div className="minitalk-option">
             <div className="minitalk-option__header">
-            <Markdown
-                options={{
-                    forceInline: true,
-                    overrides: {
-                        Fn: {
-                            component: Fn
-                        },
-                        Thought: {
-                            component: Thought
-                        },
-                        Option: {
-                            component: Option
+                <Markdown
+                    options={{
+                        forceInline: true,
+                        overrides: {
+                            Fn: {
+                                component: Fn
+                            },
+                            Thought: {
+                                component: Thought
+                            }
                         }
-                    }
-                }}
-            >
-                {option}
-            </Markdown>
+                    }}
+                >
+                    {option}
+                </Markdown>
             </div>
             <div className="msr-unit" character={character}>
-            <div className="msr-icon">
-                <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base" />
+                <div className="msr-icon">
+                    <div className="msr-icon__wrapper">
+                        <div className="msr-icon__base" />
+                    </div>
                 </div>
-            </div>
-            <div className="msr-line">
-                <div className="msr-name" />
-                <Markdown
-                options={{
-                    forceInline: true,
-                    overrides: {
-                        Fn: {
-                            component: Fn
-                        },
-                        Thought: {
-                            component: Thought
-                        },
-                        Option: {
-                            component: Option
-                        }
-                    }
-                }}
-            >
-                {children}
-            </Markdown>
+                <div className="msr-line">
+                    <div className="msr-name" />
+                    <Markdown
+                        options={{
+                            forceInline: true,
+                            overrides: {
+                                Fn: {
+                                    component: Fn
+                                },
+                                Thought: {
+                                    component: Thought
+                                },
+                                Option: {
+                                    component: Option
+                                }
+                            }
+                        }}
+                    >
+                        {children}
+                    </Markdown>
                 </div>
             </div>
         </div>
