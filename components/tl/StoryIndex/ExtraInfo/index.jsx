@@ -9,7 +9,7 @@ function ExtraInfo({ post }) {
     const {extra} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="extra">

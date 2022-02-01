@@ -10,7 +10,7 @@ export function CommentVA({ post }) {
     const {commentVA, commentVAs} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="comments">
@@ -54,7 +54,7 @@ export function CommentWriter({ post }) {
     const {commentWriter} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="comments">
@@ -94,7 +94,7 @@ export function CommentTN({ post }) {
     const {commentTN} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="comments">

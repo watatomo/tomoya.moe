@@ -15,7 +15,7 @@ export function Cards1({ post }) {
     const {cards} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="story-cards">
@@ -84,7 +84,7 @@ export function Cards2({ post }) {
     const {cards} = post;
     const [isOpen, setIsOpen] = React.useState(false);
     const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const onChange = props => props;
 
     return (
         <div className="story-cards">
