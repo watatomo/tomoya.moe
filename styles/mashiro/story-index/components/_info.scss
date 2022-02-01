@@ -47,12 +47,12 @@
 
             &.characters {
                 grid-column: 1/5;
+                padding: 5px 10px 2px;
                 
                 .value {
                     display: inline-flex;
-                    flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    place-content: first baseline stretch;
 
                     span {
                         display: inline-block;

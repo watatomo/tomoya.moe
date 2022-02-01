@@ -32,7 +32,7 @@ function Chapters({ post }) {
                                     </a>
                                 )
                             ) : (
-                                <span key={c}>{c.label}</span>
+                                <span key={c}>{c.name}</span>
                             )
                         )}
                     </li>

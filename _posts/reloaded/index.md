@@ -89,9 +89,8 @@ cards:
       supportDesc: "Slightly decreases the amount that Voltage lowers."
 
 chapterSections:
-    - name: Idol of the Dead
-      chapters:
-          - label: Idol of the Dead
+    - chapters:
+          - name: Idol of the Dead
           - label: 1
             href: 1
           - label: 2

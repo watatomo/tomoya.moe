@@ -83,9 +83,8 @@ cards:
       supportDesc: "Increases the drop rate of small Blue Pieces by 1.3."
 
 chapterSections:
-    - name: Dead End Street
-      chapters:
-          - label: Dead End Street
+    - chapters:
+          - name: Dead End Street
           - label: 1
             href: 1
           - label: 2
@@ -101,7 +100,7 @@ chapterSections:
           - label: 7
             href: 7
     - chapters:
-          - label: Epilogue
+          - name: Epilogue
           - label: 1
             href: 8
           - label: 2

@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-page-custom-font */
 import React from "react";
 import Collapse from "@kunukn/react-collapse";
 import cx from "classnames";

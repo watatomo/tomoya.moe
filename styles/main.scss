@@ -8,3 +8,30 @@ body {
 svg {
     shape-rendering: geometricPrecision;
 }
+
+.footer {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 20px;
+    background-color: #f6f8fa;
+    margin-top: 1.5em;
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+            display: inline-block;
+            color: #3f4346;
+            transition: all 0.15s linear;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

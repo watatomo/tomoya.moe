@@ -38,12 +38,15 @@
             .info .item {
                 padding: 5px 6px;
 
-                &.characters > .value {
-                    span {
-                        height: 35px;
-                        width: 35px;
-                        margin-bottom: -3px;
-                    }
+                &.characters {
+                    padding: 5px 6px 1px;
+
+                    > .value {
+                        span {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    } 
                 }
             }
         }

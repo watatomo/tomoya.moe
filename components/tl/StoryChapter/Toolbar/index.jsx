@@ -1,11 +1,11 @@
 import {
     faChevronLeft,
     faChevronRight,
-    faStar,
-    faFillDrip
+    faStar
+    // faFillDrip
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TextSize } from "../../../svgicon";
+// import { TextSize } from "../../../svgicon";
 import config from "../../../../mako.config";
 
 function derivePreviousNextURL({ slug, tl, newSegment }) {
@@ -41,9 +41,9 @@ function Toolbar({ post }) {
                     ) : null}
                 </div>
 
-                <div className="toolbar__section">
+                {/* <div className="toolbar__section">
                     <FontAwesomeIcon icon={faFillDrip} />
-                </div>
+                </div> */}
 
                 {!isStandaloneChapter && (
                     <div className="toolbar__section">
@@ -53,9 +53,9 @@ function Toolbar({ post }) {
                     </div>
                 )}
 
-                <div className="toolbar__section">
+                {/* <div className="toolbar__section">
                     <TextSize />
-                </div>
+                </div> */}
 
                 <div className="toolbar__section">
                     {post.next ? (

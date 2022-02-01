@@ -145,9 +145,8 @@ chapterSections:
     - chapters:
           - label: Prologue
             href: 1
-    - name: Polluted Paradise
-      chapters:
-          - label: Polluted Paradise
+    - chapters:
+          - name: Polluted Paradise
           - label: 1
             href: 2
           - label: 2
@@ -172,9 +171,8 @@ chapterSections:
             href: 12
           - label: 12
             href: 13
-    - name: Circuit of Happiness
-      chapters:
-          - label: Circuit of Happiness
+    - chapters:
+          - name: Circuit of Happiness
           - label: 1
             href: 14
           - label: 2
@@ -230,9 +228,8 @@ chapterSections:
           - label: 19
             href: 32
             none: true
-    - name: Epilogue
-      chapters: 
-          - label: Epilogue 
+    - chapters: 
+          - name: Epilogue 
           - label: 1
             href: 33
             none: true
@@ -251,24 +248,24 @@ chapterSections:
 
 miniTalkSections:
     - name: wataru
+      label: Wataru Hibiki
       miniTalks:
-          - label: Wataru Hibiki
           - label: 1
             href: "1"
             none: true
           - label: 2
             href: 2
     - name: tomoya
+      label: Tomoya Mashiro 
       miniTalks:
-          - label: Tomoya Mashiro
           - label: 1
             href: 1
             none: true
           - label: 2
             href: 2
     - name: tori
+      label: Tori Himemiya 
       miniTalks:
-          - label: Tori Himemiya
           - label: 1
             href: 1
             none: true
@@ -276,8 +273,8 @@ miniTalkSections:
             href: 2
             none: true
     - name: nazuna
+      label: Nazuna Nito 
       miniTalks:
-          - label: Nazuna Nito
           - label: 1
             href: 1
             none: true

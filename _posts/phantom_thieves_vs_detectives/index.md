@@ -2,6 +2,7 @@
 title: "Phantom Thieves vs. Detectives"
 titleJp: "怪盗VS探偵団"
 description: "Knights and Ra*bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!"
+descSource: "https://twitter.com/ensemble_stars/status/681716281414815744"
 story: "phantom_thieves_vs_detectives"
 banner: "still_469_normal.webp"
 cover: "cs_469_evolution.webp"
@@ -125,9 +126,8 @@ chapterSections:
     - chapters:
           - label: Prologue
             href: 1
-    - name: Case Discovery
-      chapters:
-          - label: Case Discovery
+    - chapters:
+          - name: Case Discovery
           - label: 1
             href: 2
           - label: 2
@@ -140,9 +140,8 @@ chapterSections:
             href: 6
           - label: 6
             href: 7
-    - name: Investigation Start
-      chapters:
-          - label: Investigation Start
+    - chapters:
+          - name: Investigation Start
           - label: 1 
             href: 8
           - label: 2
@@ -151,9 +150,8 @@ chapterSections:
             href: 10
           - label: 4 
             href: 11
-    - name: Criminal Pursuit
-      chapters:
-          - label: Criminal Pursuit
+    - chapters:
+          - name: Criminal Pursuit
           - label: 1 
             href: 12
           - label: 2
@@ -162,9 +160,8 @@ chapterSections:
             href: 14
           - label: 4 
             href: 15
-    - name: Revelations
-      chapters:
-          - label: Revelations
+    - chapters:
+          - name: Revelations
           - label: 1 
             href: 16
           - label: 2
@@ -173,9 +170,8 @@ chapterSections:
             href: 18
           - label: 4 
             href: 19
-    - name: Epilogue
-      chapters:
-          - label: Epilogue
+    - chapters:
+          - name: Epilogue
           - label: 1 
             href: 20
           - label: 2
@@ -184,10 +180,11 @@ chapterSections:
             href: 22
           - label: 4 
             href: 23
+            
 miniTalkSections:
     - name: mitsuru
+      label: Mitsuru Tenma 
       miniTalks:
-          - label: Mitsuru Tenma
           - label: 1
             href: 1
             none: true
@@ -195,8 +192,8 @@ miniTalkSections:
             href: 2
             none: true
     - name: arashi
+      label: Arashi Narukami 
       miniTalks:
-          - label: Arashi Narukami
           - label: 1
             href: 1
             none: true
@@ -204,8 +201,8 @@ miniTalkSections:
             href: 2
             none: true
     - name: tomoya
+      label: Tomoya Mashiro 
       miniTalks:
-          - label: Tomoya Mashiro
           - label: 1
             href: 1
             none: true
@@ -213,8 +210,8 @@ miniTalkSections:
             href: 2
             none: true
     - name: wataru
+      label: Wataru Hibiki 
       miniTalks:
-          - label: Wataru Hibiki
           - label: 1
             href: 1
             none: true

@@ -23,16 +23,17 @@ function MiniTalks({ post }) {
             <ul>
                 {miniTalkSections.map((section) => (
                     <li key={JSON.stringify(section)}>
-                        {section.miniTalks.map((c) =>
-                            c.href ? (
-                                c.none ? ( 
+                        <span key={section}>{section.label}</span>
+                        <div>
+                            {section.miniTalks.map((c) =>
+                                c.none ? (
                                     <a 
                                         key={c}
                                         id="none"
                                         href={`${deriveIndex(post)}${section.name}/${c.href}`}
                                     >
                                         {c.label}
-                                    </a> 
+                                    </a>
                                 ) : (
                                     <a
                                         key={c}
@@ -40,12 +41,8 @@ function MiniTalks({ post }) {
                                     >
                                         {c.label}
                                     </a>
-                                )
-                            ) : (
-                                <span key={c}>{c.label}</span>
-                                
-                            )
-                        )}
+                                ))}
+                        </div>
                     </li>
                 ))}
             </ul>
