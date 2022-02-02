@@ -5,7 +5,7 @@ import Markdown from "markdown-to-jsx";
 import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Bubble, Thought } from "../../../mashiro";
+import { Thought } from "../../../mashiro";
 import Fn from "../../Footnotes";
 
 export function MiniTalk({ speaker, response, children }) {
@@ -49,5 +49,14 @@ export function MiniTalk({ speaker, response, children }) {
                 <div className="minitalk-option__body">{children}</div>
             </Collapse>
         </div>
+    );
+}
+
+export function MiniTalkType({ r, name, part }) {
+    return (
+        <h2 className="minitalk-header">
+            <span mt={r} />
+            {name} ({part})
+        </h2>
     );
 }
