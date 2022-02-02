@@ -8,18 +8,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Bubble, Thought } from "../../../mashiro";
 import Fn from "../../Footnotes";
 
-export function MiniTalk({ speaker, replier, response, children }) {
+export function MiniTalk({ speaker, response, children }) {
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
-    
+    };
+
     return (
         <div className="minitalk-option" character={speaker}>
             <button
                 type="button"
-                className={visible ? "minitalk-option__header active" : "minitalk-option__header"}
+                className={
+                    visible
+                        ? "minitalk-option__header active"
+                        : "minitalk-option__header"
+                }
                 onClick={handleClick}
             >
                 <Markdown
@@ -34,15 +38,15 @@ export function MiniTalk({ speaker, replier, response, children }) {
                             }
                         }
                     }}
-                >{response}</Markdown>
+                >
+                    {response}
+                </Markdown>
                 <span className="arrow">
-                    <FontAwesomeIcon icon={faChevronDown}/>
+                    <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse isOpened={visible}>
-                <div className="minitalk-option__body">
-                    <Bubble character={replier} children={children} />
-                </div>
+                <div className="minitalk-option__body">{children}</div>
             </Collapse>
         </div>
     );
