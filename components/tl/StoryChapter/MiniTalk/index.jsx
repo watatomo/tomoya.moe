@@ -1,79 +1,32 @@
+/* eslint-disable react/no-children-prop */
 /* eslint-disable no-unused-vars */
 // import { CSSTransition } from "react-transition-group";
+import { useState } from "react";
 import Markdown from "markdown-to-jsx";
-import { Thought } from "../../../mashiro";
+import { Collapse } from "react-collapse";
+import { Bubble, Thought } from "../../../mashiro";
 import Fn from "../../Footnotes";
 
-export function MiniTalk({ character, children }) {
+export function MiniTalk({ speaker, replier, response, children }) {
+    const [visible, setVisible] = useState(false);
+
+    function handleClick() {
+        setVisible(!visible);
+    }
     return (
-        <div className="minitalk" character={character}>
-            <Markdown
-                options={{
-                    forceInline: true,
-                    overrides: {
-                        Fn: {
-                            component: Fn
-                        },
-                        Thought: {
-                            component: Thought
-                        }
-                    }
-                }}
+        <div className="minitalk-option" character={speaker}>
+            <button
+                type="button"
+                className="minitalk-option__header"
+                onClick={handleClick}
             >
-                {children}
-            </Markdown>
+                {response}
+            </button>
+            <Collapse isOpened={visible}>
+                <div className="minitalk-option__body">
+                    <Bubble character={replier} children={children} />
+                </div>
+            </Collapse>
         </div>
     );
-}
-
-export function Option({ children, option, character }) {
-    return (
-        <div className="minitalk-option">
-            <div className="minitalk-option__header">
-                <Markdown
-                    options={{
-                        forceInline: true,
-                        overrides: {
-                            Fn: {
-                                component: Fn
-                            },
-                            Thought: {
-                                component: Thought
-                            }
-                        }
-                    }}
-                >
-                    {option}
-                </Markdown>
-            </div>
-            <div className="msr-unit" character={character}>
-                <div className="msr-icon">
-                    <div className="msr-icon__wrapper">
-                        <div className="msr-icon__base" />
-                    </div>
-                </div>
-                <div className="msr-line">
-                    <div className="msr-name" />
-                    <Markdown
-                        options={{
-                            forceInline: true,
-                            overrides: {
-                                Fn: {
-                                    component: Fn
-                                },
-                                Thought: {
-                                    component: Thought
-                                },
-                                Option: {
-                                    component: Option
-                                }
-                            }
-                        }}
-                    >
-                        {children}
-                    </Markdown>
-                </div>
-            </div>
-        </div>
-    )
 }
