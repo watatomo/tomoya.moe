@@ -12,49 +12,61 @@ function deriveIndex({ slug }) {
 
 function MiniTalks({ post }) {
     const { miniTalkSections } = post;
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(
+        post.miniTalkSections.map(() => false) // make array that just a bunch of falses with length the same as minitalk sections
+    );
 
-    const handleClick = () => {
-        setVisible(!visible);
-    }
+    const handleClick = (i) => {
+        const newVisibleState = JSON.parse(JSON.stringify(visible)); // make a copy of visible
+        newVisibleState[i] = !newVisibleState[i]; // flip value of ith item
+        setVisible(newVisibleState); // set the new state
+    };
 
     return (
         <div className="mini-talks">
             <span>Mini Talks</span>
             <ul>
-                {miniTalkSections.map((section) => (
+                {miniTalkSections.map((section, i) => (
                     <li key={JSON.stringify(section)}>
                         <button
                             key={section}
                             type="button"
-                            className={visible ? "minitalk__header active" : "minitalk__header"}
-                            onClick={handleClick}
-                        >{section.label}
+                            className={
+                                visible[i]
+                                    ? "minitalk__header active"
+                                    : "minitalk__header"
+                            }
+                            onClick={() => handleClick(i)}
+                        >
+                            {section.label}
                             <span className="arrow">
-                                <FontAwesomeIcon icon={faChevronDown}/>
+                                <FontAwesomeIcon icon={faChevronDown} />
                             </span>
                         </button>
-                        <div>
-                            <Collapse isOpened={visible}>
-                                {section.miniTalks.map((c) =>
-                                    c.none ? (
-                                        <a 
-                                            key={c}
-                                            id="none"
-                                            href={`${deriveIndex(post)}${section.name}/${c.href}`}
-                                        >
-                                            {c.label}
-                                        </a>
-                                    ) : (
-                                        <a
-                                            key={c}
-                                            href={`${deriveIndex(post)}${section.name}/${c.href}`}
-                                        >
-                                            {c.label}
-                                        </a>
-                                    ))}
-                            </Collapse>
-                        </div>
+                        <Collapse isOpened={visible[i]}>
+                            {section.miniTalks.map((c) =>
+                                c.none ? (
+                                    <a
+                                        key={c}
+                                        id="none"
+                                        href={`${deriveIndex(post)}${
+                                            section.name
+                                        }/${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a>
+                                ) : (
+                                    <a
+                                        key={c}
+                                        href={`${deriveIndex(post)}${
+                                            section.name
+                                        }/${c.href}`}
+                                    >
+                                        {c.label}
+                                    </a>
+                                )
+                            )}
+                        </Collapse>
                     </li>
                 ))}
             </ul>
