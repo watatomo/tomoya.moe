@@ -35,6 +35,10 @@
         .info__wrapper {
             grid-column: 1/3;
 
+            .collapsible-header, .collapsible-header--active {
+                padding: 9px 10px;
+            }
+
             .info .item {
                 padding: 5px 6px;
 

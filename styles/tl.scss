@@ -47,10 +47,12 @@ $credits-bg-color: #f0f1f2;
         a[href*="fnref"] {
             background: none;
             color: $chapter-arrow-color;
+            transition: all 0.2s ease;
 
             &:hover {
                 background: none;
                 color: $chapter-arrow-color;
+                filter: brightness(50%);
             }
         }
     }
@@ -59,10 +61,16 @@ $credits-bg-color: #f0f1f2;
         background-color: $chapter-inner-bg-color;
         width: 52rem;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+        /* margin-bottom: 3em;
+        border-radius: 0 0 15px 15px;
+
+        .footer {
+            
+        } */
     }
 
     .mashiro {
-        margin: 1.5em;
+        margin: 2em 1.5em;
         display: flex;
         flex-direction: column;
         row-gap: 1em;

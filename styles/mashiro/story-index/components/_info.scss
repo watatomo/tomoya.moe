@@ -95,10 +95,14 @@
             cursor: pointer;
             display: grid;
             grid-template-columns: 1fr auto;
-            padding: 8px 10px;
+            padding: 10px;
+            color: #222;
+            width: 100%;
+            border: none;
+            justify-items: start;
             
             .arrow {
-                transition: 400ms all ease;
+                transition: 0.5s all ease;
             }
 
             &.active {
@@ -109,7 +113,7 @@
         }
 
         &-body {
-            padding: 0 0.45em 0;
+            padding: 0.7em 0.45em 0;
             transition: height 400ms ease-in-out, padding 400ms ease-in-out;
 
             &.active {

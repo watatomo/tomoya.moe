@@ -1,9 +1,8 @@
 /* eslint-disable no-nested-ternary */
-import React from "react";
-// import Collapse from "@kunukn/react-collapse";
-// import cx from "classnames";
-// import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { Collapse } from "react-collapse";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function deriveIndex({ slug }) {
     const slugSegments = slug.split("/");
@@ -13,9 +12,11 @@ function deriveIndex({ slug }) {
 
 function MiniTalks({ post }) {
     const { miniTalkSections } = post;
-    // const [isOpen, setIsOpen] = React.useState(false);
-    // const onToggle = () => setIsOpen(s => !s);
-    // const onChange = props => console.log(props);
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
 
     return (
         <div className="mini-talks">
@@ -23,25 +24,36 @@ function MiniTalks({ post }) {
             <ul>
                 {miniTalkSections.map((section) => (
                     <li key={JSON.stringify(section)}>
-                        <span key={section}>{section.label}</span>
+                        <button
+                            key={section}
+                            type="button"
+                            className={visible ? "minitalk__header active" : "minitalk__header"}
+                            onClick={handleClick}
+                        >{section.label}
+                            <span className="arrow">
+                                <FontAwesomeIcon icon={faChevronDown}/>
+                            </span>
+                        </button>
                         <div>
-                            {section.miniTalks.map((c) =>
-                                c.none ? (
-                                    <a 
-                                        key={c}
-                                        id="none"
-                                        href={`${deriveIndex(post)}${section.name}/${c.href}`}
-                                    >
-                                        {c.label}
-                                    </a>
-                                ) : (
-                                    <a
-                                        key={c}
-                                        href={`${deriveIndex(post)}${section.name}/${c.href}`}
-                                    >
-                                        {c.label}
-                                    </a>
-                                ))}
+                            <Collapse isOpened={visible}>
+                                {section.miniTalks.map((c) =>
+                                    c.none ? (
+                                        <a 
+                                            key={c}
+                                            id="none"
+                                            href={`${deriveIndex(post)}${section.name}/${c.href}`}
+                                        >
+                                            {c.label}
+                                        </a>
+                                    ) : (
+                                        <a
+                                            key={c}
+                                            href={`${deriveIndex(post)}${section.name}/${c.href}`}
+                                        >
+                                            {c.label}
+                                        </a>
+                                    ))}
+                            </Collapse>
                         </div>
                     </li>
                 ))}

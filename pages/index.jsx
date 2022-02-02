@@ -1,15 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import Collapse from "@kunukn/react-collapse";
-import cx from "classnames";
+import { useState } from "react";
+import { Collapse } from "react-collapse";
 import HomeMeta from "../components/index/HomeMeta";
 import StarBG from "../components/index/StarBG";
 import { Container01 } from "../components/index/Container";
 
 export default function Home() {
-    const [isOpen, setIsOpen] = React.useState(false);
-    const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
 
     return (
         <>
@@ -20,15 +21,15 @@ export default function Home() {
                     <div className="width-wrapper">
                         <Container01 />
                         <div className="home__nav">
-                            <button type="button" className={cx("expand-more", {
-                                "active": isOpen
-                            })} onClick={onToggle} aria-hidden="true">
+                            <button
+                                type="button"
+                                className={visible ? "expand-more active" : "expand-more"}
+                                onClick={handleClick}
+                            >
                                 more?
                             </button>
                         </div>
-                        <Collapse className={cx("container02", {
-                            "active": isOpen
-                        })} isOpen={isOpen} onChange={onChange}>
+                        <Collapse isOpened={visible}>
                             <div className="section02">
                                 i'm not so sure what to put
                                 here, but i can just be summed up

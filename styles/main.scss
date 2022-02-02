@@ -15,7 +15,6 @@ svg {
     justify-content: flex-end;
     padding: 4px 20px;
     background-color: #f6f8fa;
-    margin-top: 1.5em;
 
     &__links {
         display: flex;
@@ -34,4 +33,8 @@ svg {
             }
         }
     }
+}
+
+.ReactCollapse--collapse {
+    transition: height 0.5s;
 }

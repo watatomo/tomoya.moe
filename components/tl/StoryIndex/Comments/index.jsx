@@ -1,6 +1,5 @@
-import React from "react";
-import Collapse from "@kunukn/react-collapse";
-import cx from "classnames";
+import { useState } from "react";
+import { Collapse } from "react-collapse";
 import Markdown from "markdown-to-jsx";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,15 +7,19 @@ import Fn from "../../Footnotes";
 
 export function CommentVA({ post }) {
     const {commentVA, commentVAs} = post;
-    const [isOpen, setIsOpen] = React.useState(false);
-    const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => props;
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
 
     return (
         <div className="comments">
-            <div className={cx("collapsible-header", {
-                "active": isOpen
-            })} onClick={onToggle} aria-hidden="true">
+            <button
+                type="button"
+                className={visible ? "collapsible-header active" : "collapsible-header"}
+                onClick={handleClick}
+            >
                 { commentVAs ? (
                     <span>Voice Actors&apos; Comments</span>
                 ) : (
@@ -25,26 +28,26 @@ export function CommentVA({ post }) {
                 <span className="arrow">
                     <FontAwesomeIcon icon={faChevronDown}/>
                 </span>
-            </div>
-            <Collapse className={cx("collapsible-body", {
-                "active": isOpen
-            })} isOpen={isOpen} onChange={onChange}>
-                {commentVA.map((c) => (
-                    <div className="item" key={c}>
-                        <Markdown
-                            options={{
-                                forceInline: true,
-                                overrides: {
-                                    Fn: {
-                                        component: Fn
+            </button>
+            <Collapse isOpened={visible}>
+                <div className="collapsible-body">
+                    {commentVA.map((c) => (
+                        <div className="item" key={c}>
+                            <Markdown
+                                options={{
+                                    forceInline: true,
+                                    overrides: {
+                                        Fn: {
+                                            component: Fn
+                                        }
                                     }
-                                }
-                            }}>{c.comment}</Markdown>
-                        <div className="source">
-                            <Markdown>{c.source}</Markdown>
+                                }}>{c.comment}</Markdown>
+                            <div className="source">
+                                <Markdown>{c.source}</Markdown>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </Collapse>
         </div>
     );
@@ -52,39 +55,43 @@ export function CommentVA({ post }) {
 
 export function CommentWriter({ post }) {
     const {commentWriter} = post;
-    const [isOpen, setIsOpen] = React.useState(false);
-    const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => props;
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
 
     return (
         <div className="comments">
-            <div className={cx("collapsible-header", {
-                "active": isOpen
-            })} onClick={onToggle} aria-hidden="true">
+            <button
+                type="button"
+                className={visible ? "collapsible-header active" : "collapsible-header"}
+                onClick={handleClick}
+            >
                 <span>Writer&apos;s Comment</span>
                 <span className="arrow">
                     <FontAwesomeIcon icon={faChevronDown}/>
                 </span>
-            </div>
-            <Collapse className={cx("collapsible-body", {
-                "active": isOpen
-            })} isOpen={isOpen} onChange={onChange}>
-                {commentWriter.map((c) => (
-                    <div key={c}>
-                        <Markdown
-                            options={{
-                                forceInline: true,
-                                overrides: {
-                                    Fn: {
-                                        component: Fn
+            </button>
+            <Collapse isOpened={visible}>
+                <div className="collapsible-body">
+                    {commentWriter.map((c) => (
+                        <div key={c}>
+                            <Markdown
+                                options={{
+                                    forceInline: true,
+                                    overrides: {
+                                        Fn: {
+                                            component: Fn
+                                        }
                                     }
-                                }
-                            }}>{c.comment}</Markdown>
-                        <div className="source">
-                            <Markdown>{c.source}</Markdown>
+                                }}>{c.comment}</Markdown>
+                            <div className="source">
+                                <Markdown>{c.source}</Markdown>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </Collapse>
         </div>
     );
@@ -92,28 +99,32 @@ export function CommentWriter({ post }) {
 
 export function CommentTN({ post }) {
     const {commentTN} = post;
-    const [isOpen, setIsOpen] = React.useState(false);
-    const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => props;
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
 
     return (
         <div className="comments">
-            <div className={cx("collapsible-header", {
-                "active": isOpen
-            })} onClick={onToggle} aria-hidden="true">
+            <button
+                type="button"
+                className={visible ? "collapsible-header active" : "collapsible-header"}
+                onClick={handleClick}
+            >
                 <span>Translation Notes</span>
                 <span className="arrow">
                     <FontAwesomeIcon icon={faChevronDown}/>
                 </span>
-            </div>
-            <Collapse className={cx("collapsible-body", {
-                "active": isOpen
-            })} isOpen={isOpen} onChange={onChange}>
-                {commentTN.map((c) => (
-                    <div key={c}>
-                        <Markdown>{c.comment}</Markdown>
-                    </div>
-                ))}
+            </button>
+            <Collapse isOpened={visible}>
+                <div className="collapsible-body">
+                    {commentTN.map((c) => (
+                        <div key={c}>
+                            <Markdown>{c.comment}</Markdown>
+                        </div>
+                    ))}
+                </div>
             </Collapse>
         </div>
     );

@@ -1,5 +1,5 @@
 .index__wrapper .story-cards {
-    > .collapsible-body > .cards {
+    .collapsible-body > .cards {
         display: grid;
         grid-template-columns: repeat(5, minmax(auto, 1fr));
         gap: 0.4em 1.25em;

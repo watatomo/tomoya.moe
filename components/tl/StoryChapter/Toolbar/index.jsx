@@ -20,6 +20,14 @@ function deriveIndexURL({ slug, tl }) {
     return `/${tl}/${slugSegments.join("/")}`;
 }
 
+function deriveIndexURLMT({ slug, tl }) {
+    const slugSegments = slug.split("/");
+    slugSegments.pop();
+    slugSegments.pop();
+    slugSegments.pop();
+    return `/${tl}/${slugSegments.join("/")}`;
+}
+
 function Toolbar({ post }) {
     const tl = config.translationsPath || "tl";
     const isStandaloneChapter = !post.previous && !post.next && !post.miniTalk;
@@ -46,11 +54,19 @@ function Toolbar({ post }) {
                 </div> */}
 
                 {!isStandaloneChapter && (
-                    <div className="toolbar__section">
-                        <a href={deriveIndexURL({ slug: post.slug, tl })}>
-                            <FontAwesomeIcon icon={faStar} />
-                        </a>
-                    </div>
+                    post.miniTalk ? (
+                        <div className="toolbar__section">
+                            <a href={deriveIndexURLMT({ slug: post.slug, tl })}>
+                                <FontAwesomeIcon icon={faStar} />
+                            </a>
+                        </div>
+                    ) : (
+                        <div className="toolbar__section">
+                            <a href={deriveIndexURL({ slug: post.slug, tl })}>
+                                <FontAwesomeIcon icon={faStar} />
+                            </a>
+                        </div>
+                    )
                 )}
 
                 {/* <div className="toolbar__section">

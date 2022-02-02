@@ -14,7 +14,7 @@ import {
 } from "../../mashiro";
 import Toolbar from "./Toolbar";
 import Credits from "./Credits";
-import { MiniTalk, Option } from "./MiniTalk";
+import { MiniTalk } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
 // import Footer from "../../footer";
 
@@ -41,8 +41,7 @@ function StoryChapter({ post }) {
                                     Cw,
                                     Image,
                                     Credits,
-                                    MiniTalk,
-                                    Option
+                                    MiniTalk
                                 }}
                             />
                         </div>

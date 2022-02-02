@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Collapse from "@kunukn/react-collapse";
-import cx from "classnames";
+import { useState } from "react";
+import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,40 +12,44 @@ function actualSlug({ slug }) {
 
 function Gallery({ post }) {
     const {images} = post;
-    const [isOpen, setIsOpen] = React.useState(false);
-    const onToggle = () => setIsOpen(s => !s);
-    const onChange = props => console.log(props);
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        setVisible(!visible);
+    }
     
     return (
         <div className="gallery">
-            <div className={cx("collapsible-header", {
-                "active": isOpen
-            })} onClick={onToggle} aria-hidden="true">
+            <button
+                type="button"
+                className={visible ? "collapsible-header active" : "collapsible-header"}
+                onClick={handleClick}
+            >
                 <span>CG Gallery</span>
                 <span className="arrow">
                     <FontAwesomeIcon icon={faChevronDown}/>
                 </span>
-            </div>
-            <Collapse className={cx("collapsible-body", {
-                "active": isOpen
-            })} isOpen={isOpen} onChange={onChange}>
-                <div className="gallery__wrapper">
-                    {images.map((v) => (
-                        <div
-                            className="item"
-                            key={v}
-                        >
-                            <div className="image">
-                                <img
-                                    src={`/img/tl/${actualSlug(post)}/assets/${v.src}`}
-                                    alt={v.caption}
-                                />
+            </button>
+            <Collapse isOpened={visible}>
+                <div className="collapsible-body">
+                    <div className="gallery__wrapper">
+                        {images.map((v) => (
+                            <div
+                                className="item"
+                                key={v}
+                            >
+                                <div className="image">
+                                    <img
+                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src}`}
+                                        alt={v.caption}
+                                    />
+                                </div>
+                                <div className="caption">
+                                    {v.caption}
+                                </div>
                             </div>
-                            <div className="caption">
-                                {v.caption}
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </Collapse>
         </div>
