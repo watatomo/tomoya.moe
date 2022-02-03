@@ -1,8 +1,10 @@
 /* eslint-disable react/no-children-prop */
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { React, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import { Collapse } from "react-collapse";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Thought } from "../../../mashiro";
@@ -58,5 +60,19 @@ export function MiniTalkType({ r, name, part }) {
             <span mt={r} />
             {name} ({part})
         </h2>
+    );
+}
+
+export function Possibility({ children }) {
+    return (
+        <Tabs>
+            <TabList>
+                <Tab>Normal</Tab>
+                <Tab>Rare</Tab>
+            </TabList>
+            React.Children.forEach(children, function[(
+            <TabPanel>{children}</TabPanel>
+            )])
+        </Tabs>
     );
 }

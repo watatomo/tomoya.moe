@@ -1,5 +1,4 @@
 import Markdown from "markdown-to-jsx";
-// import ReactMarkdown  from "react-markdown";
 
 function Credits({ tl, tlc, qc }) {
     return (

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
+import "react-tabs/style/react-tabs.css";
 import Fn from "../Footnotes";
 import {
     Bubble,
@@ -14,7 +15,7 @@ import {
 } from "../../mashiro";
 import Toolbar from "./Toolbar";
 import Credits from "./Credits";
-import { MiniTalk, MiniTalkType } from "./MiniTalk";
+import { MiniTalk, MiniTalkType, Possibility } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
 // import Footer from "../../footer";
 
@@ -42,7 +43,8 @@ function StoryChapter({ post }) {
                                     Image,
                                     Credits,
                                     MiniTalk,
-                                    MiniTalkType
+                                    MiniTalkType,
+                                    Possibility
                                 }}
                             />
                         </div>
