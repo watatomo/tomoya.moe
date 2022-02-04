@@ -6,27 +6,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fn from "../../Footnotes";
 
 export function CommentVA({ post }) {
-    const {commentVA, commentVAs} = post;
+    const { commentVA, commentVAs } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <div className="comments">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
-                { commentVAs ? (
+                {commentVAs ? (
                     <span>Voice Actors&apos; Comments</span>
                 ) : (
                     <span>Voice Actor&apos;s Comment</span>
                 )}
                 <span className="arrow">
-                    <FontAwesomeIcon icon={faChevronDown}/>
+                    <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse isOpened={visible}>
@@ -41,7 +43,10 @@ export function CommentVA({ post }) {
                                             component: Fn
                                         }
                                     }
-                                }}>{c.comment}</Markdown>
+                                }}
+                            >
+                                {c.comment}
+                            </Markdown>
                             <div className="source">
                                 <Markdown>{c.source}</Markdown>
                             </div>
@@ -54,23 +59,25 @@ export function CommentVA({ post }) {
 }
 
 export function CommentWriter({ post }) {
-    const {commentWriter} = post;
+    const { commentWriter } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <div className="comments">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
                 <span>Writer&apos;s Comment</span>
                 <span className="arrow">
-                    <FontAwesomeIcon icon={faChevronDown}/>
+                    <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse isOpened={visible}>
@@ -85,7 +92,10 @@ export function CommentWriter({ post }) {
                                             component: Fn
                                         }
                                     }
-                                }}>{c.comment}</Markdown>
+                                }}
+                            >
+                                {c.comment}
+                            </Markdown>
                             <div className="source">
                                 <Markdown>{c.source}</Markdown>
                             </div>
@@ -98,23 +108,25 @@ export function CommentWriter({ post }) {
 }
 
 export function CommentTN({ post }) {
-    const {commentTN} = post;
+    const { commentTN } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <div className="comments">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
                 <span>Translation Notes</span>
                 <span className="arrow">
-                    <FontAwesomeIcon icon={faChevronDown}/>
+                    <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse isOpened={visible}>

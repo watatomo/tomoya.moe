@@ -11,7 +11,7 @@
         position: relative;
         display: inline-block;
         filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
-    
+
         img {
             display: block;
             max-width: 100%;
@@ -30,17 +30,17 @@
             cursor: zoom-in;
         }
     }
-        
+
     .image {
         position: relative;
-        
+
         .single {
             &.unbloomed {
                 z-index: 2;
                 transform: scale(1);
                 filter: brightness(100%);
             }
-        
+
             &.bloomed {
                 z-index: 1;
                 top: 0;
@@ -52,7 +52,7 @@
                 height: 100%;
             }
         }
-        
+
         &:hover {
             .single {
                 &.bloomed {
@@ -60,14 +60,13 @@
                     transform: translateX(0%) scale(1) rotate(0deg);
                     filter: brightness(100%);
                 }
-    
+
                 &.unbloomed {
                     z-index: 1;
                     transform: translateX(-5%) scale(0.95) rotate(-2deg);
                     filter: brightness(70%);
                 }
             }
-
         }
     }
 }

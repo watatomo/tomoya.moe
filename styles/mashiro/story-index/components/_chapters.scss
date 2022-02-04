@@ -28,9 +28,12 @@
                 padding: 5px;
                 text-align: center;
                 transition: all 0.2s ease;
-    
+
                 &:hover {
-                    background-color: rgba(var(--storyColor-rgb, #e6e6e6), 0.25);;
+                    background-color: rgba(
+                        var(--storyColor-rgb, #e6e6e6),
+                        0.25
+                    );
                 }
             }
 
@@ -42,7 +45,7 @@
 
             #none {
                 background: #f0f1f2;
-            
+
                 &:hover {
                     background: #e6e6e6;
                 }
@@ -70,7 +73,7 @@
         ul {
             gap: 0.35em;
         }
-        
+
         > span {
             margin-top: 0.8em;
             font-weight: 700;
@@ -86,7 +89,7 @@
             cursor: pointer;
 
             .arrow {
-                font-size: .75em;
+                font-size: 0.75em;
                 transition: 0.5s all ease;
             }
 

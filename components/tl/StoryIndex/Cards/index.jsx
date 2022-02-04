@@ -11,41 +11,46 @@ function actualSlug({ slug }) {
 }
 
 export function Cards1({ post }) {
-    const {cards} = post;
+    const { cards } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <div className="story-cards">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
                 <span>Associated Cards</span>
-                <span className="arrow"><FontAwesomeIcon icon={faChevronDown}/></span>
+                <span className="arrow">
+                    <FontAwesomeIcon icon={faChevronDown} />
+                </span>
             </button>
             <Collapse isOpened={visible}>
                 <div className="collapsible-body">
                     <div className="cards">
                         {cards.map((v) => (
-                            <div
-                                className="item"
-                                key={v}
-                            >
+                            <div className="item" key={v}>
                                 <div className="image">
                                     <div className="single unbloomed">
                                         <img
-                                            src={`/img/tl/${actualSlug(post)}/assets/${v.src1}`}
+                                            src={`/img/tl/${actualSlug(
+                                                post
+                                            )}/assets/${v.src1}`}
                                             alt={v.name}
                                         />
                                     </div>
                                     <div className="single bloomed">
                                         <img
-                                            src={`/img/tl/${actualSlug(post)}/assets/${v.src2}`}
+                                            src={`/img/tl/${actualSlug(
+                                                post
+                                            )}/assets/${v.src2}`}
                                             alt={v.name}
                                         />
                                     </div>
@@ -84,41 +89,46 @@ export function Cards1({ post }) {
 }
 
 export function Cards2({ post }) {
-    const {cards} = post;
+    const { cards } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <div className="story-cards">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
                 <span>Associated Cards</span>
-                <span className="arrow"><FontAwesomeIcon icon={faChevronDown}/></span>
+                <span className="arrow">
+                    <FontAwesomeIcon icon={faChevronDown} />
+                </span>
             </button>
             <Collapse isOpened={visible}>
                 <div className="collapsible-body">
                     <div className="cards">
                         {cards.map((v) => (
-                            <div
-                                className="item"
-                                key={v}
-                            >
+                            <div className="item" key={v}>
                                 <div className="image">
                                     <div className="single unbloomed">
                                         <img
-                                            src={`/img/tl/${actualSlug(post)}/assets/${v.src1}`}
+                                            src={`/img/tl/${actualSlug(
+                                                post
+                                            )}/assets/${v.src1}`}
                                             alt={v.name}
                                         />
                                     </div>
                                     <div className="single bloomed">
                                         <img
-                                            src={`/img/tl/${actualSlug(post)}/assets/${v.src2}`}
+                                            src={`/img/tl/${actualSlug(
+                                                post
+                                            )}/assets/${v.src2}`}
                                             alt={v.name}
                                         />
                                     </div>

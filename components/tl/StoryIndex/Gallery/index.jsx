@@ -11,42 +11,41 @@ function actualSlug({ slug }) {
 }
 
 function Gallery({ post }) {
-    const {images} = post;
+    const { images } = post;
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(!visible);
-    }
-    
+    };
+
     return (
         <div className="gallery">
             <button
                 type="button"
-                className={visible ? "collapsible-header active" : "collapsible-header"}
+                className={
+                    visible ? "collapsible-header active" : "collapsible-header"
+                }
                 onClick={handleClick}
             >
                 <span>CG Gallery</span>
                 <span className="arrow">
-                    <FontAwesomeIcon icon={faChevronDown}/>
+                    <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse isOpened={visible}>
                 <div className="collapsible-body">
                     <div className="gallery__wrapper">
                         {images.map((v) => (
-                            <div
-                                className="item"
-                                key={v}
-                            >
+                            <div className="item" key={v}>
                                 <div className="image">
                                     <img
-                                        src={`/img/tl/${actualSlug(post)}/assets/${v.src}`}
+                                        src={`/img/tl/${actualSlug(
+                                            post
+                                        )}/assets/${v.src}`}
                                         alt={v.caption}
                                     />
                                 </div>
-                                <div className="caption">
-                                    {v.caption}
-                                </div>
+                                <div className="caption">{v.caption}</div>
                             </div>
                         ))}
                     </div>

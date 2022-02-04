@@ -27,8 +27,7 @@ export function Container01() {
                     </span>
                     <hr />
                     <h1>
-                        <span className="highlight">ren.</span>{" "}
-                        18.
+                        <span className="highlight">ren.</span> 18.
                     </h1>
                     <h2>se asian. he/him.</h2>
                     <div className="home__links">
@@ -39,9 +38,7 @@ export function Container01() {
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                         <a href="mailto:ren@tomoya.moe">
-                            <FontAwesomeIcon
-                                icon={faEnvelope}
-                            />
+                            <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </div>
                 </div>

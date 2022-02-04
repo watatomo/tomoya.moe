@@ -22,16 +22,16 @@ characters:
     - Jin
 translator:
     - name: Ren
-      href: "https://tomoya.moe" 
+      href: "https://tomoya.moe"
 proofreader:
-    - TBA
+    - name: TBA
 extra:
     - label: "Event"
       value: "Showdown! The Great Phantom Thief vs. the Detective Brigade"
     - label: "Event Duration"
       value: "12/31/2015 (15:00 JST) - 1/10/2016 (22:00 JST)"
     - label: "Associated Song"
-      value: "Knights the Phantom Thief"  
+      value: "Knights the Phantom Thief"
 images:
     - src: "still_468_normal.webp"
       caption: "Case Discovery (3)"
@@ -126,64 +126,87 @@ chapterSections:
     - chapters:
           - label: Prologue
             href: 1
+            none: true
     - chapters:
           - name: Case Discovery
           - label: 1
             href: 2
+            none: true
           - label: 2
             href: 3
+            none: true
           - label: 3
             href: 4
+            none: true
           - label: 4
-            href: 5 
+            href: 5
+            none: true
           - label: 5
             href: 6
+            none: true
           - label: 6
             href: 7
+            none: true
     - chapters:
           - name: Investigation Start
-          - label: 1 
+          - label: 1
             href: 8
+            none: true
           - label: 2
             href: 9
+            none: true
           - label: 3
             href: 10
-          - label: 4 
+            none: true
+          - label: 4
             href: 11
+            none: true
     - chapters:
           - name: Criminal Pursuit
-          - label: 1 
+          - label: 1
             href: 12
+            none: true
           - label: 2
             href: 13
+            none: true
           - label: 3
             href: 14
-          - label: 4 
+            none: true
+          - label: 4
             href: 15
+            none: true
     - chapters:
           - name: Revelations
-          - label: 1 
+          - label: 1
             href: 16
+            none: true
           - label: 2
             href: 17
+            none: true
           - label: 3
             href: 18
-          - label: 4 
+            none: true
+          - label: 4
             href: 19
+            none: true
     - chapters:
           - name: Epilogue
-          - label: 1 
+          - label: 1
             href: 20
+            none: true
           - label: 2
             href: 21
+            none: true
           - label: 3
             href: 22
-          - label: 4 
+            none: true
+          - label: 4
             href: 23
-            
+            none: true
+
 miniTalkSections:
     - name: mitsuru
-      label: Mitsuru Tenma 
+      label: Mitsuru Tenma
       miniTalks:
           - label: 1
             href: 1
@@ -192,7 +215,7 @@ miniTalkSections:
             href: 2
             none: true
     - name: arashi
-      label: Arashi Narukami 
+      label: Arashi Narukami
       miniTalks:
           - label: 1
             href: 1
@@ -201,7 +224,7 @@ miniTalkSections:
             href: 2
             none: true
     - name: tomoya
-      label: Tomoya Mashiro 
+      label: Tomoya Mashiro
       miniTalks:
           - label: 1
             href: 1
@@ -210,7 +233,7 @@ miniTalkSections:
             href: 2
             none: true
     - name: wataru
-      label: Wataru Hibiki 
+      label: Wataru Hibiki
       miniTalks:
           - label: 1
             href: 1
@@ -229,6 +252,6 @@ commentVA:
       source: "[Shunya Hiruma [@shun_shuuuun]. December 29, 2015.](https://twitter.com/shun_shuuuun/status/681750131503333376)"
 commentWriter:
     - comment: >
-        I'm the writer for Phantom Thieves vs. Detectives. Just like Tomoya, I got sick and collapsed while writing this. I apologize for the inconvenience to those involved. (Starting 2016 with an apology)
+          I'm the writer for Phantom Thieves vs. Detectives. Just like Tomoya, I got sick and collapsed while writing this. I apologize for the inconvenience to those involved. (Starting 2016 with an apology)
       source: "[Akira [@HiHiHiakira]. Janurary 8, 2016.](https://twitter.com/HiHiHiakira/status/685411156337377280)"
 ---

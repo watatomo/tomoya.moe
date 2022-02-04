@@ -8,10 +8,10 @@ function Banner({ post }) {
     return (
         <div
             className="banner"
-            style={{ 
+            style={{
                 backgroundImage: `
                     url(/img/tl/${actualSlug(post)}/assets/${post.banner})
-                ` 
+                `
             }}
         />
     );

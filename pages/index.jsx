@@ -10,7 +10,7 @@ export default function Home() {
 
     const handleClick = () => {
         setVisible(!visible);
-    }
+    };
 
     return (
         <>
@@ -23,7 +23,11 @@ export default function Home() {
                         <div className="home__nav">
                             <button
                                 type="button"
-                                className={visible ? "expand-more active" : "expand-more"}
+                                className={
+                                    visible
+                                        ? "expand-more active"
+                                        : "expand-more"
+                                }
                                 onClick={handleClick}
                             >
                                 more?
@@ -31,12 +35,14 @@ export default function Home() {
                         </div>
                         <Collapse isOpened={visible}>
                             <div className="section02">
-                                i'm not so sure what to put
-                                here, but i can just be summed up
-                                as just Some Guy.
-                                tomowata runs in my blood and soul<p/>
+                                i'm not so sure what to put here, but i can just
+                                be summed up as just Some Guy. tomowata runs in
+                                my blood and soul
+                                <p />
                                 drama clubP. riamuP. drastarsP. shinonome fan.
-                                <br/>semi-casual priconne (global) player<p/>
+                                <br />
+                                semi-casual priconne (global) player
+                                <p />
                                 this page is still a wip bc i have no ideas
                             </div>
                         </Collapse>

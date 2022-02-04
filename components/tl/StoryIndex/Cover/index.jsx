@@ -9,9 +9,9 @@ function Cover({ post }) {
     return (
         <div className="cover">
             <div>
-                <img 
+                <img
                     src={`/img/tl/${actualSlug(post)}/assets/${post.cover}`}
-                    alt="Story cover" 
+                    alt="Story cover"
                 />
             </div>
         </div>

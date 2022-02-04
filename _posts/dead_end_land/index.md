@@ -104,15 +104,15 @@ chapterSections:
           - label: 1
             href: 8
           - label: 2
-            href: 9 
+            href: 9
 
 commentWriter:
-    - comment: > 
-        I'm the guy who wrote *Dead End Land~* While researching to decide on a chapter name, I came across the [idiom "生死妄念."](https://yoji.jitenon.jp/yojil/5571.html) It means "to be lost<Fn num="1">"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</Fn> in your destructive thoughts forever, even when you reincarnate," which suits Mayoi perfectly! He's literally the personification of it! (he's not)
+    - comment: >
+          I'm the guy who wrote _Dead End Land~_ While researching to decide on a chapter name, I came across the [idiom "生死妄念."](https://yoji.jitenon.jp/yojil/5571.html) It means "to be lost<Fn num="1">"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</Fn> in your destructive thoughts forever, even when you reincarnate," which suits Mayoi perfectly! He's literally the personification of it! (he's not)
       source: "[Seitaro Kino [@kinosei]. August 11, 2020.](https://twitter.com/kinosei/status/1292826101463490560)"
 commentTN:
     - comment: >
-        <ol><li>"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</li></ol>
+          <ol><li>"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</li></ol>
 
 storyColor: "#703f82"
 storyColorRGB: "112,63,130"

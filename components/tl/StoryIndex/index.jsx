@@ -26,35 +26,33 @@ function StoryIndex({ post }) {
                             <div className="info__wrapper">
                                 <div className="synopsis">
                                     <Markdown>{post.description}</Markdown>
-                                    { post.descSource ? (
+                                    {post.descSource ? (
                                         <a href={post.descSource}> ➹</a>
-                                    ) : null }
+                                    ) : null}
                                 </div>
                                 <InfoBox post={post} />
-                                { post.extra ? (
-                                    <ExtraInfo post={post} />
-                                ) : null }
-                                { post.commentWriter ? (
+                                {post.extra ? <ExtraInfo post={post} /> : null}
+                                {post.commentWriter ? (
                                     <CommentWriter post={post} />
-                                ) : null }
-                                { post.commentVA ? (
+                                ) : null}
+                                {post.commentVA ? (
                                     <CommentVA post={post} />
-                                ) : null }
-                                { post.commentTN ? (
+                                ) : null}
+                                {post.commentTN ? (
                                     <CommentTN post={post} />
-                                ) : null }
-                                { post.images ? (
-                                    <Gallery post={post} />
-                                ) : null }
-                                { post.newEra ? (
+                                ) : null}
+                                {post.images ? <Gallery post={post} /> : null}
+                                {post.newEra ? (
                                     <Cards2 post={post} />
-                                ) : ( <Cards1 post={post} /> )}
+                                ) : (
+                                    <Cards1 post={post} />
+                                )}
                             </div>
                             <div className="chapters__wrapper">
-                                <Chapters post={post} /> 
-                                { post.miniTalkSections ? (
+                                <Chapters post={post} />
+                                {post.miniTalkSections ? (
                                     <MiniTalks post={post} />
-                                ) : null }
+                                ) : null}
                             </div>
                         </div>
                     </div>

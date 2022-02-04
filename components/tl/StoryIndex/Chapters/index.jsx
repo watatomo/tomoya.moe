@@ -7,7 +7,7 @@ function deriveIndex({ slug }) {
 
 function Chapters({ post }) {
     const { chapterSections } = post;
-    
+
     return (
         <div className="chapters">
             <ul>
@@ -15,14 +15,14 @@ function Chapters({ post }) {
                     <li key={JSON.stringify(section)}>
                         {section.chapters.map((c) =>
                             c.href ? (
-                                c.none ? ( 
-                                    <a 
+                                c.none ? (
+                                    <a
                                         key={c}
                                         id="none"
                                         href={`${deriveIndex(post)}${c.href}`}
                                     >
                                         {c.label}
-                                    </a> 
+                                    </a>
                                 ) : (
                                     <a
                                         key={c}

@@ -21,26 +21,45 @@ function ChapterMeta({ post }) {
             <meta name="title" content={post.title} />
             <meta name="description" content={post.description} />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content={`${SITE_URL}tl/${actualSlug(post)}`} />
+            <meta
+                property="og:url"
+                content={`${SITE_URL}tl/${actualSlug(post)}`}
+            />
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.description} />
             {post.previewImg ? (
-                <meta property="og:image" content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${post.previewImg}`} />
-            ) : 
-                <meta property="og:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
-            }
+                <meta
+                    property="og:image"
+                    content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${
+                        post.previewImg
+                    }`}
+                />
+            ) : (
+                <meta
+                    property="og:image"
+                    content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`}
+                />
+            )}
             <meta property="twitter:card" content="summary" />
-            <meta property="twitter:url" content={`${SITE_URL}tl/${actualSlug(post)}`} />
-            <meta property="twitter:title" content={post.title} />
             <meta
-                property="twitter:description"
-                content={post.description}
+                property="twitter:url"
+                content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
+            <meta property="twitter:title" content={post.title} />
+            <meta property="twitter:description" content={post.description} />
             {post.previewImg ? (
-                <meta property="twitter:image" content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${post.previewImg}`} />
-            ) : 
-                <meta property="twitter:image" content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`} />
-            }
+                <meta
+                    property="twitter:image"
+                    content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${
+                        post.previewImg
+                    }`}
+                />
+            ) : (
+                <meta
+                    property="twitter:image"
+                    content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`}
+                />
+            )}
             <meta property="twitter:creator" content={TWITTER_UN} />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link

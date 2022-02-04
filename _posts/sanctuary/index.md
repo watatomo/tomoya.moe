@@ -228,8 +228,8 @@ chapterSections:
           - label: 19
             href: 32
             none: true
-    - chapters: 
-          - name: Epilogue 
+    - chapters:
+          - name: Epilogue
           - label: 1
             href: 33
             none: true
@@ -256,7 +256,7 @@ miniTalkSections:
           - label: 2
             href: 2
     - name: tomoya
-      label: Tomoya Mashiro 
+      label: Tomoya Mashiro
       miniTalks:
           - label: 1
             href: 1
@@ -264,7 +264,7 @@ miniTalkSections:
           - label: 2
             href: 2
     - name: tori
-      label: Tori Himemiya 
+      label: Tori Himemiya
       miniTalks:
           - label: 1
             href: 1
@@ -273,7 +273,7 @@ miniTalkSections:
             href: 2
             none: true
     - name: nazuna
-      label: Nazuna Nito 
+      label: Nazuna Nito
       miniTalks:
           - label: 1
             href: 1

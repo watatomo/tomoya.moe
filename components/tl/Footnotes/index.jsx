@@ -104,7 +104,9 @@ function Fn({ num, children }) {
                 ]
             }} */
         >
-            <span className="tooltip" id={`fnref:${num}`}>{num}</span>
+            <span className="tooltip" id={`fnref:${num}`}>
+                {num}
+            </span>
         </Tippy>
         // </StyledWrapper>
     );

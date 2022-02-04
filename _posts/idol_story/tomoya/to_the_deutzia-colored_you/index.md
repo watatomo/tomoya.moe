@@ -19,12 +19,12 @@ characters:
     - Wataru
 translator:
     - name: Peace
-      href: "https://twitter.com/yoroshikilled" 
+      href: "https://twitter.com/yoroshikilled"
     - name: Ren
-      href: "https://tomoya.moe" 
+      href: "https://tomoya.moe"
 proofreader:
     - name: haranami
-      href: "https://twitter.com/haranami_" 
+      href: "https://twitter.com/haranami_"
 extra:
     - label: "Gacha"
       value: "Feature Scout: Tomoya Edition"
@@ -45,7 +45,7 @@ cards:
       supportName: "My Own Fashion Show"
       supportDesc: "Increases the drop rate of all Blue Pieces by 1.5."
 chapterSections:
-      - chapters:
+    - chapters:
           - label: 1
             href: 1
           - label: 2
@@ -57,5 +57,5 @@ storyColorS: "63.8%"
 storyColorL: "56.7%"
 commentTN:
     - comment: >
-        <ul><li>卯の花 (unohana) is a pseudonym for <a href="https://en.wikipedia.org/wiki/Deutzia_crenata"><em>Deutzia crenata</em></a>, a white flowering shrub native to (and common in) Japan. The "卯" in the name refers to the fourth Chinese zodiac, the rabbit, due to the flowers blooming in April. Its other name, ウツギ/空木 (utsugi), comes from its hollow stems. 空木 means "empty shrub" literally.</li><li><a href="https://irocore.com/unohana-iro/">卯の花色</a> (unohana-iro) is yellow-tinted white color <span style="color:#fbfbf6;background:#333;padding:0 2px">★ (#FBFBF6)</span>. <a href="https://kotobank.jp/word/%E5%8D%AF%E3%81%AE%E8%8A%B1%E8%89%B2-192659">Kotobank</a> and the <a href="https://www.colordic.org/colorsample/2310">Color Dictionary</a> lists it as a blue-tinted white color <span style="color:#f7fcfe;background:#333;padding:0 2px">★ (#F7FCFE)</span>.</li><li>Tomoya's last name, Mashiro (真白), means <em>pure white</em> or <em>blank.</em> This will play a role in the second chapter.</li><li>The title of the appears to be from Wataru to Tomoya. This will be noted in the second chapter.</li></ul> 
+          <ul><li>卯の花 (unohana) is a pseudonym for <a href="https://en.wikipedia.org/wiki/Deutzia_crenata"><em>Deutzia crenata</em></a>, a white flowering shrub native to (and common in) Japan. The "卯" in the name refers to the fourth Chinese zodiac, the rabbit, due to the flowers blooming in April. Its other name, ウツギ/空木 (utsugi), comes from its hollow stems. 空木 means "empty shrub" literally.</li><li><a href="https://irocore.com/unohana-iro/">卯の花色</a> (unohana-iro) is yellow-tinted white color <span style="color:#fbfbf6;background:#333;padding:0 2px">★ (#FBFBF6)</span>. <a href="https://kotobank.jp/word/%E5%8D%AF%E3%81%AE%E8%8A%B1%E8%89%B2-192659">Kotobank</a> and the <a href="https://www.colordic.org/colorsample/2310">Color Dictionary</a> lists it as a blue-tinted white color <span style="color:#f7fcfe;background:#333;padding:0 2px">★ (#F7FCFE)</span>.</li><li>Tomoya's last name, Mashiro (真白), means <em>pure white</em> or <em>blank.</em> This will play a role in the second chapter.</li><li>The title of the appears to be from Wataru to Tomoya. This will be noted in the second chapter.</li></ul>
 ---

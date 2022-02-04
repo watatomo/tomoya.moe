@@ -53,8 +53,8 @@ function Toolbar({ post }) {
                     <FontAwesomeIcon icon={faFillDrip} />
                 </div> */}
 
-                {!isStandaloneChapter && (
-                    post.miniTalk ? (
+                {!isStandaloneChapter &&
+                    (post.miniTalk ? (
                         <div className="toolbar__section">
                             <a href={deriveIndexURLMT({ slug: post.slug, tl })}>
                                 <FontAwesomeIcon icon={faStar} />
@@ -66,8 +66,7 @@ function Toolbar({ post }) {
                                 <FontAwesomeIcon icon={faStar} />
                             </a>
                         </div>
-                    )
-                )}
+                    ))}
 
                 {/* <div className="toolbar__section">
                     <TextSize />
