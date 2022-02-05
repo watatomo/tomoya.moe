@@ -55,7 +55,7 @@ I don't need _you_ telling me that. For one, I'm not trying to be a human jack-i
 
 <Bubble character="Wataru">
 
-Who are you calling a "human jack-in-the-box"...? What a perfectly fitting name! _Amazing☆_
+Who are you calling a "human jack-in-the-box"...? What a perfectly fitting name! <span className="hold">_Amazing☆_</span>
 
 Hehehe. Now then, what would you like to discuss with me?
 

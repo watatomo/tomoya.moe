@@ -13,7 +13,7 @@ description: "Subaru: How d'you take doves on walks, though? Do you just put 'em
 
 Daikichi, Leon, lookie here\~☆
 
-Ta-da! It's a frisbee! Whoever gets it first wins the game! ☆
+Ta-da! It's a frisbee! Whoever gets it first wins the <span className="hold">game! ☆</span>
 
 Allllright☆ Ready and... Fetch!
 
@@ -27,7 +27,7 @@ Don't you lose, Leon. You've gotta show everyone that you're better than these c
 
 <Bubble character="Tomoya">
 
-Do your best, Daikichi. If you get first place, you'll get this gourmet beef jerky♪
+Do your best, Daikichi. If you get first place, you'll get this gourmet beef <span className="hold">jerky♪</span>
 
 </Bubble>
 
@@ -99,13 +99,13 @@ A dog, obviously. I get if ya dunno what _breed_ to get, though.
 
 <Bubble character="Subaru">
 
-Yup! Dogs are great\~ They're obedient; and they'll keep you in great shape too 'cause you'll need to walk 'em every day☆
+Yup! Dogs are great\~ They're obedient; and they'll keep you in great shape too 'cause you'll need to walk 'em every <span className="hold">day☆</span>
 
 </Bubble>
 
 <Bubble character="Nazuna">
 
-Rabbits are just as great! They're easy to take care of—and more importantly, they're super cute! ♪
+Rabbits are just as great! They're easy to take care of—and more importantly, they're super <span className="hold">cute! ♪</span>
 
 If you're a beginner, maybe a pet you can keep indoors—like a hamster—would be good. I heard hedgehogs are easy to take care of too.
 
@@ -191,7 +191,7 @@ By the way, Tomoya-kun. Do you have any recollection of that dove you're holding
 
 <Bubble character="Tomoya">
 
-"Recollection"... Ah, is this Jeanne d'Arc?<Fn num="1">A reference to Tomoya's Idol Story from ! era, _[Cinderella Burning at the Stake's Stage](/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage)._ Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.</Fn>
+"Recollection"... Ah, is this Jeanne <span className="hold">d'Arc?<Fn num="1">A reference to Tomoya's Idol Story from ! era, _[Cinderella Burning at the Stake's Stage](/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage)._ Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.</Fn></span>
 
 </Bubble>
 

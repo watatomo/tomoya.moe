@@ -1,6 +1,7 @@
 ---
 title: "Sanctuary"
-description: "Ra*bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
+description: "Ra<span className='noCase'>*</span>bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
+descPlain: "Ra*bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
 descSource: "https://twitter.com/ensemble_stars/status/1436932590632677442"
 story: "sanctuary"
 newEra: true

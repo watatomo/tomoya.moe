@@ -1,7 +1,8 @@
 ---
 title: "Phantom Thieves vs. Detectives"
 titleJp: "怪盗VS探偵団"
-description: "Knights and Ra*bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!"
+description: "Knights and Ra<span className='noCase'>*</span>bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!"
+descPlain: "Knights and Ra*bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!"
 descSource: "https://twitter.com/ensemble_stars/status/681716281414815744"
 story: "phantom_thieves_vs_detectives"
 banner: "still_469_normal.webp"

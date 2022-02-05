@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.4;
+    font-feature-settings: "calt", "case", "frac", "ss03";
 }
 
 svg {
@@ -37,4 +38,14 @@ svg {
 
 .ReactCollapse--collapse {
     transition: height 0.5s;
+}
+
+.noCalt {
+    font-variant-ligatures: no-contextual;
+    font-feature-settings: "calt" 0;
+}
+
+.noCase {
+    font-variant-ligatures: no-contextual;
+    font-feature-settings: "case" 0;
 }

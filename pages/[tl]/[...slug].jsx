@@ -37,6 +37,7 @@ const PostFieldsForPostType = {
         "story",
         "actualStory",
         "description",
+        "descPlain",
         "descSource",
         "banner",
         "titleJp",
