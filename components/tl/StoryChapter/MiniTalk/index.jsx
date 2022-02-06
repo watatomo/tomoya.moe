@@ -7,7 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Thought } from "../../../mashiro";
+import { Bubble, Thought } from "../../../mashiro";
 import Fn from "../../Footnotes";
 
 export function MiniTalk({ speaker, response, children }) {
@@ -63,16 +63,19 @@ export function MiniTalkType({ r, name, part }) {
     );
 }
 
-export function Possibility({ children }) {
+export function Possibility({ normal, rare, character }) {
     return (
         <Tabs>
             <TabList>
                 <Tab>Normal</Tab>
                 <Tab>Rare</Tab>
             </TabList>
-            React.Children.forEach(children, function[(
-            <TabPanel>{children}</TabPanel>
-            )])
+            <TabPanel>
+                <Bubble character={character} children={normal} />
+            </TabPanel>
+            <TabPanel>
+                <Bubble character={character} children={rare} />
+            </TabPanel>
         </Tabs>
     );
 }
