@@ -115,10 +115,6 @@
         &-body {
             padding: 0.7em 0.45em 0;
             transition: height 400ms ease-in-out, padding 400ms ease-in-out;
-
-            &.active {
-                padding: 0.7em 0.45em 0;
-            }
         }
     }
 
@@ -158,6 +154,7 @@
         }
 
         .source {
+            margin-top: 5px;
             font-size: 0.9em;
             text-align: right;
         }

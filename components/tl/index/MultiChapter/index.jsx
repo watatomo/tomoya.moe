@@ -14,16 +14,14 @@ function MultiChapter() {
                         />
                     </div>
                     <div className="data">
-                        <div>
-                            <div className="header">
-                                <h2 className="title">{s.title}</h2>
-                                <h3 className="stats">
-                                    {s.writer} • {s.chapters} Chapters
-                                </h3>
-                            </div>
-                            <div className="body">
-                                <Markdown>{s.description}</Markdown>
-                            </div>
+                        <div className="header">
+                            <h2 className="title">{s.title}</h2>
+                            <h3 className="stats">
+                                {s.writer} • {s.chapters} Chapters
+                            </h3>
+                        </div>
+                        <div className="body">
+                            <Markdown>{s.description}</Markdown>
                         </div>
                     </div>
                 </div>
