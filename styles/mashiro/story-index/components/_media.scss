@@ -1,6 +1,6 @@
 @media only screen and (max-width: 812px) {
     .index__wrapper {
-        font-size: 12px;
+        font-size: 14px;
 
         .banner {
             height: 125px;
@@ -10,7 +10,7 @@
             grid-template-columns: auto [col-start] 1fr [last];
             grid-template-rows: auto;
             margin: -50px 0 0;
-            padding: 5.2em 1.25em 1.5em;
+            padding: 4.35em 1.25em 1.5em;
             grid-gap: 1em;
 
             .cover {
