@@ -63,19 +63,15 @@ export function MiniTalkType({ r, name, part }) {
     );
 }
 
-export function Possibility({ normal, rare, character }) {
+export function Possibility({ normal, rare }) {
     return (
         <Tabs>
             <TabList>
                 <Tab>Normal</Tab>
                 <Tab>Rare</Tab>
             </TabList>
-            <TabPanel>
-                <Bubble character={character}>{normal}</Bubble>
-            </TabPanel>
-            <TabPanel>
-                <Bubble character={character}>{rare}</Bubble>
-            </TabPanel>
+            <TabPanel>{normal}</TabPanel>
+            <TabPanel>{rare}</TabPanel>
         </Tabs>
     );
 }
