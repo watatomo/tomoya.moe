@@ -20,7 +20,7 @@
         "date-fns": "2.16.1",
         "gray-matter": "4.0.2",
         "markdown-to-jsx": "^7.1.6",
-        "next": "^12.0.9",
+        "next": "^12.0.11-canary.7",
         "next-mdx-remote": "^3.0.8",
         "normalize.css": "^8.0.1",
         "react": "^17.0.2",

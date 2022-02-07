@@ -1,8 +1,11 @@
-$chapter-bg-color: #f0f5f9;
+$chapter-bg-color: #e0eefa;
 $chapter-inner-bg-color: #fff;
 $chapter-link-color: rgb(238 220 179 / 75%);
 $chapter-arrow-color: #6e85b2;
 $credits-bg-color: #f0f1f2;
+$accent-color: #126ebe;
+$text-color: var(--msr-text-color);
+// ^^ change these names to anything you want
 
 .chapter__wrapper {
     display: flex;
@@ -61,7 +64,8 @@ $credits-bg-color: #f0f1f2;
     .mashiro__wrapper {
         background-color: $chapter-inner-bg-color;
         width: 52rem;
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+        max-width: 75ch;
+        // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
     }
 
     .mashiro {
@@ -192,13 +196,15 @@ $credits-bg-color: #f0f1f2;
     }
 
     .tl-container {
-        padding: 3rem 5rem 5rem;
+        // padding: 3rem 5rem 5rem;
+        margin: 2em 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
         justify-content: center;
         gap: 2em;
+        max-width: 1000px;
 
         .multi-container {
             display: grid;
@@ -207,14 +213,22 @@ $credits-bg-color: #f0f1f2;
             grid-gap: 1.25em;
 
             .item {
+                text-decoration: none;
+                color: $text-color;
                 display: inline-grid;
                 grid-template-columns: 175px auto;
                 overflow: hidden;
                 position: relative;
                 background-color: #fff;
-                border-radius: 5px;
+                border-radius: 0.6em;
                 height: 250px;
-                box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
+                // box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
+                box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
+                transition: 0.2s ease;
+
+                &:hover {
+                    transform: scale(1.01);
+                }
 
                 .cover {
                     img {
@@ -226,7 +240,7 @@ $credits-bg-color: #f0f1f2;
 
                 .data {
                     max-height: 100%;
-                    padding: 1em;
+                    padding: 1.5em;
                     display: flex;
                     flex-direction: column;
                     gap: 0.5em;
@@ -247,11 +261,16 @@ $credits-bg-color: #f0f1f2;
                         h2.title {
                             font-size: 1.2em;
                             font-weight: 700;
+                            color: $accent-color;
                         }
 
                         h3.stats {
                             font-size: 0.8em;
-                            font-weight: 500;
+                            font-weight: 700;
+                            align-self: start;
+                            padding: 0.25em 0.6em;
+                            border-radius: 0.3em;
+                            background: rgba(0, 0, 0, 0.06);
                         }
                     }
 
@@ -271,9 +290,10 @@ $credits-bg-color: #f0f1f2;
 
             .item {
                 position: relative;
-                border-radius: 5px;
+                border-radius: 0.6em;
                 overflow: hidden;
-                box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
+                // box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
+                box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
 
                 &:hover {
                     img {

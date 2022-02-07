@@ -18,15 +18,16 @@ import Credits from "./Credits";
 import { MiniTalk, MiniTalkType, Possibility } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
 // import Footer from "../../footer";
+import Header from "../../header";
 
 function StoryChapter({ post }) {
     return (
         <>
+            <Header toolbar={<Toolbar post={post} />} />
             <article>
                 <ChapterMeta post={post} />
                 <div className="chapter__wrapper">
                     <div className="mashiro__wrapper">
-                        <Toolbar post={post} />
                         <div className="mashiro">
                             <MDXRemote
                                 {...post.content}
