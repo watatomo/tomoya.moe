@@ -198,7 +198,7 @@ $credits-bg-color: #f0f1f2;
         align-items: center;
         align-content: center;
         justify-content: center;
-        gap: 1.5em;
+        gap: 2em;
 
         .multi-container {
             display: grid;
@@ -266,13 +266,14 @@ $credits-bg-color: #f0f1f2;
             display: grid;
             width: 100%;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1em;
+            gap: 1.25em;
             line-height: 0;
 
             .item {
                 position: relative;
                 border-radius: 5px;
                 overflow: hidden;
+                box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
 
                 &:hover {
                     img {
