@@ -335,6 +335,7 @@ $credits-bg-color: #f0f1f2;
                         border: none;
                         line-height: 0;
                         cursor: pointer;
+                        appearance: none;
 
                         &:hover {
                             color: $chapter-arrow-color;

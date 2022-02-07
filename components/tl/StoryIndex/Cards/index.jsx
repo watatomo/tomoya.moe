@@ -110,7 +110,13 @@ export function Cards2({ post }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="collapsible-body">
                     <div className="cards">
                         {cards.map((v) => (

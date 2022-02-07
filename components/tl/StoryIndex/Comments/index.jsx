@@ -31,7 +31,13 @@ export function CommentVA({ post }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="collapsible-body">
                     {commentVA.map((c) => (
                         <div className="item" key={c}>
@@ -80,7 +86,13 @@ export function CommentWriter({ post }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="collapsible-body">
                     {commentWriter.map((c) => (
                         <div key={c}>
@@ -129,7 +141,13 @@ export function CommentTN({ post }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="collapsible-body">
                     {commentTN.map((c) => (
                         <div key={c}>

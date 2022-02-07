@@ -81,12 +81,14 @@
 
         .minitalk__header {
             background: unset;
+            color: var(--msr-text-color);
             border: 0;
             padding: 0;
             display: inline-flex;
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            appearance: none;
 
             .arrow {
                 font-size: 0.75em;
@@ -100,7 +102,7 @@
             }
         }
 
-        .ReactCollapse--content {
+        .collapse-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5px;

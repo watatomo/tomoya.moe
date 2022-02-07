@@ -26,7 +26,13 @@ function ExtraInfo({ post }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="collapsible-body">
                     {extra.map((v) => (
                         <div className="item" key={v}>

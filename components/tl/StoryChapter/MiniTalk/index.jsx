@@ -47,7 +47,13 @@ export function MiniTalk({ speaker, response, children }) {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
-            <Collapse isOpened={visible}>
+            <Collapse
+                isOpened={visible}
+                theme={{
+                    collapse: "collapse__wrapper",
+                    content: "collapse-content"
+                }}
+            >
                 <div className="minitalk-option__body">{children}</div>
             </Collapse>
         </div>
@@ -65,13 +71,18 @@ export function MiniTalkType({ r, name, part }) {
 
 export function Possibility({ normal, rare }) {
     return (
-        <Tabs>
-            <TabList>
-                <Tab>Normal</Tab>
-                <Tab>Rare</Tab>
+        <Tabs
+            className="minitalk-tabs"
+            disabledTabClassName="disabled"
+            selectedTabClassName="selected"
+            selectedTabPanelClassName="selected"
+        >
+            <TabList className="minitalk-tabs__list">
+                <Tab className="minitalk-tabs__tab">Normal</Tab>
+                <Tab className="minitalk-tabs__tab">Rare</Tab>
             </TabList>
-            <TabPanel>{normal}</TabPanel>
-            <TabPanel>{rare}</TabPanel>
+            <TabPanel className="minitalk-tabs__panel">{normal}</TabPanel>
+            <TabPanel className="minitalk-tabs__panel">{rare}</TabPanel>
         </Tabs>
     );
 }

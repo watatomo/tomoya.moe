@@ -43,7 +43,13 @@ function MiniTalks({ post }) {
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </span>
                         </button>
-                        <Collapse isOpened={visible[i]}>
+                        <Collapse
+                            isOpened={visible[i]}
+                            theme={{
+                                collapse: "collapse__wrapper",
+                                content: "collapse-content"
+                            }}
+                        >
                             {section.miniTalks.map((c) =>
                                 c.none ? (
                                     <a

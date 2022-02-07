@@ -70,10 +70,8 @@
         }
 
         .gallery .collapsible-body {
-            .item .caption {
-                width: calc(100% - 16px);
-                padding: 30px 8px 6px;
-            }
+            // .item .caption {
+            // }
 
             .gallery__wrapper {
                 grid-template-columns: repeat(2, minmax(auto, 2fr));
