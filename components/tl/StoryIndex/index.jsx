@@ -11,10 +11,12 @@ import MiniTalks from "./MiniTalks";
 import { Cards1, Cards2 } from "./Cards";
 import { CommentVA, CommentWriter, CommentTN } from "./Comments";
 import Footer from "../../footer";
+import Header from "../../header";
 
 function StoryIndex({ post }) {
     return (
         <>
+            <Header />
             <article>
                 <IndexMeta post={post} />
                 <div className="index__wrapper">
