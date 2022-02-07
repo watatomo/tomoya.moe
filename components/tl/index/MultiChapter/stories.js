@@ -39,7 +39,7 @@ export const storyListMulti = [
         story: "sanctuary",
         title: "Sanctuary",
         writer: "Akira",
-        chapters: 23,
+        chapters: 37,
         description:
             "Ra<span className='noCase'>*</span>bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru...",
         cover: "card_rectangle4_2887_evolution.webp"

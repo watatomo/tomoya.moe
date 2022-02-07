@@ -8,10 +8,12 @@ function MultiChapter() {
             {storyListMulti.map((s) => (
                 <div className="item" key={s}>
                     <div className="cover">
-                        <img
-                            src={`/img/tl/${s.story}/assets/${s.cover}`}
-                            alt={s.title}
-                        />
+                        <a href={`/tl/${s.story}`}>
+                            <img
+                                src={`/img/tl/${s.story}/assets/${s.cover}`}
+                                alt={s.title}
+                            />
+                        </a>
                     </div>
                     <div className="data">
                         <div className="header">

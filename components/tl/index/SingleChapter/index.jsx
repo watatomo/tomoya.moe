@@ -9,18 +9,14 @@ function SingleChapter() {
                 <div className="item" key={s}>
                     <div className="cover">
                         <img
-                            src={`/img/tl/${s.story}/assets/${s.cover}`}
+                            src={`/img/tl/${s.story}/${s.cover}`}
                             alt={s.title}
                         />
                     </div>
-                    <div className="data">
-                        <div>
-                            <div className="header">
-                                <h2 className="title">{s.title}</h2>
-                                <h3 className="stats">{s.writer}</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <a href={`/tl/${s.story}`} className="title">
+                        <span>{s.title}</span>
+                        <button type="button">Read</button>
+                    </a>
                 </div>
             ))}
         </div>

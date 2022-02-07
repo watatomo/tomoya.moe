@@ -43,8 +43,7 @@
         .info__wrapper {
             grid-column: 1/3;
 
-            .collapsible-header,
-            .collapsible-header--active {
+            .collapsible-header {
                 padding: 9px 10px;
             }
 
@@ -81,7 +80,7 @@
             }
         }
 
-        .story-cards > .collapsible-body > .cards {
+        .story-cards .collapsible-body > .cards {
             padding-right: 0.3em;
             gap: 0.2em 0.7em;
         }

@@ -71,10 +71,10 @@ export function Possibility({ normal, rare, character }) {
                 <Tab>Rare</Tab>
             </TabList>
             <TabPanel>
-                <Bubble character={character} children={normal} />
+                <Bubble character={character}>{normal}</Bubble>
             </TabPanel>
             <TabPanel>
-                <Bubble character={character} children={rare} />
+                <Bubble character={character}>{rare}</Bubble>
             </TabPanel>
         </Tabs>
     );

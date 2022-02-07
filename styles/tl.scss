@@ -20,8 +20,8 @@ $credits-bg-color: #f0f1f2;
         margin: 0.5em 0;
     }
 
-    ol:last-of-type,
-    ul:last-of-type {
+    ol:last-of-type:not([role="tablist"]),
+    ul:last-of-type:not([role="tablist"]) {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -183,17 +183,26 @@ $credits-bg-color: #f0f1f2;
     align-items: center;
     align-content: center;
     justify-content: center;
-    // height: 100vh;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
     background-color: $chapter-bg-color;
 
+    * {
+        box-sizing: border-box;
+    }
+
     .tl-container {
-        padding: 3rem;
+        padding: 3rem 5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 1.5em;
 
         .multi-container {
             display: grid;
-            grid-template-columns: repeat(2, minmax(390px, 500px));
+            grid-template-columns: repeat(2, minmax(390px, 650px));
             grid-template-rows: 1fr;
             grid-gap: 1.25em;
 
@@ -252,6 +261,87 @@ $credits-bg-color: #f0f1f2;
                 }
             }
         }
+
+        .single-container {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1em;
+            line-height: 0;
+
+            .item {
+                position: relative;
+                border-radius: 5px;
+                overflow: hidden;
+
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                    }
+
+                    .title {
+                        transform: translate(0, 0);
+
+                        button {
+                            transform: translate(0, 0);
+                        }
+                    }
+                }
+
+                .cover img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.2s ease;
+                    margin: 0;
+                }
+
+                a.title {
+                    font-size: 1em;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    background: linear-gradient(
+                        to bottom,
+                        transparent 0,
+                        #000000a3 90%
+                    );
+                    color: #fff;
+                    position: absolute;
+                    padding: 5em 0.75em 0.75em;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    transition: 0.2s ease;
+                    transform: translate(0, 2.3em);
+                    line-height: 1.4;
+                    text-decoration: none;
+
+                    button {
+                        margin-top: 0.5em;
+                        font-size: 0.85em;
+                        font-weight: 600;
+                        background: #000;
+                        color: #fff;
+                        padding: 0.5em 1.25em;
+                        height: 2.25em;
+                        border-radius: 0.25em;
+                        width: 100%;
+                        text-align: center;
+                        transition: 0.2s ease;
+                        transform: translate(0, 1em);
+                        border: none;
+                        line-height: 0;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $chapter-arrow-color;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -289,6 +379,14 @@ $credits-bg-color: #f0f1f2;
                     }
                 }
             }
+
+            .single-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+                .item a.title {
+                    font-size: 0.8em;
+                }
+            }
         }
     }
 }
@@ -299,6 +397,14 @@ $credits-bg-color: #f0f1f2;
 
         .mashiro__wrapper {
             width: 100%;
+        }
+    }
+
+    .tl__wrapper {
+        .tl-container {
+            .single-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
         }
     }
 }

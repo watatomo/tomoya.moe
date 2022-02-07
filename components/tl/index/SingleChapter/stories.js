@@ -13,13 +13,13 @@ export const storyListSingle = [
     },
     {
         story: "idol_story/wataru/birthday/2018/tomoya",
-        title: "[Birthday Celebration (2018)] Wataru Hibiki: Tomoya Mashiro",
+        title: "[Birthday Celebration] Wataru Hibiki (Tomoya)",
         writer: "Yoshino Yuuki",
         cover: "cs_87_normal.webp"
     },
     {
         story: "idol_story/tomoya/birthday/2018/wataru",
-        title: "[Birthday Celebration (2018)] Tomoya Mashiro: Wataru Hibiki",
+        title: "[Birthday Celebration] Tomoya Mashiro (Wataru)",
         writer: "Yoshino Yuuki",
         cover: "cs_63_normal.webp"
     },
