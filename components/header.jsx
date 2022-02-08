@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
     z-index: 364;
     display: flex;
     align-items: center;
-    padding: 0 0.9em;
+    padding: 0 0 0 0.9em;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
 

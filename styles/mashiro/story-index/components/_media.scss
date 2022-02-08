@@ -12,24 +12,24 @@
             margin: -50px 0 0;
             padding: 4.35em 1.25em 1.5em;
             grid-gap: 1em;
+        }
 
-            .cover {
-                grid-column: 1/2;
-                grid-row: 1/2;
+        .cover {
+            grid-column: 1/2;
+            grid-row: 1/2;
 
-                > div > img {
-                    width: 115px;
-                    height: 140px;
-                }
+            > div > img {
+                width: 115px;
+                height: 140px;
             }
+        }
 
-            .title-en {
-                font-size: 1.5em;
-            }
+        .title-en {
+            font-size: 1.5em;
+        }
 
-            .title-jp {
-                font-size: 1.05em;
-            }
+        .title-jp {
+            font-size: 1.05em;
         }
 
         .title__wrapper {
@@ -69,28 +69,13 @@
             font-size: 0.9em;
         }
 
-        .gallery .collapsible-body {
-            // .item .caption {
-            // }
-
-            .gallery__wrapper {
-                grid-template-columns: repeat(2, minmax(auto, 2fr));
-            }
+        .gallery__wrapper {
+            grid-template-columns: repeat(2, minmax(auto, 2fr));
         }
 
-        .story-cards .collapsible-body > .cards {
+        .card__wrapper {
             padding-right: 0.3em;
             gap: 0.2em 0.7em;
         }
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .story-cover {
-        display: none;
-    }
-
-    .title-area {
-        grid-column: 1/3;
     }
 }

@@ -35,7 +35,7 @@ function Toolbar({ post }) {
     return (
         <div className="toolbar__wrapper">
             <div className="toolbar">
-                <div className="toolbar__section">
+                <div className="toolbar__section previous">
                     {post.previous ? (
                         <a
                             href={derivePreviousNextURL({
@@ -49,30 +49,30 @@ function Toolbar({ post }) {
                     ) : null}
                 </div>
 
-                {/* <div className="toolbar__section">
+                {/* <div className="toolbar__section fill">
                     <FontAwesomeIcon icon={faFillDrip} />
                 </div> */}
 
                 {!isStandaloneChapter &&
                     (post.miniTalk ? (
-                        <div className="toolbar__section">
+                        <div className="toolbar__section index">
                             <a href={deriveIndexURLMT({ slug: post.slug, tl })}>
                                 <FontAwesomeIcon icon={faStar} />
                             </a>
                         </div>
                     ) : (
-                        <div className="toolbar__section">
+                        <div className="toolbar__section index">
                             <a href={deriveIndexURL({ slug: post.slug, tl })}>
                                 <FontAwesomeIcon icon={faStar} />
                             </a>
                         </div>
                     ))}
 
-                {/* <div className="toolbar__section">
+                {/* <div className="toolbar__section size">
                     <TextSize />
                 </div> */}
 
-                <div className="toolbar__section">
+                <div className="toolbar__section next">
                     {post.next ? (
                         <a
                             href={derivePreviousNextURL({

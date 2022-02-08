@@ -28,6 +28,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 2fr;
         gap: 5px;
+        margin-bottom: 0.75em;
 
         .item {
             padding: 5px 10px;
@@ -117,7 +118,7 @@
         }
 
         &-body {
-            padding: 0.7em 0.45em 0;
+            padding: 5px 0.45em 0;
             transition: height 400ms ease-in-out, padding 400ms ease-in-out;
         }
     }
@@ -159,7 +160,7 @@
 
         .source {
             margin-top: 5px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-align: right;
         }
     }

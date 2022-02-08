@@ -1,38 +1,13 @@
-.index__wrapper .story-cards {
-    .collapsible-body > .cards {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(auto, 1fr));
-        gap: 0.4em 1.25em;
-        padding-right: 0.6em;
-    }
-
-    .single {
-        transition: transform 0.2s ease;
+.index__wrapper {
+    .card {
         position: relative;
-        display: inline-block;
-        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
 
-        img {
-            display: block;
-            max-width: 100%;
-            object-fit: contain;
-            width: 100%;
-            margin: 0 !important;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(auto, 1fr));
+            gap: 0.4em 1.25em;
+            padding-right: 0.6em;
         }
-    }
-
-    .item {
-        > .lightbox {
-            display: none;
-        }
-
-        > .image {
-            cursor: zoom-in;
-        }
-    }
-
-    .image {
-        position: relative;
 
         .single {
             &.unbloomed {
@@ -67,6 +42,31 @@
                     filter: brightness(70%);
                 }
             }
+        }
+    }
+
+    .single {
+        transition: transform 0.2s ease;
+        position: relative;
+        display: inline-block;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
+
+        img {
+            display: block;
+            max-width: 100%;
+            object-fit: contain;
+            width: 100%;
+            margin: 0 !important;
+        }
+    }
+
+    .item {
+        > .lightbox {
+            display: none;
+        }
+
+        > .card {
+            cursor: zoom-in;
         }
     }
 }

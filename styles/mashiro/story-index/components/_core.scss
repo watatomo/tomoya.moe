@@ -8,10 +8,6 @@
     color: var(--msr-text-color);
     margin-bottom: 2em;
 
-    * {
-        box-sizing: border-box;
-    }
-
     a {
         color: inherit;
         text-decoration: none;
@@ -24,20 +20,6 @@
         background-position: 50% 10%;
         background-repeat: no-repeat;
     }
-}
-
-.index-container {
-    &__wrapper {
-        width: 100%;
-        max-width: 1000px;
-    }
-
-    display: grid;
-    grid-template-columns: 200px 1fr 300px;
-    grid-template-rows: auto 1fr;
-    grid-gap: 1.2em;
-    margin: -25px 15px 0;
-    padding: 3em 0;
 
     .cover {
         display: flex;
@@ -100,4 +82,18 @@
             }
         }
     }
+}
+
+.index-container {
+    &__wrapper {
+        width: 100%;
+        max-width: 1140px;
+    }
+
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1.2em;
+    margin: -25px 15px 0;
+    padding: 3em 0;
 }

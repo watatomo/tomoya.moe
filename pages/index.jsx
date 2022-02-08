@@ -209,7 +209,13 @@ export default function Home() {
                                 more?
                             </button>
                         </div>
-                        <Collapse isOpened={visible}>
+                        <Collapse
+                            isOpened={visible}
+                            theme={{
+                                collapse: "collapse__wrapper",
+                                content: "collapse-content"
+                            }}
+                        >
                             <div className="section02">
                                 i'm not so sure what to put here, but i can just
                                 be summed up as just Some Guy. tomowata runs in

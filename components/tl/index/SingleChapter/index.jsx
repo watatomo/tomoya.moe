@@ -6,7 +6,7 @@ function SingleChapter() {
     return (
         <div className="single-container">
             {storyListSingle.map((s) => (
-                <div className="item" key={s}>
+                <div className="single-container__item" key={s}>
                     <div className="cover">
                         <img
                             src={`/img/tl/${s.story}/${s.cover}`}

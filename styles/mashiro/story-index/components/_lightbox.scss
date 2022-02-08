@@ -12,9 +12,8 @@
         border-radius: 5px;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2),
             0 0 40px 0 rgba(0, 0, 0, 0.1);
-        box-sizing: border-box;
 
-        .image .quotes__wrapper {
+        .card .quotes__wrapper {
             display: block;
             --quote-height: 2.5em;
             height: var(--quote-height);

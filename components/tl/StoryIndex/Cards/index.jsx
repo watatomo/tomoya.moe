@@ -34,10 +34,10 @@ export function Cards1({ post }) {
             </button>
             <Collapse isOpened={visible}>
                 <div className="collapsible-body">
-                    <div className="cards">
+                    <div className="card__wrapper">
                         {cards.map((v) => (
                             <div className="item" key={v}>
-                                <div className="image">
+                                <div className="card">
                                     <div className="single unbloomed">
                                         <img
                                             src={`/img/tl/${actualSlug(
@@ -118,10 +118,10 @@ export function Cards2({ post }) {
                 }}
             >
                 <div className="collapsible-body">
-                    <div className="cards">
+                    <div className="card__wrapper">
                         {cards.map((v) => (
                             <div className="item" key={v}>
-                                <div className="image">
+                                <div className="card">
                                     <div className="single unbloomed">
                                         <img
                                             src={`/img/tl/${actualSlug(
