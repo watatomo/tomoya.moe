@@ -27,7 +27,7 @@ export function Container01() {
                     </span>
                     <hr />
                     <h1>
-                        <span className="highlight">ren.</span> 18.
+                        <span className="highlight">ren.</span> 19.
                     </h1>
                     <h2>se asian. he/him.</h2>
                     <div className="home__links">
