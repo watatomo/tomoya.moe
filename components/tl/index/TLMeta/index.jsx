@@ -9,7 +9,7 @@ function TLMeta() {
             <Meta />
             <meta name="title" content={`${SITE_TITLE} | Translations`} />
             <meta name="description" content="Translation Archive" />
-            <meta property="og:type" content="profile" />
+            <meta property="og:type" content="website" />
             <meta property="og:url" content={`${SITE_URL}tl`} />
             <meta
                 property="og:title"
