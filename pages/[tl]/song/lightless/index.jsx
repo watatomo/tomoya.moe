@@ -55,7 +55,7 @@ function LightlessPage() {
                     property="og:url"
                     content={`${SITE_URL}tl/song/lightless`}
                 />
-                <meta property="og:title" content="Lightless | Lyrics<" />
+                <meta property="og:title" content="Lightless | Lyrics" />
                 <meta
                     property="og:description"
                     content="Lightless (ライトレス) - Agnes Tachyon (CV: Sumire Uesaka)"
