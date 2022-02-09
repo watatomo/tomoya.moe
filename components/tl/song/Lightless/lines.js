@@ -57,7 +57,7 @@ export const lines = [
         singer: [0],
         lines: {
             jp: "さあ順番だ　光速の先へ",
-            rm: "Saa jumban da",
+            rm: "Saa jumban da kousoku no saki e",
             en: "Come, let's take turns going beyond the speed of light"
         }
     },
@@ -483,7 +483,7 @@ export const lines2 = [
         singer: [0],
         lines: {
             jp: "さあ順番だ　光速の先へ",
-            rm: "Saa jumban da",
+            rm: "Saa jumban da kousoku no saki e",
             en: "Come, let's take turns going beyond the speed of light"
         }
     },

@@ -93,6 +93,15 @@ function LightlessPage() {
           html body { 
             padding: 0px;
           }
+          h1, h2, h3 {
+              padding: 0 10px 0;
+          }
+          .yuukun-audioControls.rhap_container .rhap_main {
+              padding: 0 15px 0 5px !important;
+          }
+          .yuukun-lyrics {
+              padding: 15px 15px 100px !important;
+          }
         }
         @media only screen and (max-width: 400px) {
           .rhap_controls-section {
@@ -110,7 +119,7 @@ function LightlessPage() {
                     crossOrigin="anonymous"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Quicksand:wght@300..700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Quicksand:wght@300..700&display=swap"
                     rel="stylesheet"
                 />
                 <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
@@ -162,6 +171,12 @@ const Wrapper = styled.div`
         margin-bottom: 0.75em;
         line-height: 1.4;
         font-weight: 500;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Quicksand", "M PLUS Rounded 1c";
     }
 
     article {

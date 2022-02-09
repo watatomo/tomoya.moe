@@ -248,7 +248,7 @@ const Wrapper = styled.div`
         color: black;
         background: white;
 
-        font-family: "DM Sans", "Noto Sans JP", sans-serif;
+        font-family: "Inter var", "Quicksand", "M PLUS Rounded 1c", sans-serif;
         // font-weight: 500;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -269,7 +269,7 @@ const Wrapper = styled.div`
         grid-row: 1/2;
         grid-column: 2/3;
         /* height: 100%; */
-        padding: 15px 15px 30px;
+        padding: 15px 15px 50px;
         /* mask-image: linear-gradient(
       to bottom,
       transparent 0%,
@@ -282,7 +282,8 @@ const Wrapper = styled.div`
     .yuukun-lyrics__line {
         margin: 0.3em 0;
         display: block;
-        font-weight: 500;
+        font-weight: 400;
+        font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
         /* opacity: 0.5; */
         display: grid;
         grid-template-columns: 5px 1fr;
@@ -498,7 +499,7 @@ const Wrapper = styled.div`
         .rhap_main {
             height: 25px;
             gap: 10px;
-            padding-right: 5px;
+            padding-right: 35px;
         }
 
         .rhap_controls-section {
