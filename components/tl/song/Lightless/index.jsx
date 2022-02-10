@@ -535,7 +535,7 @@ const Wrapper = styled.div`
         .rhap_main {
             height: 25px;
             gap: 0px;
-            padding-right: 35px;
+            padding-right: 15px;
         }
 
         .rhap_controls-section {
