@@ -62,7 +62,7 @@ function MoonlightDiscoPage() {
                 />
                 <meta
                     property="og:image"
-                    content={`${SITE_URL}img/tl/song/moonlight_disco/cover.png`}
+                    content={`${SITE_URL}img/tl/song/moonlight_disco/cover.webp`}
                 />
 
                 <meta name="twitter:card" content="player" />
@@ -74,7 +74,7 @@ function MoonlightDiscoPage() {
                 />
                 <meta
                     name="twitter:image"
-                    content={`${SITE_URL}img/tl/song/moonlight_disco/cover.png`}
+                    content={`${SITE_URL}img/tl/song/moonlight_disco/cover.webp`}
                 />
                 <meta
                     name="twitter:player"
