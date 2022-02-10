@@ -76,7 +76,7 @@ export const lines = [
         timestamp: "00:26.801",
         singer: [2, 3, 4],
         lines: {
-            jp: "Once upon a time…？",
+            jp: "Once upon a time…?",
             rm: "Once upon a time...?",
             en: "Once upon a time...?"
         }
@@ -168,7 +168,7 @@ export const lines = [
         singer: [2],
         lines: {
             jp: "潤んだ目の Funky girl",
-            rm: "Urun da me no Funky girl atsui yuujou koko ni BFF o",
+            rm: "Urun da me no Funky girl",
             en: ""
         }
     },
@@ -891,7 +891,7 @@ export const lines2 = [
         timestamp: "00:26.801",
         singer: [2, 3, 4],
         lines: {
-            jp: "Once upon a time…？",
+            jp: "Once upon a time…?",
             rm: "Once upon a time...?",
             en: "Once upon a time...?"
         }
@@ -983,7 +983,7 @@ export const lines2 = [
         singer: [2],
         lines: {
             jp: "潤んだ目の Funky girl",
-            rm: "Urun da me no Funky girl atsui yuujou koko ni BFF o",
+            rm: "Urun da me no Funky girl",
             en: ""
         }
     },

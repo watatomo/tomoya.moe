@@ -28,5 +28,11 @@ export const storyListSingle = [
         title: "Cinderella Burning at the Stake's Stage",
         writer: "Akira",
         cover: "cs_963_normal.webp"
+    },
+    {
+        story: "the_spectacular_cinderella_show/mini_talk/tomoya/2",
+        title: "[Mini Talk] Cinderellaesque",
+        writer: "",
+        cover: "cs_928_evolution.webp"
     }
 ];

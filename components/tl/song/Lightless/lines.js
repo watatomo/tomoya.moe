@@ -56,9 +56,18 @@ export const lines = [
         timestamp: "00:27.34",
         singer: [0],
         lines: {
-            jp: "さあ順番だ　光速の先へ",
-            rm: "Saa jumban da kousoku no saki e",
-            en: "Come, let's take turns going beyond the speed of light"
+            jp: "さあ順番だ",
+            rm: "Saa jumban da",
+            en: "Come, let's take turns"
+        }
+    },
+    {
+        timestamp: "00:28.52",
+        singer: [0],
+        lines: {
+            jp: "光速の先へ",
+            rm: "Kousoku no saki e",
+            en: "Going beyond the speed of light"
         }
     },
     {
@@ -482,9 +491,18 @@ export const lines2 = [
         timestamp: "00:27.34",
         singer: [0],
         lines: {
-            jp: "さあ順番だ　光速の先へ",
-            rm: "Saa jumban da kousoku no saki e",
-            en: "Come, let's take turns going beyond the speed of light"
+            jp: "さあ順番だ",
+            rm: "Saa jumban da",
+            en: "Come, let's take turns"
+        }
+    },
+    {
+        timestamp: "00:28.52",
+        singer: [0],
+        lines: {
+            jp: "光速の先へ",
+            rm: "Kousoku no saki e",
+            en: "Going beyond the speed of light"
         }
     },
     {

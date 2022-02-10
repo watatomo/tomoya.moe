@@ -384,6 +384,7 @@ $text-color: var(--msr-text-color);
 
             &__item {
                 height: 200px;
+                grid-template-columns: 140px auto;
 
                 .data {
                     .header {
