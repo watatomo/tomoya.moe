@@ -390,7 +390,7 @@ export const lines = [
         }
     },
     {
-        timestamp: "02:01.98",
+        timestamp: "02:04.64",
         singer: [2],
         lines: {
             jp: "永久欠番満更じゃない",
@@ -1205,7 +1205,7 @@ export const lines2 = [
         }
     },
     {
-        timestamp: "02:01.98",
+        timestamp: "02:04.64",
         singer: [2],
         lines: {
             jp: "永久欠番満更じゃない",
