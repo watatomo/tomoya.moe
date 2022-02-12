@@ -13,7 +13,7 @@ export const lines = [
         lines: {
             jp: "色のない夢を見てた",
             rm: "Iro no nai yume o miteta",
-            en: "I'm dreaming a colorless dream"
+            en: "I dreamt a colorless dream"
         }
     },
     {
@@ -31,7 +31,7 @@ export const lines = [
         lines: {
             jp: "浅い眠りを終えたら",
             rm: "Asai nemuri o oetara",
-            en: "After this restless dream ends"
+            en: "After we wake from our light slumber"
         }
     },
     {
@@ -57,8 +57,8 @@ export const lines = [
         singer: [0],
         lines: {
             jp: "さあ順番だ",
-            rm: "Saa jumban da",
-            en: "Come, let's take turns"
+            rm: "Saa junban da",
+            en: "Come, it's our turn"
         }
     },
     {
@@ -76,7 +76,7 @@ export const lines = [
         lines: {
             jp: "もう空間は法則を超えて歪んでいくんだ",
             rm: "Mou kuukan wa housoku o koete yugandeikun da",
-            en: "Space is distorting, defying the law"
+            en: "Space is distorting, defying the laws of nature"
         }
     },
     {
@@ -103,7 +103,7 @@ export const lines = [
         lines: {
             jp: "すべてを解き明かして",
             rm: "Subete o toki akashite",
-            en: "We'll solve it all"
+            en: "We'll solve everything"
         }
     },
     {
@@ -121,7 +121,7 @@ export const lines = [
         lines: {
             jp: "解き明かして",
             rm: "Toki akashite",
-            en: "Solve it all"
+            en: "Solve everything"
         }
     },
     {
@@ -139,7 +139,7 @@ export const lines = [
         lines: {
             jp: "超光速で視界はライトレス",
             rm: "Choukousoku de shikai wa RAITORESU",
-            en: "This faster-than-light lightless view"
+            en: "Faster than light, my field of vision is lightless"
         }
     },
     {
@@ -157,7 +157,7 @@ export const lines = [
         lines: {
             jp: "すべてを解き明かして",
             rm: "Subete o toki akashite",
-            en: "We'll solve it all"
+            en: "We'll solve everything"
         }
     },
     {
@@ -166,7 +166,7 @@ export const lines = [
         lines: {
             jp: "何度だってやり直すよ",
             rm: "Nando datte yari naosu yo",
-            en: "And we'll do it all over again"
+            en: "And we'll do it again, for as many times as we need to"
         }
     },
     {
@@ -175,7 +175,7 @@ export const lines = [
         lines: {
             jp: "消えない光探して",
             rm: "Keinai hikari sagashite",
-            en: "Searching for the never-fading light"
+            en: "Searching for a never-fading light"
         }
     },
     {
@@ -184,7 +184,7 @@ export const lines = [
         lines: {
             jp: "君へといま手を伸ばした",
             rm: "Kimi e to ima te o nobashita",
-            en: "Now putting my hand out for you"
+            en: "Now reaching out towards you"
         }
     },
     {
@@ -209,7 +209,7 @@ export const lines = [
         timestamp: "01:38.26",
         singer: [0],
         lines: {
-            jp: "今日は影を落として",
+            jp: "夕日は影を落として",
             rm: "Yuuhi wa kage o otoshite",
             en: "The evening sun casts a shadow"
         }
@@ -220,7 +220,7 @@ export const lines = [
         lines: {
             jp: "摩天楼の先の空燃やしていた",
             rm: "Matenrou no saki no sora moyashiteita",
-            en: "Burning the sky beyond a skyscraper"
+            en: "Burning the sky above the skyscrapers"
         }
     },
     {
@@ -238,7 +238,7 @@ export const lines = [
         lines: {
             jp: "見ないでいた秘密のプランA",
             rm: "Minai de ita himitsu no PURAN A",
-            en: "This secret Plan A I didn't see"
+            en: "The secret Plan A I averted my eyes from"
         }
     },
     {
@@ -265,7 +265,7 @@ export const lines = [
         lines: {
             jp: "自分さえも法則を超えて",
             rm: "Jibun sae mo housoku o koete",
-            en: "I'm defying the law as well"
+            en: "I'm defying the laws of nature as well"
         }
     },
     {
@@ -274,7 +274,7 @@ export const lines = [
         lines: {
             jp: "暴力的な数値を添えて",
             rm: "Bouryokuteki na suuchi o soete",
-            en: "With these violent numerics"
+            en: "With a dash of violent numerics"
         }
     },
     {
@@ -292,7 +292,7 @@ export const lines = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose it all"
+            en: "Expose everything"
         }
     },
     {
@@ -310,7 +310,7 @@ export const lines = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose it all"
+            en: "Expose everything"
         }
     },
     {
@@ -328,7 +328,7 @@ export const lines = [
         lines: {
             jp: "踏み出していこう",
             rm: "Fumi dashiteikou",
-            en: "Step forth"
+            en: "Let's step forth"
         }
     },
     {
@@ -346,7 +346,7 @@ export const lines = [
         lines: {
             jp: "超光速で視界はライトレス",
             rm: "Choukousoku de shikai wa RAITORESU",
-            en: "This faster-than-light lightless view"
+            en: "Faster than light, my field of vision is lightless"
         }
     },
     {
@@ -364,7 +364,7 @@ export const lines = [
         lines: {
             jp: "すべてを暴き出すよ",
             rm: "Subete o abaki dasu yo",
-            en: "We'll expose it all"
+            en: "We'll expose everything"
         }
     },
     {
@@ -373,7 +373,7 @@ export const lines = [
         lines: {
             jp: "何度だってやり直すよ",
             rm: "Nando datte yari naosu yo",
-            en: "And we'll do it all over again"
+            en: "And we'll do it again, for as many times as we need to"
         }
     },
     {
@@ -382,7 +382,7 @@ export const lines = [
         lines: {
             jp: "消えない光探して",
             rm: "Keinai hikari sagashite",
-            en: "Searching for the never-fading light"
+            en: "Searching for a never-fading light"
         }
     },
     {
@@ -391,7 +391,7 @@ export const lines = [
         lines: {
             jp: "答えをいま私の足で",
             rm: "Kotae o ima watashi no ashi de",
-            en: "The answer is right here at my feet"
+            en: "Searching for the answer now, with my own two feet"
         }
     },
     {
@@ -409,7 +409,7 @@ export const lines = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Exposing it all"
+            en: "Expose everything"
         }
     },
     {
@@ -427,7 +427,7 @@ export const lines = [
         lines: {
             jp: "私の足で",
             rm: "Watashi no ashi de",
-            en: "At my feet"
+            en: "With my own two feet"
         }
     },
     {
@@ -448,7 +448,7 @@ export const lines2 = [
         lines: {
             jp: "色のない夢を見てた",
             rm: "Iro no nai yume o miteta",
-            en: "I'm dreaming a colorless dream"
+            en: "I dreamt a colorless dream"
         }
     },
     {
@@ -466,7 +466,7 @@ export const lines2 = [
         lines: {
             jp: "浅い眠りを終えたら",
             rm: "Asai nemuri o oetara",
-            en: "After this restless dream ends"
+            en: "After we wake from our light slumber"
         }
     },
     {
@@ -492,8 +492,8 @@ export const lines2 = [
         singer: [0],
         lines: {
             jp: "さあ順番だ",
-            rm: "Saa jumban da",
-            en: "Come, let's take turns"
+            rm: "Saa junban da",
+            en: "Come, it's our turn"
         }
     },
     {
@@ -511,7 +511,7 @@ export const lines2 = [
         lines: {
             jp: "もう空間は法則を超えて歪んでいくんだ",
             rm: "Mou kuukan wa housoku o koete yugandeikun da",
-            en: "Space is distorting, defying the law"
+            en: "Space is distorting, defying the laws of nature"
         }
     },
     {
@@ -538,7 +538,7 @@ export const lines2 = [
         lines: {
             jp: "すべてを解き明かして",
             rm: "Subete o toki akashite",
-            en: "We'll solve it all"
+            en: "We'll solve everything"
         }
     },
     {
@@ -556,7 +556,7 @@ export const lines2 = [
         lines: {
             jp: "解き明かして",
             rm: "Toki akashite",
-            en: "Solve it all"
+            en: "Solve everything"
         }
     },
     {
@@ -574,7 +574,7 @@ export const lines2 = [
         lines: {
             jp: "超光速で視界はライトレス",
             rm: "Choukousoku de shikai wa RAITORESU",
-            en: "This faster-than-light lightless view"
+            en: "Faster than light, my field of vision is lightless"
         }
     },
     {
@@ -592,7 +592,7 @@ export const lines2 = [
         lines: {
             jp: "すべてを解き明かして",
             rm: "Subete o toki akashite",
-            en: "We'll solve it all"
+            en: "We'll solve everything"
         }
     },
     {
@@ -601,7 +601,7 @@ export const lines2 = [
         lines: {
             jp: "何度だってやり直すよ",
             rm: "Nando datte yari naosu yo",
-            en: "And we'll do it all over again"
+            en: "And we'll do it again, for as many times as we need to"
         }
     },
     {
@@ -610,7 +610,7 @@ export const lines2 = [
         lines: {
             jp: "消えない光探して",
             rm: "Keinai hikari sagashite",
-            en: "Searching for the never-fading light"
+            en: "Searching for a never-fading light"
         }
     },
     {
@@ -619,7 +619,7 @@ export const lines2 = [
         lines: {
             jp: "君へといま手を伸ばした",
             rm: "Kimi e to ima te o nobashita",
-            en: "Now putting my hand out for you"
+            en: "Now reaching out towards you"
         }
     },
     {
@@ -644,7 +644,7 @@ export const lines2 = [
         timestamp: "01:38.26",
         singer: [0],
         lines: {
-            jp: "今日は影を落として",
+            jp: "夕日は影を落として",
             rm: "Yuuhi wa kage o otoshite",
             en: "The evening sun casts a shadow"
         }
@@ -655,7 +655,7 @@ export const lines2 = [
         lines: {
             jp: "摩天楼の先の空燃やしていた",
             rm: "Matenrou no saki no sora moyashiteita",
-            en: "Burning the sky beyond a skyscraper"
+            en: "Burning the sky above the skyscrapers"
         }
     },
     {
@@ -673,7 +673,7 @@ export const lines2 = [
         lines: {
             jp: "見ないでいた秘密のプランA",
             rm: "Minai de ita himitsu no PURAN A",
-            en: "This secret Plan A I didn't see"
+            en: "The secret Plan A I averted my eyes from"
         }
     },
     {
@@ -700,7 +700,7 @@ export const lines2 = [
         lines: {
             jp: "自分さえも法則を超えて",
             rm: "Jibun sae mo housoku o koete",
-            en: "I'm defying the law as well"
+            en: "I'm defying the laws of nature as well"
         }
     },
     {
@@ -709,7 +709,7 @@ export const lines2 = [
         lines: {
             jp: "暴力的な数値を添えて",
             rm: "Bouryokuteki na suuchi o soete",
-            en: "With these violent numerics"
+            en: "With a dash of violent numerics"
         }
     },
     {
@@ -727,7 +727,7 @@ export const lines2 = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose it all"
+            en: "Expose everything"
         }
     },
     {
@@ -745,7 +745,7 @@ export const lines2 = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose it all"
+            en: "Expose everything"
         }
     },
     {
@@ -763,7 +763,7 @@ export const lines2 = [
         lines: {
             jp: "踏み出していこう",
             rm: "Fumi dashiteikou",
-            en: "Step forth"
+            en: "Let's step forth"
         }
     },
     {
@@ -781,7 +781,7 @@ export const lines2 = [
         lines: {
             jp: "超光速で視界はライトレス",
             rm: "Choukousoku de shikai wa RAITORESU",
-            en: "This faster-than-light lightless view"
+            en: "Faster than light, my field of vision is lightless"
         }
     },
     {
@@ -799,7 +799,7 @@ export const lines2 = [
         lines: {
             jp: "すべてを暴き出すよ",
             rm: "Subete o abaki dasu yo",
-            en: "We'll expose it all"
+            en: "We'll expose everything"
         }
     },
     {
@@ -808,7 +808,7 @@ export const lines2 = [
         lines: {
             jp: "何度だってやり直すよ",
             rm: "Nando datte yari naosu yo",
-            en: "And we'll do it all over again"
+            en: "And we'll do it again, for as many times as we need to"
         }
     },
     {
@@ -817,7 +817,7 @@ export const lines2 = [
         lines: {
             jp: "消えない光探して",
             rm: "Keinai hikari sagashite",
-            en: "Searching for the never-fading light"
+            en: "Searching for a never-fading light"
         }
     },
     {
@@ -826,7 +826,7 @@ export const lines2 = [
         lines: {
             jp: "答えをいま私の足で",
             rm: "Kotae o ima watashi no ashi de",
-            en: "The answer is right here at my feet"
+            en: "Searching for the answer now, with my own two feet"
         }
     },
     {
@@ -844,7 +844,7 @@ export const lines2 = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Exposing it all"
+            en: "Expose everything"
         }
     },
     {
@@ -862,7 +862,7 @@ export const lines2 = [
         lines: {
             jp: "私の足で",
             rm: "Watashi no ashi de",
-            en: "At my feet"
+            en: "With my own two feet"
         }
     },
     {

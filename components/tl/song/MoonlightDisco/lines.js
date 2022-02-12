@@ -15,14 +15,14 @@ export const singers = [
         color: "0068b7"
     },
     {
-        name: "Arashi Narukami",
+        name: "Kanata Shinkai",
         id: 3,
-        color: "edde7b"
+        color: "008db7"
     },
     {
-        name: "Kanata Shinkai",
+        name: "Arashi Narukami",
         id: 4,
-        color: "008db7"
+        color: "edde7b"
     }
 ];
 
@@ -129,7 +129,7 @@ export const lines = [
     },
     {
         timestamp: "00:37.70",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "(ぷかぷか)",
             rm: "(Puka puka)",
@@ -147,7 +147,7 @@ export const lines = [
     },
     {
         timestamp: "00:43.02",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "(踊りましょう)",
             rm: "(Odorimashou)",
@@ -184,7 +184,7 @@ export const lines = [
     },
     {
         timestamp: "00:51.98",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "もらったんだね eternity",
             rm: "Morattan da ne eternity",
@@ -193,7 +193,7 @@ export const lines = [
     },
     {
         timestamp: "00:54.64",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "ブレスよりも絆っぽいじゃん",
             rm: "BURESU yori mo kizunappoi jan",
@@ -202,7 +202,7 @@ export const lines = [
     },
     {
         timestamp: "00:58.70",
-        singer: [3],
+        singer: [],
         lines: {
             jp: "",
             rm: "",
@@ -211,7 +211,7 @@ export const lines = [
     },
     {
         timestamp: "00:58.701",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "思い出話は尽きない",
             rm: "Omoi debanashi wa tsukinai",
@@ -220,7 +220,7 @@ export const lines = [
     },
     {
         timestamp: "01:02.02",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "なんでちょっと黙っちゃうの",
             rm: "Nande chotto tamacchau no",
@@ -364,7 +364,7 @@ export const lines = [
     },
     {
         timestamp: "01:54.94",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "チークタイムは Shyなboy",
             rm: "CHIIKU TAIMU wa Shy na boy",
@@ -373,10 +373,10 @@ export const lines = [
     },
     {
         timestamp: "01:57.64",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "ロマンチック程遠いまま",
-            rm: "ROMANCHIIKU hodotoo mama",
+            rm: "ROMANCHIIKU hodotooi mama",
             en: ""
         }
     },
@@ -409,7 +409,7 @@ export const lines = [
     },
     {
         timestamp: "02:08.641",
-        singer: [0, 4],
+        singer: [0, 3],
         lines: {
             jp: "刺激的セーシュン",
             rm: "Shikiteki seeshun",
@@ -418,7 +418,7 @@ export const lines = [
     },
     {
         timestamp: "02:10.32",
-        singer: [0, 4],
+        singer: [0, 3],
         lines: {
             jp: "地球って So happy",
             rm: "Chikyuutte So happy",
@@ -436,7 +436,7 @@ export const lines = [
     },
     {
         timestamp: "02:15.70",
-        singer: [2, 3],
+        singer: [2, 4],
         lines: {
             jp: "あの店のメニュー制覇し損ねた",
             rm: "Ano mise no MENYUU seihashi sokoneta",
@@ -445,7 +445,7 @@ export const lines = [
     },
     {
         timestamp: "02:19.20",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "制服返すのヤダなあ",
             rm: "Seifuku kaesu no yada naa",
@@ -517,7 +517,7 @@ export const lines = [
     },
     {
         timestamp: "02:41.88",
-        singer: [1, 4],
+        singer: [1, 3],
         lines: {
             jp: "エンドロール代わりに",
             rm: "ENDOROORU kawari ni",
@@ -553,7 +553,7 @@ export const lines = [
     },
     {
         timestamp: "02:55.66",
-        singer: [0, 2, 3],
+        singer: [0, 2, 4],
         lines: {
             jp: "サヨナラがツライなんて",
             rm: "Sayonara ga tsurai nante",
@@ -562,7 +562,7 @@ export const lines = [
     },
     {
         timestamp: "02:59.34",
-        singer: [0, 2, 3],
+        singer: [0, 2, 4],
         lines: {
             jp: "わかってたのに",
             rm: "Wakatte no ni",
@@ -589,7 +589,7 @@ export const lines = [
     },
     {
         timestamp: "03:05.54",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "ピカピカのUFOだとか",
             rm: "Pika pika no UFO da toka",
@@ -607,7 +607,7 @@ export const lines = [
     },
     {
         timestamp: "03:12.30",
-        singer: [0, 3],
+        singer: [0, 4],
         lines: {
             jp: "お迎えが来たから",
             rm: "Omukae ga kuta kara",
@@ -643,7 +643,7 @@ export const lines = [
     },
     {
         timestamp: "03:20.40",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "時空",
             rm: "Jikuu",
@@ -652,7 +652,7 @@ export const lines = [
     },
     {
         timestamp: "03:21.26",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "次元",
             rm: "Jigen",
@@ -741,7 +741,7 @@ export const lines = [
         }
     },
     {
-        timestamp: "03:51.98",
+        timestamp: "03:55.46",
         singer: [0, 1, 2, 3, 4],
         lines: {
             jp: "この星を照らし出して",
@@ -944,7 +944,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:37.70",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "(ぷかぷか)",
             rm: "(Puka puka)",
@@ -962,7 +962,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:43.02",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "(踊りましょう)",
             rm: "(Odorimashou)",
@@ -999,7 +999,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:51.98",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "もらったんだね eternity",
             rm: "Morattan da ne eternity",
@@ -1008,7 +1008,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:54.64",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "ブレスよりも絆っぽいじゃん",
             rm: "BURESU yori mo kizunappoi jan",
@@ -1017,7 +1017,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:58.70",
-        singer: [3],
+        singer: [],
         lines: {
             jp: "",
             rm: "",
@@ -1026,7 +1026,7 @@ export const lines2 = [
     },
     {
         timestamp: "00:58.701",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "思い出話は尽きない",
             rm: "Omoi debanashi wa tsukinai",
@@ -1035,7 +1035,7 @@ export const lines2 = [
     },
     {
         timestamp: "01:02.02",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "なんでちょっと黙っちゃうの",
             rm: "Nande chotto tamacchau no",
@@ -1179,7 +1179,7 @@ export const lines2 = [
     },
     {
         timestamp: "01:54.94",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "チークタイムは Shyなboy",
             rm: "CHIIKU TAIMU wa Shy na boy",
@@ -1188,10 +1188,10 @@ export const lines2 = [
     },
     {
         timestamp: "01:57.64",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "ロマンチック程遠いまま",
-            rm: "ROMANCHIIKU hodotoo mama",
+            rm: "ROMANCHIIKU hodotooi mama",
             en: ""
         }
     },
@@ -1224,7 +1224,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:08.641",
-        singer: [0, 4],
+        singer: [0, 3],
         lines: {
             jp: "刺激的セーシュン",
             rm: "Shikiteki seeshun",
@@ -1233,7 +1233,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:10.32",
-        singer: [0, 4],
+        singer: [0, 3],
         lines: {
             jp: "地球って So happy",
             rm: "Chikyuutte So happy",
@@ -1251,7 +1251,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:15.70",
-        singer: [2, 3],
+        singer: [2, 4],
         lines: {
             jp: "あの店のメニュー制覇し損ねた",
             rm: "Ano mise no MENYUU seihashi sokoneta",
@@ -1260,7 +1260,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:19.20",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "制服返すのヤダなあ",
             rm: "Seifuku kaesu no yada naa",
@@ -1332,7 +1332,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:41.88",
-        singer: [1, 4],
+        singer: [1, 3],
         lines: {
             jp: "エンドロール代わりに",
             rm: "ENDOROORU kawari ni",
@@ -1368,7 +1368,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:55.66",
-        singer: [0, 2, 3],
+        singer: [0, 2, 4],
         lines: {
             jp: "サヨナラがツライなんて",
             rm: "Sayonara ga tsurai nante",
@@ -1377,7 +1377,7 @@ export const lines2 = [
     },
     {
         timestamp: "02:59.34",
-        singer: [0, 2, 3],
+        singer: [0, 2, 4],
         lines: {
             jp: "わかってたのに",
             rm: "Wakatte no ni",
@@ -1404,7 +1404,7 @@ export const lines2 = [
     },
     {
         timestamp: "03:05.54",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "ピカピカのUFOだとか",
             rm: "Pika pika no UFO da toka",
@@ -1422,7 +1422,7 @@ export const lines2 = [
     },
     {
         timestamp: "03:12.30",
-        singer: [0, 3],
+        singer: [0, 4],
         lines: {
             jp: "お迎えが来たから",
             rm: "Omukae ga kuta kara",
@@ -1458,7 +1458,7 @@ export const lines2 = [
     },
     {
         timestamp: "03:20.40",
-        singer: [4],
+        singer: [3],
         lines: {
             jp: "時空",
             rm: "Jikuu",
@@ -1467,7 +1467,7 @@ export const lines2 = [
     },
     {
         timestamp: "03:21.26",
-        singer: [3],
+        singer: [4],
         lines: {
             jp: "次元",
             rm: "Jigen",
@@ -1556,7 +1556,7 @@ export const lines2 = [
         }
     },
     {
-        timestamp: "03:51.98",
+        timestamp: "03:55.46",
         singer: [0, 1, 2, 3, 4],
         lines: {
             jp: "この星を照らし出して",
