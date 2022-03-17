@@ -409,7 +409,7 @@ export const lines = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose everything"
+            en: "I shall expose everything"
         }
     },
     {
@@ -844,7 +844,7 @@ export const lines2 = [
         lines: {
             jp: "暴き出すよ",
             rm: "Abaki dasu yo",
-            en: "Expose everything"
+            en: "I shall expose everything"
         }
     },
     {
