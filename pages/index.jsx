@@ -163,6 +163,9 @@ const StyledWrapper = styled.article`
         transform: scaleX(0);
         transition: transform 0.2s ease;
     }
+    .home__wrapper .section02 a {
+        color: inherit;
+    }
 
     @media (max-width: 500px) {
         .home__wrapper {
@@ -227,7 +230,7 @@ export default function Home() {
                                 semi-casual priconne (global) player
                                 <p />
                                 this page is still a wip bc i have no ideas. you
-                                can find my translations
+                                can find my translations{" "}
                                 <Link href="/tl">
                                     <a>here</a>
                                 </Link>
