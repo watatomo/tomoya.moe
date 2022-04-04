@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faComments } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Icon from "../../../public/img/home_icon.png";
 
@@ -39,6 +39,9 @@ export function Container01() {
                         </a>
                         <a href="mailto:ren@tomoya.moe">
                             <FontAwesomeIcon icon={faEnvelope} />
+                        </a>
+                        <a href="https://retrospring.net/tomoya">
+                            <FontAwesomeIcon icon={faComments} />
                         </a>
                     </div>
                 </div>

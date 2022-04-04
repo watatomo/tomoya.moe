@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { Collapse } from "react-collapse";
+import Link from "next/link";
 import HomeMeta from "../components/index/HomeMeta";
 import StarBG from "../components/index/StarBG";
 import { Container01 } from "../components/index/Container";
@@ -225,7 +226,12 @@ export default function Home() {
                                 <br />
                                 semi-casual priconne (global) player
                                 <p />
-                                this page is still a wip bc i have no ideas
+                                this page is still a wip bc i have no ideas. you
+                                can find my translations
+                                <Link href="/tl">
+                                    <a>here</a>
+                                </Link>
+                                .
                             </div>
                         </Collapse>
                     </div>
