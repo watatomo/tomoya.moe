@@ -26,15 +26,15 @@ export const storyListMulti = [
             "Tomoya is worried about what direction to take for his personalized outfit. Unable to figure out what he wants to be, Tomoya tries on various outfits. But Hokuto, who's accompanying him, only gives the same response each time.",
         cover: "card_rectangle4_2553_evolution.webp"
     },
-    {
-        story: "phantom_thieves_vs_detectives",
-        title: "Phantom Thieves vs. Detectives",
-        writer: "Akira",
-        chapters: 23,
-        description:
-            "Knights and Ra<span className='noCase'>*</span>bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!",
-        cover: "cs_469_evolution.webp"
-    },
+    // {
+    //     story: "phantom_thieves_vs_detectives",
+    //     title: "Phantom Thieves vs. Detectives",
+    //     writer: "Akira",
+    //     chapters: 23,
+    //     description:
+    //         "Knights and Ra<span className='noCase'>*</span>bits will have an eight-day concert for the new S3 tier. They're split into two groups: phantom thieves and detectives. But just when the curtains rise, something happened to Tomoya...?!",
+    //     cover: "cs_469_evolution.webp"
+    // },
     {
         story: "sanctuary",
         title: "Sanctuary",
