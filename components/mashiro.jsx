@@ -11,51 +11,99 @@ import Markdown from "markdown-to-jsx";
 import { ThermometerHalf } from "./svgicon";
 import Fn from "./tl/Footnotes";
 
-export function Bubble({ children, character }) {
+export function Bubble({ children, character, name }) {
     return (
-        <div className="msr-unit" character={character}>
-            <div className="msr-icon">
-                <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base" />
+        <>
+            {name ? (
+                <div className="msr-unit" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">{name}</div>
+                        {children}
+                    </div>
                 </div>
-            </div>
-            <div className="msr-line">
-                <div className="msr-name" />
-                {children}
-            </div>
-        </div>
+            ) : (
+                <div className="msr-unit" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">{character}</div>
+                        {children}
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 
-export function BubbleHidden({ children, character }) {
+export function BubbleHidden({ children, character, name }) {
     return (
-        <div className="msr-unit hidden" character={character}>
-            <div className="msr-icon">
-                <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base" />
+        <>
+            {name ? (
+                <div className="msr-unit hidden" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">{name}</div>
+                        {children}
+                    </div>
                 </div>
-            </div>
-            <div className="msr-line">
-                <div className="msr-name" />
-                {children}
-            </div>
-        </div>
+            ) : (
+                <div className="msr-unit hidden" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">{character}</div>
+                        {children}
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 
-export function BubbleUnknown({ children, character }) {
+export function BubbleUnknown({ children, character, name }) {
     return (
-        <div className="msr-unit unknown" character={character}>
-            <div className="msr-icon">
-                <div className="msr-icon__wrapper">
-                    <div className="msr-icon__base" />
+        <>
+            {name ? (
+                <div className="msr-unit unknown" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">{name}</div>
+                        {children}
+                    </div>
                 </div>
-            </div>
-            <div className="msr-line">
-                <div className="msr-name" />
-                {children}
-            </div>
-        </div>
+            ) : (
+                <div className="msr-unit unknown" character={character}>
+                    <div className="msr-icon">
+                        <div className="msr-icon__wrapper">
+                            <div className="msr-icon__base" />
+                        </div>
+                    </div>
+                    <div className="msr-line">
+                        <div className="msr-name">???</div>
+                        {children}
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 

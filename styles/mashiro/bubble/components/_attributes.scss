@@ -31,11 +31,11 @@
         }
     }
 
-    .msr-name {
-        &::before {
-            content: "???";
-        }
-    }
+    // .msr-name {
+    //     &::before {
+    //         content: "???";
+    //     }
+    // }
 
     .msr-line p {
         background: #f1f1f1;

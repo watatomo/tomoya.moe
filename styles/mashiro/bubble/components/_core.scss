@@ -38,9 +38,9 @@
     font-weight: 700;
     text-transform: var(--msr-name-case);
 
-    &::before {
-        content: var(--name, "???");
-    }
+    ///   &::before {
+    ///       content: var(--name, "???");
+    ///   }
 }
 
 .msr-line {
