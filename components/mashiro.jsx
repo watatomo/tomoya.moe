@@ -201,7 +201,7 @@ export function Cw({ children }) {
     return (
         <div className="msr-cw">
             <FontAwesomeIcon icon={faExclamationTriangle} />
-            <h4 className="cw-header">Content Warning</h4>
+            <span className="cw-header">Content Warning</span>
             <p>{children}</p>
         </div>
     );
