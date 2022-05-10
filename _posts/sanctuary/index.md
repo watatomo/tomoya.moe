@@ -23,6 +23,8 @@ characters:
     - "Nazuna"
     - "Gatekeeper"
 translator:
+    - name: "Ciel"
+      href: "https://twitter.com/bluefilaments"
     - name: "Nui"
       href: "https://maonuis.tumblr.com"
     - name: "Ren"
@@ -32,6 +34,8 @@ proofreader:
       href: "https://honeyspades.tumblr.com"
     - name: "remi"
       href: "https://twitter.com/trystofstarrs"
+    - name: "Simon"
+      href: "https://twitter.com/dapporock"
 extra:
     - label: "Event"
       value: "SS Arc／6th Stage: Sanctuary"
@@ -180,19 +184,14 @@ chapterSections:
             href: 15
           - label: 3
             href: 16
-            none: true
           - label: 4
             href: 17
-            none: true
           - label: 5
             href: 18
-            none: true
           - label: 6
             href: 19
-            none: true
           - label: 7
             href: 20
-            none: true
           - label: 8
             href: 21
             none: true

@@ -78,6 +78,25 @@ export function Thought({ children }) {
     );
 }
 
+export function Action({ children }) {
+    return (
+        <p className="noCase">
+            <Markdown
+                options={{
+                    forceInline: true,
+                    overrides: {
+                        Fn: {
+                            component: Fn
+                        }
+                    }
+                }}
+            >
+                {children}
+            </Markdown>
+        </p>
+    );
+}
+
 export function Season({ s }) {
     return (
         <div className="msr-season" s={s}>
