@@ -22,7 +22,9 @@ export function Bubble({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">{name}</div>
+                        <div className="msr-name">
+                            <b>{name}</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -34,7 +36,9 @@ export function Bubble({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">{character}</div>
+                        <div className="msr-name">
+                            <b>{character}</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -54,7 +58,9 @@ export function BubbleHidden({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">{name}</div>
+                        <div className="msr-name">
+                            <b>{name}</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -66,7 +72,9 @@ export function BubbleHidden({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">{character}</div>
+                        <div className="msr-name">
+                            <b>{character}</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -86,7 +94,9 @@ export function BubbleUnknown({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">{name}</div>
+                        <div className="msr-name">
+                            <b>{name}</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -98,7 +108,9 @@ export function BubbleUnknown({ children, character, name }) {
                         </div>
                     </div>
                     <div className="msr-line">
-                        <div className="msr-name">???</div>
+                        <div className="msr-name">
+                            <b>???</b>
+                        </div>
                         {children}
                     </div>
                 </div>
@@ -189,7 +201,7 @@ export function Cw({ children }) {
     return (
         <div className="msr-cw">
             <FontAwesomeIcon icon={faExclamationTriangle} />
-            <span className="cw-header">Content Warning</span>
+            <h4 className="cw-header">Content Warning</h4>
             <p>{children}</p>
         </div>
     );
