@@ -17,24 +17,28 @@ function ChapterMeta({ post }) {
         <Head>
             <title>{post.title}</title>
             <meta name="title" content={post.title} />
-            <meta
-                property="description"
-                content={post.description
-                    .replace(/\.\.\./g, "…")
-                    .replace(/<\/?[^>]+(>|$)/g, "")}
-            />
+            {post.description ? (
+                <meta
+                    property="description"
+                    content={post.description
+                        .replace(/\.\.\./g, "…")
+                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                />
+            ) : null}
             <meta property="og:type" content="article" />
             <meta
                 property="og:url"
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="og:title" content={post.title} />
-            <meta
-                property="og:description"
-                content={post.description
-                    .replace(/\.\.\./g, "…")
-                    .replace(/<\/?[^>]+(>|$)/g, "")}
-            />
+            {post.description ? (
+                <meta
+                    property="og:description"
+                    content={post.description
+                        .replace(/\.\.\./g, "…")
+                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                />
+            ) : null}
             {post.previewImg ? (
                 <meta
                     property="og:image"
@@ -54,12 +58,14 @@ function ChapterMeta({ post }) {
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="twitter:title" content={post.title} />
-            <meta
-                property="twitter:description"
-                content={post.description
-                    .replace(/\.\.\./g, "…")
-                    .replace(/<\/?[^>]+(>|$)/g, "")}
-            />
+            {post.description ? (
+                <meta
+                    property="twitter:description"
+                    content={post.description
+                        .replace(/\.\.\./g, "…")
+                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                />
+            ) : null}
             {post.previewImg ? (
                 <meta
                     property="twitter:image"
