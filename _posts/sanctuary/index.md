@@ -1,7 +1,6 @@
 ---
 title: "Sanctuary"
 description: "Ra<span className='noCase'>*</span>bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
-descPlain: "Ra*bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
 descSource: "https://twitter.com/ensemble_stars/status/1436932590632677442"
 story: "sanctuary"
 newEra: true
@@ -22,6 +21,7 @@ characters:
     - "Wataru"
     - "Nazuna"
     - "Gatekeeper"
+
 translator:
     - name: "Ciel"
       href: "https://twitter.com/bluefilaments"
@@ -36,6 +36,7 @@ proofreader:
       href: "https://twitter.com/trystofstarrs"
     - name: "Simon"
       href: "https://twitter.com/dapporock"
+
 extra:
     - label: "Event"
       value: "SS Arc／6th Stage: Sanctuary"
@@ -251,7 +252,7 @@ miniTalkSections:
       label: Wataru Hibiki
       miniTalks:
           - label: 1
-            href: "1"
+            href: 1
             none: true
           - label: 2
             href: 2
@@ -281,12 +282,14 @@ miniTalkSections:
           - label: 2
             href: 2
             none: true
+
 commentVAs: true
 commentVA:
     - comment: "you know this pair is gonna make someone cry"
       source: "[Tomoya Kousaka [@NOT_TAKASAKA]. September 12, 2021.](https://twitter.com/NOT_TAKASAKA/status/1436937514602811400)"
     - comment: "I'm late but 😭<br>This pair is just so 😭 fuckfuckfuckfuckfuck 😭<br>They look so good too 🌞 I have no words 🙇‍♂️"
       source: "[Shunya Hiruma [@shun_shuuuun]. September 13, 2021.](https://twitter.com/shun_shuuuun/status/1437298813119590402)"
+
 storyColor: "#47b3c6"
 storyColorRGB: "71,179,198"
 storyColorH: "189"

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Meta from "../../meta";
 import {
     TWITTER_UN,
     SITE_URL,
@@ -11,7 +10,6 @@ function HomeMeta() {
     return (
         <Head>
             <title>{SITE_TITLE}</title>
-            <Meta />
             <meta name="title" content={SITE_TITLE} />
             <meta name="description" content={META_DESC} />
             <meta property="og:type" content="profile" />

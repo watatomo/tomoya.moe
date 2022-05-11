@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Meta from "../../../meta";
 import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
 
 function actualSlug({ slug }) {
@@ -17,16 +16,25 @@ function ChapterMeta({ post }) {
     return (
         <Head>
             <title>{post.title}</title>
-            <Meta />
             <meta name="title" content={post.title} />
-            <meta name="description" content={post.description} />
+            <meta
+                property="description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             <meta property="og:type" content="article" />
             <meta
                 property="og:url"
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="og:title" content={post.title} />
-            <meta property="og:description" content={post.description} />
+            <meta
+                property="og:description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             {post.previewImg ? (
                 <meta
                     property="og:image"
@@ -46,7 +54,12 @@ function ChapterMeta({ post }) {
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="twitter:title" content={post.title} />
-            <meta property="twitter:description" content={post.description} />
+            <meta
+                property="twitter:description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             {post.previewImg ? (
                 <meta
                     property="twitter:image"

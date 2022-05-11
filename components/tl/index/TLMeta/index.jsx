@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Meta from "../../../meta";
 import { TWITTER_UN, SITE_URL, SITE_TITLE } from "../../../../lib/constants";
 
 function TLMeta() {
     return (
         <Head>
             <title>{SITE_TITLE} | Translations</title>
-            <Meta />
             <meta name="title" content={`${SITE_TITLE} | Translations`} />
             <meta name="description" content="Translation Archive" />
             <meta property="og:type" content="website" />

@@ -7,7 +7,7 @@ description: "Subaru: How d'you take doves on walks, though? Do you just put 'em
 
 <Location>Seisou Hall - Courtyard</Location>
 
-<Image src="/img/tl/idol_story/wataru/animal_presentation/1.jpg" layout="responsive" width="1560" height="720" quality="100" />
+<Image src="/img/tl/idol_story/wataru/animal_presentation/1.jpg" alt="Chapter image 1" layout="responsive" width="1560" height="720" quality="100" />
 
 <Bubble character="Subaru">
 

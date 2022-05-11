@@ -2,7 +2,6 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Head from "next/head";
-import Meta from "../../../../components/meta";
 import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
 import { lines2 } from "../../../../components/tl/song/Lightless/lines";
 
@@ -36,7 +35,6 @@ function LightlessPage() {
         <>
             <Head>
                 <title>Lightless | Lyrics</title>
-                <Meta />
 
                 <meta
                     name="description"

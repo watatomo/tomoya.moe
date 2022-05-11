@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Meta from "../../../meta";
 import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
 
 function actualSlug({ slug }) {
@@ -22,24 +21,26 @@ function IndexMeta({ post }) {
     return (
         <Head>
             <title>{post.title}</title>
-            <Meta />
             <meta name="title" content={post.title} />
-            {post.descPlain ? (
-                <meta property="description" content={post.descPlain} />
-            ) : (
-                <meta property="description" content={post.description} />
-            )}
+            <meta
+                property="description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             <meta property="og:type" content="article" />
             <meta
                 property="og:url"
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="og:title" content={post.title} />
-            {post.descPlain ? (
-                <meta property="og:description" content={post.descPlain} />
-            ) : (
-                <meta property="og:description" content={post.description} />
-            )}
+
+            <meta
+                property="og:description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             <meta
                 property="og:image"
                 content={`${SITE_URL}img/tl/${actualSlug(post)}/assets/${
@@ -52,14 +53,12 @@ function IndexMeta({ post }) {
                 content={`${SITE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="twitter:title" content={post.title} />
-            {post.descPlain ? (
-                <meta property="twitter:description" content={post.descPlain} />
-            ) : (
-                <meta
-                    property="twitter:description"
-                    content={post.description}
-                />
-            )}
+            <meta
+                property="twitter:description"
+                content={post.description
+                    .replace(/\.\.\./g, "…")
+                    .replace(/<\/?[^>]+(>|$)/g, "")}
+            />
             <meta
                 property="twitter:image"
                 content={`${SITE_URL}img/tl/${actualSlug(post)}/assets/${

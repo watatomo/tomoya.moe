@@ -15,6 +15,7 @@ characters:
     - Shinobu
     - Wataru
     - Mayoi
+
 translator:
     - name: Ren
       href: "https://tomoya.moe"

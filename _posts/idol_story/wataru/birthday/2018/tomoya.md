@@ -7,7 +7,7 @@ description: "Tomoya: Woah, why are you crying?! Uh, you want me to say it with 
 
 <Location>Birthday Venue</Location>
 
-<Image src="/img/tl/idol story/wataru/birthday/2018/tomoya/1.jpg" layout="responsive" width="1280" height="720" quality="100" />
+<Image src="/img/tl/idol_story/wataru/birthday/2018/tomoya/1.jpg" alt="Chapter image 1" layout="responsive" width="1280" height="720" quality="100" />
 
 <Bubble character="Tomoya">
 
