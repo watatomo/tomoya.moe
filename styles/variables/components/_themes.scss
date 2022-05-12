@@ -1,0 +1,21 @@
+body,
+body[data-theme="light"] {
+    --chapter-bg-color: #e0eefa;
+    --chapter-inner-bg-color: #fff;
+    --chapter-link-color: rgb(238 220 179 / 75%);
+    --chapter-arrow-color: #6e85b2;
+    --credits-bg-color: #f0f1f2;
+    --accent-color: #126ebe;
+    --text-color: var(--msr-text-color);
+
+    --index-item-color: #fff;
+
+    --msr-text-color: #1e2022;
+    --msr-bubble-text-color: #222;
+    --msr-bubble-thought-color: #215cc7;
+    --msr-tippy-bg: rgba(0, 0, 0, 0.75);
+    --msr-marker-lineColor: #bbb;
+}
+
+body[data-theme="dark"] {
+}
