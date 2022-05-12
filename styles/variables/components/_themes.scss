@@ -1,5 +1,5 @@
-body,
-body[data-theme="light"] {
+html,
+html[data-theme="light"] {
     --chapter-bg-color: #e0eefa;
     --chapter-inner-bg-color: #fff;
     --chapter-link-color: rgb(238 220 179 / 75%);
@@ -15,7 +15,67 @@ body[data-theme="light"] {
     --msr-bubble-thought-color: #215cc7;
     --msr-tippy-bg: rgba(0, 0, 0, 0.75);
     --msr-marker-lineColor: #bbb;
+
+    --msr-winter-border: hsl(221, 27%, 80%);
+    --msr-winter-bg: hsl(221, 27%, 92%);
+    --msr-spring-border: hsl(341, 100%, 83%);
+    --msr-spring-bg: hsl(341, 100%, 95%);
+    --msr-summer-border: hsl(210, 100%, 83%);
+    --msr-summer-bg: hsl(210, 100%, 95%);
+    --msr-fall-border: hsl(29, 100%, 83%);
+    --msr-fall-bg: hsl(29, 100%, 95%);
+
+    --msr-cw-border: #9f0606;
+    --msr-cw-bg: #cb0f0f;
+
+    --credits-bg-color: #f0f1f2;
+
+    --cover-shadow-color: rgb(0 0 0 / 0.06);
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"],
+[data-theme="dark"] {
+    --dark-mode-img-filter: brightness(0.75) contrast(1.1);
+    --dark-mode-img-trans: 0.2s ease;
+
+    --chapter-bg-color: #212328;
+    --chapter-inner-bg-color: #121318;
+    --chapter-link-color: rgb(238 220 179 / 75%);
+    --chapter-arrow-color: #6e85b2;
+    --credits-bg-color: #f0f1f2;
+    --accent-color: #126ebe;
+    --text-color: var(--msr-text-color);
+
+    --index-item-color: #121318;
+
+    --msr-text-color: hsl(0, 0%, 80%);
+    --msr-bubble-text-color: hsl(0, 0%, 90%);
+    --msr-bubble-thought-color: #215cc7;
+    --msr-tippy-bg: rgba(0, 0, 0, 0.75);
+    --msr-marker-lineColor: #555;
+
+    --msr-winter-border: hsl(221, 27%, 15%);
+    --msr-winter-bg: hsl(221, 27%, 30%);
+    --msr-spring-border: hsl(341, 100%, 18%);
+    --msr-spring-bg: hsl(341, 100%, 30%);
+    --msr-summer-border: hsl(210, 100%, 18%);
+    --msr-summer-bg: hsl(210, 100%, 30%);
+    --msr-fall-border: hsl(29, 100%, 18%);
+    --msr-fall-bg: hsl(29, 100%, 30%);
+
+    --msr-cw-border: hsl(0, 93%, 12%);
+    --msr-cw-bg: hsl(0, 86%, 23%);
+
+    --credits-bg-color: #1d1e20;
+
+    .mashiro {
+        img {
+            filter: var(--dark-mode-img-filter);
+            transition: var(--dark-mode-img-trans);
+
+            &:hover {
+                filter: unset;
+            }
+        }
+    }
 }

@@ -101,7 +101,7 @@
             display: grid;
             grid-template-columns: 1fr auto;
             padding: 10px;
-            color: #222;
+            color: var(--msr-bubble-text-color);
             width: 100%;
             border: none;
             justify-items: start;
@@ -135,7 +135,7 @@
             }
 
             &:not(:first-child) {
-                border-top: solid 1px #eff0f4;
+                border-top: solid 1px var(--msr-marker-lineColor);
                 padding: 8px 0;
             }
 

@@ -1,8 +1,8 @@
 .cw {
     display: grid;
     align-items: center;
-    background: #cb0f0f;
-    border: solid 1px #9f0606;
+    background: var(--msr-cw-bg);
+    border: solid 1px var(--msr-cw-border);
     color: #fff;
     border-radius: 5px;
     padding: 12px;

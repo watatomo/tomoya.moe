@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
     height: 40px;
-    background: white;
+    background: var(--chapter-inner-bg-color);
     box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
