@@ -20,9 +20,7 @@ function ChapterMeta({ post }) {
             {post.description ? (
                 <meta
                     property="description"
-                    content={post.description
-                        .replace(/\.\.\./g, "…")
-                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                    content={post.description.replace(/\.\.\./g, "…")}
                 />
             ) : null}
             <meta property="og:type" content="article" />
@@ -34,9 +32,7 @@ function ChapterMeta({ post }) {
             {post.description ? (
                 <meta
                     property="og:description"
-                    content={post.description
-                        .replace(/\.\.\./g, "…")
-                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                    content={post.description.replace(/\.\.\./g, "…")}
                 />
             ) : null}
             {post.previewImg ? (
@@ -61,9 +57,7 @@ function ChapterMeta({ post }) {
             {post.description ? (
                 <meta
                     property="twitter:description"
-                    content={post.description
-                        .replace(/\.\.\./g, "…")
-                        .replace(/<\/?[^>]+(>|$)/g, "")}
+                    content={post.description.replace(/\.\.\./g, "…")}
                 />
             ) : null}
             {post.previewImg ? (

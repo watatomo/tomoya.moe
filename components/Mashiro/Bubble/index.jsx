@@ -3,11 +3,9 @@ import styles from "./Bubble.module.scss";
 function Bubble({ children, character, name, hidden, unknown }) {
     return (
         <div
-            className={`
-                ${styles.unit}
-                ${hidden ? styles.hidden : ""}
-                ${unknown ? styles.unknown : ""}
-            `}
+            className={`${styles.unit}${hidden ? ` ${styles.hidden}` : ""}${
+                unknown ? ` ${styles.unknown}` : ""
+            }`}
             character={character}
         >
             <div className={styles.icon}>
