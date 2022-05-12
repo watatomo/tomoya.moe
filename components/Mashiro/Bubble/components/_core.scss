@@ -52,13 +52,12 @@
 
     p {
         align-self: flex-start;
-        background: var(--light-mode, #f1f1f1);
-        color: var(--msr-bubble-color);
+        background: var(--msr-bubble-color);
+        color: var(--msr-bubble-text-color);
         padding: 0.6em;
         margin: 0;
         border-radius: var(--msr-line-border);
         position: relative;
-        filter: var(--msr-line-filter, 0);
 
         &:hover {
             transform: translate(2px, 0px);
@@ -70,7 +69,7 @@
             &::before {
                 content: "";
                 display: block;
-                background: var(--light-mode, #f1f1f1);
+                background: var(--msr-bubble-color);
                 width: 8px;
                 height: 12px;
                 position: absolute;

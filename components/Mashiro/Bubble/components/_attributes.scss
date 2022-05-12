@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-[attribute="unknown"] {
+.unknown {
     .icon {
         &__base {
             background: #b3b3b3;
@@ -40,7 +40,7 @@
     }
 }
 
-[attribute="hidden"] {
+.hidden {
     .icon__wrapper::after {
         @extend %icon-silhouette;
     }

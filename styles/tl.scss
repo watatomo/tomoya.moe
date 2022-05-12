@@ -1,12 +1,3 @@
-$chapter-bg-color: #e0eefa;
-$chapter-inner-bg-color: #fff;
-$chapter-link-color: rgb(238 220 179 / 75%);
-$chapter-arrow-color: #6e85b2;
-$credits-bg-color: #f0f1f2;
-$accent-color: #126ebe;
-$text-color: var(--msr-text-color);
-// ^^ change these names to anything you want
-
 .chapter__wrapper {
     display: flex;
     flex-direction: column;
@@ -15,7 +6,7 @@ $text-color: var(--msr-text-color);
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
-    background-color: $chapter-bg-color;
+    background-color: var(--chapter-bg-color);
 
     hr {
         border: 1px solid #d7dcdf;
@@ -35,8 +26,8 @@ $text-color: var(--msr-text-color);
             color: #000;
             padding: 1px;
             background: linear-gradient(
-                    $chapter-link-color,
-                    $chapter-link-color
+                    var(--chapter-link-color),
+                    var(--chapter-link-color)
                 )
                 left bottom no-repeat;
             background-position: 100% 1em;
@@ -50,19 +41,19 @@ $text-color: var(--msr-text-color);
 
         a[href*="fnref"] {
             background: none;
-            color: $chapter-arrow-color;
+            color: var(--chapter-arrow-color);
             transition: all 0.2s ease;
 
             &:hover {
                 background: none;
-                color: $chapter-arrow-color;
+                color: var(--chapter-arrow-color);
                 filter: brightness(50%);
             }
         }
     }
 
     .mashiro__wrapper {
-        background-color: $chapter-inner-bg-color;
+        background-color: var(--chapter-inner-bg-color);
         width: 52rem;
         max-width: 75ch;
         // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
@@ -114,7 +105,7 @@ $text-color: var(--msr-text-color);
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
-    background-color: $chapter-bg-color;
+    background-color: var(--chapter-bg-color);
 
     .tl-container {
         margin: 2em 10px;
@@ -135,12 +126,12 @@ $text-color: var(--msr-text-color);
 
         &__item {
             text-decoration: none;
-            color: $text-color;
+            color: var(--msr-text-color);
             display: inline-grid;
             grid-template-columns: 175px auto;
             overflow: hidden;
             position: relative;
-            background-color: #fff;
+            background-color: var(--index-item-color);
             border-radius: 0.6em;
             height: 250px;
             // box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
@@ -184,7 +175,7 @@ $text-color: var(--msr-text-color);
                     h2.title {
                         font-size: 1.2em;
                         font-weight: 700;
-                        color: $accent-color;
+                        color: var(--accent-color);
                     }
 
                     h3.stats {
@@ -280,7 +271,7 @@ $text-color: var(--msr-text-color);
                     appearance: none;
 
                     &:hover {
-                        color: $accent-color;
+                        color: var(--accent-color);
                     }
                 }
             }

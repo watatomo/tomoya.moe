@@ -135,7 +135,7 @@ The more we spend time together, the more painful it'd be to part with them...
 
 </Bubble>
 
-<Bubble attribute="hidden" character="Wataru">
+<Bubble hidden character="Wataru">
 
 Ah, but aren't you aware that you'll miss out on so many important encounters if you fear parting too much?
 
