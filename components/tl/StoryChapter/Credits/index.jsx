@@ -1,12 +1,15 @@
 import Markdown from "markdown-to-jsx";
+import styles from "./Credits.module.scss";
 
 function Credits({ tl, tlc, qc }) {
     return (
-        <div className="credits__wrapper">
-            <div className="credits">
+        <div className={styles.credits__wrapper}>
+            <div className={styles.credits}>
                 {tl ? (
-                    <div className="tl">
-                        <span className="label">Translation</span>
+                    <div className={styles.tl}>
+                        <span className={styles.label}>
+                            <b>Translation</b>
+                        </span>
                         <Markdown
                             options={{
                                 forceWrapper: true
@@ -18,8 +21,10 @@ function Credits({ tl, tlc, qc }) {
                 ) : null}
 
                 {tlc ? (
-                    <div className="tlc">
-                        <span className="label">Translation Check</span>
+                    <div className={styles.tlc}>
+                        <span className={styles.label}>
+                            <b>Translation Check</b>
+                        </span>
                         <Markdown
                             options={{
                                 forceWrapper: true
@@ -31,8 +36,10 @@ function Credits({ tl, tlc, qc }) {
                 ) : null}
 
                 {qc ? (
-                    <div className="qc">
-                        <span className="label">Quality Check</span>
+                    <div className={styles.qc}>
+                        <span className={styles.label}>
+                            <b>Quality Check</b>
+                        </span>
                         <Markdown
                             options={{
                                 forceWrapper: true

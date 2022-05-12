@@ -1,0 +1,12 @@
+@media (min-width: 1200px) {
+    .spell {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 650px) {
+    .icon__wrapper {
+        width: var(--msr-icon-sizeSmall);
+        height: var(--msr-icon-sizeSmall);
+    }
+}

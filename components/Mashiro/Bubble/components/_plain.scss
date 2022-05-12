@@ -1,0 +1,34 @@
+.plain {
+    .unit {
+        grid-template-columns: 115px 1fr;
+        column-gap: 5px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .name {
+        font-size: var(--msr-line-size);
+        line-height: unset;
+        text-transform: capitalize;
+
+        &::after {
+            content: ":";
+        }
+    }
+
+    .line {
+        row-gap: 0.5em;
+
+        p {
+            background: 0;
+            padding: initial;
+            color: initial;
+
+            &:first-child::before {
+                display: none;
+            }
+        }
+    }
+}

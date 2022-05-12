@@ -7,8 +7,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Thought } from "../../../mashiro";
+import { Thought } from "../../../Mashiro/Thought";
 import Fn from "../../Footnotes";
+import styles from "./MiniTalk.module.scss";
 
 export function MiniTalk({ speaker, response, children }) {
     const [visible, setVisible] = useState(false);
@@ -18,13 +19,11 @@ export function MiniTalk({ speaker, response, children }) {
     };
 
     return (
-        <div className="minitalk-option" character={speaker}>
+        <div className={styles.option} character={speaker}>
             <button
                 type="button"
                 className={
-                    visible
-                        ? "minitalk-option__header active"
-                        : "minitalk-option__header"
+                    styles.option__header + (visible ? ` ${styles.active}` : "")
                 }
                 onClick={handleClick}
             >
@@ -43,18 +42,18 @@ export function MiniTalk({ speaker, response, children }) {
                 >
                     {response}
                 </Markdown>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
             <Collapse
                 isOpened={visible}
                 theme={{
-                    collapse: "collapse__wrapper",
-                    content: "collapse-content"
+                    collapse: `${styles.collapse__wrapper}`,
+                    content: `${styles.collapse__content}`
                 }}
             >
-                <div className="minitalk-option__body">{children}</div>
+                <div className={styles.option__body}>{children}</div>
             </Collapse>
         </div>
     );
@@ -62,7 +61,7 @@ export function MiniTalk({ speaker, response, children }) {
 
 export function MiniTalkType({ r, name, part }) {
     return (
-        <h2 className="minitalk-header">
+        <h2 className={styles.header}>
             <span mt={r} />
             {name} ({part})
         </h2>
@@ -72,17 +71,17 @@ export function MiniTalkType({ r, name, part }) {
 export function Possibility({ normal, rare }) {
     return (
         <Tabs
-            className="minitalk-tabs"
-            disabledTabClassName="disabled"
-            selectedTabClassName="selected"
-            selectedTabPanelClassName="selected"
+            className={styles.tabs}
+            disabledTabClassName={styles.disabled}
+            selectedTabClassName={styles.selected}
+            selectedTabPanelClassName={styles.selected}
         >
-            <TabList className="minitalk-tabs__list">
-                <Tab className="minitalk-tabs__tab">Normal</Tab>
-                <Tab className="minitalk-tabs__tab">Rare</Tab>
+            <TabList className={styles.tabs__list}>
+                <Tab className={styles.tabs__tab}>Normal</Tab>
+                <Tab className={styles.tabs__tab}>Rare</Tab>
             </TabList>
-            <TabPanel className="minitalk-tabs__panel">{normal}</TabPanel>
-            <TabPanel className="minitalk-tabs__panel">{rare}</TabPanel>
+            <TabPanel className={styles.tabs__panel}>{normal}</TabPanel>
+            <TabPanel className={styles.tabs__panel}>{rare}</TabPanel>
         </Tabs>
     );
 }

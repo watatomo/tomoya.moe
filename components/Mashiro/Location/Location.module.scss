@@ -1,0 +1,36 @@
+.location {
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 1fr auto 1fr;
+    gap: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    svg {
+        width: 0.85em;
+    }
+
+    p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    span {
+        padding-right: 2px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        height: 0.1em;
+        width: 100%;
+        display: block;
+        border-bottom: solid var(--msr-marker-lineColor, #555) 1px;
+    }
+}

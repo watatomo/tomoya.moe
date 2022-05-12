@@ -7,6 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { TextSize } from "../../../svgicon";
 import config from "../../../../mako.config";
+import styles from "./Toolbar.module.scss";
 
 function derivePreviousNextURL({ slug, tl, newSegment }) {
     const slugSegments = slug.split("/");
@@ -33,9 +34,11 @@ function Toolbar({ post }) {
     const isStandaloneChapter = !post.previous && !post.next && !post.miniTalk;
 
     return (
-        <div className="toolbar__wrapper">
-            <div className="toolbar">
-                <div className="toolbar__section previous">
+        <div className={styles.toolbar__wrapper}>
+            <div className={styles.toolbar}>
+                <div
+                    className={`${styles.toolbar__section} ${styles.previous}`}
+                >
                     {post.previous ? (
                         <a
                             href={derivePreviousNextURL({
@@ -49,30 +52,34 @@ function Toolbar({ post }) {
                     ) : null}
                 </div>
 
-                {/* <div className="toolbar__section fill">
+                {/* <div className={`${styles.toolbar__section} ${styles.fill}`}>
                     <FontAwesomeIcon icon={faFillDrip} />
                 </div> */}
 
                 {!isStandaloneChapter &&
                     (post.miniTalk ? (
-                        <div className="toolbar__section index">
+                        <div
+                            className={`${styles.toolbar__section} ${styles.index}`}
+                        >
                             <a href={deriveIndexURLMT({ slug: post.slug, tl })}>
                                 <FontAwesomeIcon icon={faStar} />
                             </a>
                         </div>
                     ) : (
-                        <div className="toolbar__section index">
+                        <div
+                            className={`${styles.toolbar__section} ${styles.index}`}
+                        >
                             <a href={deriveIndexURL({ slug: post.slug, tl })}>
                                 <FontAwesomeIcon icon={faStar} />
                             </a>
                         </div>
                     ))}
 
-                {/* <div className="toolbar__section size">
+                {/* <div className={`${styles.toolbar__section} ${styles.size}`}>
                     <TextSize />
                 </div> */}
 
-                <div className="toolbar__section next">
+                <div className={`${styles.toolbar__section} ${styles.next}`}>
                     {post.next ? (
                         <a
                             href={derivePreviousNextURL({

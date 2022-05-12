@@ -2,11 +2,24 @@
 @use "variables";
 @use "enst";
 
-@use "general";
+// @use "general";
 
-@use "bubble";
+// @use "bubble";
 @use "story-index";
-@use "mini-talk";
-@use "toolbar";
-@use "footnote";
-@use "marker";
+// @use "mini-talk";
+// @use "toolbar";
+// @use "footnote";
+// @use "marker";
+
+.minitalk__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.15s all ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
