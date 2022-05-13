@@ -6,7 +6,9 @@
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
-    margin-bottom: 2em;
+    background-color: var(--chapter-inner-bg-color);
+    transition: background-color var(--msr-transition);
+    padding-bottom: 2em;
 
     a {
         color: inherit;
