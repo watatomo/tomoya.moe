@@ -1,10 +1,8 @@
 // import React, {} from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-// import * as React from "react";
-// import * as ReactDOM from "react-dom";
-// import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "next-themes";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 const StyledHeader = styled.header`
     height: 40px;
@@ -54,14 +52,16 @@ function Header({ toolbar }) {
                 <span className="site-name">tomoya.moe</span>
                 <div className="header-toolbar">{toolbar}</div>
                 <div className="mode-toggle">
-                    <select
-                        value={resolvedTheme}
-                        onChange={(e) => setTheme(e.target.value)}
-                    >
-                        {/* <option value="system">System</option> */}
-                        <option value="dark">Dark</option>
-                        <option value="light">Light</option>
-                    </select>
+                    <DarkModeSwitch
+                        style={{ marginRight: "2rem" }}
+                        checked={mounted}
+                        onChange={() =>
+                            setTheme(
+                                resolvedTheme === "light" ? "dark" : "light"
+                            )
+                        }
+                        size={120}
+                    />
                 </div>
             </StyledHeader>
             <HeaderSpacing />

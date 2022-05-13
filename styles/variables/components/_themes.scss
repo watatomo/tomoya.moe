@@ -2,9 +2,11 @@ html,
 html[data-theme="light"] {
     --storyColor-opacity: 0.1;
     --storyColor-opacity-hover: 0.25;
+
+    --tl-stats-color: rgba(0, 0, 0, 0.06);
+
     --chapter-none-l: 85%;
     --chapter-none-l-hover: 65%;
-
     --chapter-bg-color: #e0eefa;
     --chapter-inner-bg-color: #fff;
     --chapter-link-color: rgb(238 220 179 / 75%);
@@ -12,6 +14,8 @@ html[data-theme="light"] {
     --credits-bg-color: #f0f1f2;
     --accent-color: #126ebe;
     --text-color: var(--msr-text-color);
+    --tooltip-border: rgb(158 158 158 / 40%);
+    --tooltip-bg: rgb(255 255 255 / 50%);
 
     --index-item-color: #fff;
 
@@ -41,20 +45,23 @@ html[data-theme="light"] {
 html[data-theme="dark"],
 [data-theme="dark"] {
     --dark-mode-img-filter: brightness(0.75) contrast(1.1);
-    --dark-mode-img-trans: 0.2s ease;
 
     --storyColor-opacity: 0.2;
     --storyColor-opacity-hover: 0.15;
+
+    --tl-stats-color: rgba(255, 255, 255, 0.1);
+
     --chapter-none-l: 50%;
     --chapter-none-l-hover: 35%;
-
     --chapter-bg-color: #212328;
     --chapter-inner-bg-color: #121318;
-    --chapter-link-color: rgb(238 220 179 / 75%);
+    --chapter-link-color: rgb(238 220 179 / 30%);
     --chapter-arrow-color: #6e85b2;
     --credits-bg-color: #f0f1f2;
-    --accent-color: #126ebe;
+    --accent-color: #537ec5;
     --text-color: var(--msr-text-color);
+    --tooltip-border: rgb(158 158 158 / 20%);
+    --tooltip-bg: rgb(255 255 255 / 15%);
 
     --index-item-color: #121318;
 
@@ -89,7 +96,7 @@ html[data-theme="dark"],
     .index__wrapper {
         img {
             filter: var(--dark-mode-img-filter);
-            transition: var(--dark-mode-img-trans);
+            transition: filter var(--msr-transition);
 
             &:hover {
                 filter: unset;

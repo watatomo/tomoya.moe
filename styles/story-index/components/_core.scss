@@ -71,7 +71,7 @@
             display: inline-block;
             border-radius: 5px;
             padding: 0.4375em 0.625em;
-            background: rgba(var(--storyColor-rgb), 0.1);
+            background: rgba(var(--storyColor-rgb), var(--storyColor-opacity));
             color: rgba(var(--storyColor-rgb), 1);
             text-decoration: none;
             transition: all 0.2s ease;

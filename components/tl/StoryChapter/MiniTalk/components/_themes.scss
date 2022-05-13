@@ -3,6 +3,7 @@ html[data-theme="dark"],
     .option__header {
         background: var(--bubble-dark-mode);
         color: var(--msr-bubble-text-color);
+        transition: filter var(--msr-transition);
 
         &::before {
             filter: var(--dark-mode-img-filter);

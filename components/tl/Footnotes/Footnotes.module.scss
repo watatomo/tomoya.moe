@@ -7,9 +7,9 @@
     font-style: normal;
     font-size: 0.55em;
     border-radius: 3px;
-    border: solid 1px rgb(158 158 158 / 40%);
+    border: solid 1px var(--tooltip-border);
     padding: 0 3px;
-    background: rgb(255 255 255 / 50%);
+    background: var(--tooltip-bg);
     color: var(--msr-text-color);
 
     &:hover {

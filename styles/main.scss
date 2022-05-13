@@ -51,6 +51,11 @@ h6 {
 
 svg {
     shape-rendering: geometricPrecision;
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    height: 1em;
+    vertical-align: -0.125em;
 }
 
 .footer {
@@ -70,7 +75,7 @@ svg {
         a {
             display: inline-block;
             color: #3f4346;
-            transition: all 0.15s linear;
+            transition: color 0.15s linear;
 
             &:hover {
                 color: inherit;
@@ -80,7 +85,7 @@ svg {
 }
 
 .collapse__wrapper {
-    transition: height 0.5s;
+    transition: height 0.5s ease;
 }
 
 .noCalt {

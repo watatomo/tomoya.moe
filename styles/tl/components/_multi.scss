@@ -15,7 +15,6 @@
             background-color: var(--index-item-color);
             border-radius: 0.6em;
             height: 250px;
-            // box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
             box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
             transition: 0.2s ease;
 
@@ -65,7 +64,7 @@
                         align-self: start;
                         padding: 0.25em 0.6em;
                         border-radius: 0.3em;
-                        background: rgba(0, 0, 0, 0.06);
+                        background: var(--tl-stats-color);
                     }
                 }
 

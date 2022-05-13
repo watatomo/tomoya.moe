@@ -7,6 +7,7 @@
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
     background-color: var(--chapter-bg-color);
+    transition: background-color var(--msr-transition);
 
     hr {
         border: 1px solid #d7dcdf;
@@ -23,7 +24,7 @@
         margin: 0 0 0 20px;
 
         a {
-            color: #000;
+            color: var(--msr-text-color);
             padding: 1px;
             background: linear-gradient(
                     var(--chapter-link-color),
@@ -54,6 +55,7 @@
 
     .mashiro__wrapper {
         background-color: var(--chapter-inner-bg-color);
+        transition: background-color var(--msr-transition);
         width: 52rem;
         max-width: 75ch;
         // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));

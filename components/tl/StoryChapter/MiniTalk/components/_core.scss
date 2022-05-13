@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.65em;
-    transition: 0.35s all ease;
+    transition: height 0.35s ease;
 }
 
 .collapse__content {
@@ -22,9 +22,15 @@
     color: var(--msr-bubble-text-color);
     width: 100%;
     border: none;
+    transition: background var(--msr-transition);
 
     .arrow {
-        transition: 0.5s all ease;
+        transition: transform 0.5s ease;
+
+        svg {
+            height: 1em;
+            vertical-align: -0.125em;
+        }
     }
 
     &::before {
@@ -61,7 +67,7 @@
     border-bottom: 0;
     padding: 3px;
     font-weight: 400;
-    transition: 0.15s all ease;
+    transition: font-weight 0.15s ease;
     margin-bottom: -2px;
     cursor: pointer;
 
