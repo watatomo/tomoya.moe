@@ -1,9 +1,9 @@
 // import React, {} from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
+// import * as React from "react";
+// import * as ReactDOM from "react-dom";
+// import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "next-themes";
 
 const StyledHeader = styled.header`
@@ -58,7 +58,7 @@ function Header({ toolbar }) {
                         value={resolvedTheme}
                         onChange={(e) => setTheme(e.target.value)}
                     >
-                        <option value="system">System</option>
+                        {/* <option value="system">System</option> */}
                         <option value="dark">Dark</option>
                         <option value="light">Light</option>
                     </select>
