@@ -1,0 +1,30 @@
+html[data-theme="dark"],
+[data-theme="dark"] {
+    .option__header {
+        background: var(--bubble-dark-mode);
+        color: var(--msr-bubble-text-color);
+
+        &::before {
+            filter: var(--dark-mode-img-filter);
+        }
+    }
+
+    .tabs__list {
+        border-color: var(--bubble-dark-mode);
+    }
+
+    .tabs__tab {
+        border-color: var(--bubble-dark-mode);
+
+        &.selected {
+            background: var(--bubble-dark-mode);
+        }
+    }
+
+    h2.header {
+        [mt="normal"],
+        [mt="rare"] {
+            filter: var(--dark-mode-img-filter);
+        }
+    }
+}

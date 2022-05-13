@@ -7,7 +7,8 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Thought } from "../../../Mashiro/Thought";
+import Thought from "../../../Mashiro/Thought";
+import Bubble from "../../../Mashiro/Bubble";
 import Fn from "../../Footnotes";
 import styles from "./MiniTalk.module.scss";
 
@@ -36,6 +37,9 @@ export function MiniTalk({ speaker, response, children }) {
                             },
                             Thought: {
                                 component: Thought
+                            },
+                            Bubble: {
+                                component: Bubble
                             }
                         }
                     }}

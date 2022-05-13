@@ -24,15 +24,18 @@
                 display: block;
                 color: inherit;
                 border-radius: 3px;
-                background: rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
+                background: rgba(
+                    var(--storyColor-rgb),
+                    var(--storyColor-opacity)
+                );
                 padding: 5px;
                 text-align: center;
                 transition: all 0.2s ease;
 
                 &:hover {
                     background-color: rgba(
-                        var(--storyColor-rgb, #e6e6e6),
-                        0.25
+                        var(--storyColor-rgb),
+                        var(--storyColor-opacity-hover)
                     );
                 }
             }
@@ -44,10 +47,12 @@
             }
 
             #none {
-                background: #f0f1f2;
+                background: hsl(210deg 6% var(--chapter-none-l) / 30%);
 
                 &:hover {
-                    background: #e6e6e6;
+                    background: hsl(
+                        210deg 6% var(--chapter-none-l-hover) / 30%
+                    );
                 }
             }
         }
@@ -64,7 +69,7 @@
     }
 
     &__wrapper .mini-talks {
-        border-top: solid 1px #eff0f4;
+        border-top: solid 1px var(--msr-marker-lineColor);
         grid-column: 3/3;
         grid-row: 1/3;
         display: flex;
@@ -93,6 +98,10 @@
             .arrow {
                 font-size: 0.75em;
                 transition: 0.5s all ease;
+
+                svg {
+                    fill: var(--msr-text-color);
+                }
             }
 
             &.active {

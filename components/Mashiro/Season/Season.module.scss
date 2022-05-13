@@ -15,6 +15,7 @@
 
     svg {
         width: 0.8em;
+        fill: var(--msr-bubble-text-color);
     }
 
     p {
@@ -23,23 +24,23 @@
     }
 
     &[s="Winter"] {
-        border-color: hsl(221, 27%, 80%);
-        background: hsl(221, 27%, 92%);
+        border-color: var(--msr-winter-border);
+        background: var(--msr-winter-bg);
     }
 
     &[s="Spring"] {
-        border-color: hsl(341, 100%, 83%);
-        background: hsl(341, 100%, 95%);
+        border-color: var(--msr-spring-border);
+        background: var(--msr-spring-bg);
     }
 
     &[s="Summer"] {
-        border-color: hsl(210, 100%, 83%);
-        background: hsl(210, 100%, 95%);
+        border-color: var(--msr-summer-border);
+        background: var(--msr-summer-bg);
     }
 
     &[s="Fall"],
     &[s="Autumn"] {
-        border-color: hsl(29, 100%, 83%);
-        background: hsl(29, 100%, 95%);
+        border-color: var(--msr-fall-border);
+        background: var(--msr-fall-bg);
     }
 }

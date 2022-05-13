@@ -3,10 +3,11 @@ import Head from "next/head";
 import "normalize.css/normalize.css";
 import "../styles/index.scss";
 import { THEME_COLOR } from "../lib/constants";
+import { ThemeProvider } from "next-themes";
 
 export default function MyApp({ Component, pageProps }) {
     return (
-        <>
+        <ThemeProvider>
             <Head>
                 <meta charSet="utf-8" />
                 <meta
@@ -52,6 +53,6 @@ export default function MyApp({ Component, pageProps }) {
                 data-cf-beacon='{"token": "089ceca5d79842a499fda95ac9e0751c"}'
             />
             {/* <!-- End Cloudflare Web Analytics --> */}
-        </>
+        </ThemeProvider>
     );
 }

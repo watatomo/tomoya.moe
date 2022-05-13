@@ -32,7 +32,8 @@
 
         .item {
             padding: 5px 10px;
-            border: solid 2px rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
+            border: solid 2px
+                rgba(var(--storyColor-rgb), var(--storyColor-opacity));
             border-radius: 5px;
 
             &.season {
@@ -94,14 +95,14 @@
 
     .collapsible {
         &-header {
-            background: rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
+            background: rgba(var(--storyColor-rgb), var(--storyColor-opacity));
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;
             display: grid;
             grid-template-columns: 1fr auto;
             padding: 10px;
-            color: #222;
+            color: var(--msr-bubble-text-color);
             width: 100%;
             border: none;
             justify-items: start;
@@ -135,7 +136,7 @@
             }
 
             &:not(:first-child) {
-                border-top: solid 1px #eff0f4;
+                border-top: solid 1px var(--msr-marker-lineColor);
                 padding: 8px 0;
             }
 

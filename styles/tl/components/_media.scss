@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+    .tl__wrapper {
+        font-size: 14px;
+
+        .multi-container {
+            grid-template-columns: minmax(auto, 760px);
+            grid-template-rows: auto;
+
+            &__item {
+                height: 200px;
+                grid-template-columns: 140px auto;
+
+                .data {
+                    .header {
+                        h2.title {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .single-container {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+            &__item a.title {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .tl__wrapper {
+        .tl-container {
+            .single-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    }
+}

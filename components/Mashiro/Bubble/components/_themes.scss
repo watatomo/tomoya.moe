@@ -1,0 +1,30 @@
+html[data-theme="dark"],
+[data-theme="dark"] {
+    .line {
+        p {
+            background: var(--bubble-dark-mode, #292929);
+
+            &:nth-child(2) {
+                &::before {
+                    background: var(--bubble-dark-mode, #292929);
+                }
+            }
+        }
+    }
+
+    .icon {
+        filter: var(--dark-mode-img-filter);
+    }
+
+    .unknown {
+        p {
+            background: #292929;
+
+            &:nth-child(2) {
+                &::before {
+                    background: #292929;
+                }
+            }
+        }
+    }
+}

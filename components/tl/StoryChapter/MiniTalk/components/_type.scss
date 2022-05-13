@@ -5,7 +5,7 @@ h2.header {
     line-height: 1;
     gap: 10px;
     padding-bottom: 6px;
-    border-bottom: solid 1px #eff0f4;
+    border-bottom: solid 1px var(--msr-marker-lineColor);
     font-size: 1.4em;
 
     &:not(:first-child) {

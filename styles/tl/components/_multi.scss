@@ -1,0 +1,78 @@
+.tl__wrapper {
+    .multi-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(390px, 650px));
+        grid-template-rows: 1fr;
+        grid-gap: 1.25em;
+
+        &__item {
+            text-decoration: none;
+            color: var(--msr-text-color);
+            display: inline-grid;
+            grid-template-columns: 175px auto;
+            overflow: hidden;
+            position: relative;
+            background-color: var(--index-item-color);
+            border-radius: 0.6em;
+            height: 250px;
+            // box-shadow: 0 0 8px 0px rgb(103 132 187 / 40%);
+            box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
+            transition: 0.2s ease;
+
+            &:hover {
+                transform: scale(1.01);
+            }
+
+            .cover {
+                line-height: 0;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .data {
+                max-height: 100%;
+                padding: 1.5em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                overflow: auto;
+                overscroll-behavior: contain;
+
+                .header {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 1;
+                    gap: 7px;
+
+                    h2,
+                    h3 {
+                        margin: 0;
+                    }
+
+                    h2.title {
+                        font-size: 1.2em;
+                        font-weight: 700;
+                        color: var(--accent-color);
+                    }
+
+                    h3.stats {
+                        font-size: 0.8em;
+                        font-weight: 700;
+                        align-self: start;
+                        padding: 0.25em 0.6em;
+                        border-radius: 0.3em;
+                        background: rgba(0, 0, 0, 0.06);
+                    }
+                }
+
+                .body {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}

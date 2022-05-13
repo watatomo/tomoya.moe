@@ -27,7 +27,7 @@ module.exports = {
         return config;
     },
 
-    experimental: {
+    compiler: {
         // Enables the styled-components SWC transform
         styledComponents: true
     }

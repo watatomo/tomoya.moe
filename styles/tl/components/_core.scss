@@ -1,0 +1,21 @@
+.tl__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
+    color: var(--msr-text-color);
+    background-color: var(--chapter-bg-color);
+
+    .tl-container {
+        margin: 2em 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 2em;
+        max-width: 1000px;
+    }
+}
