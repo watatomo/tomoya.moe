@@ -33,6 +33,7 @@
         "react-lrc": "^2.1.5",
         "react-markdown": "^8.0.3",
         "react-tabs": "^5.1.0",
+        "react-toggle-dark-mode": "^1.0.4",
         "react-transition-group": "^4.4.2",
         "remark-gfm": "^3.0.1",
         "remark-mdx": "^2.1.1",

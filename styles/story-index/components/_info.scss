@@ -32,7 +32,8 @@
 
         .item {
             padding: 5px 10px;
-            border: solid 2px rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
+            border: solid 2px
+                rgba(var(--storyColor-rgb), var(--storyColor-opacity));
             border-radius: 5px;
 
             &.season {
@@ -94,7 +95,7 @@
 
     .collapsible {
         &-header {
-            background: rgba(var(--storyColor-rgb, #f0f1f2), 0.1);
+            background: rgba(var(--storyColor-rgb), var(--storyColor-opacity));
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;

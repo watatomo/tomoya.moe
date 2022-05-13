@@ -1,5 +1,10 @@
 html,
 html[data-theme="light"] {
+    --storyColor-opacity: 0.1;
+    --storyColor-opacity-hover: 0.25;
+    --chapter-none-l: 85%;
+    --chapter-none-l-hover: 65%;
+
     --chapter-bg-color: #e0eefa;
     --chapter-inner-bg-color: #fff;
     --chapter-link-color: rgb(238 220 179 / 75%);
@@ -38,6 +43,11 @@ html[data-theme="dark"],
     --dark-mode-img-filter: brightness(0.75) contrast(1.1);
     --dark-mode-img-trans: 0.2s ease;
 
+    --storyColor-opacity: 0.2;
+    --storyColor-opacity-hover: 0.15;
+    --chapter-none-l: 50%;
+    --chapter-none-l-hover: 35%;
+
     --chapter-bg-color: #212328;
     --chapter-inner-bg-color: #121318;
     --chapter-link-color: rgb(238 220 179 / 75%);
@@ -68,7 +78,15 @@ html[data-theme="dark"],
 
     --credits-bg-color: #1d1e20;
 
-    .mashiro {
+    .index__wrapper {
+        .banner,
+        .info .item.characters .value span {
+            filter: var(--dark-mode-img-filter);
+        }
+    }
+
+    .mashiro,
+    .index__wrapper {
         img {
             filter: var(--dark-mode-img-filter);
             transition: var(--dark-mode-img-trans);
