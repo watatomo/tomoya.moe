@@ -25,8 +25,8 @@
                 color: inherit;
                 border-radius: 3px;
                 background: rgba(
-                    var(--storyColor-rgb),
-                    var(--storyColor-opacity)
+                    var(--storycolor-rgb),
+                    var(--storycolor-opacity)
                 );
                 padding: 5px;
                 text-align: center;
@@ -34,8 +34,8 @@
 
                 &:hover {
                     background-color: rgba(
-                        var(--storyColor-rgb),
-                        var(--storyColor-opacity-hover)
+                        var(--storycolor-rgb),
+                        var(--storycolor-opacity-hover)
                     );
                 }
             }

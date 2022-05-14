@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useState } from "react";
+import Link from "next/link";
 import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -52,24 +53,23 @@ function MiniTalks({ post }) {
                         >
                             {section.miniTalks.map((c) =>
                                 c.none ? (
-                                    <a
+                                    <Link
                                         key={c}
-                                        id="none"
                                         href={`${deriveIndex(post)}${
                                             section.name
                                         }/${c.href}`}
                                     >
-                                        {c.label}
-                                    </a>
+                                        <a id="none">{c.label}</a>
+                                    </Link>
                                 ) : (
-                                    <a
+                                    <Link
                                         key={c}
                                         href={`${deriveIndex(post)}${
                                             section.name
                                         }/${c.href}`}
                                     >
-                                        {c.label}
-                                    </a>
+                                        <a>{c.label}</a>
+                                    </Link>
                                 )
                             )}
                         </Collapse>

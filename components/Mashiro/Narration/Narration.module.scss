@@ -16,7 +16,7 @@
         padding: unset;
         margin: 0;
         border-radius: unset;
-        transition: all 0.2s ease;
+        transition: all var(--msr-transition);
 
         &:first-child::before {
             content: none;

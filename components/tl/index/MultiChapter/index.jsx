@@ -8,10 +8,7 @@ function MultiChapter() {
         <div className="multi-container">
             {storyListMulti.map((s) => (
                 <Link key={s} href={`/tl/${s.story}`}>
-                    <a
-                        className="multi-container__item"
-                        href={`/tl/${s.story}`}
-                    >
+                    <a className="multi-container__item">
                         <div className="cover">
                             <img
                                 src={`/img/tl/${s.story}/assets/${s.cover}`}

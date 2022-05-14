@@ -1,6 +1,7 @@
 // import React, {} from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,31 +9,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const StyledHeader = styled.header`
     height: 40px;
     background-color: var(--chapter-inner-bg-color);
-    transition: background-color var(--msr-transition);
+    transition: var(--msr-transition);
     box-shadow: 0 0 12px 0px var(--header-shadow-color);
     position: fixed;
     width: 100%;
     z-index: 364;
     display: flex;
     align-items: center;
-    padding: 0 0 0 0.9em;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
     color: var(--msr-text-color);
+    padding: 0 0.9em;
 
     .site-name {
         font-weight: 700;
+        color: var(--msr-text-color);
+        text-decoration: none;
     }
 
     .header-toolbar {
         flex: 1 1 200px;
         max-width: 400px;
-        justify-self: end;
+        justify-self: center;
     }
 
     .mode-toggle {
-        margin-right: 2em;
-
         button {
             position: relative;
             background: unset;
@@ -70,7 +71,9 @@ function Header({ toolbar }) {
     return (
         <>
             <StyledHeader>
-                <span className="site-name">tomoya.moe</span>
+                <Link href="/tl">
+                    <a className="site-name">tomoya.moe</a>
+                </Link>
                 <div className="header-toolbar">{toolbar}</div>
                 <div className="mode-toggle">
                     <button onClick={toggleTheme}>

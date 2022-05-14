@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
     faChevronLeft,
     faChevronRight,
@@ -40,15 +41,17 @@ function Toolbar({ post }) {
                     className={`${styles.toolbar__section} ${styles.previous}`}
                 >
                     {post.previous ? (
-                        <a
+                        <Link
                             href={derivePreviousNextURL({
                                 slug: post.slug,
                                 tl,
                                 newSegment: post.previous
                             })}
                         >
-                            <FontAwesomeIcon icon={faChevronLeft} />
-                        </a>
+                            <a>
+                                <FontAwesomeIcon icon={faChevronLeft} />
+                            </a>
+                        </Link>
                     ) : null}
                 </div>
 
@@ -61,17 +64,31 @@ function Toolbar({ post }) {
                         <div
                             className={`${styles.toolbar__section} ${styles.index}`}
                         >
-                            <a href={deriveIndexURLMT({ slug: post.slug, tl })}>
-                                <FontAwesomeIcon icon={faStar} />
-                            </a>
+                            <Link
+                                href={deriveIndexURLMT({
+                                    slug: post.slug,
+                                    tl
+                                })}
+                            >
+                                <a>
+                                    <FontAwesomeIcon icon={faStar} />
+                                </a>
+                            </Link>
                         </div>
                     ) : (
                         <div
                             className={`${styles.toolbar__section} ${styles.index}`}
                         >
-                            <a href={deriveIndexURL({ slug: post.slug, tl })}>
-                                <FontAwesomeIcon icon={faStar} />
-                            </a>
+                            <Link
+                                href={deriveIndexURL({
+                                    slug: post.slug,
+                                    tl
+                                })}
+                            >
+                                <a>
+                                    <FontAwesomeIcon icon={faStar} />
+                                </a>
+                            </Link>
                         </div>
                     ))}
 
@@ -81,15 +98,17 @@ function Toolbar({ post }) {
 
                 <div className={`${styles.toolbar__section} ${styles.next}`}>
                     {post.next ? (
-                        <a
+                        <Link
                             href={derivePreviousNextURL({
                                 slug: post.slug,
                                 tl,
                                 newSegment: post.next
                             })}
                         >
-                            <FontAwesomeIcon icon={faChevronRight} />
-                        </a>
+                            <a>
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </a>
+                        </Link>
                     ) : null}
                 </div>
             </div>

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import Markdown from "markdown-to-jsx";
 import { storyListSingle } from "./stories";
+import Link from "next/link";
 
 function SingleChapter() {
     return (
@@ -13,10 +14,12 @@ function SingleChapter() {
                             alt={s.title}
                         />
                     </div>
-                    <a href={`/tl/${s.story}`} className="title">
-                        <span>{s.title}</span>
-                        <button type="button">Read</button>
-                    </a>
+                    <Link href={`/tl/${s.story}`}>
+                        <a className="title">
+                            <span>{s.title}</span>
+                            <button type="button">Read</button>
+                        </a>
+                    </Link>
                 </div>
             ))}
         </div>

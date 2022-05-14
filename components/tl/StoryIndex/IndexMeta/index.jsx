@@ -10,11 +10,11 @@ function actualSlug({ slug }) {
 function IndexMeta({ post }) {
     const storyColorStyle = `
         :root { 
-            --storyColor: ${post.storyColor};
-            --storyColor-rgb: ${post.storyColorRGB};
-            --storyColor-h: ${post.storyColorH};
-            --storyColor-s: ${post.storyColorS};
-            --storyColor-l: ${post.storyColorL};
+            --storycolor: ${post.storyColor};
+            --storycolor-rgb: ${post.storyColorRGB};
+            --storycolor-h: ${post.storyColorH};
+            --storycolor-s: ${post.storyColorS};
+            --storycolor-l: ${post.storyColorL};
         }
     `;
 

@@ -5,12 +5,12 @@
     gap: 5px;
 
     a {
-        color: var(--storyColor);
+        color: var(--storycolor);
         transition: 0.2s ease-in-out;
         border-bottom: none;
 
         &:hover {
-            color: var(--storyColor-dark);
+            color: var(--storycolor-dark);
         }
     }
 
@@ -33,7 +33,7 @@
         .item {
             padding: 5px 10px;
             border: solid 2px
-                rgba(var(--storyColor-rgb), var(--storyColor-opacity));
+                rgba(var(--storycolor-rgb), var(--storycolor-opacity));
             border-radius: 5px;
 
             &.season {
@@ -95,7 +95,7 @@
 
     .collapsible {
         &-header {
-            background: rgba(var(--storyColor-rgb), var(--storyColor-opacity));
+            background: rgba(var(--storycolor-rgb), var(--storycolor-opacity));
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function deriveFirstChapter({ slug }) {
     const slugSegments = slug.split("/");
     slugSegments.pop();
@@ -10,7 +12,9 @@ function Title({ post }) {
             <h1 className="title-en">{post.title}</h1>
             {post.titleJp ? <h2 className="title-jp">{post.titleJp}</h2> : null}
             <div className="title-start">
-                <a href={deriveFirstChapter(post)}>Start Reading</a>
+                <Link href={deriveFirstChapter(post)}>
+                    <a>Start Reading</a>
+                </Link>
             </div>
         </div>
     );

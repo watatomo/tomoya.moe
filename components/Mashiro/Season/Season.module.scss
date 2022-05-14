@@ -12,10 +12,13 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: var(--msr-transition);
+    transition-property: color, background, border;
 
     svg {
         width: 0.8em;
         fill: var(--msr-bubble-text-color);
+        transition: fill var(--msr-transition);
     }
 
     p {

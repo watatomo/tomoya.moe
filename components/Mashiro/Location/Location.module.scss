@@ -10,6 +10,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: var(--msr-transition);
 
     svg {
         width: 0.85em;
@@ -32,6 +33,7 @@
         height: 0.1em;
         width: 100%;
         display: block;
-        border-bottom: solid var(--msr-marker-lineColor, #555) 1px;
+        border-bottom: solid var(--msr-marker-lineColor) 1px;
+        transition: var(--msr-transition);
     }
 }

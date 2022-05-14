@@ -1,4 +1,6 @@
 /* eslint-disable no-nested-ternary */
+import Link from "next/link";
+
 function deriveIndex({ slug }) {
     const slugSegments = slug.split("/");
     slugSegments.pop();
@@ -16,20 +18,19 @@ function Chapters({ post }) {
                         {section.chapters.map((c) =>
                             c.href ? (
                                 c.none ? (
-                                    <a
+                                    <Link
                                         key={c}
-                                        id="none"
                                         href={`${deriveIndex(post)}${c.href}`}
                                     >
-                                        {c.label}
-                                    </a>
+                                        <a id="none">{c.label}</a>
+                                    </Link>
                                 ) : (
-                                    <a
+                                    <Link
                                         key={c}
                                         href={`${deriveIndex(post)}${c.href}`}
                                     >
-                                        {c.label}
-                                    </a>
+                                        <a>{c.label}</a>
+                                    </Link>
                                 )
                             ) : (
                                 <span key={c}>{c.name}</span>
