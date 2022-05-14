@@ -3,18 +3,21 @@ html[data-theme="light"] {
     --storycolor-opacity: 0.1;
     --storycolor-opacity-hover: 0.25;
 
-    --tl-stats-color: rgba(0, 0, 0, 0.06);
+    --tl-stats-color: hsla(230, 23%, 37%, 0.08);
 
-    --header-shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: 204deg 14% 60%;
+
+    --header-shadow-color: hsl(var(--shadow-color) / 0.2);
+    --multi-shadow-color: hsl(var(--shadow-color) / 0.2);
 
     --chapter-none-l: 85%;
     --chapter-none-l-hover: 65%;
-    --chapter-bg-color: #f3f6f7;
+    --chapter-bg-color: #eff5f9;
     --chapter-inner-bg-color: #fff;
     --chapter-link-color: rgb(238 220 179 / 75%);
-    --chapter-arrow-color: #6e85b2;
+    --chapter-arrow-color: var(--accent-color);
     --credits-bg-color: #f0f1f2;
-    --accent-color: #126ebe;
+    --accent-color: #577acd;
     --text-color: var(--msr-text-color);
     --tooltip-border: rgb(158 158 158 / 40%);
     --tooltip-bg: rgb(255 255 255 / 50%);
@@ -22,14 +25,14 @@ html[data-theme="light"] {
     --index-item-color: #fff;
 
     --toolbar-hover-color: #000;
-    --toolbar-hover-bg: #e0e0e0;
+    --toolbar-hover-bg: hsla(230, 23%, 37%, 0.1);
 
-    --msr-text-color: #1e2022;
-    --msr-bubble-text-color: #222;
+    --msr-text-color: #2c303a;
+    --msr-bubble-text-color: #1c1e24;
     --msr-bubble-thought-color: #215cc7;
     --msr-tippy-bg: rgba(0, 0, 0, 0.75);
     --msr-tippy-color: #fff;
-    --msr-marker-lineColor: #bbb;
+    --msr-line-color: hsla(230, 23%, 37%, 0.1);
 
     --msr-winter-border: hsl(221, 27%, 80%);
     --msr-winter-bg: hsl(221, 27%, 92%);
@@ -43,30 +46,33 @@ html[data-theme="light"] {
     --msr-cw-border: #9f0606;
     --msr-cw-bg: #cb0f0f;
 
-    --credits-bg-color: #f0f1f2;
+    --credits-bg-color: hsla(230, 23%, 37%, 0.075);
 
     --cover-shadow-color: rgb(0 0 0 / 0.06);
 }
 
 html[data-theme="dark"],
 [data-theme="dark"] {
-    --dark-mode-img-filter: brightness(0.75) contrast(1.1);
+    --dark-mode-img-filter: brightness(0.75) contrast(0.9);
 
     --storycolor-opacity: 0.2;
     --storycolor-opacity-hover: 0.15;
 
     --tl-stats-color: rgba(255, 255, 255, 0.1);
 
-    --header-shadow-color: rgba(0, 0, 0, 0.5);
+    --shadow-color: 232deg 27% 1%;
+
+    --header-shadow-color: hsl(var(--shadow-color) / 0.3);
+    --multi-shadow-color: hsl(var(--shadow-color) / 0.3);
 
     --chapter-none-l: 50%;
     --chapter-none-l-hover: 35%;
     --chapter-bg-color: #121319;
     --chapter-inner-bg-color: #202128;
-    --chapter-link-color: rgb(238 220 179 / 30%);
-    --chapter-arrow-color: #81a9ff;
+    --chapter-link-color: rgb(238 220 179 / 20%);
+    --chapter-arrow-color: var(--accent-color);
 
-    --accent-color: #81a9ff;
+    --accent-color: #90acff;
     --text-color: var(--msr-text-color);
     --tooltip-border: rgb(158 158 158 / 20%);
     --tooltip-bg: rgb(255 255 255 / 15%);
@@ -76,12 +82,12 @@ html[data-theme="dark"],
     --toolbar-hover-color: #fff;
     --toolbar-hover-bg: hsla(0, 0%, 100%, 0.1);
 
-    --msr-text-color: #e4e7f1;
-    --msr-bubble-text-color: #f2f3f8;
+    --msr-text-color: #dde1ee;
+    --msr-bubble-text-color: #e4e7f1;
     --msr-bubble-thought-color: #cce4ff;
     --msr-tippy-bg: rgba(0, 0, 0, 0.8);
     --msr-tippy-color: #fff;
-    --msr-marker-lineColor: #4b4f5e;
+    --msr-line-color: #4b4f5e;
 
     --msr-winter-border: hsl(221, 24%, 8%);
     --msr-winter-bg: hsl(221, 24%, 15%);
@@ -95,7 +101,7 @@ html[data-theme="dark"],
     --msr-cw-border: hsl(0, 93%, 12%);
     --msr-cw-bg: hsl(0, 86%, 23%);
 
-    --credits-bg-color: hsla(0, 0%, 100%, 0.075);
+    --credits-bg-color: hsla(0, 0%, 100%, 0.06);
 
     .index__wrapper {
         .banner,

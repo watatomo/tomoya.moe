@@ -15,11 +15,12 @@
             background-color: var(--index-item-color);
             border-radius: 0.6em;
             height: 250px;
-            box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 12px 0px hsl(var(--shadow-color) / 0.15);
             transition: 0.2s ease;
 
             &:hover {
                 transform: scale(1.01);
+                box-shadow: 0 0 12px 0px hsl(var(--shadow-color) / 0.25);
             }
 
             .cover {

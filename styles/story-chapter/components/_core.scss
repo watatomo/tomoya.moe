@@ -10,9 +10,10 @@
     transition: background-color var(--msr-transition);
 
     hr {
-        border: 1px solid var(--msr-marker-lineColor);
+        border: 1px solid var(--msr-line-color);
         width: 100%;
         margin: 0.5em 0;
+        transition: all var(--msr-transition);
     }
 
     ol:last-of-type:not([role="tablist"]),

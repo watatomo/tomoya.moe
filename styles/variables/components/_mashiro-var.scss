@@ -1,21 +1,21 @@
 %story-dark {
-    --storyColor-dark-l: calc(var(--storyColor-l) - 20%);
-    --storyColor-dark: hsl(
-        var(--storyColor-h),
-        var(--storyColor-s),
-        var(--storyColor-dark-l)
+    --storycolor-dark-l: calc(var(--storycolor-l) - 20%);
+    --storycolor-dark: hsl(
+        var(--storycolor-h),
+        var(--storycolor-s),
+        var(--storycolor-dark-l)
     );
 }
 
 :root {
     @extend %story-dark;
 
-    --storyColor-bright-l: calc(var(--storyColor-l) + 20%);
-    --storyColor-bright-s: calc(var(--storyColor-s) + 20%);
-    --storyColor-bright: hsl(
-        var(--storyColor-h),
-        var(--storyColor-bright-s),
-        var(--storyColor-bright-l)
+    --storycolor-bright-l: calc(var(--storycolor-l) + 20%);
+    --storycolor-bright-s: calc(var(--storycolor-s) + 20%);
+    --storycolor-bright: hsl(
+        var(--storycolor-h),
+        var(--storycolor-bright-s),
+        var(--storycolor-bright-l)
     );
 
     --msr-icon-border: 12px 4px;

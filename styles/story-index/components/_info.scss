@@ -77,7 +77,7 @@
                 a:not(:last-of-type)::after {
                     content: ",\0020";
                     color: initial;
-                    cursor: initial;
+                    cursor: var(--msr-text-color);
                 }
             }
 
@@ -87,7 +87,7 @@
                 a:not(:last-of-type)::after {
                     content: ",\0020";
                     color: initial;
-                    cursor: initial;
+                    cursor: var(--msr-text-color);
                 }
             }
         }
@@ -136,7 +136,7 @@
             }
 
             &:not(:first-child) {
-                border-top: solid 1px var(--msr-marker-lineColor);
+                border-top: solid 1px var(--msr-line-color);
                 padding: 8px 0;
             }
 

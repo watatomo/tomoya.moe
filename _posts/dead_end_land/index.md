@@ -115,9 +115,9 @@ commentTN:
     - comment: >
           <ol><li>"迷い" (mayoi) is translated as "lost" here, but it can also mean doubt, delusion, etc. In Buddhism, it refers to the inability to reach enlightenment.</li></ol>
 
-storyColor: "#703f82"
-storyColorRGB: "112,63,130"
-storyColorH: "282.9"
-storyColorS: "34.7%"
-storyColorL: "37.8%"
+storyColor: "#7E4692"
+storyColorRGB: "126, 70, 146"
+storyColorH: "284"
+storyColorS: "35%"
+storyColorL: "42%"
 ---
