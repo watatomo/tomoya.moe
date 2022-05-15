@@ -21,20 +21,9 @@ characters:
     - Wataru
     - Kanata
     - Nazuna
-translator:
-    - name: morichiichan
-      href: "https://moricchiichan.tumblr.com"
-    - name: nazunyan427
-      href: "https://nazunyan427.dreamwidth.org"
-    - name: Ren
-      href: "https://tomoya.moe"
-proofreader:
-    - name: allegiantheart
-      href: "https://allegiantheart.dreamwidth.org"
-    - name: Ren
-      href: "https://tomoya.moe"
-    - name: Spoon
-      href: "https://twitter.com/spoonbutt"
+translator: "[morichiichan](https://moricchiichan.tumblr.com), [nazunyan427](https://nazunyan427.dreamwidth.org), [Ren](https://tomoya.moe)"
+proofreader: "[allegiantheart](https://allegiantheart.dreamwidth.org), [Ren](https://tomoya.moe), [Spoon](https://twitter.com/spoonbutt)"
+
 extra:
     - label: "Gacha"
       value: "Scout! RELOADED"

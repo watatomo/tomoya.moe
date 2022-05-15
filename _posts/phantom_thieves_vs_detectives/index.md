@@ -21,11 +21,8 @@ characters:
     - Wataru
     - Nazuna
     - Jin
-translator:
-    - name: Ren
-      href: "https://tomoya.moe"
-proofreader:
-    - name: TBA
+translator: "[Ren](https://tomoya.moe)"
+proofreader: "TBA"
 extra:
     - label: "Event"
       value: "Showdown! The Great Phantom Thief vs. the Detective Brigade"

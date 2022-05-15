@@ -17,12 +17,8 @@ characters:
     - "Luka_n25"
     - "Meiko_n25"
 
-translator:
-    - name: "Ren"
-      href: "https://tomoya.moe"
-proofreader:
-    - name: "Yuna"
-      href: "https://twitter.com/YZ0RzGlsiHfWP3W"
+translator: "[Ren](https://tomoya.moe)"
+proofreader: "[Yuna](https://twitter.com/YZ0RzGlsiHfWP3W)"
 
 extra:
     - label: "Event"
@@ -30,7 +26,7 @@ extra:
     - label: "Event Duration"
       value: "3/20/2022 (15:00 JST) - 3/28/2022 (20:59 JST)"
     - label: "Associated Song"
-      value: "[Nomad](https://youtu.be/GcuRzFt7juI) - Balloon"
+      value: "[Nomad](https://youtu.be/GcuRzFt7juI)"
 
 images:
     - src: "res019_no015-card_normal.webp"

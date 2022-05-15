@@ -1,3 +1,5 @@
+import Markdown from "markdown-to-jsx";
+
 function InfoBox({ post }) {
     const { characters, translator, proofreader } = post;
 
@@ -32,30 +34,14 @@ function InfoBox({ post }) {
             <div className="item tl">
                 <div className="label">Translation</div>
                 <div className="value">
-                    {translator.map((t) =>
-                        t.href ? (
-                            <a href={t.href} key={t}>
-                                {t.name}
-                            </a>
-                        ) : (
-                            <span key={t}>{t.name}</span>
-                        )
-                    )}
+                    <Markdown>{post.translator}</Markdown>
                 </div>
             </div>
             {post.proofreader ? (
                 <div className="item pr">
                     <div className="label">Proofreading</div>
                     <div className="value">
-                        {proofreader.map((p) =>
-                            p.href ? (
-                                <a href={p.href} key={p}>
-                                    {p.name}
-                                </a>
-                            ) : (
-                                <span key={p}>{p.name}</span>
-                            )
-                        )}
+                        <Markdown>{post.proofreader}</Markdown>
                     </div>
                 </div>
             ) : null}

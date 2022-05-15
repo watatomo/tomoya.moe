@@ -23,20 +23,8 @@ characters:
     - "Nazuna"
     - "Gatekeeper"
 
-translator:
-    - name: "Ciel"
-      href: "https://twitter.com/bluefilaments"
-    - name: "Nui"
-      href: "https://maonuis.tumblr.com"
-    - name: "Ren"
-      href: "https://tomoya.moe"
-proofreader:
-    - name: "honeyspades"
-      href: "https://honeyspades.tumblr.com"
-    - name: "remi"
-      href: "https://twitter.com/trystofstarrs"
-    - name: "Simon"
-      href: "https://twitter.com/dapporock"
+translator: "[Ciel](https://twitter.com/bluefilaments), [Nui](https://maonuis.tumblr.com), [Ren](https://tomoya.moe)"
+proofreader: "[honeyspades](https://honeyspades.tumblr.com), [remi](https://twitter.com/trystofstarrs), [Simon](https://twitter.com/dapporock)"
 
 extra:
     - label: "Event"

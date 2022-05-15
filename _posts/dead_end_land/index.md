@@ -17,18 +17,8 @@ characters:
     - Wataru
     - Mayoi
 
-translator:
-    - name: Ren
-      href: "https://tomoya.moe"
-    - name: Whisper
-      href: "https://whisperscrawls.dreamwidth.org"
-proofreader:
-    - name: haranami
-      href: "https://twitter.com/haranami_"
-    - name: Holi
-      href: "https://holistar.dreamwidth.org"
-    - name: Sheep
-      href: "https://twitter.com/Czar_Ramzy"
+translator: "[Ren](https://tomoya.moe), [Whisper](https://whisperscrawls.dreamwidth.org)"
+proofreader: "[haranami](https://twitter.com/haranami_), [Holi](https://holistar.dreamwidth.org), [Sheep](https://twitter.com/Czar_Ramzy)"
 
 extra:
     - label: "Gacha"

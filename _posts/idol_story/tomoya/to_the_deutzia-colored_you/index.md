@@ -18,14 +18,9 @@ characters:
     - Arashi
     - Keito
     - Wataru
-translator:
-    - name: Peace
-      href: "https://twitter.com/yoroshikilled"
-    - name: Ren
-      href: "https://tomoya.moe"
-proofreader:
-    - name: haranami
-      href: "https://twitter.com/haranami_"
+translator: "[Peace](https://twitter.com/yoroshikilled), [Ren](https://tomoya.moe)"
+proofreader: "[haranami](https://twitter.com/haranami_)"
+
 extra:
     - label: "Gacha"
       value: "Feature Scout: Tomoya Edition"

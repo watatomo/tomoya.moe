@@ -103,6 +103,17 @@ html[data-theme="dark"],
 
     --credits-bg-color: hsla(0, 0%, 100%, 0.06);
 
+    .mashiro {
+        img {
+            filter: var(--dark-mode-img-filter);
+            transition: filter var(--msr-transition);
+
+            &:hover {
+                filter: unset;
+            }
+        }
+    }
+
     .index__wrapper {
         .banner,
         .info .item.characters .value span {
@@ -111,7 +122,6 @@ html[data-theme="dark"],
         }
     }
 
-    .mashiro,
     .index__wrapper {
         .cover,
         .gallery__wrapper .item {
