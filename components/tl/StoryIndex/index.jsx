@@ -8,7 +8,7 @@ import ExtraInfo from "./ExtraInfo";
 import Gallery from "./Gallery";
 import Chapters from "./Chapters";
 import MiniTalks from "./MiniTalks";
-import { Cards1, Cards2 } from "./Cards";
+import Cards from "./Cards";
 import { CommentVA, CommentWriter, CommentTN } from "./Comments";
 import Footer from "../../footer";
 import Header from "../../header";
@@ -44,11 +44,7 @@ function StoryIndex({ post }) {
                                     <CommentTN post={post} />
                                 ) : null}
                                 {post.images ? <Gallery post={post} /> : null}
-                                {post.newEra ? (
-                                    <Cards2 post={post} />
-                                ) : (
-                                    <Cards1 post={post} />
-                                )}
+                                {post.cards ? <Cards post={post} /> : null}
                             </div>
                             <div className="chapters__wrapper">
                                 <Chapters post={post} />

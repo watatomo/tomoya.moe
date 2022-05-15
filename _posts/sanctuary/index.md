@@ -3,6 +3,7 @@ title: "Sanctuary"
 description: "Ra<span className='noCase'>*</span>bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru..."
 descSource: "https://twitter.com/ensemble_stars/status/1436932590632677442"
 story: "sanctuary"
+series: "enst"
 newEra: true
 titleJp: "サンクチュアリ"
 banner: "card_still_full1_2887_normal.webp"

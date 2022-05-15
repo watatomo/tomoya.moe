@@ -113,7 +113,8 @@ html[data-theme="dark"],
 
     .mashiro,
     .index__wrapper {
-        img {
+        .cover,
+        .gallery__wrapper .item {
             filter: var(--dark-mode-img-filter);
             transition: filter var(--msr-transition);
 

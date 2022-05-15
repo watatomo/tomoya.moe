@@ -1,5 +1,6 @@
 ---
 title: "[Birthday Celebration (2018)] Tomoya Mashiro: Wataru Hibiki"
+series: "enst"
 description: "Wataru: The rose petals on the cake? Hehehe, no need to fret. I assure you that they're all edible."
 ---
 

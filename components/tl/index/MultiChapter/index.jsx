@@ -19,7 +19,8 @@ function MultiChapter() {
                             <div className="header">
                                 <h2 className="title">{s.title}</h2>
                                 <h3 className="stats">
-                                    {s.writer} • {s.chapters} Chapters
+                                    {s.writer ? `${s.writer}  • ` : null}
+                                    {s.chapters} Chapters
                                 </h3>
                             </div>
                             <div className="body">

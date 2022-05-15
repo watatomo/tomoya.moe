@@ -9,10 +9,12 @@ function InfoBox({ post }) {
                     <div className="value">{post.season}</div>
                 </div>
             ) : null}
-            <div className="item chapters">
-                <div className="label">Chapters</div>
-                <div className="value">{post.chapterTotal}</div>
-            </div>
+            {post.chapterTotal ? (
+                <div className="item chapters">
+                    <div className="label">Chapters</div>
+                    <div className="value">{post.chapterTotal}</div>
+                </div>
+            ) : null}
             {post.writer ? (
                 <div className="item writer">
                     <div className="label">Writer</div>

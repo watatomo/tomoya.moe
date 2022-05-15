@@ -2,7 +2,7 @@ export const storyListMulti = [
     {
         story: "dead_end_land",
         title: "Dead End Land",
-        writer: "Kino Seitaro",
+        writer: "Seitaro Kino",
         chapters: 9,
         description:
             "The Ninja Association was asked to help out at a theme restaurant. However, Mayoi—who can't stand crowds—runs off...",
@@ -43,5 +43,13 @@ export const storyListMulti = [
         description:
             "Ra<span className='noCase'>*</span>bits and fine were participating in the Kanto qualifying rounds. Tomoya wakes up from a nightmare and finds himself not at the inn he was staying at, but in an unknown alleyway. Confused, he looks around, only to find an unconscious Wataru...",
         cover: "card_rectangle4_2887_evolution.webp"
+    },
+    {
+        story: "on_this_blank_canvas_i_paint",
+        title: "On This Blank Canvas, I Paint",
+        chapters: 8,
+        description:
+            "Ena feels like she's unable to convey the new expressions Kanade and the others acquired. Wanting to create a painting worthy of Nightcord at 25, Ena considers going to an art class she was once in.",
+        cover: "cover.webp"
     }
 ];

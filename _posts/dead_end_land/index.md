@@ -5,6 +5,7 @@ description: "The Ninja Association was asked to help out at a theme restaurant.
 descSource: "https://twitter.com/ensemble_stars/status/1287991176339968001"
 newEra: true
 story: "dead_end_land"
+series: "enst"
 banner: "card_still_full1_2484_normal.webp"
 cover: "card_rectangle4_2484_evolution.webp"
 season: "Summer"

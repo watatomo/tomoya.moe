@@ -30,14 +30,14 @@ const PostFieldsForPostType = {
         "next",
         "content",
         "previewImg",
-        "miniTalk"
+        "miniTalk",
+        "series"
     ],
     [PostType.Index]: [
         "title",
         "story",
         "actualStory",
         "description",
-        "descPlain",
         "descSource",
         "banner",
         "titleJp",
@@ -58,14 +58,14 @@ const PostFieldsForPostType = {
         "minitalk",
         "chapterSections",
         "cards",
-        "newEra",
         "translator",
         "proofreader",
         "miniTalkSections",
         "commentVA",
         "commentVAs",
         "commentWriter",
-        "commentTN"
+        "commentTN",
+        "series"
     ]
 };
 

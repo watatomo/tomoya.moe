@@ -1,9 +1,10 @@
 @media only screen and (max-width: 812px) {
     .index__wrapper {
+        --banner-height: 125px;
+
         font-size: 14px;
 
         .banner {
-            height: 125px;
         }
 
         .index-container {

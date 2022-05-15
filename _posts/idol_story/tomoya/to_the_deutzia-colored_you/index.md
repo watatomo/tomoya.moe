@@ -5,6 +5,7 @@ description: "Tomoya is worried about what direction to take for his personalize
 descSource: "https://twitter.com/ensemble_stars/status/1314445489908011008"
 newEra: true
 story: "to_the_deutzia-colored_you"
+series: "enst"
 banner: "card_still_full1_2553_normal.webp"
 cover: "card_rectangle4_2553_evolution.webp"
 season: "Summer"

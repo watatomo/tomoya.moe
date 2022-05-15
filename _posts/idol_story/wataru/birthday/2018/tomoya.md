@@ -1,5 +1,6 @@
 ---
 title: "[Birthday Celebration (2018)] Wataru Hibiki: Tomoya Mashiro"
+series: "enst"
 description: "Tomoya: Woah, why are you crying?! Uh, you want me to say it with your name instead?"
 ---
 

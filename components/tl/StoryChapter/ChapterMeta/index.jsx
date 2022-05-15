@@ -85,6 +85,7 @@ function ChapterMeta({ post }) {
                 rel="stylesheet"
             />
             <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+            <link href={`/css/${post.series}.css`} rel="stylesheet" />
         </Head>
     );
 }

@@ -1,5 +1,6 @@
 ---
 title: "Animal Presentation"
+series: "enst"
 description: "Subaru: How d'you take doves on walks, though? Do you just put 'em on your shoulders?"
 ---
 
