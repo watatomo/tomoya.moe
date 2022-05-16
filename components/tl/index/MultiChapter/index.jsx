@@ -27,7 +27,7 @@ function MultiChapter() {
                                     <span className="chapters">
                                         {s.chapters} Chapters
                                     </span>
-                                    <span className="series">{s.series}</span>
+                                    {/* <span className="series">{s.series}</span> */}
                                 </h3>
                             </div>
                             <div className="body">

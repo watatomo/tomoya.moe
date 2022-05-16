@@ -10,6 +10,7 @@
             position: relative;
             border-radius: 0.6em;
             overflow: hidden;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
             box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
 
             &:hover {

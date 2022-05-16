@@ -124,7 +124,8 @@ html[data-theme="dark"],
 
     .index__wrapper {
         .cover,
-        .gallery__wrapper .item {
+        .gallery__wrapper .item,
+        .card__wrapper .item {
             filter: var(--dark-mode-img-filter);
             transition: filter var(--msr-transition);
 

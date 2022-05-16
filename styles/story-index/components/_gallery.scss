@@ -8,6 +8,7 @@
 
     .item {
         overflow: hidden;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
         border-radius: 5px;
         position: relative;
         width: 100%;

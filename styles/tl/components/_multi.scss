@@ -11,6 +11,7 @@
             display: inline-grid;
             grid-template-columns: 175px auto;
             overflow: hidden;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
             position: relative;
             background-color: var(--index-item-color);
             border-radius: 0.6em;
