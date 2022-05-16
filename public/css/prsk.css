@@ -2,378 +2,378 @@
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku.png");
 }
 
 :root [character="Miku_n25"] {
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku_n25.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku_n25.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku_n25.png");
 }
 
 :root [character="Miku_ln"] {
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku_ln.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku_ln.png");
 }
 
 :root [character="Miku_mmj"] {
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku_mmj.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku_mmj.png");
 }
 
 :root [character="Miku_vbs"] {
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku_vbs.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku_vbs.png");
 }
 
 :root [character="Miku_wxs"] {
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/miku_wxs.png");
     --color: #33ccbb;
     --hue: 173;
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/miku_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/miku_wxs.png");
 }
 
 :root [character="Rin"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin.png");
 }
 
 :root [character="Rin_ln"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin_ln.png");
 }
 
 :root [character="Rin_mmj"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin_mmj.png");
 }
 
 :root [character="Rin_vbs"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin_vbs.png");
 }
 
 :root [character="Rin_wxs"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin_wxs.png");
 }
 
 :root [character="Rin_n25"] {
     --color: #ffcc11;
     --hue: 47;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rin.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rin_n25.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rin_n25.png");
 }
 
 :root [character="Len"] {
     --color: #ffee11;
     --hue: 56;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/len.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/len.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/len.png");
 }
 
 :root [character="Len_ln"] {
     --color: #ffee11;
     --hue: 56;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/len.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/len_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/len_ln.png");
 }
 
 :root [character="Len_mmj"] {
     --color: #ffee11;
     --hue: 56;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/len.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/len_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/len_mmj.png");
 }
 
 :root [character="Len_vbs"] {
     --color: #ffee11;
     --hue: 56;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/len.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/len_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/len_vbs.png");
 }
 
 :root [character="Len_wxs"] {
     --color: #ffee11;
     --hue: 56;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/len.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/len_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/len_wxs.png");
 }
 
 :root [character="Luka"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka.png");
 }
 
 :root [character="Luka_ln"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka_ln.png");
 }
 
 :root [character="Luka_mmj"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka_mmj.png");
 }
 
 :root [character="Luka_vbs"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka_vbs.png");
 }
 
 :root [character="Luka_wxs"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka_wxs.png");
 }
 
 :root [character="Luka_n25"] {
     --color: #ffbbcc;
     --hue: 345;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/luka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/luka_n25.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/luka_n25.png");
 }
 
 :root [character="Meiko"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko.png");
 }
 
 :root [character="Meiko_ln"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko_ln.png");
 }
 
 :root [character="Meiko_mmj"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko_mmj.png");
 }
 
 :root [character="Meiko_vbs"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko_vbs.png");
 }
 
 :root [character="Meiko_wxs"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko_wxs.png");
 }
 
 :root [character="Meiko_n25"] {
     --color: #dd4444;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/meiko.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/meiko_n25.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/meiko_n25.png");
 }
 
 :root [character="Kaito"] {
     --color: #3366cc;
     --hue: 220;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kaito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kaito.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kaito.png");
 }
 
 :root [character="Kaito_ln"] {
     --color: #3366cc;
     --hue: 220;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kaito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kaito_ln.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kaito_ln.png");
 }
 
 :root [character="Kaito_mmj"] {
     --color: #3366cc;
     --hue: 220;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kaito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kaito_mmj.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kaito_mmj.png");
 }
 
 :root [character="Kaito_vbs"] {
     --color: #3366cc;
     --hue: 220;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kaito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kaito_vbs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kaito_vbs.png");
 }
 
 :root [character="Kaito_wxs"] {
     --color: #3366cc;
     --hue: 220;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kaito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kaito_wxs.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kaito_wxs.png");
 }
 
 :root [character="Ichika"] {
     --color: #33aaee;
     --hue: 202;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/ichika.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/ichika.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/ichika.png");
 }
 
 :root [character="Saki"] {
     --color: #ffdd44;
     --hue: 49;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/saki.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/saki.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/saki.png");
 }
 
 :root [character="Honami"] {
     --color: #ee6666;
     --hue: 0;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/honami.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/honami.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/honami.png");
 }
 
 :root [character="Shiho"] {
     --color: #bbdd22;
     --hue: 71;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/shiho.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/shiho.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/shiho.png");
 }
 
 :root [character="Minori"] {
     --color: #ffccaa;
     --hue: 24;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/minori.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/minori.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/minori.png");
 }
 
 :root [character="Haruka"] {
     --color: #99ccff;
     --hue: 210;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/haruka.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/haruka.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/haruka.png");
 }
 
 :root [character="Airi"] {
     --color: #ffaacc;
     --hue: 336;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/airi.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/airi.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/airi.png");
 }
 
 :root [character="Shizuku"] {
     --color: #99eedd;
     --hue: 168;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/shizuku.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/shizuku.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/shizuku.png");
 }
 
 :root [character="Kohane"] {
     --color: #ff6699;
     --hue: 340;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kohane.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kohane.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kohane.png");
 }
 
 :root [character="An"] {
     --color: #00bbdd;
     --hue: 189;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/an.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/an.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/an.png");
 }
 
 :root [character="Akito"] {
     --color: #ff7722;
     --hue: 23;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/akito.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/akito.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/akito.png");
 }
 
 :root [character="Toya"] {
     --color: #0077dd;
     --hue: 208;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/toya.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/toya.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/toya.png");
 }
 
 :root [character="Emu"] {
     --color: #ff66bb;
     --hue: 327;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/emu.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/emu.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/emu.png");
 }
 
 :root [character="Nene"] {
     --color: #33dd99;
     --hue: 156;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/nene.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/nene.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/nene.png");
 }
 
 :root [character="Rui"] {
     --color: #bb88ee;
     --hue: 270;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/rui.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/rui.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/rui.png");
 }
 
 :root [character="Tsukasa"] {
     --color: #ffbb00;
     --hue: 44;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/tsukasa.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/tsukasa.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/tsukasa.png");
 }
 
 :root [character="Kanade"] {
     --color: #bb6688;
     --hue: 336;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/kanade.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/kanade.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/kanade.png");
 }
 
 :root [character="Mafuyu"] {
     --color: #8888cc;
     --hue: 240;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/mafuyu.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/mafuyu.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/mafuyu.png");
 }
 
 :root [character="Ena"] {
     --color: #ccaa88;
     --hue: 30;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/ena.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/ena.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/ena.png");
 }
 
 :root [character="Mizuki"] {
     --color: #ddaacc;
     --hue: 320;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/prsk/mizuki.png");
-    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@latest/charahead/prsk/mizuki.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/watatomo/img@v0.1.0/charahead/prsk/mizuki.png");
 }
 
 :root [character="Futaba"] {

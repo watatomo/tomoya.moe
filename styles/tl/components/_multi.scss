@@ -20,7 +20,7 @@
 
             &:hover {
                 transform: scale(1.01);
-                box-shadow: 0 0 12px 0px hsl(var(--shadow-color) / 0.25);
+                box-shadow: 0 0 15px 0px hsl(var(--shadow-color) / 0.2);
             }
 
             .cover {
@@ -60,12 +60,21 @@
                     }
 
                     h3.stats {
-                        font-size: 0.8em;
-                        font-weight: 700;
-                        align-self: start;
-                        padding: 0.25em 0.6em;
-                        border-radius: 0.3em;
-                        background: var(--tl-stats-color);
+                        display: inline-flex;
+                        gap: 0.2em;
+
+                        > span {
+                            font-size: 0.7em;
+                            font-weight: 700;
+                            align-self: start;
+                            padding: 0.25em 0.6em;
+                            border-radius: 0.3em;
+                            background: var(--tl-stats-color);
+
+                            &.series {
+                                text-transform: uppercase;
+                            }
+                        }
                     }
                 }
 

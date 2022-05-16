@@ -222,12 +222,19 @@ export default function Home() {
                         >
                             <div className="section02">
                                 i'm not so sure what to put here, but i can just
-                                be summed up as just Some Guy. tomowata runs in
-                                my blood and soul
+                                be summed up as just{" "}
+                                <Link href="https://ensemble-stars.jp/characters/mashiro_tomoya/">
+                                    <a>Some Guy</a>
+                                </Link>
+                                . tomowata runs in my blood and soul
                                 <p />
-                                drama clubP. riamuP. drastarsP. shinonome fan.
-                                <br />
-                                semi-casual priconne (global) player
+                                tomoya, wataru, hokuto (enst); ena, akito
+                                (prsk); riamu, akari, akira (imas cg); kaoru,
+                                teru, tsubasa (imas sm); anna, matsuri (imas
+                                ml); nichika (imas sc); shizuku (ll nijigaku);
+                                sumire (ll superstar); hikari, karen (revstar);
+                                agnes tachyon, manhattan cafe (umamusu); saori,
+                                rika (d4dj)
                                 <p />
                                 this page is still a wip bc i have no ideas. you
                                 can find my translations{" "}
