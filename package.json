@@ -32,6 +32,7 @@
         "react-h5-audio-player": "^3.8.2",
         "react-lrc": "^2.1.4",
         "react-markdown": "^8.0.0",
+        "react-spinners": "^0.12.0",
         "react-spring": "^9.4.5",
         "react-tabs": "^5.1.0",
         "react-transition-group": "^4.4.2",

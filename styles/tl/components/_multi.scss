@@ -68,9 +68,12 @@
                             font-size: 0.7em;
                             font-weight: 700;
                             align-self: start;
-                            padding: 0.25em 0.6em;
+                            padding: 0.25em 0.5em;
                             border-radius: 0.3em;
                             background: var(--tl-stats-color);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 
                             &.series {
                                 text-transform: uppercase;
