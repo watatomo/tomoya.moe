@@ -3,7 +3,7 @@
     align-items: center;
     justify-items: center;
     grid-template: 1fr / 24px 1fr;
-    gap: 5px;
+    gap: 0.15em;
     border-radius: 5px;
     padding: 8px;
     border: solid 1px;
@@ -17,6 +17,7 @@
     transition-property: color, background, border;
 
     svg {
+        height: 1em;
         width: 1em;
         fill: var(--msr-bubble-text-color);
         transition: fill var(--msr-transition);
@@ -24,6 +25,7 @@
 
     p {
         margin: 0;
+        transition: var(--msr-transition);
         justify-self: flex-start;
         grid-column: 2;
     }
