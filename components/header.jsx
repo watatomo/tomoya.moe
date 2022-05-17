@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
     color: var(--msr-text-color);
-    padding: 0 0.9em;
+    padding: 0 14px;
 
     .site-name {
         font-weight: 700;
@@ -38,6 +38,10 @@ const StyledHeader = styled.header`
 
     .mode-toggle {
         justify-self: flex-end;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
 
         button {
             position: relative;
@@ -46,12 +50,12 @@ const StyledHeader = styled.header`
             cursor: pointer;
             text-decoration: none;
             color: inherit;
-            top: 2px;
+            bottom: 1px;
         }
 
         svg {
-            width: 22px;
-            height: 22px;
+            width: 22px !important;
+            height: 22px !important;
         }
     }
 
