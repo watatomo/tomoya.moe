@@ -3,6 +3,7 @@
     align-items: center;
     justify-items: center;
     grid-template: 1fr / 24px 1fr;
+    gap: 5px;
     border-radius: 5px;
     padding: 8px;
     border: solid 1px;
@@ -16,7 +17,7 @@
     transition-property: color, background, border;
 
     svg {
-        width: 0.8em;
+        width: 1em;
         fill: var(--msr-bubble-text-color);
         transition: fill var(--msr-transition);
     }
@@ -24,6 +25,7 @@
     p {
         margin: 0;
         justify-self: flex-start;
+        grid-column: 2;
     }
 
     &[s="Winter"] {

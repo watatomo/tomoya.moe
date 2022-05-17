@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
     height: 40px;
@@ -14,7 +14,9 @@ const StyledHeader = styled.header`
     position: fixed;
     width: 100%;
     z-index: 364;
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 1em;
     align-items: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
@@ -28,22 +30,34 @@ const StyledHeader = styled.header`
     }
 
     .header-toolbar {
-        flex: 1 1 200px;
+        flex: 1;
         max-width: 400px;
         justify-self: center;
     }
 
     .mode-toggle {
+        justify-self: flex-end;
+
         button {
             position: relative;
             background: unset;
             border: unset;
             cursor: pointer;
             text-decoration: none;
-            font-size: 1.3em;
             color: inherit;
+            width: 2.2em;
+            height: 2.2em;
+        }
+
+        svg {
         }
     }
+
+    /* @media only screen and (max-width: 500px) {
+        .site-name {
+            font-size: 14px;
+        }
+    } */
 `;
 
 const HeaderSpacing = styled.div`

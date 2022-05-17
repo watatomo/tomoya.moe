@@ -10,16 +10,19 @@
     -ms-user-select: none;
     user-select: none;
 
-    p {
-        background: unset !important;
-        color: unset;
-        padding: unset;
-        margin: 0;
-        border-radius: unset;
-        transition: all var(--msr-transition);
+    .line {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        row-gap: var(--msr-line-gap);
 
-        &:first-child::before {
-            content: none;
+        p {
+            margin: 0;
+            transition: all var(--msr-transition);
+
+            &:hover {
+                transform: translate(2px, 0px);
+            }
         }
     }
 
@@ -28,7 +31,7 @@
         height: 0.1em;
         width: 100%;
         display: block;
-        border-bottom: solid var(--msr-line-color, #555) 1px;
+        border-bottom: solid var(--msr-line-color) 1px;
         transition: all 0.2s ease;
     }
 }

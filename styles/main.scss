@@ -27,6 +27,11 @@ svg {
     max-width: 100%;
 }
 
+svg {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
 input,
 button,
 textarea,
@@ -49,14 +54,14 @@ h6 {
     isolation: isolate;
 }
 
-svg {
-    shape-rendering: geometricPrecision;
-    display: inline-block;
-    font-size: inherit;
-    overflow: visible;
-    height: 1em;
-    vertical-align: -0.125em;
-}
+// svg {
+//     shape-rendering: geometricPrecision;
+//     display: inline-block;
+//     font-size: inherit;
+//     overflow: visible;
+//     height: 1em;
+//     vertical-align: -0.125em;
+// }
 
 .footer {
     height: 2rem;

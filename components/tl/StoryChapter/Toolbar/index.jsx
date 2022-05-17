@@ -37,9 +37,10 @@ function Toolbar({ post }) {
     return (
         <div className={styles.toolbar__wrapper}>
             <div className={styles.toolbar}>
-                <div
+                {/* <div
                     className={`${styles.toolbar__section} ${styles.previous}`}
-                >
+                > */}
+                <div>
                     {post.previous ? (
                         <Link
                             href={derivePreviousNextURL({
@@ -48,9 +49,9 @@ function Toolbar({ post }) {
                                 newSegment: post.previous
                             })}
                         >
-                            <a>
+                            <button>
                                 <FontAwesomeIcon icon={faChevronLeft} />
-                            </a>
+                            </button>
                         </Link>
                     ) : null}
                 </div>
@@ -61,33 +62,35 @@ function Toolbar({ post }) {
 
                 {!isStandaloneChapter &&
                     (post.miniTalk ? (
-                        <div
-                            className={`${styles.toolbar__section} ${styles.index}`}
-                        >
+                        // <div
+                        //     className={`${styles.toolbar__section} ${styles.index}`}
+                        // >
+                        <div>
                             <Link
                                 href={deriveIndexURLMT({
                                     slug: post.slug,
                                     tl
                                 })}
                             >
-                                <a>
+                                <button>
                                     <FontAwesomeIcon icon={faStar} />
-                                </a>
+                                </button>
                             </Link>
                         </div>
                     ) : (
-                        <div
-                            className={`${styles.toolbar__section} ${styles.index}`}
-                        >
+                        // <div
+                        //     className={`${styles.toolbar__section} ${styles.index}`}
+                        // >
+                        <div>
                             <Link
                                 href={deriveIndexURL({
                                     slug: post.slug,
                                     tl
                                 })}
                             >
-                                <a>
+                                <button>
                                     <FontAwesomeIcon icon={faStar} />
-                                </a>
+                                </button>
                             </Link>
                         </div>
                     ))}
@@ -96,7 +99,8 @@ function Toolbar({ post }) {
                     <TextSize />
                 </div> */}
 
-                <div className={`${styles.toolbar__section} ${styles.next}`}>
+                {/* <div className={`${styles.toolbar__section} ${styles.next}`}> */}
+                <div>
                     {post.next ? (
                         <Link
                             href={derivePreviousNextURL({
@@ -105,9 +109,9 @@ function Toolbar({ post }) {
                                 newSegment: post.next
                             })}
                         >
-                            <a>
+                            <button>
                                 <FontAwesomeIcon icon={faChevronRight} />
-                            </a>
+                            </button>
                         </Link>
                     ) : null}
                 </div>

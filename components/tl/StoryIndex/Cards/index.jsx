@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
