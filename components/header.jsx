@@ -46,13 +46,12 @@ const StyledHeader = styled.header`
             cursor: pointer;
             text-decoration: none;
             color: inherit;
-            width: 2.2em;
-            height: 2.2em;
+            top: 2px;
         }
 
         svg {
-            width: 2em;
-            height: 2em;
+            width: 1.5em;
+            height: 1.5em;
         }
     }
 
@@ -71,7 +70,7 @@ const HeaderSpacing = styled.div`
 
 function Header({ toolbar }) {
     const [mounted, setMounted] = useState(false);
-    const { setTheme, theme } = useTheme();
+    const { setTheme, theme, resolvedTheme } = useTheme();
 
     useEffect(() => {
         setMounted(true);
@@ -94,7 +93,7 @@ function Header({ toolbar }) {
                 <div className="header-toolbar">{toolbar}</div>
                 <div className="mode-toggle">
                     <button onClick={toggleTheme}>
-                        {theme === "dark" ? (
+                        {resolvedTheme === "dark" ? (
                             <FontAwesomeIcon icon={faMoon} />
                         ) : (
                             <FontAwesomeIcon icon={faSun} />
