@@ -51,6 +51,8 @@ const StyledHeader = styled.header`
         }
 
         svg {
+            width: 2em;
+            height: 2em;
         }
     }
 

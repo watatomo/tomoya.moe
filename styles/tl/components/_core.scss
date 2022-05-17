@@ -7,6 +7,7 @@
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--msr-text-color);
     background-color: var(--chapter-bg-color);
+    transition: var(--msr-transition);
 
     .tl-container {
         margin: 2em 10px;
