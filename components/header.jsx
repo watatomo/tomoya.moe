@@ -27,6 +27,7 @@ const StyledHeader = styled.header`
         font-weight: 700;
         color: var(--msr-text-color);
         text-decoration: none;
+        transition: color 0.2s ease;
     }
 
     .header-toolbar {
