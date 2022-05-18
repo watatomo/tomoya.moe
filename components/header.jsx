@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
-    height: 40px;
+    height: var(--header-height);
     background-color: var(--chapter-inner-bg-color);
     transition: var(--msr-transition);
     box-shadow: 0 0 12px 0px var(--header-shadow-color);
@@ -51,6 +51,7 @@ const StyledHeader = styled.header`
             text-decoration: none;
             color: inherit;
             bottom: 1px;
+            font-size: 22px;
         }
 
         svg {

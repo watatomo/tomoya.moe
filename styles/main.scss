@@ -63,33 +63,6 @@ h6 {
 //     vertical-align: -0.125em;
 // }
 
-.footer {
-    height: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 4px 20px;
-    background-color: var(--chapter-bg-color);
-    transition: background-color var(--msr-transition);
-
-    &__links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
-        a {
-            display: inline-block;
-            color: var(--msr-text-color);
-            transition: color 0.15s linear;
-
-            &:hover {
-                color: inherit;
-            }
-        }
-    }
-}
-
 .collapse__wrapper {
     transition: height 0.5s ease;
 }

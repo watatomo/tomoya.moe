@@ -28,6 +28,9 @@
 
     --msr-transition: 0.25s ease;
 
+    --header-height: 40px;
+    --footer-height: 32px;
+
     [character] {
         --bubble-light-mode: hsl(var(--hue), 54%, 93%);
         --bubble-dark-mode: hsl(var(--hue), 18%, 18%);

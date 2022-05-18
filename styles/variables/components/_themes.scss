@@ -22,6 +22,8 @@ html[data-theme="light"] {
     --tooltip-border: rgb(158 158 158 / 40%);
     --tooltip-bg: rgb(255 255 255 / 50%);
 
+    --footer-bg: var(--chapter-bg-color);
+
     --index-item-color: #fff;
 
     --toolbar-hover-color: #000;
@@ -78,6 +80,7 @@ html[data-theme="dark"],
     --tooltip-bg: rgb(255 255 255 / 15%);
 
     --index-item-color: #202128;
+    --footer-bg: var(--chapter-bg-color);
 
     --toolbar-hover-color: #fff;
     --toolbar-hover-bg: hsla(0, 0%, 100%, 0.1);

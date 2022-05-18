@@ -1,5 +1,6 @@
 .tl__wrapper {
     display: flex;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - 3em);
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -18,5 +19,10 @@
         justify-content: center;
         gap: 2em;
         max-width: 1000px;
+    }
+
+    + footer {
+        margin: 0;
+        background-color: var(--chapter-inner-bg-color);
     }
 }
