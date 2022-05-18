@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
     color: var(--msr-text-color);
-    padding: 0 14px;
+    padding: 0 0.9em;
 
     .site-name {
         font-weight: 700;
@@ -51,7 +51,7 @@ const StyledHeader = styled.header`
             text-decoration: none;
             color: inherit;
             bottom: 1px;
-            font-size: 22px;
+            font-size: 0;
         }
 
         svg {

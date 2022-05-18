@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledFooter = styled.footer`
     height: var(--footer-height);
-    // margin-top: 3em;
     display: flex;
     justify-content: flex-end;
     padding: 4px 16px;

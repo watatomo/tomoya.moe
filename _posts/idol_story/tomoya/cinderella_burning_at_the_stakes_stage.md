@@ -20,7 +20,7 @@ President, do you have a moment? There's something I'd like to discuss with you.
 
 Oh? How rare of you to have business with me, Hokuto-kun!
 
-But I could definitely spare a moment, as this Wataru Hibiki will grant all that you desire! Ahahahaha☆
+But I could definitely spare a moment, as this Wataru Hibiki will grant all that you desire! <span className="hold">Ahahahaha☆</span>
 
 </Bubble>
 
@@ -92,7 +92,7 @@ However, I was getting too bored, so I put an end to that a long time ago.
 
 As an actor, you must always be aware that you're being watched... It's a game for him to understand the most basic of basics.
 
-It wasn't to peek into his daily life.
+It wasn't to peek into his <span className="hold">daily life.</span>
 
 </Bubble>
 
@@ -124,7 +124,7 @@ It's a special breed of dove you don't find around here.
 
 Hmm... Whatever could it be?
 
-How mysterious! Aah, there are still so many _amazing_ things hidden in this world...☆
+How mysterious! Aah, there are still so many _amazing_ things hidden in this <span className="hold">world...☆</span>
 
 </Bubble>
 
@@ -144,7 +144,7 @@ P-P-P-Pre-Preeeez...!
 
 <Bubble character="Tomoya">
 
-Oh, good afternoon, Hokuto-senpai! You're as cool today as ever...☆
+Oh, good afternoon, Hokuto-senpai! You're as cool today as <span className="hold">ever...☆</span>
 
 </Bubble>
 
@@ -204,9 +204,9 @@ C-Can you help her? I could go grab the first-aid kit from the nurse's office!
 
 Ah, there's no need to do that. I have one right here.
 
-My doves often get scratches whenever we do a play, so I have a first-aid kit on hand at all times♪
+My doves often get scratches whenever we do a play, so I have a first-aid kit on hand at all <span className="hold">times♪</span>
 
-Please hold still, Jeanne d'Arc... This will only take a moment\~♪
+Please hold still, Jeanne d'Arc... This will only take a <span className="hold">moment~♪</span>
 
 ...Mhm, you should be alright now. It's fortunate that this isn't a grave injury, so her life isn't in any danger.
 
@@ -214,7 +214,7 @@ Please hold still, Jeanne d'Arc... This will only take a moment\~♪
 
 <Bubble character="Tomoya">
 
-I-Is that so? What a relief...♪
+I-Is that so? What a <span className="hold">relief...♪</span>
 
 </Bubble>
 

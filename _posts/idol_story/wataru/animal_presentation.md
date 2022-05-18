@@ -68,7 +68,7 @@ That's my partner for ya. He didn't even break a sweat.
 
 <Bubble character="Subaru">
 
-You worked really hard, didn't you, Daikichi? There, there. You're deeefinitely gonna win next time...☆
+You worked really hard, didn't you, Daikichi? There, there. You're deeefinitely gonna win next <span className="hold">time...☆</span>
 
 </Bubble>
 
@@ -86,7 +86,7 @@ You're the only one in ANIMALS that doesn't have a pet, Tomo-chin. Don't you wan
 
 <Bubble character="Tomoya">
 
-Yeah. You're allowed to keep pets here, so I guess it'd be fine to have one...♪
+Yeah. You're allowed to keep pets here, so I guess it'd be fine to have <span className="hold">one...♪</span>
 
 But I never had a pet before. Do you guys have any recommendations for a beginner?
 
@@ -170,7 +170,7 @@ Eh— Eeek?! When did a dove get in here?
 
 My dove isn't the only one here; I've come along as well.
 
-Greetings from behind your back! 'Tis I, your Wataru Hibiki...☆
+Greetings from behind your back! 'Tis I, your Wataru <span className="hold">Hibiki...☆</span>
 
 I'm practically green with envy, seeing all the members of ANIMALS enjoy themselves without me! How lonely it is to be left out! Sniff, sniff.
 
@@ -238,7 +238,7 @@ In any case, I cannot recommend that you take a pet under your wing on a mere wh
 
 <Bubble character="Subaru">
 
-Yup, yup! Lemme know anytime you wanna go on a walk with Daikichi☆
+Yup, yup! Lemme know anytime you wanna go on a walk with <span className="hold">Daikichi☆</span>
 
 </Bubble>
 
@@ -250,7 +250,7 @@ Leon's a lone wolf, but he'll let you pet him—don't make a habit of it, though
 
 <Bubble character="Nazuna">
 
-And come to my room whenever you feel like spending time with rabbits. I'll make sure you enjoy their fluffiness\~♪
+And come to my room whenever you feel like spending time with rabbits. I'll make sure you enjoy their <span className="hold">fluffiness~♪</span>
 
 </Bubble>
 
@@ -276,7 +276,7 @@ How d'you take _doves_ on walks, though? Do you just put 'em on your shoulders?
 
 Not at all. I take them on walks through the sky in my hot air balloon, you see.
 
-On that note, Tomoya-kun, let us do exactly that...☆
+On that note, Tomoya-kun, let us do exactly <span className="hold">that...☆</span>
 
 </Bubble>
 
