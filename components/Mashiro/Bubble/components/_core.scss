@@ -5,6 +5,7 @@
     column-gap: 12px;
     row-gap: 1px;
     font-size: var(--msr-line-size);
+    transition: font-size 0.2s ease;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -15,7 +16,7 @@
 
 .icon {
     grid-column: 1;
-    transition: all var(--msr-transition);
+    transition: filter var(--mode-transition);
 
     &__wrapper {
         border-radius: var(--msr-icon-border);
@@ -23,6 +24,7 @@
         overflow: hidden;
         width: var(--msr-icon-size);
         height: var(--msr-icon-size);
+        transition: width 0.2s ease, height 0.2s ease;
     }
 
     &__base {
@@ -42,8 +44,8 @@
     font-size: 0.85em;
     line-height: 0.7;
     text-transform: var(--msr-name-case);
-    color: var(--msr-text-color);
-    transition: all var(--msr-transition);
+    color: var(--msr-name-color);
+    transition: color var(--mode-transition);
 }
 
 .line {
@@ -60,7 +62,8 @@
         margin: 0;
         border-radius: var(--msr-line-border);
         position: relative;
-        transition: all var(--msr-transition);
+        transition: background var(--mode-transition),
+            color var(--mode-transition), transform 0.2s ease;
 
         &:hover {
             transform: translate(2px, 0px);
@@ -72,8 +75,8 @@
             &::before {
                 content: "";
                 display: block;
-                transition: var(--msr-transition);
                 background: var(--bubble-light-mode, #f1f1f1);
+                transition: background var(--mode-transition);
                 width: 8px;
                 height: 12px;
                 position: absolute;

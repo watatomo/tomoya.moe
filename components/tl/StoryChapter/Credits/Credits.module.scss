@@ -12,7 +12,8 @@
     a {
         position: relative;
         text-decoration: none;
-        color: var(--msr-text-color);
+        color: var(--text-color);
+        transition: color var(--mode-transition);
         line-height: 0;
         padding: 0.5px;
 
@@ -30,7 +31,7 @@
             height: 1px;
             bottom: 0;
             left: 0;
-            background-color: var(--msr-text-color);
+            background: var(--text-color);
             transform: scaleX(0);
             transition: transform 0.2s ease;
         }
@@ -39,6 +40,8 @@
     .label {
         font-weight: 700;
         font-size: 0.85em;
+        color: var(--credits-label-color);
+        transition: color var(--mode-transition);
     }
 
     .tl,
@@ -49,7 +52,8 @@
         justify-content: center;
         justify-items: center;
         gap: 2px;
-        background-color: var(--credits-bg-color);
+        background: var(--credits-bg-color);
+        transition: background var(--mode-transition);
         padding: 10px;
         border-radius: 5px;
     }

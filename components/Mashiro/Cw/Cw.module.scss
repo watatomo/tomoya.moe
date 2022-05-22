@@ -3,7 +3,9 @@
     align-items: center;
     background: var(--msr-cw-bg);
     border: solid 1px var(--msr-cw-border);
-    color: #fff;
+    color: var(--msr-cw-text);
+    transition: background var(--mode-transition), border var(--mode-transition),
+        color var(--mode-transition);
     border-radius: 5px;
     padding: 12px;
     grid-template: 1fr 1fr / 28px 1fr;

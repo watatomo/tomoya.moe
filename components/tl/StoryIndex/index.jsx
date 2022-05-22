@@ -19,7 +19,7 @@ function StoryIndex({ post }) {
             <Header />
             <article>
                 <IndexMeta post={post} />
-                <div className="index__wrapper">
+                <div className="index__wrapper" story-theme={post.storyTheme}>
                     <Banner post={post} />
                     <div className="index-container__wrapper">
                         <div className="index-container">

@@ -100,9 +100,10 @@ chapterSections:
             href: 1
             none: true
 
-storyColor: "#e1a86f"
-storyColorRGB: "225,168,111"
-storyColorH: "30"
-storyColorS: "65.5%"
-storyColorL: "65.9%"
+# storyColor: "#e1a86f"
+# storyColorRGB: "225,168,111"
+# storyColorH: "30"
+# storyColorS: "65.5%"
+# storyColorL: "65.9%"
+storyTheme: "flamingo"
 ---

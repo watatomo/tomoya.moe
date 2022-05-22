@@ -103,9 +103,10 @@ chapterSections:
           - label: Epilogue
             href: 10
 
-storyColor: "#d7ac4a"
-storyColorRGB: "215,172,74"
-storyColorH: "41.7"
-storyColorS: "63.8%"
-storyColorL: "56.7%"
+# storyColor: "#d7ac4a"
+# storyColorRGB: "215,172,74"
+# storyColorH: "41.7"
+# storyColorS: "63.8%"
+# storyColorL: "56.7%"
+storyTheme: "green"
 ---

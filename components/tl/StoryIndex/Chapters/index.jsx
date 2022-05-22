@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import Link from "next/link";
 
 function deriveIndex({ slug }) {
@@ -18,12 +17,9 @@ function Chapters({ post }) {
                         {section.chapters.map((c) =>
                             c.href ? (
                                 c.none ? (
-                                    <Link
-                                        key={c}
-                                        href={`${deriveIndex(post)}${c.href}`}
-                                    >
-                                        <a id="none">{c.label}</a>
-                                    </Link>
+                                    <a key={c} className="none">
+                                        {c.label}
+                                    </a>
                                 ) : (
                                     <Link
                                         key={c}

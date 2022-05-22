@@ -279,9 +279,10 @@ commentVA:
     - comment: "I'm late but 😭<br>This pair is just so 😭 fuckfuckfuckfuckfuck 😭<br>They look so good too 🌞 I have no words 🙇‍♂️"
       source: "[Shunya Hiruma [@shun_shuuuun]. September 13, 2021.](https://twitter.com/shun_shuuuun/status/1437298813119590402)"
 
-storyColor: "#47b3c6"
-storyColorRGB: "71,179,198"
-storyColorH: "189"
-storyColorS: "52.7%"
-storyColorL: "52.7%"
+# storyColor: "#47b3c6"
+# storyColorRGB: "71,179,198"
+# storyColorH: "189"
+# storyColorS: "52.7%"
+# storyColorL: "52.7%"
+storyTheme: "sky"
 ---

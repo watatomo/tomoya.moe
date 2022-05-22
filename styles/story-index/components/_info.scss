@@ -5,16 +5,18 @@
     gap: 5px;
 
     a {
-        color: var(--storycolor);
-        transition: 0.2s ease-in-out;
+        color: var(--si-info-link-color);
+        transition: color var(--mode-transition);
         border-bottom: none;
 
         &:hover {
-            color: var(--storycolor-dark);
+            color: var(--si-info-link-color-hover);
         }
     }
 
     .label {
+        color: var(--si-label-color);
+        transition: color var(--mode-transition);
         font-weight: 700;
         font-size: 0.9em;
         line-height: 1.2;
@@ -32,9 +34,9 @@
 
         .item {
             padding: 5px 10px;
-            border: solid 2px
-                rgba(var(--storycolor-rgb), var(--storycolor-opacity));
+            border: solid 2px var(--si-color-main);
             border-radius: 5px;
+            transition: border var(--mode-transition);
 
             &.season {
                 grid-column: 1/2;
@@ -64,6 +66,7 @@
                         display: inline-block;
                         position: relative;
                         background: var(--charahead) 0 0 / cover;
+                        transition: filter var(--mode-transition);
                         height: 40px;
                         width: 40px;
                         margin: 0;
@@ -83,20 +86,22 @@
 
     .collapsible {
         &-header {
-            background: rgba(var(--storycolor-rgb), var(--storycolor-opacity));
+            background: var(--si-color-main);
             font-weight: 700;
             border-radius: 5px;
             cursor: pointer;
             display: grid;
             grid-template-columns: 1fr auto;
             padding: 10px;
-            color: var(--msr-bubble-text-color);
+            color: var(--text-color);
             width: 100%;
             border: none;
             justify-items: start;
+            transition: background var(--mode-transition),
+                color var(--mode-transition);
 
             .arrow {
-                transition: 0.5s all ease;
+                transition: transform 0.5s ease;
 
                 svg {
                     width: 1em;
@@ -112,7 +117,25 @@
 
         &-body {
             padding: 5px 0.45em 0;
-            transition: height 400ms ease-in-out, padding 400ms ease-in-out;
+            transition: height 400ms ease, padding 400ms ease;
+        }
+    }
+
+    .comment a {
+        color: var(--text-color);
+        padding: 1px;
+        background: linear-gradient(
+                var(--si-comment-link-color),
+                var(--si-comment-link-color)
+            )
+            left bottom no-repeat;
+        background-position: 100% 1em;
+        transition: background var(--mode-transition),
+            color var(--mode-transition);
+        text-decoration: none;
+
+        &:hover {
+            background-position: bottom;
         }
     }
 
@@ -130,6 +153,7 @@
             &:not(:first-child) {
                 border-top: solid 1px var(--msr-line-color);
                 padding: 8px 0;
+                transition: border-top var(--mode-transition);
             }
 
             &:last-child:not(:only-child) {

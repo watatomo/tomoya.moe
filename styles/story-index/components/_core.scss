@@ -7,9 +7,9 @@
     align-content: center;
     justify-content: flex-start;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    color: var(--msr-text-color);
-    background-color: var(--chapter-inner-bg-color);
-    transition: background-color var(--msr-transition);
+    color: var(--text-color);
+    background: var(--chapter-inner-bg-color);
+    transition: color var(--mode-transition), background var(--mode-transition);
     padding-bottom: 3rem;
 
     a {
@@ -23,12 +23,14 @@
         background-size: cover;
         background-position: 50% 10%;
         background-repeat: no-repeat;
+        transition: filter var(--mode-transition);
     }
 
     .cover {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        transition: filter var(--mode-transition);
 
         > div {
             height: 0;
@@ -75,13 +77,14 @@
             display: inline-block;
             border-radius: 5px;
             padding: 0.4375em 0.625em;
-            background: rgba(var(--storycolor-rgb), var(--storycolor-opacity));
-            color: rgba(var(--storycolor-rgb), 1);
+            background: var(--si-color-main);
+            color: var(--si-start-text-color);
             text-decoration: none;
-            transition: all 0.2s ease;
+            transition: color var(--mode-transition),
+                background var(--mode-transition);
 
             &:hover {
-                background: rgba(var(--storycolor-rgb), 1);
+                background: var(--si-start-bg-hover);
                 color: #fff;
             }
         }

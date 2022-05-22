@@ -8,8 +8,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
     height: var(--header-height);
-    background-color: var(--chapter-inner-bg-color);
-    transition: var(--msr-transition);
+    background: var(--chapter-inner-bg-color);
     box-shadow: 0 0 12px 0px var(--header-shadow-color);
     position: fixed;
     width: 100%;
@@ -20,14 +19,15 @@ const StyledHeader = styled.header`
     align-items: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
-    color: var(--msr-text-color);
+    color: var(--text-color);
     padding: 0 0.9em;
+    transition: background var(--mode-transition), color var(--mode-transition);
 
     .site-name {
         font-weight: 700;
-        color: var(--msr-text-color);
+        color: var(--text-color);
         text-decoration: none;
-        transition: color 0.2s ease;
+        transition: color var(--mode-transition);
     }
 
     .header-toolbar {
@@ -92,9 +92,11 @@ function Header({ toolbar }) {
     return (
         <>
             <StyledHeader>
-                <Link href="/tl">
-                    <a className="site-name">tomoya.moe</a>
-                </Link>
+                <span>
+                    <Link href="/tl">
+                        <a className="site-name">tomoya.moe</a>
+                    </Link>
+                </span>
                 <div className="header-toolbar">{toolbar}</div>
                 <div className="mode-toggle">
                     <button onClick={toggleTheme}>

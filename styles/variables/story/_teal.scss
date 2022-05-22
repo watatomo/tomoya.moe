@@ -1,0 +1,32 @@
+@import "../catppuccin";
+
+[data-theme="light"] [story-theme="teal"],
+[story-theme="teal"] {
+    --si-color-main: #{scale-color($teal, $saturation: 30%, $alpha: -60%)};
+    --si-color-secondary: #{scale-color($teal, $saturation: 30%, $alpha: -40%)};
+
+    --si-start-text-color: #{scale-color(
+            $teal,
+            $saturation: 80%,
+            $lightness: -65%
+        )};
+    --si-start-bg-hover: #{$ctp-latte-teal};
+
+    --si-info-link-color: #{$ctp-latte-teal};
+    --si-info-link-color-hover: #{scale-color($ctp-latte-teal, $lightness: -35%)};
+
+    --si-comment-link-color: #{fade-out($ctp-frappe-teal, 0.5)};
+}
+
+[data-theme="dark"] [story-theme="teal"] {
+    --si-color-main: #{scale-color($teal, $saturation: 50%, $alpha: -80%)};
+    --si-color-secondary: #{scale-color($teal, $saturation: 50%, $alpha: -90%)};
+
+    --si-start-text-color: #{$teal};
+    --si-start-bg-hover: #{$ctp-latte-teal};
+
+    --si-info-link-color: #{$teal};
+    --si-info-link-color-hover: #{$ctp-latte-teal};
+
+    --si-comment-link-color: #{fade-out($ctp-frappe-teal, 0.5)};
+}

@@ -2,6 +2,7 @@
     display: grid;
     align-items: center;
     grid-template: 1fr / var(--msr-icon-size) 1fr;
+    transition: grid-template 0.2s ease;
     gap: 10px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -18,7 +19,7 @@
 
         p {
             margin: 0;
-            transition: all var(--msr-transition);
+            transition: transform 0.2s ease;
 
             &:hover {
                 transform: translate(2px, 0px);
@@ -32,7 +33,7 @@
         width: 100%;
         display: block;
         border-bottom: solid var(--msr-line-color) 1px;
-        transition: all 0.2s ease;
+        transition: border-bottom var(--mode-transition);
     }
 }
 

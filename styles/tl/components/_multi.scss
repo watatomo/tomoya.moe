@@ -7,17 +7,18 @@
 
         &__item {
             text-decoration: none;
-            color: var(--msr-text-color);
+            color: var(--text-color);
             display: inline-grid;
             grid-template-columns: 175px auto;
             overflow: hidden;
             -webkit-mask-image: -webkit-radial-gradient(white, black);
             position: relative;
-            background-color: var(--index-item-color);
+            background: var(--tl-item-color);
             border-radius: 0.6em;
             height: 250px;
             box-shadow: 0 0 12px 0px hsl(var(--shadow-color) / 0.15);
-            transition: 0.2s ease;
+            transition: transform 0.2s ease, box-shadow var(--mode-transition),
+                color var(--mode-transition), background var(--mode-transition);
 
             &:hover {
                 transform: scale(1.01);
@@ -58,6 +59,7 @@
                         font-size: 1.2em;
                         font-weight: 700;
                         color: var(--accent-color);
+                        transition: color var(--mode-transition);
                     }
 
                     h3.stats {
@@ -71,6 +73,7 @@
                             padding: 0.25em 0.5em;
                             border-radius: 0.3em;
                             background: var(--tl-stats-color);
+                            transition: background var(--mode-transition);
                             display: flex;
                             justify-content: center;
                             align-items: center;

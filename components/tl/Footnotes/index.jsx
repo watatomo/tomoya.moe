@@ -14,11 +14,13 @@ const Button = styled.button`
     border: solid 1px var(--tooltip-border);
     padding: 0 3px;
     background: var(--tooltip-bg);
-    color: var(--msr-text-color);
+    color: var(--text-color);
+    transition: border var(--mode-transition), background var(--mode-transition),
+        color var(--mode-transition);
 
-    &:hover {
+    /* &:hover {
         color: var(--storycolor-dark);
-    }
+    } */
 `;
 
 function Fn({ num, children }) {

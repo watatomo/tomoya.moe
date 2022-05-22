@@ -8,15 +8,15 @@
 }
 
 :root {
-    @extend %story-dark;
+    // @extend %story-dark;
 
-    --storycolor-bright-l: calc(var(--storycolor-l) + 20%);
-    --storycolor-bright-s: calc(var(--storycolor-s) + 20%);
-    --storycolor-bright: hsl(
-        var(--storycolor-h),
-        var(--storycolor-bright-s),
-        var(--storycolor-bright-l)
-    );
+    // --storycolor-bright-l: calc(var(--storycolor-l) + 20%);
+    // --storycolor-bright-s: calc(var(--storycolor-s) + 20%);
+    // --storycolor-bright: hsl(
+    //     var(--storycolor-h),
+    //     var(--storycolor-bright-s),
+    //     var(--storycolor-bright-l)
+    // );
 
     --msr-icon-border: 12px 4px;
     --msr-icon-size: 60px;
@@ -26,7 +26,7 @@
     --msr-line-size: 1em;
     --msr-line-gap: 2.5px;
 
-    --msr-transition: 0.25s ease;
+    --mode-transition: 0.25s ease;
 
     --header-height: 40px;
     --footer-height: 32px;
@@ -34,10 +34,6 @@
     [character] {
         --bubble-light-mode: hsl(var(--hue), 54%, 93%);
         --bubble-dark-mode: hsl(var(--hue), 18%, 18%);
-        --bubble-fill-mode: hsl(var(--hue), 25%, 42%);
+        // --bubble-fill-mode: hsl(var(--hue), 25%, 42%);
     }
-}
-
-a.msr-fn-inline {
-    @extend %story-dark;
 }

@@ -6,9 +6,9 @@
     align-content: center;
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    color: var(--msr-text-color);
-    background-color: var(--chapter-bg-color);
-    transition: var(--msr-transition);
+    color: var(--text-color);
+    background: var(--chapter-bg-color);
+    transition: color var(--mode-transition), background var(--mode-transition);
 
     .tl-container {
         margin: 2em 10px;
@@ -23,6 +23,11 @@
 
     + footer {
         margin: 0;
-        background-color: var(--chapter-inner-bg-color);
+        background: var(--chapter-inner-bg-color);
+        transition: background var(--mode-transition);
+    }
+
+    img {
+        transition: filter var(--mode-transition);
     }
 }

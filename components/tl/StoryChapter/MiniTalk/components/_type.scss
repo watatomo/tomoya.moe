@@ -7,7 +7,6 @@ h2.header {
     padding-bottom: 6px;
     border-bottom: solid 1px var(--msr-line-color);
     font-size: 1.4em;
-    transition: all var(--msr-transition);
 
     &:not(:first-child) {
         margin-top: 1.25em;

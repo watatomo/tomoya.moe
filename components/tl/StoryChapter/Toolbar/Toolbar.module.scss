@@ -6,7 +6,8 @@
     align-items: center;
     justify-items: center;
     gap: 32px;
-    color: var(--msr-text-color);
+    color: var(--text-color);
+    transition: color var(--mode-transition);
 
     button {
         position: relative;
@@ -16,16 +17,13 @@
         text-decoration: none;
         color: inherit;
         padding: 4px 6px;
-        transition-property: background, color;
-        transition-duration: 0.2s, 0.15s;
-        transition-timing-function: ease;
         border-radius: 5px;
         bottom: 1px;
         font-size: 0;
 
         &:hover {
             color: var(--toolbar-hover-color);
-            background-color: var(--toolbar-hover-bg);
+            background: var(--toolbar-hover-bg);
         }
     }
 

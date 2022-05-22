@@ -42,6 +42,7 @@ export function CommentVA({ post }) {
                     {commentVA.map((c) => (
                         <div className="item" key={c}>
                             <Markdown
+                                className="comment"
                                 options={{
                                     forceInline: true,
                                     overrides: {
@@ -97,6 +98,7 @@ export function CommentWriter({ post }) {
                     {commentWriter.map((c) => (
                         <div key={c}>
                             <Markdown
+                                className="comment"
                                 options={{
                                     forceInline: true,
                                     overrides: {
@@ -150,7 +152,7 @@ export function CommentTN({ post }) {
             >
                 <div className="collapsible-body">
                     {commentTN.map((c) => (
-                        <div key={c}>
+                        <div className="comment" key={c}>
                             <Markdown>{c.comment}</Markdown>
                         </div>
                     ))}

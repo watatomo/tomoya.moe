@@ -239,11 +239,6 @@ miniTalkSections:
           - label: 2
             href: 2
             none: true
-storyColor: "#47b3c6"
-storyColorRGB: "71,179,198"
-storyColorH: "189"
-storyColorS: "52.7%"
-storyColorL: "52.7%"
 
 commentVA:
     - comment: "The event's hereee!! Tomo-chin finally got his long-awaited [ranking] event 5*!! And he's not cross-dressing!!"
@@ -252,4 +247,11 @@ commentWriter:
     - comment: >
           I'm the writer for Phantom Thieves vs. Detectives. Just like Tomoya, I got sick and collapsed while writing this. I apologize for the inconvenience to those involved. (Starting 2016 with an apology)
       source: "[Akira [@HiHiHiakira]. Janurary 8, 2016.](https://twitter.com/HiHiHiakira/status/685411156337377280)"
+
+# storyColor: "#47b3c6"
+# storyColorRGB: "71,179,198"
+# storyColorH: "189"
+# storyColorS: "52.7%"
+# storyColorL: "52.7%"
+storyTheme: "sky"
 ---
