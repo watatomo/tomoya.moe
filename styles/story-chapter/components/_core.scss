@@ -49,8 +49,7 @@
 
             &:hover {
                 background: none;
-                color: var(--chapter-arrow-color);
-                filter: brightness(30%);
+                color: var(--chapter-arrow-color-hover);
             }
         }
     }

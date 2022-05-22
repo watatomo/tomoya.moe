@@ -19,6 +19,11 @@ html[data-theme="light"] {
     --chapter-inner-bg-color: #fff;
     --chapter-link-color: #{fade-out($blue, 0.45)};
     --chapter-arrow-color: var(--accent-color);
+    --chapter-arrow-color-hover: #{scale-color(
+            $ctp-latte-lavender,
+            $lightness: -65%,
+            $saturation: 20%
+        )};
 
     --tooltip-border: rgb(158 158 158 / 40%);
     --tooltip-bg: rgb(255 255 255 / 50%);

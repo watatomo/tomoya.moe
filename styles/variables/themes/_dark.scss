@@ -20,6 +20,7 @@ html[data-theme="dark"],
     --chapter-inner-bg-color: #{$black2};
     --chapter-link-color: #{fade-out($blue, 0.65)};
     --chapter-arrow-color: var(--accent-color);
+    --chapter-arrow-color-hover: #{$ctp-latte-blue};
 
     --text-color: #{$white};
     --tooltip-border: rgb(158 158 158 / 20%);

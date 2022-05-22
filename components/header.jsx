@@ -21,7 +21,8 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     color: var(--text-color);
     padding: 0 0.9em;
-    transition: background var(--mode-transition), color var(--mode-transition);
+    transition: background var(--mode-transition), color var(--mode-transition),
+        box-shadow var(--mode-transition);
 
     .site-name {
         font-weight: 700;
