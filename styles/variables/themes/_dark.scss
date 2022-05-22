@@ -7,10 +7,7 @@ html[data-theme="dark"],
     --text-color: #{$white};
     --accent-color: #{$blue};
 
-    --shadow-color: #{$ctp-mocha-crust-rgb};
-
-    --header-shadow-color: rgba(var(--shadow-color), 1);
-    --multi-shadow-color: rgba(var(--shadow-color), 1);
+    --shadow-color: 4, 3, 7;
 
     --si-label-color: #{$gray2};
     --si-chapter-none-bg: #{$ctp-macchiato-surface0};

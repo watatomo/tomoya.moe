@@ -9,7 +9,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 const StyledHeader = styled.header`
     height: var(--header-height);
     background: var(--chapter-inner-bg-color);
-    box-shadow: 0 0 12px 0px var(--header-shadow-color);
+    box-shadow: 0 0 12px 0 rgba(var(--shadow-color), 0.35);
     position: fixed;
     width: 100%;
     z-index: 364;

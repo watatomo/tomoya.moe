@@ -8,10 +8,10 @@
 
         &__item {
             position: relative;
-            border-radius: 0.6em;
+            border-radius: 9px;
             overflow: hidden;
-            -webkit-mask-image: -webkit-radial-gradient(white, black);
-            box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.06);
+            // -webkit-mask-image: -webkit-radial-gradient(white, black);
+            box-shadow: 0 0 12px 0 rgba(var(--shadow-color), 0.2);
 
             &:hover {
                 img {
@@ -33,6 +33,7 @@
                 object-fit: cover;
                 transition: transform 0.2s ease;
                 margin: 0;
+                border-radius: 9px;
             }
 
             a.title {

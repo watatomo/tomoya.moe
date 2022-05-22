@@ -9,10 +9,7 @@ html[data-theme="light"] {
             $saturation: -20%
         )};
 
-    --shadow-color: #{$ctp-mocha-crust-rgb};
-
-    --header-shadow-color: rgba(var(--shadow-color), 0.2);
-    --multi-shadow-color: rgba(var(--shadow-color), 0.2);
+    --shadow-color: 123, 143, 183;
 
     --si-label-color: #{$black4};
     --si-chapter-none-bg: #{$ctp-latte-mantle};
