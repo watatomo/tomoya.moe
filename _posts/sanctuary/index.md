@@ -184,7 +184,6 @@ chapterSections:
             href: 20
           - label: 8
             href: 21
-            none: true
           - label: 9
             href: 22
             none: true
