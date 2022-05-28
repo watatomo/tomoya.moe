@@ -14,7 +14,7 @@ description: "Subaru: How d'you take doves on walks, though? Do you just put 'em
 
 Daikichi, Leon, lookie here\~☆
 
-Ta-da! It's a frisbee! Whoever gets it first wins the <span className="hold">game! ☆</span>
+Ta-da! It's a frisbee! Whoever gets it first wins the game!&nbsp;☆
 
 Allllright☆ Ready and... Fetch!
 
@@ -28,7 +28,7 @@ Don't you lose, Leon. You've gotta show everyone that you're better than these c
 
 <Bubble character="Tomoya">
 
-Do your best, Daikichi. If you get first place, you'll get this gourmet beef <span className="hold">jerky♪</span>
+Do your best, Daikichi. If you get first place, you'll get this gourmet beef jerky&NoBreak;♪
 
 </Bubble>
 
@@ -68,7 +68,7 @@ That's my partner for ya. He didn't even break a sweat.
 
 <Bubble character="Subaru">
 
-You worked really hard, didn't you, Daikichi? There, there. You're deeefinitely gonna win next <span className="hold">time...☆</span>
+You worked really hard, didn't you, Daikichi? There, there. You're deeefinitely gonna win next time...&NoBreak;☆
 
 </Bubble>
 
@@ -86,7 +86,7 @@ You're the only one in ANIMALS that doesn't have a pet, Tomo-chin. Don't you wan
 
 <Bubble character="Tomoya">
 
-Yeah. You're allowed to keep pets here, so I guess it'd be fine to have <span className="hold">one...♪</span>
+Yeah. You're allowed to keep pets here, so I guess it'd be fine to have one...&NoBreak;♪
 
 But I never had a pet before. Do you guys have any recommendations for a beginner?
 
@@ -100,13 +100,13 @@ A dog, obviously. I get if ya dunno what _breed_ to get, though.
 
 <Bubble character="Subaru">
 
-Yup! Dogs are great\~ They're obedient; and they'll keep you in great shape too 'cause you'll need to walk 'em every <span className="hold">day☆</span>
+Yup! Dogs are great\~ They're obedient; and they'll keep you in great shape too 'cause you'll need to walk 'em every day&NoBreak;☆
 
 </Bubble>
 
 <Bubble character="Nazuna">
 
-Rabbits are just as great! They're easy to take care of—and more importantly, they're super <span className="hold">cute! ♪</span>
+Rabbits are just as great! They're easy to take care of—and more importantly, they're super cute!&nbsp;♪
 
 If you're a beginner, maybe a pet you can keep indoors—like a hamster—would be good. I heard hedgehogs are easy to take care of too.
 
@@ -170,7 +170,7 @@ Eh— Eeek?! When did a dove get in here?
 
 My dove isn't the only one here; I've come along as well.
 
-Greetings from behind your back! 'Tis I, your Wataru <span className="hold">Hibiki...☆</span>
+Greetings from behind your back! 'Tis I, your Wataru Hibiki...&NoBreak;☆
 
 I'm practically green with envy, seeing all the members of ANIMALS enjoy themselves without me! How lonely it is to be left out! Sniff, sniff.
 
@@ -192,7 +192,7 @@ By the way, Tomoya-kun. Do you have any recollection of that dove you're holding
 
 <Bubble character="Tomoya">
 
-"Recollection"... Ah, is this Jeanne <span className="hold">d'Arc?<Fn num="1">A reference to Tomoya's Idol Story from ! era, _[Cinderella Burning at the Stake's Stage](/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage)._ Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.</Fn></span>
+"Recollection"... Ah, is this Jeanne d'Arc?&NoBreak;<Fn num="1">A reference to Tomoya's Idol Story from ! era, _[Cinderella Burning at the Stake's Stage](/tl/idol_story/tomoya/cinderella_burning_at_the_stakes_stage)._ Tomoya rescues Jeanne d'Arc, who passed out on the side of a street. She's quite fond of him.</Fn>
 
 </Bubble>
 
@@ -238,7 +238,7 @@ In any case, I cannot recommend that you take a pet under your wing on a mere wh
 
 <Bubble character="Subaru">
 
-Yup, yup! Lemme know anytime you wanna go on a walk with <span className="hold">Daikichi☆</span>
+Yup, yup! Lemme know anytime you wanna go on a walk with Daikichi&NoBreak;☆
 
 </Bubble>
 
@@ -250,7 +250,7 @@ Leon's a lone wolf, but he'll let you pet him—don't make a habit of it, though
 
 <Bubble character="Nazuna">
 
-And come to my room whenever you feel like spending time with rabbits. I'll make sure you enjoy their <span className="hold">fluffiness~♪</span>
+And come to my room whenever you feel like spending time with rabbits. I'll make sure you enjoy their fluffiness~&NoBreak;♪
 
 </Bubble>
 
@@ -276,7 +276,7 @@ How d'you take _doves_ on walks, though? Do you just put 'em on your shoulders?
 
 Not at all. I take them on walks through the sky in my hot air balloon, you see.
 
-On that note, Tomoya-kun, let us do exactly <span className="hold">that...☆</span>
+On that note, Tomoya-kun, let us do exactly that...&NoBreak;☆
 
 </Bubble>
 

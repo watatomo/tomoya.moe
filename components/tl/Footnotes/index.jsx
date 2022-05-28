@@ -17,10 +17,6 @@ const Button = styled.button`
     color: var(--text-color);
     transition: border var(--mode-transition), background var(--mode-transition),
         color var(--mode-transition);
-
-    /* &:hover {
-        color: var(--storycolor-dark);
-    } */
 `;
 
 function Fn({ num, children }) {
