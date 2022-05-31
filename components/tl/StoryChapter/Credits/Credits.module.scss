@@ -13,7 +13,6 @@
         position: relative;
         text-decoration: none;
         color: var(--text-color);
-        transition: color var(--mode-transition);
         line-height: 0;
         padding: 0.5px;
 
@@ -41,7 +40,6 @@
         font-weight: 700;
         font-size: 0.85em;
         color: var(--credits-label-color);
-        transition: color var(--mode-transition);
     }
 
     .tl,
@@ -53,7 +51,6 @@
         justify-items: center;
         gap: 2px;
         background: var(--credits-bg-color);
-        transition: background var(--mode-transition);
         padding: 10px;
         border-radius: 5px;
     }

@@ -9,7 +9,6 @@ const StyledFooter = styled.footer`
     justify-content: flex-end;
     padding: 4px 16px;
     background: var(--footer-bg);
-    transition: background var(--mode-transition);
 
     .links {
         display: flex;
@@ -26,7 +25,6 @@ const StyledFooter = styled.footer`
         a {
             display: inline-block;
             color: var(--text-color);
-            transition: color var(--mode-transition);
 
             &:hover {
                 color: inherit;

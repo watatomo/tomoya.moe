@@ -5,11 +5,9 @@
     grid-template: 1fr / 24px 1fr;
     gap: 0.15em;
     border-radius: 5px;
-    padding: 8px;
     border: solid 1px;
+    padding: 8px;
     color: var(--msr-season-text);
-    transition: color var(--mode-transition),
-        border-color var(--mode-transition), background var(--mode-transition);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -21,7 +19,6 @@
         height: 1em;
         width: 1em;
         fill: var(--msr-season-text);
-        transition: fill var(--mode-transition);
     }
 
     p {

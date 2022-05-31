@@ -61,8 +61,6 @@
     }
 
     .item {
-        transition: filter var(--mode-transition);
-
         > .lightbox {
             display: none;
         }

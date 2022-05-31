@@ -8,7 +8,6 @@
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--text-color);
     background: var(--chapter-bg-color);
-    transition: color var(--mode-transition), background var(--mode-transition);
 
     .tl-container {
         margin: 2em 10px;
@@ -24,9 +23,5 @@
     + footer {
         margin: 0;
         background: var(--chapter-inner-bg-color);
-    }
-
-    img {
-        transition: filter var(--mode-transition);
     }
 }

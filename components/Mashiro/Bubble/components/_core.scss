@@ -16,7 +16,6 @@
 
 .icon {
     grid-column: 1;
-    transition: filter var(--mode-transition);
 
     &__wrapper {
         border-radius: var(--msr-icon-border);
@@ -45,7 +44,6 @@
     line-height: 0.7;
     text-transform: var(--msr-name-case);
     color: var(--msr-name-color);
-    transition: color var(--mode-transition);
 }
 
 .line {
@@ -62,8 +60,7 @@
         margin: 0;
         border-radius: var(--msr-line-border);
         position: relative;
-        transition: background var(--mode-transition),
-            color var(--mode-transition), transform 0.2s ease;
+        transition: transform 0.2s ease;
 
         &:hover {
             transform: translate(2px, 0px);
@@ -76,7 +73,6 @@
                 content: "";
                 display: block;
                 background: var(--bubble-light-mode, #f1f1f1);
-                transition: background var(--mode-transition);
                 width: 8px;
                 height: 12px;
                 position: absolute;

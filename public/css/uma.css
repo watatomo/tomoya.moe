@@ -1,0 +1,32 @@
+:root [character="Sakura Bakushin O"] {
+    --color: #ee70ab;
+    --hue: 332;
+    --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/bakushin.png");
+}
+
+:root [character="Manhattan Cafe"] {
+    --color: #4a4642;
+    --hue: 30;
+    --bubble-light-mode: hsl(var(--hue), 9%, 92%) !important;
+    --bubble-dark-mode: hsl(var(--hue), 5%, 20%) !important;
+    --bubble-fill-mode: hsl(var(--hue), 5%, 45%) !important;
+    --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/cafe.png");
+}
+
+:root [character="Symboli Rudolf"] {
+    --color: #1d7864;
+    --hue: 167;
+    --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/rudolf.png");
+}
+
+:root [character="Air Shakur"] {
+    --color: #255ab4;
+    --hue: 218;
+    --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/shakur.png");
+}
+
+:root [character="Agnes Tachyon"] {
+    --color: #36b2b6;
+    --hue: 182;
+    --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/tachyon.png");
+}

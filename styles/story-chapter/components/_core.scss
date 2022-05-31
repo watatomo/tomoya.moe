@@ -7,11 +7,9 @@
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--text-color);
     background: var(--chapter-bg-color);
-    transition: color var(--mode-transition), background var(--mode-transition);
 
     hr {
         border: 1px solid var(--msr-line-color);
-        transition: border var(--mode-transition);
         width: 100%;
         margin: 0.5em 0;
     }
@@ -33,8 +31,7 @@
                 )
                 left bottom no-repeat;
             background-position: 100% 1em;
-            transition: background var(--mode-transition),
-                color var(--mode-transition);
+            transition: 0.2s ease;
             text-decoration: none;
 
             &:hover {
@@ -45,7 +42,7 @@
         a[href*="fnref"] {
             background: none;
             color: var(--chapter-arrow-color);
-            transition: color var(--mode-transition);
+            transition: 0.2s ease-in-out;
 
             &:hover {
                 background: none;
@@ -56,7 +53,6 @@
 
     .mashiro__wrapper {
         background: var(--chapter-inner-bg-color);
-        transition: background var(--mode-transition);
         width: 52rem;
         max-width: 75ch;
         // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
@@ -70,7 +66,7 @@
 
         img {
             border-radius: 5px;
-            transition: filter var(--mode-transition);
+            transition: filter 0.25s ease;
         }
 
         .footnotes > ol {

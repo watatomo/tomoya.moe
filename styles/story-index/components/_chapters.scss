@@ -27,8 +27,7 @@
                 background: var(--si-color-main);
                 padding: 5px;
                 text-align: center;
-                transition: background var(--mode-transition),
-                    color var(--mode-transition);
+                transition: 0.2s ease-in-out;
 
                 &:hover {
                     background: var(--si-color-secondary);
@@ -64,7 +63,6 @@
 
     &__wrapper .mini-talks {
         border-top: solid 1px var(--msr-line-color);
-        transition: border-top var(--mode-transition);
         grid-column: 3/3;
         grid-row: 1/3;
         display: flex;
@@ -82,7 +80,6 @@
         .minitalk__header {
             background: unset;
             color: var(--text-color);
-            transition: color var(--mode-transition);
             border: 0;
             padding: 0;
             display: inline-flex;
@@ -97,7 +94,6 @@
 
                 svg {
                     fill: var(--text-color);
-                    transition: fill var(--mode-transition);
                     width: 1em;
                 }
             }

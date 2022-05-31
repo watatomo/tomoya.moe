@@ -34,5 +34,11 @@ export const storyListSingle = [
         title: "[Mini Talk] Cinderellaesque",
         writer: "",
         cover: "cs_928_evolution.webp"
+    },
+    {
+        story: "character_story/tachyon/1",
+        title: "Agnes Tachyon: 1 - Zeigarnik Effect",
+        writer: "",
+        cover: "tex_support_card_10036.webp"
     }
 ];

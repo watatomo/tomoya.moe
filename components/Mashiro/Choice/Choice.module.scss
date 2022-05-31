@@ -1,0 +1,41 @@
+.choice {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .line {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        border: solid 1px;
+        border-radius: var(--msr-line-border);
+        line-height: 1.2;
+        padding: 0.8em;
+
+        svg {
+            height: 1.1em;
+            width: 1.1em;
+        }
+
+        p {
+            margin: 0;
+            padding-right: 0.3em;
+        }
+    }
+
+    &[c="green"] {
+        .line {
+            border-color: var(--msr-choice-green-border);
+            background: var(--msr-choice-green-bg);
+        }
+    }
+}

@@ -14,6 +14,7 @@ import Toolbar from "./Toolbar";
 import Credits from "./Credits";
 import { MiniTalk, MiniTalkType, Possibility } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
+import Choice from "../../Mashiro/Choice";
 // import Footer from "../../footer";
 import Header from "../../header";
 
@@ -41,7 +42,8 @@ function StoryChapter({ post }) {
                                     Credits,
                                     MiniTalk,
                                     MiniTalkType,
-                                    Possibility
+                                    Possibility,
+                                    Choice
                                 }}
                             />
                         </div>
