@@ -29,7 +29,7 @@ function StoryIndex({ post }) {
                                 <div className="synopsis">
                                     <Markdown>{post.description}</Markdown>
                                     {post.descSource ? (
-                                        <a href={post.descSource}> ➹</a>
+                                        <a href={post.descSource}>&nbsp;➹</a>
                                     ) : null}
                                 </div>
                                 <InfoBox post={post} />

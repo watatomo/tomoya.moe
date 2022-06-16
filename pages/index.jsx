@@ -234,7 +234,7 @@ export default function Home() {
                                 ml); nichika (imas sc); shizuku (ll nijigaku);
                                 sumire (ll superstar); hikari, karen (revstar);
                                 agnes tachyon, manhattan cafe (umamusu); saori,
-                                rika (d4dj)
+                                rika (d4dj); aoi (priconne)
                                 <p />
                                 this page is still a wip bc i have no ideas. you
                                 can find my translations{" "}
