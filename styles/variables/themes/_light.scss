@@ -3,6 +3,7 @@
 html,
 html[data-theme="light"] {
     --text-color: #{$black2};
+    --blockquote-color: #{$ctp-latte-subtext0};
     --accent-color: #{scale-color(
             $ctp-latte-blue,
             $lightness: -15%

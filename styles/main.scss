@@ -77,6 +77,12 @@ h6 {
     font-feature-settings: "case" 0;
 }
 
+.tippy-box blockquote {
+    margin: 0.5em 0;
+    padding: 0 0.5em;
+    border-left: solid 2px var(--msr-tippy-color);
+}
+
 .tippy-box[data-animation="shift-away"][data-state="hidden"] {
     opacity: 0;
 
