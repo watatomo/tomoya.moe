@@ -36,3 +36,13 @@
         border-bottom: solid var(--msr-line-color) 1px;
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .location {
+        grid-gap: 0.15em;
+
+        p > * + * {
+            margin-left: 5px;
+        }
+    }
+}

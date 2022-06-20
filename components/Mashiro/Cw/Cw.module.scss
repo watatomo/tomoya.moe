@@ -33,3 +33,9 @@
         justify-self: center;
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .cw {
+        grid-column-gap: 8px;
+    }
+}

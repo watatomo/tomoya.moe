@@ -12,7 +12,7 @@
             grid-template-rows: auto;
             margin: -50px 0 0;
             padding: 4.35em 1.25em 1.5em;
-            grid-gap: 1em;
+            gap: 1em;
         }
 
         .cover {
@@ -77,6 +77,65 @@
         .card__wrapper {
             padding-right: 0.3em;
             gap: 0.2em 0.7em;
+        }
+    }
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .index__wrapper {
+        .title__wrapper > * + * {
+            margin: 7px 0;
+        }
+
+        .index-container {
+            grid-gap: 1.2em;
+        }
+
+        .card__wrapper {
+            grid-gap: 0.4em 1.25em;
+        }
+
+        .chapters li {
+            grid-gap: 5px;
+        }
+
+        .chapters__wrapper {
+            > * + * {
+                margin: 1em 0;
+            }
+
+            ul > * + * {
+                margin: 0.25em 0;
+            }
+
+            .mini-talks {
+                ul > * + * {
+                    grid-gap: 0.35em;
+                }
+
+                .collapse-content {
+                    grid-gap: 5px;
+                }
+            }
+        }
+
+        .gallery .gallery__wrapper {
+            grid-gap: 5px;
+        }
+
+        .info__wrapper {
+            > * + * {
+                margin: 5px 0;
+            }
+
+            .info {
+                grid-gap: 5px;
+            }
+
+            .extra > * + *,
+            .comments > * + * {
+                margin: 1px 0;
+            }
         }
     }
 }

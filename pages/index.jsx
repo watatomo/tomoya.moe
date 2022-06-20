@@ -183,6 +183,20 @@ const StyledWrapper = styled.article`
             height: 7.4em;
         }
     }
+
+    @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+        .home__wrapper .width-wrapper > * + * {
+            margin: 0.8em 0;
+        }
+
+        .home__wrapper .container01 > * + * {
+            margin: 0 1.5625em;
+        }
+
+        .home__wrapper .home__links > * + * {
+            margin: 0 0.8em;
+        }
+    }
 `;
 
 export default function Home() {

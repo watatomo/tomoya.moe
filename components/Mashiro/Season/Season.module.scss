@@ -48,3 +48,9 @@
         background: var(--msr-fall-bg);
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .season {
+        grid-gap: 0.15em;
+    }
+}

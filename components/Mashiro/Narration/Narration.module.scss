@@ -41,3 +41,9 @@
         grid-template: 1fr / var(--msr-icon-sizeSmall) 1fr;
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .narration {
+        grid-gap: 10px;
+    }
+}

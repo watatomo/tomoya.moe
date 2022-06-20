@@ -39,3 +39,29 @@
         }
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .tl__wrapper {
+        .tl-container > * + * {
+            margin: 2em 0;
+        }
+
+        .multi-container {
+            grid-gap: 1.25em;
+
+            &__item .data {
+                > * + * {
+                    margin: 0.5em 0;
+                }
+
+                .header h3.stats > * + * {
+                    margin: 0 0.2em;
+                }
+            }
+        }
+
+        .single-container {
+            grid-gap: 1.25em;
+        }
+    }
+}

@@ -20,3 +20,16 @@
         }
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .chapter__wrapper {
+        ol:last-of-type:not([role="tablist"]) > * + *,
+        ul:last-of-type:not([role="tablist"]) > * + * {
+            margin: 5px 0;
+        }
+
+        .mashiro > * + * {
+            margin: 1em 0;
+        }
+    }
+}

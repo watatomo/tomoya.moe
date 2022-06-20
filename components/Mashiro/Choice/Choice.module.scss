@@ -39,3 +39,9 @@
         }
     }
 }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .choice .line {
+        margin: 0 2px;
+    }
+}
