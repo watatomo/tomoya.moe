@@ -15,7 +15,7 @@
     }
 
     .label {
-        color: var(--si-label-color);
+        color: var(--text-secondary);
         font-weight: 700;
         font-size: 0.9em;
         line-height: 1.2;
@@ -90,7 +90,7 @@
             display: grid;
             grid-template-columns: 1fr auto;
             padding: 10px;
-            color: var(--text-color);
+            color: var(--text-primary);
             width: 100%;
             border: none;
             justify-items: start;
@@ -117,7 +117,7 @@
     }
 
     .comment a {
-        color: var(--text-color);
+        color: var(--text-primary);
         padding: 1px;
         background: linear-gradient(
                 var(--si-comment-link-color),

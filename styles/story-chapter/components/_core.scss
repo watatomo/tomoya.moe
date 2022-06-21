@@ -5,8 +5,8 @@
     align-content: center;
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    color: var(--text-color);
-    background: var(--chapter-bg-color);
+    color: var(--text-primary);
+    background: var(--background-secondary);
 
     hr {
         border: 1px solid var(--msr-line-color);
@@ -23,7 +23,7 @@
         margin: 0 0 0 20px;
 
         a {
-            color: var(--text-color);
+            color: var(--text-primary);
             padding: 1px;
             background: linear-gradient(
                     var(--chapter-link-color),
@@ -52,7 +52,7 @@
     }
 
     .mashiro__wrapper {
-        background: var(--chapter-inner-bg-color);
+        background: var(--background-primary);
         width: 52rem;
         max-width: 75ch;
         // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
@@ -99,6 +99,6 @@
     blockquote {
         margin: 0.5em 0;
         padding: 0 0.5em;
-        border-left: solid 2px var(--blockquote-color);
+        border-left: solid 2px var(--text-secondary);
     }
 }

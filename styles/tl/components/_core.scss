@@ -6,8 +6,8 @@
     align-content: center;
     justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    color: var(--text-color);
-    background: var(--chapter-bg-color);
+    color: var(--text-primary);
+    background: var(--background-secondary);
 
     .tl-container {
         margin: 2em 10px;
@@ -22,6 +22,6 @@
 
     + footer {
         margin: 0;
-        background: var(--chapter-inner-bg-color);
+        background: var(--background-primary);
     }
 }

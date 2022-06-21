@@ -14,7 +14,7 @@ const Button = styled.button`
     border: solid 1px var(--tooltip-border);
     padding: 0 3px;
     background: var(--tooltip-bg);
-    color: var(--text-color);
+    color: var(--text-primary);
 `;
 
 function Fn({ num, children }) {

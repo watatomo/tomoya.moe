@@ -7,7 +7,7 @@
 
         &__item {
             text-decoration: none;
-            color: var(--text-color);
+            color: var(--text-primary);
             display: inline-grid;
             grid-template-columns: 175px auto;
             overflow: hidden;
@@ -58,7 +58,7 @@
                     h2.title {
                         font-size: 1.2em;
                         font-weight: 700;
-                        color: var(--accent-color);
+                        color: var(--tl-title-color);
                     }
 
                     h3.stats {

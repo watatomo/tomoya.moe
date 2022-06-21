@@ -6,24 +6,27 @@
     align-items: center;
     justify-items: center;
     gap: 32px;
-    color: var(--text-color);
+    color: var(--text-primary);
 
-    button {
-        position: relative;
-        background: unset;
-        border: unset;
+    > div {
         cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-        padding: 4px 6px;
+        padding: 4px;
         border-radius: 5px;
-        bottom: 1px;
-        font-size: 0;
 
         &:hover {
-            color: var(--toolbar-hover-color);
             background: var(--toolbar-hover-bg);
+
+            a {
+                color: var(--toolbar-hover-color);
+            }
         }
+    }
+
+    a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        bottom: 1px;
     }
 
     svg {

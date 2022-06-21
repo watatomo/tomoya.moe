@@ -24,7 +24,7 @@ const StyledFooter = styled.footer`
 
         a {
             display: inline-block;
-            color: var(--text-color);
+            color: var(--text-primary);
 
             &:hover {
                 color: inherit;

@@ -2,21 +2,18 @@
 
 html,
 html[data-theme="light"] {
-    --text-color: #{$black2};
-    --blockquote-color: #{$ctp-latte-subtext0};
-    --accent-color: #{scale-color(
-            $ctp-latte-blue,
-            $lightness: -15%
-        )};
-
+    --text-primary: #{$ctp-frappe-base};
+    --text-secondary: #{$ctp-latte-text};
+    --background-primary: #fff;
+    --background-secondary: #{$ctp-latte-base};
     --shadow-color: 123, 143, 183;
+    
+    --accent-color: #{$ctp-latte-blue};
+    --blockquote-color: #{$ctp-latte-subtext0};
 
-    --si-label-color: #{$black4};
     --si-chapter-none-bg: #{$ctp-latte-mantle};
     --si-chapter-none-bg-hover: #{scale-color($ctp-latte-mantle, $lightness: -5%)};
-
-    --chapter-bg-color: #{$ctp-latte-base};
-    --chapter-inner-bg-color: #fff;
+    
     --chapter-link-color: #{fade-out($ctp-latte-blue, 0.8)};
     --chapter-arrow-color: var(--accent-color);
     --chapter-arrow-color-hover: #{scale-color(
@@ -27,9 +24,10 @@ html[data-theme="light"] {
     --tooltip-border: rgb(158 158 158 / 40%);
     --tooltip-bg: rgb(255 255 255 / 50%);
 
+    --tl-title-color: #{$ctp-frappe-surface0};
     --tl-stats-color: #{$ctp-latte-base};
     --tl-item-color: #fff;
-    --footer-bg: var(--chapter-bg-color);
+    --footer-bg: var(--background-secondary);
 
     --toolbar-hover-color: #000;
     --toolbar-hover-bg: #{$ctp-latte-base};

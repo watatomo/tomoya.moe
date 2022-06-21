@@ -2,36 +2,35 @@
 
 html[data-theme="dark"],
 [data-theme="dark"] {
+    --text-primary: #{$white};
+    --text-secondary: #{$ctp-mocha-text};
+    --background-primary: #{$ctp-mocha-base};
+    --background-secondary: #{$ctp-mocha-mantle};
+    --shadow-color: 4, 3, 7;
     --dark-mode-img-filter: brightness(0.85) contrast(0.9);
 
     --accent-color: #{$ctp-mocha-sapphire};
+    --blockquote-color: #{$ctp-latte-subtext0};
 
-    --shadow-color: 4, 3, 7;
-
-    --si-label-color: #{$gray2};
     --si-chapter-none-bg: #{$ctp-mocha-surface0};
     --si-chapter-none-bg-hover: #{scale-color(
             $ctp-mocha-surface0,
             $lightness: -10%
         )};
 
-    --chapter-bg-color: #{$ctp-mocha-mantle};
-    --chapter-inner-bg-color: #{$ctp-mocha-base};
     --chapter-link-color: #{fade-out($ctp-mocha-sapphire, 0.7)};
     --chapter-arrow-color: var(--accent-color);
     --chapter-arrow-color-hover: #{scale-color(
             $ctp-mocha-sapphire,
             $lightness: -20%
         )};
-
-    --text-color: #{$white};
-    --blockquote-color: #{$ctp-mocha-subtext0};
     --tooltip-border: rgb(158 158 158 / 20%);
     --tooltip-bg: rgb(255 255 255 / 15%);
 
+    --tl-title-color: var(--accent-color);
     --tl-stats-color: #{$ctp-mocha-surface0};
     --tl-item-color: #{$ctp-mocha-base};
-    --footer-bg: var(--chapter-bg-color);
+    --footer-bg: var(--background-secondary);
 
     --toolbar-hover-color: #fff;
     --toolbar-hover-bg: #{$ctp-mocha-surface0};

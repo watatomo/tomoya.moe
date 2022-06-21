@@ -12,7 +12,7 @@
     a {
         position: relative;
         text-decoration: none;
-        color: var(--text-color);
+        color: var(--text-primary);
         line-height: 0;
         padding: 0.5px;
 
@@ -30,7 +30,7 @@
             height: 1px;
             bottom: 0;
             left: 0;
-            background: var(--text-color);
+            background: var(--text-primary);
             transform: scaleX(0);
             transition: transform 0.2s ease;
         }
@@ -39,7 +39,7 @@
     .label {
         font-weight: 700;
         font-size: 0.85em;
-        color: var(--credits-label-color);
+        color: var(--text-secondary);
     }
 
     .tl,

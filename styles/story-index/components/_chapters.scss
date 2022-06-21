@@ -75,11 +75,12 @@
         > span {
             margin-top: 0.8em;
             font-weight: 700;
+            color: var(--text-secondary);
         }
 
         .minitalk__header {
             background: unset;
-            color: var(--text-color);
+            color: var(--text-primary);
             border: 0;
             padding: 0;
             display: inline-flex;
@@ -93,7 +94,7 @@
                 transition: transform 0.5s ease;
 
                 svg {
-                    fill: var(--text-color);
+                    fill: var(--text-primary);
                     width: 1em;
                 }
             }

@@ -8,7 +8,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
     height: var(--header-height);
-    background: var(--chapter-inner-bg-color);
+    background: var(--background-primary);
     box-shadow: 0 0 12px 0 rgba(var(--shadow-color), 0.35);
     position: fixed;
     width: 100%;
@@ -19,12 +19,12 @@ const StyledHeader = styled.header`
     align-items: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
-    color: var(--text-color);
+    color: var(--text-primary);
     padding: 0 0.9em;
 
     .site-name {
         font-weight: 700;
-        color: var(--text-color);
+        color: var(--text-primary);
         text-decoration: none;
     }
 
@@ -45,7 +45,6 @@ const StyledHeader = styled.header`
             position: relative;
             background: unset;
             border: unset;
-            cursor: pointer;
             text-decoration: none;
             color: inherit;
             bottom: 1px;
@@ -55,6 +54,11 @@ const StyledHeader = styled.header`
         svg {
             width: 22px !important;
             height: 22px !important;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--toolbar-hover-color);
+            }
         }
     }
 

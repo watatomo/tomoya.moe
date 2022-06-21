@@ -49,9 +49,9 @@ function Toolbar({ post }) {
                                 newSegment: post.previous
                             })}
                         >
-                            <button>
+                            <a>
                                 <FontAwesomeIcon icon={faChevronLeft} />
-                            </button>
+                            </a>
                         </Link>
                     ) : null}
                 </div>
@@ -72,9 +72,9 @@ function Toolbar({ post }) {
                                     tl
                                 })}
                             >
-                                <button>
+                                <a>
                                     <FontAwesomeIcon icon={faStar} />
-                                </button>
+                                </a>
                             </Link>
                         </div>
                     ) : (
@@ -88,9 +88,9 @@ function Toolbar({ post }) {
                                     tl
                                 })}
                             >
-                                <button>
+                                <a>
                                     <FontAwesomeIcon icon={faStar} />
-                                </button>
+                                </a>
                             </Link>
                         </div>
                     ))}
@@ -109,9 +109,9 @@ function Toolbar({ post }) {
                                 newSegment: post.next
                             })}
                         >
-                            <button>
+                            <a>
                                 <FontAwesomeIcon icon={faChevronRight} />
-                            </button>
+                            </a>
                         </Link>
                     ) : null}
                 </div>
