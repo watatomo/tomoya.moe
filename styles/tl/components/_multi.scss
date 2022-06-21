@@ -3,6 +3,7 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(390px, 650px));
         grid-template-rows: 1fr;
+        grid-gap: 1.25em;
         gap: 1.25em;
 
         &__item {
@@ -40,7 +41,7 @@
                 padding: 1.5em;
                 display: flex;
                 flex-direction: column;
-                gap: 0.5em;
+                // gap: 0.5em;
                 overflow: auto;
                 overscroll-behavior: contain;
 
@@ -48,7 +49,8 @@
                     display: flex;
                     flex-direction: column;
                     line-height: 1;
-                    gap: 7px;
+                    margin-bottom: 0.5em;
+                    // gap: 7px;
 
                     h2,
                     h3 {
@@ -59,11 +61,12 @@
                         font-size: 1.2em;
                         font-weight: 700;
                         color: var(--tl-title-color);
+                        margin-bottom: 7px;
                     }
 
                     h3.stats {
                         display: inline-flex;
-                        gap: 0.2em;
+                        // gap: 0.2em;
 
                         > span {
                             font-size: 0.7em;
@@ -78,6 +81,10 @@
 
                             &.series {
                                 text-transform: uppercase;
+                            }
+
+                            &:not(:last-child) {
+                                margin-right: 0.2em;
                             }
                         }
                     }

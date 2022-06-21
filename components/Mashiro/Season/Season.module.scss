@@ -3,6 +3,7 @@
     align-items: center;
     justify-items: center;
     grid-template: 1fr / 24px 1fr;
+    grid-gap: 0.15em;
     gap: 0.15em;
     border-radius: 5px;
     border: solid 1px;
@@ -46,11 +47,5 @@
     &[s="Autumn"] {
         border-color: var(--msr-fall-border);
         background: var(--msr-fall-bg);
-    }
-}
-
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-    .season {
-        grid-gap: 0.15em;
     }
 }

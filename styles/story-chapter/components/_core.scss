@@ -18,9 +18,13 @@
     ul:last-of-type:not([role="tablist"]) {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        // gap: 5px;
         padding-left: 0;
         margin: 0 0 0 20px;
+
+        li:not(:last-child) {
+            margin-bottom: 5px;
+        }
 
         a {
             color: var(--text-primary);
@@ -60,9 +64,17 @@
 
     .mashiro {
         margin: 2em 1.5em;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        // flex-direction: column;
+        grid-row-gap: 1em;
         row-gap: 1em;
+
+        // > div:not(:last-child),
+        // > img:not(:last-child),
+        // > hr:not(:last-child),
+        // > ol:not(:last-child) {
+        //     margin-bottom: 1em;
+        // }
 
         img {
             border-radius: 5px;

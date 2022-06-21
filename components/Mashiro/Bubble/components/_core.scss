@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     line-height: 1.2;
+    grid-column-gap: 12px;
+    grid-row-gap: 1px;
     column-gap: 12px;
     row-gap: 1px;
     font-size: var(--msr-line-size);
@@ -44,13 +46,14 @@
     line-height: 0.7;
     text-transform: var(--msr-name-case);
     color: var(--text-secondary);
+    margin-bottom: var(--msr-line-gap);
 }
 
 .line {
     display: flex;
     flex-direction: column;
     grid-column: 2;
-    row-gap: var(--msr-line-gap);
+    // row-gap: var(--msr-line-gap);
 
     p {
         align-self: flex-start;
@@ -61,6 +64,10 @@
         border-radius: var(--msr-line-border);
         position: relative;
         transition: 0.2s ease;
+
+        &:not(:last-child) {
+            margin-bottom: var(--msr-line-gap);
+        }
 
         &:hover {
             transform: translate(2px, 0px);

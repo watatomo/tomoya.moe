@@ -15,7 +15,10 @@ const StyledFooter = styled.footer`
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        // gap: 10px;
+        > * + * {
+            margin-left: 10px;
+        }
 
         svg {
             width: 16px;

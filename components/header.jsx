@@ -15,6 +15,7 @@ const StyledHeader = styled.header`
     z-index: 364;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
+    grid-gap: 1em;
     gap: 1em;
     align-items: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;

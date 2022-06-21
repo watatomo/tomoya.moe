@@ -3,6 +3,7 @@
     align-items: center;
     grid-template: 1fr / var(--msr-icon-size) 1fr;
     transition: grid-template 0.2s ease;
+    grid-gap: 10px;
     gap: 10px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -15,7 +16,6 @@
         display: flex;
         flex-direction: column;
         grid-column: 2;
-        row-gap: var(--msr-line-gap);
 
         p {
             margin: 0;
@@ -39,11 +39,5 @@
 @media (max-width: 650px) {
     .narration {
         grid-template: 1fr / var(--msr-icon-sizeSmall) 1fr;
-    }
-}
-
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-    .narration {
-        grid-gap: 10px;
     }
 }

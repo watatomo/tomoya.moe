@@ -7,6 +7,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
     gap: 5px;
 
     a {
@@ -40,6 +41,7 @@
         font-weight: 700;
         font-size: 0.85em;
         color: var(--text-secondary);
+        margin-bottom: 2px;
     }
 
     .tl,
@@ -49,7 +51,7 @@
         flex-direction: column;
         justify-content: center;
         justify-items: center;
-        gap: 2px;
+        // gap: 2px;
         background: var(--credits-bg-color);
         padding: 10px;
         border-radius: 5px;

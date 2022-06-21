@@ -16,8 +16,12 @@
         align-items: center;
         align-content: center;
         justify-content: center;
-        gap: 2em;
+        // gap: 2em;
         max-width: 1000px;
+
+        > div:not(:last-child) {
+            margin-bottom: 2em;
+        }
     }
 
     + footer {
