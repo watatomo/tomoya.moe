@@ -146,9 +146,6 @@
 :root [character="Koga"] {
     --color: #c9caca;
     --hue: 180;
-    --bubble-light-mode: hsl(var(--hue), 9%, 92%) !important;
-    --bubble-dark-mode: hsl(var(--hue), 5%, 20%) !important;
-    --bubble-fill-mode: hsl(var(--hue), 5%, 45%) !important;
     --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/koga.png");
     --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/koga.png");
 }
@@ -324,9 +321,6 @@
 :root [character="Tetora"] {
     --color: #302833;
     --hue: 283.6;
-    --bubble-light-mode: hsl(var(--hue), 9%, 92%) !important;
-    --bubble-dark-mode: hsl(var(--hue), 5%, 20%) !important;
-    --bubble-fill-mode: hsl(var(--hue), 5%, 45%) !important;
     --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/tetora.png");
     --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/tetora.png");
 }

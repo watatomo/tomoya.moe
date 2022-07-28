@@ -23,7 +23,7 @@
 .unknown {
     .icon {
         &__base {
-            background: #b3b3b3;
+            background: #acb0be;
         }
 
         &__wrapper::after {
@@ -32,10 +32,10 @@
     }
 
     .line p {
-        background: #f1f1f1;
+        background: #dbdee5;
 
         &:nth-child(2)::before {
-            background: #f1f1f1;
+            background: #dbdee5;
         }
     }
 }

@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: flex-end;
     padding: 4px 16px;
-    background: var(--footer-bg);
+    background: var(--background-tertiary);
 
     .links {
         display: flex;

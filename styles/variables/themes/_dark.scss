@@ -2,15 +2,17 @@
 
 html[data-theme="dark"],
 [data-theme="dark"] {
-    --text-primary: #{$white};
-    --text-secondary: #{$ctp-mocha-text};
+    --text-primary: #{$ctp-mocha-text};
+    --text-secondary: #{$ctp-mocha-subtext1};
+    --text-tertiary: #{$ctp-mocha-subtext0};
     --background-primary: #{$ctp-mocha-base};
     --background-secondary: #{$ctp-mocha-mantle};
+    --background-tertiary: #{$ctp-mocha-crust};
     --shadow-color: 4, 3, 7;
     --dark-mode-img-filter: brightness(0.85) contrast(0.9);
 
-    --accent-color: #{$ctp-mocha-sapphire};
-    --blockquote-color: #{$ctp-latte-subtext0};
+    --accent-color: #{$ctp-mocha-blue};
+    --blockquote-color: #{$ctp-mocha-overlay2};
 
     --si-chapter-none-bg: #{$ctp-mocha-surface0};
     --si-chapter-none-bg-hover: #{scale-color(
@@ -18,10 +20,10 @@ html[data-theme="dark"],
             $lightness: -10%
         )};
 
-    --chapter-link-color: #{fade-out($ctp-mocha-sapphire, 0.7)};
+    --chapter-link-color: #{fade-out($ctp-mocha-blue, 0.7)};
     --chapter-arrow-color: var(--accent-color);
     --chapter-arrow-color-hover: #{scale-color(
-            $ctp-mocha-sapphire,
+            $ctp-mocha-blue,
             $lightness: -20%
         )};
     --tooltip-border: rgb(158 158 158 / 20%);
@@ -30,13 +32,12 @@ html[data-theme="dark"],
     --tl-title-color: var(--accent-color);
     --tl-stats-color: #{$ctp-mocha-surface0};
     --tl-item-color: #{$ctp-mocha-base};
-    --footer-bg: var(--background-secondary);
 
     --toolbar-hover-color: #fff;
     --toolbar-hover-bg: #{$ctp-mocha-surface0};
 
     --msr-name-color: #{$ctp-mocha-subtext1};
-    --msr-bubble-text-color: #{$white};
+    --msr-bubble-text-color: #{$ctp-mocha-text};
     --msr-bubble-thought-color: #{scale-color(
             $blue,
             $lightness: 28%,
@@ -72,13 +73,13 @@ html[data-theme="dark"],
         )};
     --msr-fall-bg: #{fade-out($ctp-latte-peach, 0.7)};
 
-    --msr-cw-text: #{$white};
+    --msr-cw-text: #{$ctp-mocha-text};
     --msr-cw-border: #{scale-color(
             $ctp-latte-red,
-            $lightness: -40%,
+            $lightness: -60%,
             $saturation: 10%
         )};
-    --msr-cw-bg: #{fade-out($ctp-latte-red, 0.35)};
+    --msr-cw-bg: #{fade-out($ctp-latte-red, 0.5)};
 
     --credits-label-color: #{$ctp-mocha-subtext1};
     --credits-bg-color: #{$ctp-mocha-surface0};

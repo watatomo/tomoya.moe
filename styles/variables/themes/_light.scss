@@ -2,18 +2,23 @@
 
 html,
 html[data-theme="light"] {
-    --text-primary: #{$ctp-frappe-base};
-    --text-secondary: #{$ctp-latte-text};
-    --background-primary: #fff;
-    --background-secondary: #{$ctp-latte-base};
-    --shadow-color: 123, 143, 183;
-    
+    --text-primary: #{$ctp-latte-text};
+    --text-secondary: #{$ctp-latte-subtext1};
+    --text-tertiary: #{$ctp-latte-subtext0};
+    --background-primary: #{scale-color($ctp-latte-base, $lightness: 25%)};
+    --background-secondary: #{scale-color($ctp-latte-mantle, $lightness: 10%)};
+    --background-tertiary: #{$ctp-latte-crust};
+    --shadow-color: 137, 142, 154;
+
     --accent-color: #{$ctp-latte-blue};
     --blockquote-color: #{$ctp-latte-subtext0};
 
     --si-chapter-none-bg: #{$ctp-latte-mantle};
-    --si-chapter-none-bg-hover: #{scale-color($ctp-latte-mantle, $lightness: -5%)};
-    
+    --si-chapter-none-bg-hover: #{scale-color(
+            $ctp-latte-mantle,
+            $lightness: -5%
+        )};
+
     --chapter-link-color: #{fade-out($ctp-latte-blue, 0.8)};
     --chapter-arrow-color: var(--accent-color);
     --chapter-arrow-color-hover: #{scale-color(
@@ -24,20 +29,20 @@ html[data-theme="light"] {
     --tooltip-border: rgb(158 158 158 / 40%);
     --tooltip-bg: rgb(255 255 255 / 50%);
 
-    --tl-title-color: #{$ctp-frappe-surface0};
-    --tl-stats-color: #{$ctp-latte-base};
-    --tl-item-color: #fff;
-    --footer-bg: var(--background-secondary);
+    --tl-title-color: #{$ctp-latte-text};
+    --tl-stats-color: #{fade-out($ctp-latte-surface0, 0.5)};
+    --tl-item-color: var(--background-primary);
+    --footer-bg: #{$ctp-latte-crust};
 
     --toolbar-hover-color: #000;
-    --toolbar-hover-bg: #{$ctp-latte-base};
+    --toolbar-hover-bg: #{$ctp-latte-mantle};
 
-    --msr-name-color: #{lighten($black0, 10%)};
-    --msr-bubble-text-color: {$black0};
+    --msr-name-color: #{$ctp-latte-subtext1};
+    --msr-bubble-text-color: #{$ctp-latte-text};
     --msr-bubble-thought-color: #{scale-color(
             $ctp-latte-blue,
-            $lightness: -34%,
-            $saturation: -1%
+            $lightness: -20%,
+            $saturation: -30%
         )};
     --msr-tippy-bg: rgba(0, 0, 0, 0.75);
     --msr-tippy-color: #fff;
@@ -69,16 +74,16 @@ html[data-theme="light"] {
         )};
     --msr-fall-bg: #{fade-out($ctp-latte-peach, 0.8)};
 
-    --msr-cw-text: #fff;
+    --msr-cw-text: #{scale-color($ctp-latte-base, $lightness: 25%)};
     --msr-cw-border: #{scale-color(
             $ctp-latte-red,
             $lightness: -40%,
             $saturation: 10%
         )};
-    --msr-cw-bg: #{fade-out($ctp-latte-red, 0.1)};
+    --msr-cw-bg: #{fade-out($ctp-latte-red, 0.15)};
 
-    --credits-bg-color: #{$ctp-latte-base};
-    --credits-label-color: #{$black4};
+    --credits-bg-color: #{fade-out($ctp-latte-surface0, 0.5)};
+    --credits-label-color: #{$ctp-latte-subtext1};
 
     --msr-choice-green-border: #{scale-color(
             $ctp-latte-green,

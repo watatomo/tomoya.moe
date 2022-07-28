@@ -57,8 +57,8 @@
 
     .mashiro__wrapper {
         background: var(--background-primary);
-        width: 52rem;
-        max-width: 75ch;
+        // width: 52rem;
+        max-width: 55ch;
         // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
     }
 
@@ -111,6 +111,6 @@
     blockquote {
         margin: 0.5em 0;
         padding: 0 0.5em;
-        border-left: solid 2px var(--text-secondary);
+        border-left: solid 2px var(--blockquote-color);
     }
 }

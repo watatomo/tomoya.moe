@@ -35,7 +35,7 @@
                     --icon,
                     url("https://cdn.jsdelivr.net/gh/enstars/img/icon/unknown.png")
                 ),
-            var(--color, #b3b3b3);
+            var(--color, #acb0be);
         width: 100%;
         height: 100%;
     }
@@ -57,7 +57,7 @@
 
     p {
         align-self: flex-start;
-        background: var(--bubble-light-mode, #f1f1f1);
+        background: var(--bubble-light-mode, #dbdee5);
         color: var(--msr-bubble-text-color);
         padding: 0.6em;
         margin: 0;
@@ -79,7 +79,7 @@
             &::before {
                 content: "";
                 display: block;
-                background: var(--bubble-light-mode, #f1f1f1);
+                background: var(--bubble-light-mode, #dbdee5);
                 width: 8px;
                 height: 12px;
                 position: absolute;
