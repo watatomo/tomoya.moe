@@ -17,8 +17,8 @@ function MultiChapter() {
                         </div>
                         <div className="data">
                             <div className="header">
-                                <h2 className="title">{s.title}</h2>
-                                <h3 className="stats">
+                                <span className="title">{s.title}</span>
+                                <span className="stats">
                                     {s.writer ? (
                                         <span className="writer">
                                             {s.writer}
@@ -28,7 +28,7 @@ function MultiChapter() {
                                         {s.chapters} Chapters
                                     </span>
                                     {/* <span className="series">{s.series}</span> */}
-                                </h3>
+                                </span>
                             </div>
                             <div className="body">
                                 <Markdown>{s.description}</Markdown>

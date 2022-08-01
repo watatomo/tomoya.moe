@@ -49,27 +49,27 @@
                     display: flex;
                     flex-direction: column;
                     line-height: 1;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 0.3em;
                     // gap: 7px;
 
-                    h2,
-                    h3 {
-                        margin: 0;
-                    }
+                    // h2,
+                    // h3 {
+                    //     margin: 0;
+                    // }
 
-                    h2.title {
+                    .title {
                         font-size: 1.2em;
                         font-weight: 700;
                         color: var(--tl-title-color);
                         margin-bottom: 7px;
                     }
 
-                    h3.stats {
+                    .stats {
                         display: inline-flex;
                         // gap: 0.2em;
 
                         > span {
-                            font-size: 0.7em;
+                            font-size: 0.8em;
                             font-weight: 700;
                             align-self: start;
                             padding: 0.25em 0.5em;

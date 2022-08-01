@@ -210,19 +210,14 @@ chapterSections:
           - name: Epilogue
           - label: 1
             href: 33
-            none: true
           - label: 2
             href: 34
-            none: true
           - label: 3
             href: 35
-            none: true
           - label: 4
             href: 36
-            none: true
           - label: 5
             href: 37
-            none: true
 
 miniTalkSections:
     - name: wataru

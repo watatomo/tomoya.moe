@@ -32,10 +32,8 @@
     --footer-height: 32px;
 
     [character] {
-        // --bubble-light-mode: hsl(var(--hue), 54%, 93%);
-        --bubble-light-mode: hsl(var(--hue), 20%, 88%);
-        // --bubble-dark-mode: hsl(var(--hue), 18%, 18%);
-        --bubble-dark-mode: hsl(var(--hue), 20%, 23%);
+        --bubble-light-mode: hsl(var(--hue), 25%, 88%);
+        --bubble-dark-mode: hsl(var(--hue), 25%, 23%);
         // --bubble-fill-mode: hsl(var(--hue), 25%, 42%);
     }
 }
