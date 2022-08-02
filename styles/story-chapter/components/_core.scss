@@ -14,6 +14,13 @@
         margin: 0.5em 0;
     }
 
+    // hr#tln + ol,
+    // hr#tln + ul {
+    //     p {
+    //         margin: 0.35em 0 0;
+    //     }
+    // }
+
     ol:last-of-type:not([role="tablist"]),
     ul:last-of-type:not([role="tablist"]) {
         display: flex;
@@ -22,8 +29,20 @@
         padding-left: 0;
         margin: 0 0 0 20px;
 
-        li:not(:last-child) {
-            margin-bottom: 5px;
+        li {
+            p {
+                margin: 0.35em 0 0;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            blockquote + figcaption {
+                text-align: right;
+                font-size: 0.85em;
+                margin-top: -0.4em;
+            }
         }
 
         a {

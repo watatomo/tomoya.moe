@@ -2,7 +2,7 @@
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import "react-tabs/style/react-tabs.css";
-import Fn from "../Footnotes";
+import { Fn, Tln } from "../Footnotes";
 import Action from "../../Mashiro/Action";
 import Bubble from "../../Mashiro/Bubble";
 import Cw from "../../Mashiro/Cw";
@@ -32,6 +32,7 @@ function StoryChapter({ post }) {
                                 components={{
                                     Bubble,
                                     Fn,
+                                    Tln,
                                     Thought,
                                     Action,
                                     Season,

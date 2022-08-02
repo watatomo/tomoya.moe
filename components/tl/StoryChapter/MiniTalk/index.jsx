@@ -9,7 +9,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Thought from "../../../Mashiro/Thought";
 import Bubble from "../../../Mashiro/Bubble";
-import Fn from "../../Footnotes";
+import { Fn } from "../../Footnotes";
 import styles from "./MiniTalk.module.scss";
 
 export function MiniTalk({ speaker, response, children }) {

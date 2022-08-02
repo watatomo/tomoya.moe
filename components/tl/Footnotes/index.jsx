@@ -17,7 +17,7 @@ const Button = styled.button`
     color: var(--text-primary);
 `;
 
-function Fn({ num, children }) {
+export function Fn({ num, children }) {
     return (
         <Tippy
             content={children}
@@ -34,4 +34,11 @@ function Fn({ num, children }) {
     );
 }
 
-export default Fn;
+export function Tln({ children }) {
+    return (
+        <>
+            <hr id="tln"></hr>
+            {children}
+        </>
+    );
+}

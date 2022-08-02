@@ -77,10 +77,25 @@ h6 {
     font-feature-settings: "case" 0;
 }
 
-.tippy-box blockquote {
-    margin: 0.5em 0;
-    padding: 0 0.5em;
-    border-left: solid 2px var(--msr-tippy-color);
+.hold {
+    display: inline-block;
+}
+
+.tippy-box {
+    blockquote {
+        margin: 0.5em 0;
+        padding: 0 0.5em;
+        border-left: solid 2px var(--msr-tippy-color);
+
+        + figcaption {
+            text-align: right;
+            font-size: 0.85em;
+            margin-top: -0.4em;
+        }
+    }
+    p {
+        margin: 0.35em 0 0;
+    }
 }
 
 .tippy-box[data-animation="shift-away"][data-state="hidden"] {

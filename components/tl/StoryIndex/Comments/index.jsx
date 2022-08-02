@@ -3,7 +3,7 @@ import { Collapse } from "react-collapse";
 import Markdown from "markdown-to-jsx";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fn from "../../Footnotes";
+import { Fn } from "../../Footnotes";
 
 export function CommentVA({ post }) {
     const { commentVA, commentVAs } = post;
