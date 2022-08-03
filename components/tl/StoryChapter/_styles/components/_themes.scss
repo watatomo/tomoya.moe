@@ -1,0 +1,12 @@
+html[data-theme="dark"],
+[data-theme="dark"] {
+    .mashiro {
+        img {
+            filter: var(--dark-mode-img-filter);
+
+            &:hover {
+                filter: unset;
+            }
+        }
+    }
+}

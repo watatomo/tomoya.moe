@@ -2,7 +2,7 @@
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import "react-tabs/style/react-tabs.css";
-import Fn from "../Footnotes";
+import { Fn, Tln } from "../Footnotes";
 import Action from "../../Mashiro/Action";
 import Bubble from "../../Mashiro/Bubble";
 import Cw from "../../Mashiro/Cw";
@@ -17,6 +17,7 @@ import ChapterMeta from "./ChapterMeta";
 import Choice from "../../Mashiro/Choice";
 // import Footer from "../../footer";
 import Header from "../../header";
+import styles from "./StoryChapter.module.scss";
 
 function StoryChapter({ post }) {
     return (
@@ -24,14 +25,15 @@ function StoryChapter({ post }) {
             <Header toolbar={<Toolbar post={post} />} />
             <article>
                 <ChapterMeta post={post} />
-                <div className="chapter__wrapper">
-                    <div className="mashiro__wrapper">
-                        <div className="mashiro">
+                <div className={styles.wrapper}>
+                    <div className={styles.mashiro__wrapper}>
+                        <div className={styles.mashiro}>
                             <MDXRemote
                                 {...post.content}
                                 components={{
                                     Bubble,
                                     Fn,
+                                    Tln,
                                     Thought,
                                     Action,
                                     Season,

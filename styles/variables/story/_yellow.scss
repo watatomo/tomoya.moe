@@ -2,34 +2,17 @@
 
 [data-theme="light"] [story-theme="yellow"],
 [story-theme="yellow"] {
-    --si-color-main: #{scale-color($yellow, $saturation: 30%, $alpha: -70%)};
-    --si-color-secondary: #{scale-color($yellow, $saturation: 30%, $alpha: -50%)};
-
-    --si-start-text-color: #{scale-color(
-            $yellow,
-            $saturation: 80%,
-            $lightness: -50%
-        )};
-    --si-start-bg-hover: #{$ctp-latte-yellow};
-
-    --si-info-link-color: #{$ctp-latte-yellow};
-    --si-info-link-color-hover: #{scale-color(
-            $ctp-latte-yellow,
-            $lightness: -35%
-        )};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-yellow, 0.5)};
+    --si-color: #{$ctp-latte-yellow};
+    --si-color-main: #{fade-out($ctp-latte-yellow, 0.9)};
+    --si-color-secondary: #{fade-out($ctp-latte-yellow, 0.8)};
+    --si-color-darker: #{scale-color($ctp-latte-yellow, $lightness: -30%)};
+    --si-comment-link-color: #{fade-out($ctp-latte-yellow, 0.5)};
 }
 
 [data-theme="dark"] [story-theme="yellow"] {
-    --si-color-main: #{scale-color($yellow, $saturation: 50%, $alpha: -80%)};
-    --si-color-secondary: #{scale-color($yellow, $saturation: 50%, $alpha: -90%)};
-
-    --si-start-text-color: #{$yellow};
-    --si-start-bg-hover: #{$ctp-latte-yellow};
-
-    --si-info-link-color: #{$yellow};
-    --si-info-link-color-hover: #{$ctp-latte-yellow};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-yellow, 0.5)};
+    --si-color: #{$ctp-mocha-yellow};
+    --si-color-main: #{fade-out($ctp-mocha-yellow, 0.8)};
+    --si-color-secondary: #{fade-out($ctp-mocha-yellow, 0.7)};
+    --si-color-darker: #{scale-color($ctp-mocha-yellow, $lightness: -40%)};
+    --si-comment-link-color: #{fade-out($ctp-mocha-yellow, 0.5)};
 }

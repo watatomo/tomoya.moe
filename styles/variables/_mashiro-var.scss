@@ -1,39 +1,20 @@
-%story-dark {
-    --storycolor-dark-l: calc(var(--storycolor-l) - 20%);
-    --storycolor-dark: hsl(
-        var(--storycolor-h),
-        var(--storycolor-s),
-        var(--storycolor-dark-l)
-    );
-}
-
 :root {
-    // @extend %story-dark;
-
-    // --storycolor-bright-l: calc(var(--storycolor-l) + 20%);
-    // --storycolor-bright-s: calc(var(--storycolor-s) + 20%);
-    // --storycolor-bright: hsl(
-    //     var(--storycolor-h),
-    //     var(--storycolor-bright-s),
-    //     var(--storycolor-bright-l)
-    // );
-
     --msr-icon-border: 12px 4px;
-    --msr-icon-size: 60px;
+    --msr-icon-size: 50px;
     --msr-icon-sizeSmall: 45px;
     --msr-name-case: uppercase;
     --msr-line-border: 8px;
     --msr-line-size: 1em;
     --msr-line-gap: 0.15em;
 
-    --mode-transition: 0.25s ease;
+    --mode-transition: 0.2s ease;
 
     --header-height: 40px;
     --footer-height: 32px;
 
     [character] {
-        --bubble-light-mode: hsl(var(--hue), 54%, 93%);
-        --bubble-dark-mode: hsl(var(--hue), 18%, 18%);
+        --bubble-light-mode: hsl(var(--hue), 25%, 88%);
+        --bubble-dark-mode: hsl(var(--hue), 20%, 23%);
         // --bubble-fill-mode: hsl(var(--hue), 25%, 42%);
     }
 }

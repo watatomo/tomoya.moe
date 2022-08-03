@@ -1,5 +1,5 @@
 import Markdown from "markdown-to-jsx";
-import Fn from "../../tl/Footnotes";
+import { Fn } from "../../tl/Footnotes";
 
 function Action({ children }) {
     return (

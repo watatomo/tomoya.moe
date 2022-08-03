@@ -1,0 +1,73 @@
+.wrapper {
+    .card {
+        position: relative;
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(auto, 1fr));
+            grid-gap: 0.4em 1.25em;
+            gap: 0.4em 1.25em;
+            padding: 0.1em 0.6em 0 0;
+        }
+
+        .single {
+            &.unbloomed {
+                z-index: 2;
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            &.bloomed {
+                z-index: 1;
+                top: 0;
+                left: 0;
+                transform: translateX(5%) scale(0.95) rotate(2deg);
+                filter: brightness(70%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:hover {
+            .single {
+                &.bloomed {
+                    z-index: 2;
+                    transform: translateX(0%) scale(1) rotate(0deg);
+                    filter: brightness(100%);
+                }
+
+                &.unbloomed {
+                    z-index: 1;
+                    transform: translateX(-5%) scale(0.95) rotate(-2deg);
+                    filter: brightness(70%);
+                }
+            }
+        }
+    }
+
+    .single {
+        transition: transform 0.2s ease;
+        position: relative;
+        display: inline-block;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
+
+        img {
+            display: block;
+            max-width: 100%;
+            object-fit: contain;
+            width: 100%;
+            margin: 0 !important;
+        }
+    }
+
+    .item {
+        > .lightbox {
+            display: none;
+        }
+
+        > .card {
+            cursor: zoom-in;
+        }
+    }
+}

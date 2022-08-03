@@ -2,42 +2,17 @@
 
 [data-theme="light"] [story-theme="flamingo"],
 [story-theme="flamingo"] {
-    --si-color-main: #{scale-color($flamingo, $saturation: 30%, $alpha: -60%)};
-    --si-color-secondary: #{scale-color(
-            $flamingo,
-            $saturation: 30%,
-            $alpha: -40%
-        )};
-
-    --si-start-text-color: #{scale-color(
-            $flamingo,
-            $saturation: 80%,
-            $lightness: -50%
-        )};
-    --si-start-bg-hover: #{$ctp-latte-flamingo};
-
-    --si-info-link-color: #{$ctp-latte-flamingo};
-    --si-info-link-color-hover: #{scale-color(
-            $ctp-latte-flamingo,
-            $lightness: -35%
-        )};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-flamingo, 0.5)};
+    --si-color: #{$ctp-latte-flamingo};
+    --si-color-main: #{fade-out($ctp-latte-flamingo, 0.9)};
+    --si-color-secondary: #{fade-out($ctp-latte-flamingo, 0.8)};
+    --si-color-darker: #{scale-color($ctp-latte-flamingo, $lightness: -30%)};
+    --si-comment-link-color: #{fade-out($ctp-latte-flamingo, 0.5)};
 }
 
 [data-theme="dark"] [story-theme="flamingo"] {
-    --si-color-main: #{scale-color($flamingo, $saturation: 50%, $alpha: -80%)};
-    --si-color-secondary: #{scale-color(
-            $flamingo,
-            $saturation: 50%,
-            $alpha: -90%
-        )};
-
-    --si-start-text-color: #{$flamingo};
-    --si-start-bg-hover: #{$ctp-latte-flamingo};
-
-    --si-info-link-color: #{$flamingo};
-    --si-info-link-color-hover: #{$ctp-latte-flamingo};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-flamingo, 0.5)};
+    --si-color: #{$ctp-mocha-flamingo};
+    --si-color-main: #{fade-out($ctp-mocha-flamingo, 0.8)};
+    --si-color-secondary: #{fade-out($ctp-mocha-flamingo, 0.7)};
+    --si-color-darker: #{scale-color($ctp-mocha-flamingo, $lightness: -40%)};
+    --si-comment-link-color: #{fade-out($ctp-mocha-flamingo, 0.5)};
 }

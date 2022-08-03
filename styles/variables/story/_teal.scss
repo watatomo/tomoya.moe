@@ -2,31 +2,17 @@
 
 [data-theme="light"] [story-theme="teal"],
 [story-theme="teal"] {
-    --si-color-main: #{scale-color($teal, $saturation: 30%, $alpha: -60%)};
-    --si-color-secondary: #{scale-color($teal, $saturation: 30%, $alpha: -40%)};
-
-    --si-start-text-color: #{scale-color(
-            $teal,
-            $saturation: 80%,
-            $lightness: -65%
-        )};
-    --si-start-bg-hover: #{$ctp-latte-teal};
-
-    --si-info-link-color: #{$ctp-latte-teal};
-    --si-info-link-color-hover: #{scale-color($ctp-latte-teal, $lightness: -35%)};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-teal, 0.5)};
+    --si-color: #{$ctp-latte-teal};
+    --si-color-main: #{fade-out($ctp-latte-teal, 0.9)};
+    --si-color-secondary: #{fade-out($ctp-latte-teal, 0.8)};
+    --si-color-darker: #{scale-color($ctp-latte-teal, $lightness: -30%)};
+    --si-comment-link-color: #{fade-out($ctp-latte-teal, 0.5)};
 }
 
 [data-theme="dark"] [story-theme="teal"] {
-    --si-color-main: #{scale-color($teal, $saturation: 50%, $alpha: -80%)};
-    --si-color-secondary: #{scale-color($teal, $saturation: 50%, $alpha: -90%)};
-
-    --si-start-text-color: #{$teal};
-    --si-start-bg-hover: #{$ctp-latte-teal};
-
-    --si-info-link-color: #{$teal};
-    --si-info-link-color-hover: #{$ctp-latte-teal};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-teal, 0.5)};
+    --si-color: #{$ctp-mocha-teal};
+    --si-color-main: #{fade-out($ctp-mocha-teal, 0.8)};
+    --si-color-secondary: #{fade-out($ctp-mocha-teal, 0.7)};
+    --si-color-darker: #{scale-color($ctp-mocha-teal, $lightness: -40%)};
+    --si-comment-link-color: #{fade-out($ctp-mocha-teal, 0.5)};
 }

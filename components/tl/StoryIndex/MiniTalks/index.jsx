@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../StoryIndex.module.scss";
 
 function deriveIndex({ slug }) {
     const slugSegments = slug.split("/");
@@ -24,7 +25,7 @@ function MiniTalks({ post }) {
     };
 
     return (
-        <div className="mini-talks">
+        <div className={styles.minitalks}>
             <span>Mini Talks</span>
             <ul>
                 {miniTalkSections.map((section, i) => (
@@ -34,13 +35,13 @@ function MiniTalks({ post }) {
                             type="button"
                             className={
                                 visible[i]
-                                    ? "minitalk__header active"
-                                    : "minitalk__header"
+                                    ? `${styles.minitalk__header} ${styles.active}`
+                                    : `${styles.minitalk__header}`
                             }
                             onClick={() => handleClick(i)}
                         >
                             {section.label}
-                            <span className="arrow">
+                            <span className={styles.arrow}>
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </span>
                         </button>
@@ -48,12 +49,12 @@ function MiniTalks({ post }) {
                             isOpened={visible[i]}
                             theme={{
                                 collapse: "collapse__wrapper",
-                                content: "collapse-content"
+                                content: `${styles.content}`
                             }}
                         >
                             {section.miniTalks.map((c) =>
                                 c.none ? (
-                                    <a className="none" key={c}>
+                                    <a className={styles.none} key={c}>
                                         {c.label}
                                     </a>
                                 ) : (

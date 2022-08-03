@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../StoryIndex.module.scss";
 
 function deriveIndex({ slug }) {
     const slugSegments = slug.split("/");
@@ -10,14 +11,14 @@ function Chapters({ post }) {
     const { chapterSections } = post;
 
     return (
-        <div className="chapters">
+        <div className={styles.chapters}>
             <ul>
                 {chapterSections.map((section) => (
                     <li key={JSON.stringify(section)}>
                         {section.chapters.map((c) =>
                             c.href ? (
                                 c.none ? (
-                                    <a key={c} className="none">
+                                    <a key={c} className={styles.none}>
                                         {c.label}
                                     </a>
                                 ) : (

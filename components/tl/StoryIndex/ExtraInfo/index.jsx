@@ -3,6 +3,7 @@ import Markdown from "markdown-to-jsx";
 import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../StoryIndex.module.scss";
 
 function ExtraInfo({ post }) {
     const { extra } = post;
@@ -13,16 +14,18 @@ function ExtraInfo({ post }) {
     };
 
     return (
-        <div className="extra">
+        <div className={styles.extra}>
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
                 <span>Extra Information</span>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -33,11 +36,11 @@ function ExtraInfo({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
+                <div className={styles.body}>
                     {extra.map((v) => (
-                        <div className="item" key={v}>
-                            <div className="label">{v.label}</div>
-                            <div className="value">
+                        <div className={styles.item} key={v}>
+                            <div className={styles.label}>{v.label}</div>
+                            <div className={styles.value}>
                                 <Markdown>{v.value}</Markdown>
                             </div>
                         </div>

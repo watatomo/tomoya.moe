@@ -1,10 +1,10 @@
-.credits {
-    &__wrapper {
-        text-align: center;
-        margin-top: 1em;
-        line-height: 1;
-    }
+.wrapper {
+    text-align: center;
+    margin-top: 1em;
+    line-height: 1;
+}
 
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
@@ -38,7 +38,7 @@
     }
 
     .label {
-        font-weight: 700;
+        // font-weight: 700;
         font-size: 0.85em;
         color: var(--text-secondary);
         margin-bottom: 2px;
@@ -52,7 +52,7 @@
         justify-content: center;
         justify-items: center;
         // gap: 2px;
-        background: var(--credits-bg-color);
+        background: var(--credits-bg);
         padding: 10px;
         border-radius: 5px;
     }

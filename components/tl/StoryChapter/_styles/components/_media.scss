@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    .wrapper {
+        .mashiro__wrapper {
+            width: 97%;
+        }
+
+        .mashiro {
+            margin: 1.5em 1em;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        font-size: 14px;
+
+        .mashiro__wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .wrapper {
+        ol:last-of-type:not([role="tablist"]) > * + *,
+        ul:last-of-type:not([role="tablist"]) > * + * {
+            margin: 5px 0;
+        }
+
+        .mashiro > * + * {
+            margin: 1em 0;
+        }
+    }
+}

@@ -188,51 +188,36 @@ chapterSections:
             href: 22
           - label: 10
             href: 23
-            none: true
           - label: 11
             href: 24
-            none: true
           - label: 12
             href: 25
-            none: true
           - label: 13
             href: 26
-            none: true
           - label: 14
             href: 27
-            none: true
           - label: 15
             href: 28
-            none: true
           - label: 16
             href: 29
-            none: true
           - label: 17
             href: 30
-            none: true
           - label: 18
             href: 31
-            none: true
           - label: 19
             href: 32
-            none: true
     - chapters:
           - name: Epilogue
           - label: 1
             href: 33
-            none: true
           - label: 2
             href: 34
-            none: true
           - label: 3
             href: 35
-            none: true
           - label: 4
             href: 36
-            none: true
           - label: 5
             href: 37
-            none: true
 
 miniTalkSections:
     - name: wataru

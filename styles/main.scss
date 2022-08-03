@@ -77,10 +77,27 @@ h6 {
     font-feature-settings: "case" 0;
 }
 
-.tippy-box blockquote {
-    margin: 0.5em 0;
-    padding: 0 0.5em;
-    border-left: solid 2px var(--msr-tippy-color);
+.hold {
+    display: inline-block;
+}
+
+.tippy-box {
+    padding: 2px;
+
+    blockquote {
+        margin: 0.5em 0;
+        padding: 0 0.5em;
+        border-left: solid 2px var(--msr-tippy-color);
+
+        + figcaption {
+            text-align: right;
+            font-size: 0.85em;
+            margin-top: -0.4em;
+        }
+    }
+    p {
+        margin: 0.35em 0;
+    }
 }
 
 .tippy-box[data-animation="shift-away"][data-state="hidden"] {
@@ -107,7 +124,7 @@ h6 {
     background-color: var(--msr-tippy-bg);
     color: var(--msr-tippy-color);
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
-    font-size: 0.88em;
+    font-size: 0.85em;
 
     a {
         color: inherit;
@@ -152,5 +169,21 @@ h6 {
         .tippy-svg-arrow {
             fill: var(--msr-tippy-bg);
         }
+    }
+}
+
+.minitalk__wrapper {
+    display: flex;
+    flex-direction: column;
+    // gap: 8px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    > div:not(:last-child) {
+        margin-bottom: 8px;
     }
 }

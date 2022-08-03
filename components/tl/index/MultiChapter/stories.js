@@ -58,4 +58,14 @@ export const storyListMulti = [
             "Ena feels like she's unable to convey the new expressions Kanade and the others acquired. Wanting to create a painting worthy of Nightcord at 25, Ena considers going to an art class she was once in.",
         cover: "cover.webp"
     }
+    // {
+    //     story: "animals",
+    //     title: "Animals",
+    //     writer: "Seitaro Kino",
+    //     series: "EnSt",
+    //     chapters: 8,
+    //     description:
+    //         'Tomoya says he\'s still on the fence about getting a pet. But one night, the words "Hokutosenpai" and "Don\'t get food all over the place!" are heard from his room...',
+    //     cover: "card_rectangle4_2887_evolution.webp"
+    // }
 ];

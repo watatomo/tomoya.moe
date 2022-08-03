@@ -1,0 +1,14 @@
+@use "../../palette/mocha";
+
+[data-theme="dark"] [story-theme="#{$color}"] {
+    --si-color-main: #{scale-color($color, $saturation: 50%, $alpha: -80%)};
+    --si-color-secondary: #{scale-color($color, $saturation: 50%, $alpha: -90%)};
+
+    --si-start-text-color: #{$color};
+    --si-start-bg-hover: #{$color};
+
+    --si-info-link-color: #{$color};
+    --si-info-link-color-hover: #{$color};
+
+    --si-comment-link-color: #{fade-out($color, 0.5)};
+}

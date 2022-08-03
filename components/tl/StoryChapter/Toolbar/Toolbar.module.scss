@@ -7,7 +7,7 @@
     justify-items: center;
     grid-gap: 32px;
     gap: 32px;
-    color: var(--text-primary);
+    color: var(--text-secondary);
 
     > div {
         cursor: pointer;
@@ -18,7 +18,7 @@
             background: var(--toolbar-hover-bg);
 
             a {
-                color: var(--toolbar-hover-color);
+                color: inherit;
             }
         }
     }

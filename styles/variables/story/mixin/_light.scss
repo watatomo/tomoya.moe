@@ -1,0 +1,19 @@
+@use "../../palette/latte";
+
+[data-theme="light"] [story-theme="#{$color}"],
+[story-theme="#{$color}"] {
+    --si-color-main: #{scale-color($color, $saturation: 30%, $alpha: -70%)};
+    --si-color-secondary: #{scale-color($color, $saturation: 30%, $alpha: -50%)};
+
+    --si-start-text-color: #{scale-color(
+            $color,
+            $saturation: 80%,
+            $lightness: -50%
+        )};
+    --si-start-bg-hover: #{$color};
+
+    --si-info-link-color: #{$color};
+    --si-info-link-color-hover: #{scale-color($color, $lightness: -35%)};
+
+    --si-comment-link-color: #{fade-out($color, 0.5)};
+}
