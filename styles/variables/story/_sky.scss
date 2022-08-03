@@ -2,31 +2,17 @@
 
 [data-theme="light"] [story-theme="sky"],
 [story-theme="sky"] {
-    --si-color-main: #{scale-color($sky, $saturation: 30%, $alpha: -70%)};
-    --si-color-secondary: #{scale-color($sky, $saturation: 30%, $alpha: -50%)};
-
-    --si-start-text-color: #{scale-color(
-            $sky,
-            $saturation: 80%,
-            $lightness: -60%
-        )};
-    --si-start-bg-hover: #{$ctp-latte-sky};
-
-    --si-info-link-color: #{$ctp-latte-sky};
-    --si-info-link-color-hover: #{scale-color($ctp-latte-sky, $lightness: -35%)};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-sky, 0.5)};
+    --si-color: #{$ctp-latte-sky};
+    --si-color-main: #{fade-out($ctp-latte-sky, 0.9)};
+    --si-color-secondary: #{fade-out($ctp-latte-sky, 0.8)};
+    --si-color-darker: #{scale-color($ctp-latte-sky, $lightness: -30%)};
+    --si-comment-link-color: #{fade-out($ctp-latte-sky, 0.5)};
 }
 
 [data-theme="dark"] [story-theme="sky"] {
-    --si-color-main: #{scale-color($sky, $saturation: 50%, $alpha: -80%)};
-    --si-color-secondary: #{scale-color($sky, $saturation: 50%, $alpha: -90%)};
-
-    --si-start-text-color: #{$sky};
-    --si-start-bg-hover: #{$ctp-latte-sky};
-
-    --si-info-link-color: #{$sky};
-    --si-info-link-color-hover: #{$ctp-latte-sky};
-
-    --si-comment-link-color: #{fade-out($ctp-frappe-sky, 0.5)};
+    --si-color: #{$ctp-mocha-sky};
+    --si-color-main: #{fade-out($ctp-mocha-sky, 0.8)};
+    --si-color-secondary: #{fade-out($ctp-mocha-sky, 0.7)};
+    --si-color-darker: #{scale-color($ctp-mocha-sky, $lightness: -40%)};
+    --si-comment-link-color: #{fade-out($ctp-mocha-sky, 0.5)};
 }

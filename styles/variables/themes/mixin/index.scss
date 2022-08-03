@@ -1,0 +1,135 @@
+[data-theme="#{$mode}"] {
+    --text-primary: #{$text};
+    --text-secondary: #{$subtext1};
+    --text-tertiary: #{$subtext0};
+    --background-primary: #{$base};
+    --background-secondary: #{$mantle};
+    --background-tertiary: #{$crust};
+
+    --accent-color: #{$blue};
+    --blockquote-color: #{$overlay2};
+
+    --msr-line-color: #{$surface1};
+
+    --msr-tippy-bg: rgba(17, 17, 27, 0.9);
+    --msr-tippy-color: #d9e0ee;
+
+    @if $theme == latte {
+        $surface0-alt: fade-out($surface0, 0.4);
+
+        --shadow-color: 137, 142, 154;
+
+        --si-chapter-none-bg: #{$surface0-alt};
+        --si-chapter-none-bg-hover: #{fade-in($surface0-alt, 0.2)};
+
+        --chapter-link-color: #{fade-out($blue, 0.8)};
+        --chapter-arrow-color: #{$blue};
+        --chapter-arrow-color-hover: #{scale-color($blue, $lightness: -35%)};
+
+        --tl-title-color: #{scale-color(
+                $blue,
+                $saturation: -30%,
+                $lightness: -20%
+            )};
+        --tl-stats-color: #{$surface0-alt};
+
+        --tooltip-border: #{fade-out($text, 0.7)};
+        --tooltip-bg: rgb(255 255 255 / 50%);
+
+        --toolbar-hover-bg: rgb(255 255 255 / 30%);
+
+        --msr-bubble-thought-color: #{scale-color(
+                $blue,
+                $lightness: -25%,
+                $saturation: -30%
+            )};
+
+        --msr-winter: #{fade-out($blue, 0.8)};
+        --msr-spring: #{fade-out($pink, 0.8)};
+        --msr-summer: #{fade-out($sky, 0.8)};
+        --msr-fall: #{fade-out($peach, 0.8)};
+
+        --msr-cw-text: #{scale-color($base, $lightness: 25%)};
+        --msr-cw-border: #{scale-color($red, $lightness: -20%)};
+        --msr-cw-bg: #{fade-out($red, 0.2)};
+
+        --credits-bg: #{$surface0-alt};
+
+        --msr-choice-green: #{fade-out($green, 0.8)};
+    } @else {
+        --shadow-color: 4, 3, 7;
+        --dark-mode-img-filter: brightness(0.85);
+
+        --si-chapter-none-bg: #{$surface0};
+        --si-chapter-none-bg-hover: #{scale-color($surface0, $lightness: 10%)};
+
+        --chapter-link-color: #{fade-out($blue, 0.7)};
+        --chapter-arrow-color: #{$blue};
+
+        --tl-title-color: #{$blue};
+        --tl-stats-color: #{$surface0};
+
+        --chapter-arrow-color-hover: #{scale-color($blue, $lightness: -20%)};
+        --tooltip-border: #{fade-out($text, 0.7)};
+        --tooltip-bg: rgb(255 255 255 / 15%);
+
+        --toolbar-hover-bg: rgb(255 255 255 / 15%);
+
+        --msr-bubble-thought-color: #{scale-color(
+                $blue,
+                $lightness: 18%,
+                $saturation: -10%
+            )};
+
+        --msr-winter: #{fade-out($blue, 0.8)};
+        --msr-spring: #{fade-out($pink, 0.8)};
+        --msr-summer: #{fade-out($sky, 0.8)};
+        --msr-fall: #{fade-out($peach, 0.8)};
+
+        --msr-cw-text: #{$text};
+        --msr-cw-border: #{scale-color(
+                $red,
+                $lightness: -20%,
+                $saturation: 40%,
+                $alpha: -40%
+            )};
+        --msr-cw-bg: #{scale-color(
+                $red,
+                $lightness: -40%,
+                $saturation: 40%,
+                $alpha: -50%
+            )};
+
+        --credits-label-color: #{$subtext1};
+        --credits-bg: #{$surface0};
+
+        --msr-choice-green: #{fade-out($green, 0.75)};
+
+        .mashiro {
+            img {
+                filter: var(--dark-mode-img-filter);
+
+                &:hover {
+                    filter: unset;
+                }
+            }
+        }
+
+        .index__wrapper {
+            .banner,
+            .info .item.characters .value span {
+                filter: var(--dark-mode-img-filter);
+            }
+
+            .cover,
+            .gallery__wrapper .item,
+            .card__wrapper .item {
+                filter: var(--dark-mode-img-filter);
+
+                &:hover {
+                    filter: unset;
+                }
+            }
+        }
+    }
+}

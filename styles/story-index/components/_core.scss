@@ -78,13 +78,13 @@
             border-radius: 5px;
             padding: 0.4375em 0.625em;
             background: var(--si-color-main);
-            color: var(--si-start-text-color);
+            color: var(--si-color);
             text-decoration: none;
             transition: 0.25s ease-in-out;
 
             &:hover {
-                background: var(--si-start-bg-hover);
-                color: #fff;
+                background: var(--si-color);
+                color: var(--background-primary);
             }
         }
     }

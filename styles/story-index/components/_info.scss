@@ -9,12 +9,12 @@
     }
 
     a {
-        color: var(--si-info-link-color);
+        color: var(--si-color);
         transition: 0.25s ease-in-out;
         border-bottom: none;
 
         &:hover {
-            color: var(--si-info-link-color-hover);
+            color: var(--si-color-darker);
         }
     }
 
@@ -124,10 +124,7 @@
     .comment a {
         color: var(--text-primary);
         padding: 1px;
-        background: linear-gradient(
-                var(--si-comment-link-color),
-                var(--si-comment-link-color)
-            )
+        background: linear-gradient(var(--si-color-main), var(--si-color-main))
             left bottom no-repeat;
         background-position: 100% 1em;
         text-decoration: none;

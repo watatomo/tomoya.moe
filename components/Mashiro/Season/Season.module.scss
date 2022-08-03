@@ -8,7 +8,7 @@
     border-radius: 5px;
     border: solid 1px;
     padding: 8px;
-    color: var(--msr-season-text);
+    color: var(--text-primary);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -19,7 +19,7 @@
     svg {
         height: 1em;
         width: 1em;
-        fill: var(--msr-season-text);
+        fill: var(--text-primary);
     }
 
     p {
@@ -29,23 +29,23 @@
     }
 
     &[s="Winter"] {
-        border-color: var(--msr-winter-border);
-        background: var(--msr-winter-bg);
+        border-color: var(--msr-winter);
+        background: var(--msr-winter);
     }
 
     &[s="Spring"] {
-        border-color: var(--msr-spring-border);
-        background: var(--msr-spring-bg);
+        border-color: var(--msr-spring);
+        background: var(--msr-spring);
     }
 
     &[s="Summer"] {
-        border-color: var(--msr-summer-border);
-        background: var(--msr-summer-bg);
+        border-color: var(--msr-summer);
+        background: var(--msr-summer);
     }
 
     &[s="Fall"],
     &[s="Autumn"] {
-        border-color: var(--msr-fall-border);
-        background: var(--msr-fall-bg);
+        border-color: var(--msr-fall);
+        background: var(--msr-fall);
     }
 }
