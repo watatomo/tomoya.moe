@@ -12,6 +12,7 @@ import Cards from "./Cards";
 import { CommentVA, CommentWriter, CommentTN } from "./Comments";
 import Footer from "../../footer";
 import Header from "../../header";
+import styles from "./StoryIndex.module.scss";
 
 function StoryIndex({ post }) {
     return (
@@ -19,14 +20,14 @@ function StoryIndex({ post }) {
             <Header />
             <article>
                 <IndexMeta post={post} />
-                <div className="index__wrapper" story-theme={post.storyTheme}>
+                <div className={styles.wrapper} story-theme={post.storyTheme}>
                     <Banner post={post} />
-                    <div className="index-container__wrapper">
-                        <div className="index-container">
+                    <div className={styles.container__wrapper}>
+                        <div className={styles.container}>
                             <Cover post={post} />
                             <Title post={post} />
-                            <div className="info__wrapper">
-                                <div className="synopsis">
+                            <div className={styles.info__wrapper}>
+                                <div className={styles.synopsis}>
                                     <Markdown>{post.description}</Markdown>
                                     {post.descSource ? (
                                         <a href={post.descSource}>&nbsp;➹</a>
@@ -46,7 +47,7 @@ function StoryIndex({ post }) {
                                 {post.images ? <Gallery post={post} /> : null}
                                 {post.cards ? <Cards post={post} /> : null}
                             </div>
-                            <div className="chapters__wrapper">
+                            <div className={styles.chapters__wrapper}>
                                 <Chapters post={post} />
                                 {post.miniTalkSections ? (
                                     <MiniTalks post={post} />

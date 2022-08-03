@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fn } from "../../Footnotes";
+import styles from "../StoryIndex.module.scss";
 
 export function CommentVA({ post }) {
     const { commentVA, commentVAs } = post;
@@ -14,11 +15,13 @@ export function CommentVA({ post }) {
     };
 
     return (
-        <div className="comments">
+        <div className={styles.comments}>
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
@@ -27,7 +30,7 @@ export function CommentVA({ post }) {
                 ) : (
                     <span>Voice Actor&apos;s Comment</span>
                 )}
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -38,11 +41,11 @@ export function CommentVA({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
+                <div className={styles.body}>
                     {commentVA.map((c) => (
-                        <div className="item" key={c}>
+                        <div className={styles.item} key={c}>
                             <Markdown
-                                className="comment"
+                                className={styles.comment}
                                 options={{
                                     forceInline: true,
                                     overrides: {
@@ -54,7 +57,7 @@ export function CommentVA({ post }) {
                             >
                                 {c.comment}
                             </Markdown>
-                            <div className="source">
+                            <div className={styles.source}>
                                 <Markdown>{c.source}</Markdown>
                             </div>
                         </div>
@@ -74,16 +77,18 @@ export function CommentWriter({ post }) {
     };
 
     return (
-        <div className="comments">
+        <div className={styles.comments}>
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
                 <span>Writer&apos;s Comment</span>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -94,11 +99,11 @@ export function CommentWriter({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
+                <div className={styles.body}>
                     {commentWriter.map((c) => (
                         <div key={c}>
                             <Markdown
-                                className="comment"
+                                className={styles.comment}
                                 options={{
                                     forceInline: true,
                                     overrides: {
@@ -110,7 +115,7 @@ export function CommentWriter({ post }) {
                             >
                                 {c.comment}
                             </Markdown>
-                            <div className="source">
+                            <div className={styles.source}>
                                 <Markdown>{c.source}</Markdown>
                             </div>
                         </div>
@@ -130,16 +135,18 @@ export function CommentTN({ post }) {
     };
 
     return (
-        <div className="comments">
+        <div className={styles.comments}>
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
                 <span>Translation Notes</span>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -150,9 +157,9 @@ export function CommentTN({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
+                <div className={styles.body}>
                     {commentTN.map((c) => (
-                        <div className="comment" key={c}>
+                        <div className={styles.comment} key={c}>
                             <Markdown>{c.comment}</Markdown>
                         </div>
                     ))}

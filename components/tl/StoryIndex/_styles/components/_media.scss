@@ -1,5 +1,5 @@
 @media only screen and (max-width: 812px) {
-    .index__wrapper {
+    .wrapper {
         --banner-height: 125px;
 
         font-size: 14px;
@@ -7,7 +7,7 @@
         .banner {
         }
 
-        .index-container {
+        .container {
             grid-template-columns: auto [col-start] 1fr [last];
             grid-template-rows: auto;
             margin: -50px 0 0;
@@ -26,20 +26,20 @@
             }
         }
 
-        .title-en {
-            font-size: 1.5em;
-        }
-
-        .title-jp {
-            font-size: 1.05em;
-        }
-
         .title__wrapper {
             grid-column: 2/3;
             grid-row: 1/2;
             display: grid;
             grid-gap: 5px;
             gap: 5px;
+
+            .en {
+                font-size: 1.5em;
+            }
+
+            .jp {
+                font-size: 1.05em;
+            }
         }
 
         .info__wrapper {

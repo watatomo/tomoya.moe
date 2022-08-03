@@ -50,15 +50,25 @@
         --msr-fall: #{fade-out($peach, 0.8)};
 
         --msr-cw-text: #{scale-color($base, $lightness: 25%)};
-        --msr-cw-border: #{scale-color($red, $lightness: -20%)};
-        --msr-cw-bg: #{fade-out($red, 0.2)};
+        --msr-cw-border: #{scale-color(
+                $red,
+                $lightness: -30%,
+                $saturation: 10%,
+                $alpha: -10%
+            )};
+        --msr-cw-bg: #{scale-color(
+                $red,
+                $lightness: -10%,
+                $saturation: 10%,
+                $alpha: -10%
+            )};
 
         --credits-bg: #{$surface0-alt};
 
         --msr-choice-green: #{fade-out($green, 0.8)};
     } @else {
         --shadow-color: 4, 3, 7;
-        --dark-mode-img-filter: brightness(0.85);
+        --dark-mode-img-filter: brightness(0.8) contrast(0.9);
 
         --si-chapter-none-bg: #{$surface0};
         --si-chapter-none-bg-hover: #{scale-color($surface0, $lightness: 10%)};
@@ -89,47 +99,20 @@
         --msr-cw-text: #{$text};
         --msr-cw-border: #{scale-color(
                 $red,
-                $lightness: -20%,
-                $saturation: 40%,
+                $lightness: -35%,
+                $saturation: 30%,
                 $alpha: -40%
             )};
         --msr-cw-bg: #{scale-color(
                 $red,
                 $lightness: -40%,
                 $saturation: 40%,
-                $alpha: -50%
+                $alpha: -45%
             )};
 
         --credits-label-color: #{$subtext1};
         --credits-bg: #{$surface0};
 
         --msr-choice-green: #{fade-out($green, 0.75)};
-
-        .mashiro {
-            img {
-                filter: var(--dark-mode-img-filter);
-
-                &:hover {
-                    filter: unset;
-                }
-            }
-        }
-
-        .index__wrapper {
-            .banner,
-            .info .item.characters .value span {
-                filter: var(--dark-mode-img-filter);
-            }
-
-            .cover,
-            .gallery__wrapper .item,
-            .card__wrapper .item {
-                filter: var(--dark-mode-img-filter);
-
-                &:hover {
-                    filter: unset;
-                }
-            }
-        }
     }
 }

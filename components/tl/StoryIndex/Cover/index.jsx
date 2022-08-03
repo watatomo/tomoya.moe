@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import styles from "../StoryIndex.module.scss";
+
 function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
     slugSegments.pop();
@@ -7,7 +9,7 @@ function actualSlug({ slug }) {
 
 function Cover({ post }) {
     return (
-        <div className="cover">
+        <div className={styles.cover}>
             <div>
                 <img
                     src={`/img/tl/${actualSlug(post)}/assets/${post.cover}`}

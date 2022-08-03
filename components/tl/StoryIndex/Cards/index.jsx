@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import styles from "../StoryIndex.module.scss";
 
 function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
@@ -23,12 +24,14 @@ function Cards({ post }) {
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
                 <span>Associated Cards</span>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -39,12 +42,14 @@ function Cards({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
-                    <div className="card__wrapper">
+                <div className={styles.body}>
+                    <div className={styles.card__wrapper}>
                         {cards.map((v) => (
-                            <div className="item" key={v}>
-                                <div className="card">
-                                    <div className="single unbloomed">
+                            <div className={styles.item} key={v}>
+                                <div className={styles.card}>
+                                    <div
+                                        className={`${styles.single} ${styles.unbloomed}`}
+                                    >
                                         <img
                                             src={`/img/tl/${actualSlug(
                                                 post
@@ -52,7 +57,9 @@ function Cards({ post }) {
                                             alt={v.name}
                                         />
                                     </div>
-                                    <div className="single bloomed">
+                                    <div
+                                        className={`${styles.single} ${styles.bloomed}`}
+                                    >
                                         <img
                                             src={`/img/tl/${actualSlug(
                                                 post
@@ -61,7 +68,7 @@ function Cards({ post }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="lightbox">
+                                {/* <div className="lightbox">
                                     <div className="card__name">{v.name}</div>
                                     <div className="card__jp">{v.nameJP}</div>
                                     <div className="skills">
@@ -92,7 +99,7 @@ function Cards({ post }) {
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         ))}
                     </div>

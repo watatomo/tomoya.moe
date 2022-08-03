@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../StoryIndex.module.scss";
 
 function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
@@ -19,16 +20,18 @@ function Gallery({ post }) {
     };
 
     return (
-        <div className="gallery">
+        <div className={styles.gallery}>
             <button
                 type="button"
                 className={
-                    visible ? "collapsible-header active" : "collapsible-header"
+                    visible
+                        ? `${styles.header} ${styles.active}`
+                        : `${styles.header}`
                 }
                 onClick={handleClick}
             >
                 <span>CG Gallery</span>
-                <span className="arrow">
+                <span className={styles.arrow}>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </span>
             </button>
@@ -39,11 +42,11 @@ function Gallery({ post }) {
                     content: "collapse-content"
                 }}
             >
-                <div className="collapsible-body">
-                    <div className="gallery__wrapper">
+                <div className={styles.body}>
+                    <div className={styles.gallery__wrapper}>
                         {images.map((v) => (
-                            <div className="item" key={v}>
-                                <div className="image">
+                            <div className={styles.item} key={v}>
+                                <div className={styles.image}>
                                     <img
                                         src={`/img/tl/${actualSlug(
                                             post
@@ -51,7 +54,9 @@ function Gallery({ post }) {
                                         alt={v.caption}
                                     />
                                 </div>
-                                <div className="caption">{v.caption}</div>
+                                <div className={styles.caption}>
+                                    {v.caption}
+                                </div>
                             </div>
                         ))}
                     </div>

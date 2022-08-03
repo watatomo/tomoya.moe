@@ -1,13 +1,10 @@
 html[data-theme="dark"],
 [data-theme="dark"] {
-    .tl__wrapper {
+    .mashiro {
         img {
             filter: var(--dark-mode-img-filter);
-        }
 
-        .multi-container__item:hover,
-        .single-container__item:hover {
-            img {
+            &:hover {
                 filter: unset;
             }
         }

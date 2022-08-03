@@ -3,8 +3,8 @@ import styles from "./Credits.module.scss";
 
 function Credits({ tl, tlc, qc }) {
     return (
-        <div className={styles.credits__wrapper}>
-            <div className={styles.credits}>
+        <div className={styles.wrapper}>
+            <div className={styles.content}>
                 {tl ? (
                     <div className={styles.tl}>
                         <span className={styles.label}>

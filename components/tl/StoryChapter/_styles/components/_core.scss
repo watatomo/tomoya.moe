@@ -1,4 +1,4 @@
-.chapter__wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,6 @@
     ul:last-of-type:not([role="tablist"]) {
         display: flex;
         flex-direction: column;
-        // gap: 5px;
         padding-left: 0;
         margin: 0 0 0 20px;
 
@@ -82,7 +81,6 @@
     .mashiro {
         margin: 2em 1.5em;
         display: grid;
-        // flex-direction: column;
         grid-row-gap: 1em;
         row-gap: 1em;
 
@@ -95,7 +93,7 @@
 
         img {
             border-radius: 5px;
-            transition: filter 0.25s ease;
+            transition: filter 0.2s ease;
         }
 
         .footnotes > ol {
@@ -107,13 +105,13 @@
         }
     }
 
-    .msr-unit {
-        sup {
-            vertical-align: unset;
-            font-size: unset;
-            top: 0;
-        }
-    }
+    // .msr-unit {
+    //     sup {
+    //         vertical-align: unset;
+    //         font-size: unset;
+    //         top: 0;
+    //     }
+    // }
 
     .tln {
         h3,
