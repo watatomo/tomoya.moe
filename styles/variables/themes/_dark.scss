@@ -9,7 +9,6 @@ html[data-theme="dark"],
     --background-secondary: #{$ctp-mocha-mantle};
     --background-tertiary: #{$ctp-mocha-crust};
     --shadow-color: 4, 3, 7;
-    --dark-mode-img-filter: brightness(0.85) contrast(0.9);
 
     --accent-color: #{$ctp-mocha-blue};
     --blockquote-color: #{$ctp-mocha-overlay2};
@@ -17,7 +16,7 @@ html[data-theme="dark"],
     --si-chapter-none-bg: #{$ctp-mocha-surface0};
     --si-chapter-none-bg-hover: #{scale-color(
             $ctp-mocha-surface0,
-            $lightness: -10%
+            $lightness: 10%
         )};
 
     --chapter-link-color: #{fade-out($ctp-mocha-blue, 0.7)};
@@ -26,30 +25,30 @@ html[data-theme="dark"],
             $ctp-mocha-blue,
             $lightness: -20%
         )};
-    --tooltip-border: rgb(158 158 158 / 20%);
-    --tooltip-bg: rgb(255 255 255 / 15%);
+    --tooltip-border: #{fade-out($ctp-mocha-text, 0.7)};
+    --tooltip-bg: rgb(255 255 255 / 20%);
 
     --tl-title-color: var(--accent-color);
     --tl-stats-color: #{$ctp-mocha-surface0};
     --tl-item-color: #{$ctp-mocha-base};
 
-    --toolbar-hover-color: #fff;
-    --toolbar-hover-bg: #{$ctp-mocha-surface0};
+    // --toolbar-hover-color: #fff;
+    --toolbar-hover-bg: rgb(255 255 255 / 15%);
 
     --msr-name-color: #{$ctp-mocha-subtext1};
     --msr-bubble-text-color: #{$ctp-mocha-text};
     --msr-bubble-thought-color: #{scale-color(
-            $blue,
-            $lightness: 28%,
-            $saturation: -20%
+            $ctp-mocha-sky,
+            $lightness: 15%,
+            $saturation: -10%
         )};
     --msr-tippy-bg: rgba(0, 0, 0, 0.8);
     --msr-tippy-color: #fff;
     --msr-line-color: #{$ctp-mocha-surface1};
 
-    --msr-season-text: #{$white};
+    --msr-season-text: #{$ctp-mocha-text};
     --msr-winter-border: #{scale-color(
-            $ctp-latte-blue,
+            $ctp-latte-sky,
             $lightness: -70%,
             $saturation: 10%
         )};
@@ -90,6 +89,8 @@ html[data-theme="dark"],
             $lightness: -70%,
             $saturation: 10%
         )};
+
+    --dark-mode-img-filter: brightness(0.85);
 
     .mashiro {
         img {
