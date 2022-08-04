@@ -20,7 +20,7 @@ const Article = styled.article`
         background: var(--background-secondary);
 
         .tl-container {
-            margin: 2em 10px;
+            margin: 2em 2.5em;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -41,6 +41,12 @@ const Article = styled.article`
     @media (max-width: 900px) {
         .tl__wrapper {
             font-size: 14px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .tl__wrapper .tl-container {
+            margin: 2em 10px;
         }
     }
 `;

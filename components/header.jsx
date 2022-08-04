@@ -20,12 +20,12 @@ const StyledHeader = styled.header`
     align-items: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     justify-content: space-between;
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     padding: 0 0.9em;
 
     .site-name {
         font-weight: 700;
-        color: var(--text-secondary);
+        color: var(--text-tertiary);
         text-decoration: none;
     }
 

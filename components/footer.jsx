@@ -27,10 +27,10 @@ const StyledFooter = styled.footer`
 
         a {
             display: inline-block;
-            color: var(--text-primary);
+            color: var(--text-tertiary);
 
             &:hover {
-                color: inherit;
+                color: var(--text-primary);
             }
         }
     }

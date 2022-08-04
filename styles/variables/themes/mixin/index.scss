@@ -1,4 +1,4 @@
-[data-theme="#{$mode}"] {
+@mixin themes {
     --text-primary: #{$text};
     --text-secondary: #{$subtext1};
     --text-tertiary: #{$subtext0};
@@ -14,10 +14,8 @@
     --msr-tippy-bg: rgba(17, 17, 27, 0.9);
     --msr-tippy-color: #d9e0ee;
 
-    @if $theme == latte {
+    @if $mode == light {
         $surface0-alt: fade-out($surface0, 0.4);
-
-        --shadow-color: 137, 142, 154;
 
         --si-chapter-none-bg: #{$surface0-alt};
         --si-chapter-none-bg-hover: #{fade-in($surface0-alt, 0.2)};
@@ -67,8 +65,7 @@
 
         --msr-choice-green: #{fade-out($green, 0.8)};
     } @else {
-        --shadow-color: 4, 3, 7;
-        --dark-mode-img-filter: brightness(0.8) contrast(0.9);
+        --dark-mode-img-filter: brightness(0.85) contrast(0.9);
 
         --si-chapter-none-bg: #{$surface0};
         --si-chapter-none-bg-hover: #{scale-color($surface0, $lightness: 10%)};
@@ -114,5 +111,33 @@
         --credits-bg: #{$surface0};
 
         --msr-choice-green: #{fade-out($green, 0.75)};
+    }
+
+    @if $theme == latte {
+        --shadow-color: 137, 142, 154;
+    } @else if $theme == frappe {
+        --shadow-color: 17, 18, 29;
+    } @else if $theme == macchiato {
+        --shadow-color: 10, 11, 21;
+    } @else if $theme == mocha {
+        --shadow-color: 4, 3, 7;
+    }
+}
+
+@if $theme == mocha {
+    html,
+    html[data-theme="#{$mode}"],
+    html[data-theme="#{$mode}"],
+    html[palette-theme="#{$theme}"] {
+        @include themes;
+    }
+} @else if $theme == latte {
+    html[data-theme="#{$mode}"],
+    html[palette-theme="#{$theme}"] {
+        @include themes;
+    }
+} @else {
+    html[palette-theme="#{$theme}"] {
+        @include themes;
     }
 }
