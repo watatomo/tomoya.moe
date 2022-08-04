@@ -10,7 +10,7 @@
 }
 
 .option__header {
-    background: var(--bubble-light-mode);
+    background: var(--bubble-latte);
     border-radius: 5px;
     cursor: pointer;
     padding: 8px;
@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: solid 3px;
-    border-color: var(--bubble-light-mode);
+    border-color: var(--bubble-latte);
     grid-gap: 5px;
     gap: 5px;
     text-align: center;
@@ -65,7 +65,7 @@
     display: block;
     border-radius: 10px 10px 0 0;
     border: solid 3px;
-    border-color: var(--bubble-light-mode);
+    border-color: var(--bubble-latte);
     border-bottom: 0;
     padding: 3px;
     font-weight: 400;
@@ -74,7 +74,7 @@
     cursor: pointer;
 
     &.selected {
-        background: var(--bubble-light-mode);
+        background: var(--bubble-latte);
         font-weight: 700;
     }
 

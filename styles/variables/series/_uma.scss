@@ -8,8 +8,8 @@
     [character="Manhattan Cafe"] {
         --color: #4a4642;
         --hue: 30;
-        --bubble-light-mode: hsl(var(--hue), 9%, 88%) !important;
-        --bubble-dark-mode: hsl(var(--hue), 9%, 23%) !important;
+        --bubble-latte: hsl(var(--hue), 9%, 88%) !important;
+        --bubble-mocha: hsl(var(--hue), 9%, 23%) !important;
         --bubble-fill-mode: hsl(var(--hue), 9%, 45%) !important;
         --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/cafe.png");
     }

@@ -126,18 +126,15 @@
 
 @if $theme == mocha {
     html,
-    html[data-theme="#{$mode}"],
-    html[data-theme="#{$mode}"],
-    html[palette-theme="#{$theme}"] {
+    html[data-theme="#{$mode}"] {
         @include themes;
     }
 } @else if $theme == latte {
-    html[data-theme="#{$mode}"],
-    html[palette-theme="#{$theme}"] {
+    html[data-theme="#{$mode}"] {
         @include themes;
     }
 } @else {
-    html[palette-theme="#{$theme}"] {
+    html[data-theme="#{$theme}"] {
         @include themes;
     }
 }

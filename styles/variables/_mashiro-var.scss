@@ -13,8 +13,11 @@
     --footer-height: 32px;
 
     [character] {
-        --bubble-light-mode: hsl(var(--hue), 25%, 88%);
-        --bubble-dark-mode: hsl(var(--hue), 20%, 23%);
-        // --bubble-fill-mode: hsl(var(--hue), 25%, 42%);
+        // based on surface0
+        // latte is lightened. og: hsl(223, 16%, 83%)
+        --bubble-latte: hsl(var(--hue), 22%, 88%); // hsl(224, 17%, 88%)
+        --bubble-mocha: hsl(var(--hue), 21%, 23%); // hsl(237, 16%, 23%)
+        --bubble-frappe: hsl(var(--hue), 21%, 30%); // hsl(230, 16%, 30%)
+        --bubble-macchiato: hsl(var(--hue), 24%, 26%); // hsl(230, 19%, 26%)
     }
 }

@@ -1,5 +1,6 @@
 html[data-theme="dark"],
-[data-theme="dark"] {
+[data-theme="dark"],
+html[style*="dark"] {
     .wrapper {
         .banner,
         .info .item.characters .value span {

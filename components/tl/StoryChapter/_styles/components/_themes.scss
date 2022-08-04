@@ -1,5 +1,6 @@
 html[data-theme="dark"],
-[data-theme="dark"] {
+[data-theme="dark"],
+html[style*="dark"] {
     .mashiro {
         img {
             filter: var(--dark-mode-img-filter);

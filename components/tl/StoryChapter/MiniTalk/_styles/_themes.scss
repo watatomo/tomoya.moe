@@ -1,7 +1,8 @@
 html[data-theme="dark"],
-[data-theme="dark"] {
+[data-theme="dark"],
+html[style*="dark"] {
     .option__header {
-        background: var(--bubble-dark-mode);
+        background: var(--bubble-mocha);
         color: var(--msr-bubble-text-color);
 
         &::before {
@@ -10,14 +11,14 @@ html[data-theme="dark"],
     }
 
     .tabs__list {
-        border-color: var(--bubble-dark-mode);
+        border-color: var(--bubble-mocha);
     }
 
     .tabs__tab {
-        border-color: var(--bubble-dark-mode);
+        border-color: var(--bubble-mocha);
 
         &.selected {
-            background: var(--bubble-dark-mode);
+            background: var(--bubble-mocha);
         }
     }
 

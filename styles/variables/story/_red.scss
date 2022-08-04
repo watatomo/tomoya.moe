@@ -9,6 +9,7 @@
     --si-comment-link-color: #{fade-out($ctp-latte-red, 0.5)};
 }
 
+html[style*="dark"],
 [data-theme="dark"] [story-theme="red"] {
     --si-color: #{$ctp-mocha-red};
     --si-color-main: #{fade-out($ctp-mocha-red, 0.8)};
