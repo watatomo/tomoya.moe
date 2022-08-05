@@ -6,7 +6,7 @@ import styles from "./Choice.module.scss";
 
 function Choice({ children, c }) {
     return (
-        <div className={styles.choice} c={c || "green"}>
+        <div className={styles.unit} c={c || "green"}>
             <div className={styles.line}>
                 <FontAwesomeIcon icon={faCaretRight} />
                 <ReactMarkdown

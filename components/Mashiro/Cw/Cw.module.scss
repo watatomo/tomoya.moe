@@ -1,4 +1,4 @@
-.cw {
+.unit {
     display: grid;
     align-items: center;
     background: var(--msr-cw-bg);
@@ -21,7 +21,7 @@
         grid-column: 2/3;
     }
 
-    &__header {
+    .header {
         // font-weight: 700;
         font-size: 1.1em;
         grid-column: 2/3;

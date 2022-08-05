@@ -22,6 +22,7 @@
         background-size: cover;
         background-position: 50% 10%;
         background-repeat: no-repeat;
+        filter: var(--img-filter);
     }
 
     .cover {
@@ -31,6 +32,11 @@
         box-shadow: 0 0 5px 1px rgba(var(--shadow-color), 0.25);
         border-radius: 9px;
         transition: 0.25s ease;
+        filter: var(--img-filter);
+
+        &:hover {
+            filter: unset;
+        }
 
         > div {
             height: 0;
@@ -47,6 +53,7 @@
     }
 
     .title__wrapper {
+        color: var(--text-primary);
         line-height: 1;
         display: grid;
         // flex-direction: column;
@@ -101,6 +108,6 @@
     grid-template-rows: auto 1fr;
     grid-gap: 1.2em;
     gap: 1.2em;
-    margin: -25px 15px 0;
+    margin: -25px 2.5em 0;
     padding: 3em 0 0;
 }

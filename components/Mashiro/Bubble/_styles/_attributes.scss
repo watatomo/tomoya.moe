@@ -32,10 +32,10 @@
     }
 
     .line p {
-        background: #dbdee5;
+        background: var(--bubble-bg-default);
 
         &:nth-child(2)::before {
-            background: #dbdee5;
+            background: var(--bubble-bg-default);
         }
     }
 }

@@ -373,3 +373,23 @@
     --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/yuzuru.png");
     --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/yuzuru.png");
 }
+
+[character="Koga"],
+[character="Tetora"] {
+    --bubble-bg: hsl(var(--hue), 5%, 23%) !important;
+}
+
+[data-theme="light"] [character="Koga"],
+[data-theme="light"] [character="Tetora"] {
+    --bubble-bg: hsl(var(--hue), 5%, 88%) !important;
+}
+
+[data-theme="frappe"] [character="Koga"],
+[data-theme="frappe"] [character="Tetora"] {
+    --bubble-bg: hsl(var(--hue), 5%, 30%) !important;
+}
+
+[data-theme="macchiato"] [character="Koga"],
+[data-theme="macchiato"] [character="Tetora"] {
+    --bubble-bg: hsl(var(--hue), 5%, 26%) !important;
+}

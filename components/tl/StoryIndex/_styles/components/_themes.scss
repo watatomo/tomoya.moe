@@ -4,13 +4,13 @@ html[style*="dark"] {
     .wrapper {
         .banner,
         .info .item.characters .value span {
-            filter: var(--dark-mode-img-filter);
+            filter: var(--img-filter);
         }
 
         .cover,
         .gallery__wrapper .item,
         .card__wrapper .item {
-            filter: var(--dark-mode-img-filter);
+            filter: var(--img-filter);
 
             &:hover {
                 filter: unset;

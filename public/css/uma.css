@@ -23,3 +23,19 @@
     --hue: 182;
     --icon: url("https://cdn.jsdelivr.net/gh/watatomo/img/icon/umas/tachyon.png");
 }
+
+[character="Manhattan Cafe"] {
+    --bubble-bg: hsl(var(--hue), 5%, 23%) !important;
+}
+
+[data-theme="light"] [character="Manhattan Cafe"] {
+    --bubble-bg: hsl(var(--hue), 5%, 88%) !important;
+}
+
+[data-theme="frappe"] [character="Manhattan Cafe"] {
+    --bubble-bg: hsl(var(--hue), 5%, 30%) !important;
+}
+
+[data-theme="macchiato"] [character="Manhattan Cafe"] {
+    --bubble-bg: hsl(var(--hue), 5%, 26%) !important;
+}

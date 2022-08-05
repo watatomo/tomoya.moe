@@ -1,0 +1,30 @@
+@use "sass:meta";
+
+@mixin colors($args...) {
+    @debug meta.keywords($args);
+
+    @each $name, $color in meta.keywords($args) {
+        html[data-theme="dark"] [story-theme="#{$name}"] {
+            --si-color: #{$color};
+            --si-color-main: #{fade-out($color, 0.8)};
+            --si-color-secondary: #{fade-out($color, 0.7)};
+            --si-color-darker: #{scale-color($color, $lightness: -40%)};
+            --si-comment-link-color: #{fade-out($color, 0.5)};
+        }
+    }
+}
+
+@include colors(
+    $flamingo: #f2cdcd,
+    $pink: #f5c2e7,
+    $mauve: #cba6f7,
+    $red: #f38ba8,
+    $maroon: #eba0ac,
+    $peach: #fab387,
+    $yellow: #f9e2af,
+    $green: #a6e3a1,
+    $teal: #94e2d5,
+    $sky: #89dceb,
+    $sapphire: #74c7ec,
+    $blue: #89b4fa
+);

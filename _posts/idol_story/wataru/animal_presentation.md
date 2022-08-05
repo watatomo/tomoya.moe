@@ -162,7 +162,7 @@ Huh? There's something moving in your shirt, Tomoya-kun.
 
 <Bubble character="Tomoya">
 
-Eh— Eeek?! When did a dove get in here?
+Eh&NoBreak;— Eeek?! When did a dove get in here?
 
 </Bubble>
 

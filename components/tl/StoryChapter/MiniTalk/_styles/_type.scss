@@ -19,6 +19,7 @@ h2.header {
         height: 29.28px;
         background-size: cover;
         margin-right: 10px;
+        filter: var(--img-filter);
     }
 
     [mt="normal"] {

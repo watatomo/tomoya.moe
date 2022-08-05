@@ -10,7 +10,6 @@
     --blockquote-color: #{$overlay2};
 
     --msr-line-color: #{$surface1};
-
     --msr-tippy-bg: rgba(17, 17, 27, 0.9);
     --msr-tippy-color: #d9e0ee;
 
@@ -29,7 +28,7 @@
                 $saturation: -30%,
                 $lightness: -20%
             )};
-        --tl-stats-color: #{$surface0-alt};
+        --tl-stats-bg: #{$surface0-alt};
 
         --tooltip-border: #{fade-out($text, 0.7)};
         --tooltip-bg: rgb(255 255 255 / 50%);
@@ -65,18 +64,16 @@
 
         --msr-choice-green: #{fade-out($green, 0.8)};
     } @else {
-        --dark-mode-img-filter: brightness(0.85) contrast(0.9);
-
         --si-chapter-none-bg: #{$surface0};
         --si-chapter-none-bg-hover: #{scale-color($surface0, $lightness: 10%)};
 
         --chapter-link-color: #{fade-out($blue, 0.7)};
         --chapter-arrow-color: #{$blue};
+        --chapter-arrow-color-hover: #{scale-color($blue, $lightness: -20%)};
 
         --tl-title-color: #{$blue};
-        --tl-stats-color: #{$surface0};
+        --tl-stats-bg: #{$surface0};
 
-        --chapter-arrow-color-hover: #{scale-color($blue, $lightness: -20%)};
         --tooltip-border: #{fade-out($text, 0.7)};
         --tooltip-bg: rgb(255 255 255 / 15%);
 
@@ -84,8 +81,8 @@
 
         --msr-bubble-thought-color: #{scale-color(
                 $blue,
-                $lightness: 18%,
-                $saturation: -10%
+                $lightness: 30%,
+                $saturation: -15%
             )};
 
         --msr-winter: #{fade-out($blue, 0.8)};
@@ -107,20 +104,46 @@
                 $alpha: -45%
             )};
 
-        --credits-label-color: #{$subtext1};
         --credits-bg: #{$surface0};
 
         --msr-choice-green: #{fade-out($green, 0.75)};
     }
 
+    // bubble bgs based on surface0
+
     @if $theme == latte {
         --shadow-color: 137, 142, 154;
+        --img-filter: unset;
+
+        [character] {
+            // lightened. og: hsl(223, 16%, 83%)
+            --bubble-bg: hsl(var(--hue), 22%, 88%); // hsl(224, 17%, 88%)
+            --bubble-bg-default: #dbdee5;
+        }
     } @else if $theme == frappe {
         --shadow-color: 17, 18, 29;
+        --img-filter: brightness(0.9) contrast(0.9);
+
+        [character] {
+            --bubble-bg: hsl(var(--hue), 21%, 30%); // hsl(230, 16%, 30%)
+            --bubble-bg-default: #{$surface0};
+        }
     } @else if $theme == macchiato {
         --shadow-color: 10, 11, 21;
+        --img-filter: brightness(0.85) contrast(0.9);
+
+        [character] {
+            --bubble-bg: hsl(var(--hue), 24%, 26%); // hsl(230, 19%, 26%)
+            --bubble-bg-default: #{$surface0};
+        }
     } @else if $theme == mocha {
         --shadow-color: 4, 3, 7;
+        --img-filter: brightness(0.85) contrast(0.9);
+
+        [character] {
+            --bubble-bg: hsl(var(--hue), 21%, 23%); // hsl(237, 16%, 23%)
+            --bubble-bg-default: #{$surface0};
+        }
     }
 }
 

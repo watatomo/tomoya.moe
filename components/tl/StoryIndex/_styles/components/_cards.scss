@@ -62,12 +62,19 @@
     }
 
     .item {
+        transition: filter 0.2s ease;
+
         > .lightbox {
             display: none;
         }
 
         > .card {
             cursor: zoom-in;
+            filter: var(--img-filter);
+
+            &:hover {
+                filter: unset;
+            }
         }
     }
 }

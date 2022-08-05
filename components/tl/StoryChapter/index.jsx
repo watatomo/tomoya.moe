@@ -15,7 +15,7 @@ import Credits from "./Credits";
 import { MiniTalk, MiniTalkType, Possibility } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
 import Choice from "../../Mashiro/Choice";
-// import Footer from "../../footer";
+import Footer from "../../footer";
 import Header from "../../header";
 import styles from "./StoryChapter.module.scss";
 
@@ -52,7 +52,7 @@ function StoryChapter({ post }) {
                     </div>
                 </div>
             </article>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }

@@ -4,7 +4,7 @@ import styles from "./Narration.module.scss";
 
 function Narration({ children }) {
     return (
-        <div className={styles.narration}>
+        <div className={styles.unit}>
             <div className={styles.line}>
                 <ReactMarkdown
                     remarkPlugins={[remarkGfm, { singleTilde: false }]}

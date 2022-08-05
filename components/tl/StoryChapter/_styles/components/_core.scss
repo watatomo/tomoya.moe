@@ -94,6 +94,11 @@
         img {
             border-radius: 5px;
             transition: filter 0.2s ease;
+            filter: var(--img-filter);
+
+            &:hover {
+                filter: unset;
+            }
         }
 
         .footnotes > ol {

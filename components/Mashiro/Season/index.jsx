@@ -5,7 +5,7 @@ import styles from "./Season.module.scss";
 
 function Season({ s }) {
     return (
-        <div className={styles.season} s={s}>
+        <div className={styles.unit} s={s}>
             {"Winter" === s ? <FontAwesomeIcon icon={faSnowflake} /> : null}
             {"Spring" === s ? <FaFlower /> : null}
             {"Summer" === s ? <FaSunBright /> : null}

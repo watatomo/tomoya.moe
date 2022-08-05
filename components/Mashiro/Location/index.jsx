@@ -4,7 +4,7 @@ import styles from "./Location.module.scss";
 
 function Location({ children }) {
     return (
-        <div className={styles.location}>
+        <div className={styles.unit}>
             <p>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
                 <span>
