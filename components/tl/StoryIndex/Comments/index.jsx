@@ -113,7 +113,7 @@ export function CommentWriter({ post }) {
                                     }
                                 }}
                             >
-                                {c.comment}
+                                {writer.comment}
                             </Markdown>
                             <div className={styles.source}>
                                 <Markdown>{writer.source}</Markdown>

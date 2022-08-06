@@ -1,6 +1,6 @@
 module.exports = {
     reactStrictMode: true,
-    webpack5: true,
+    // webpack5: true,
     webpack(config, options) {
         const { isServer } = options;
         config.module.rules.push({

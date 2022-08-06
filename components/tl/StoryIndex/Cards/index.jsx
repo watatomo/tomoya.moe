@@ -69,8 +69,8 @@ function Cards({ post }) {
                                     </div>
                                 </div>
                                 {/* <div className="lightbox">
-                                    <div className="card__name">{v.name}</div>
-                                    <div className="card__jp">{v.nameJP}</div>
+                                    <div className="card__name">{card.name}</div>
+                                    <div className="card__jp">{card.nameJP}</div>
                                     <div className="skills">
                                         <ul>
                                             <li id="center">
