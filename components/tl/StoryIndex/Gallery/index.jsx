@@ -44,18 +44,18 @@ function Gallery({ post }) {
             >
                 <div className={styles.body}>
                     <div className={styles.gallery__wrapper}>
-                        {images.map((v) => (
-                            <div className={styles.item} key={v}>
+                        {images.map((gallery) => (
+                            <div className={styles.item} key={gallery}>
                                 <div className={styles.image}>
                                     <img
                                         src={`/img/tl/${actualSlug(
                                             post
-                                        )}/assets/${v.src}`}
-                                        alt={v.caption}
+                                        )}/assets/${gallery.src}`}
+                                        alt={gallery.caption}
                                     />
                                 </div>
                                 <div className={styles.caption}>
-                                    {v.caption}
+                                    {gallery.caption}
                                 </div>
                             </div>
                         ))}

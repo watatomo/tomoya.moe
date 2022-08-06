@@ -15,22 +15,24 @@ function Chapters({ post }) {
             <ul>
                 {chapterSections.map((section) => (
                     <li key={JSON.stringify(section)}>
-                        {section.chapters.map((c) =>
-                            c.href ? (
-                                c.none ? (
-                                    <a key={c} className={styles.none}>
-                                        {c.label}
+                        {section.chapters.map((chapter) =>
+                            chapter.href ? (
+                                chapter.none ? (
+                                    <a key={chapter} className={styles.none}>
+                                        {chapter.label}
                                     </a>
                                 ) : (
                                     <Link
-                                        key={c}
-                                        href={`${deriveIndex(post)}${c.href}`}
+                                        key={chapter}
+                                        href={`${deriveIndex(post)}${
+                                            chapter.href
+                                        }`}
                                     >
-                                        <a>{c.label}</a>
+                                        <a>{chapter.label}</a>
                                     </Link>
                                 )
                             ) : (
-                                <span key={c}>{c.name}</span>
+                                <span key={chapter}>{chapter.name}</span>
                             )
                         )}
                     </li>

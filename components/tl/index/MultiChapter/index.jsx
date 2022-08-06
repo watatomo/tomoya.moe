@@ -7,32 +7,34 @@ import styles from "./MultiChapter.module.scss";
 function MultiChapter() {
     return (
         <div className={styles.container}>
-            {storyListMulti.map((s) => (
-                <Link key={s} href={`/tl/${s.story}`}>
+            {storyListMulti.map((multi) => (
+                <Link key={multi} href={`/tl/${multi.story}`}>
                     <a className={styles.container__item}>
                         <div className={styles.cover}>
                             <img
-                                src={`/img/tl/${s.story}/assets/${s.cover}`}
-                                alt={s.title}
+                                src={`/img/tl/${multi.story}/assets/${multi.cover}`}
+                                alt={multi.title}
                             />
                         </div>
                         <div className={styles.data}>
                             <div className={styles.header}>
-                                <span className={styles.title}>{s.title}</span>
+                                <span className={styles.title}>
+                                    {multi.title}
+                                </span>
                                 <span className={styles.stats}>
-                                    {s.writer ? (
+                                    {multi.writer ? (
                                         <span className={styles.writer}>
-                                            {s.writer}
+                                            {multi.writer}
                                         </span>
                                     ) : null}
                                     <span className={styles.chapters}>
-                                        {s.chapters} Chapters
+                                        {multi.chapters} Chapters
                                     </span>
-                                    {/* <span className={styles.series}>{s.series}</span> */}
+                                    {/* <span className={styles.series}>{multi.series}</span> */}
                                 </span>
                             </div>
                             <div className={styles.body}>
-                                <Markdown>{s.description}</Markdown>
+                                <Markdown>{multi.description}</Markdown>
                             </div>
                         </div>
                     </a>

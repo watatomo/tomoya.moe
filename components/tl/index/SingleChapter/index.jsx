@@ -7,17 +7,17 @@ import styles from "./SingleChapter.module.scss";
 function SingleChapter() {
     return (
         <div className={styles.container}>
-            {storyListSingle.map((s) => (
-                <div className={styles.container__item} key={s}>
+            {storyListSingle.map((single) => (
+                <div className={styles.container__item} key={single}>
                     <div className={styles.cover}>
                         <img
-                            src={`/img/tl/${s.story}/${s.cover}`}
-                            alt={s.title}
+                            src={`/img/tl/${single.story}/${single.cover}`}
+                            alt={single.title}
                         />
                     </div>
-                    <Link href={`/tl/${s.story}`}>
+                    <Link href={`/tl/${single.story}`}>
                         <a className={styles.title}>
-                            <span>{s.title}</span>
+                            <span>{single.title}</span>
                             <button type="button">Read</button>
                         </a>
                     </Link>

@@ -44,8 +44,8 @@ function Cards({ post }) {
             >
                 <div className={styles.body}>
                     <div className={styles.card__wrapper}>
-                        {cards.map((v) => (
-                            <div className={styles.item} key={v}>
+                        {cards.map((card) => (
+                            <div className={styles.item} key={card}>
                                 <div className={styles.card}>
                                     <div
                                         className={`${styles.single} ${styles.unbloomed}`}
@@ -53,8 +53,8 @@ function Cards({ post }) {
                                         <img
                                             src={`/img/tl/${actualSlug(
                                                 post
-                                            )}/assets/${v.src1}`}
-                                            alt={v.name}
+                                            )}/assets/${card.src1}`}
+                                            alt={card.name}
                                         />
                                     </div>
                                     <div
@@ -63,8 +63,8 @@ function Cards({ post }) {
                                         <img
                                             src={`/img/tl/${actualSlug(
                                                 post
-                                            )}/assets/${v.src2}`}
-                                            alt={v.name}
+                                            )}/assets/${card.src2}`}
+                                            alt={card.name}
                                         />
                                     </div>
                                 </div>
@@ -75,26 +75,26 @@ function Cards({ post }) {
                                         <ul>
                                             <li id="center">
                                                 <div className="name">
-                                                    {v.centerName}
+                                                    {card.centerName}
                                                 </div>
                                                 <div className="desc">
-                                                    {v.centerDesc}
+                                                    {card.centerDesc}
                                                 </div>
                                             </li>
                                             <li id="live">
                                                 <div className="name">
-                                                    {v.liveName}
+                                                    {card.liveName}
                                                 </div>
                                                 <div className="desc">
-                                                    {v.liveDesc}
+                                                    {card.liveDesc}
                                                 </div>
                                             </li>
                                             <li id="support">
                                                 <div className="name">
-                                                    {v.supportName}
+                                                    {card.supportName}
                                                 </div>
                                                 <div className="desc">
-                                                    {v.supportDesc}
+                                                    {card.supportDesc}
                                                 </div>
                                             </li>
                                         </ul>

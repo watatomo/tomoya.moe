@@ -42,8 +42,8 @@ export function CommentVA({ post }) {
                 }}
             >
                 <div className={styles.body}>
-                    {commentVA.map((c) => (
-                        <div className={styles.item} key={c}>
+                    {commentVA.map((va) => (
+                        <div className={styles.item} key={va}>
                             <Markdown
                                 className={styles.comment}
                                 options={{
@@ -55,10 +55,10 @@ export function CommentVA({ post }) {
                                     }
                                 }}
                             >
-                                {c.comment}
+                                {va.comment}
                             </Markdown>
                             <div className={styles.source}>
-                                <Markdown>{c.source}</Markdown>
+                                <Markdown>{va.source}</Markdown>
                             </div>
                         </div>
                     ))}
@@ -100,8 +100,8 @@ export function CommentWriter({ post }) {
                 }}
             >
                 <div className={styles.body}>
-                    {commentWriter.map((c) => (
-                        <div key={c}>
+                    {commentWriter.map((writer) => (
+                        <div key={writer}>
                             <Markdown
                                 className={styles.comment}
                                 options={{
@@ -116,7 +116,7 @@ export function CommentWriter({ post }) {
                                 {c.comment}
                             </Markdown>
                             <div className={styles.source}>
-                                <Markdown>{c.source}</Markdown>
+                                <Markdown>{writer.source}</Markdown>
                             </div>
                         </div>
                     ))}
@@ -158,9 +158,9 @@ export function CommentTN({ post }) {
                 }}
             >
                 <div className={styles.body}>
-                    {commentTN.map((c) => (
-                        <div className={styles.comment} key={c}>
-                            <Markdown>{c.comment}</Markdown>
+                    {commentTN.map((tn) => (
+                        <div className={styles.comment} key={tn}>
+                            <Markdown>{tn.comment}</Markdown>
                         </div>
                     ))}
                 </div>

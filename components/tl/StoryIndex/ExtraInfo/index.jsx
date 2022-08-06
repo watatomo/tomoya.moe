@@ -37,11 +37,11 @@ function ExtraInfo({ post }) {
                 }}
             >
                 <div className={styles.body}>
-                    {extra.map((v) => (
-                        <div className={styles.item} key={v}>
-                            <div className={styles.label}>{v.label}</div>
+                    {extra.map((extra) => (
+                        <div className={styles.item} key={extra}>
+                            <div className={styles.label}>{extra.label}</div>
                             <div className={styles.value}>
-                                <Markdown>{v.value}</Markdown>
+                                <Markdown>{extra.value}</Markdown>
                             </div>
                         </div>
                     ))}

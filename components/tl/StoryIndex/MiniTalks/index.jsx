@@ -52,19 +52,19 @@ function MiniTalks({ post }) {
                                 content: `${styles.content}`
                             }}
                         >
-                            {section.miniTalks.map((c) =>
-                                c.none ? (
-                                    <a className={styles.none} key={c}>
-                                        {c.label}
+                            {section.miniTalks.map((minitalk) =>
+                                minitalk.none ? (
+                                    <a className={styles.none} key={minitalk}>
+                                        {minitalk.label}
                                     </a>
                                 ) : (
                                     <Link
-                                        key={c}
+                                        key={minitalk}
                                         href={`${deriveIndex(post)}${
                                             section.name
-                                        }/${c.href}`}
+                                        }/${minitalk.href}`}
                                     >
-                                        <a>{c.label}</a>
+                                        <a>{minitalk.label}</a>
                                     </Link>
                                 )
                             )}

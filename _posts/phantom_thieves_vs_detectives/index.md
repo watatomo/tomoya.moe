@@ -22,7 +22,7 @@ characters:
     - Nazuna
     - Jin
 translator: "[Ren](https://tomoya.moe)"
-proofreader: "TBA"
+proofreader: "[Ciel](https://twitter.com/bluefilaments), [Yuna](https://twitter.com/YZ0RzGlsiHfWP3W)"
 extra:
     - label: "Event"
       value: "Showdown! The Great Phantom Thief vs. the Detective Brigade"
