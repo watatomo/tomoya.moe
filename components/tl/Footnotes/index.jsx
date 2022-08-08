@@ -17,6 +17,27 @@ const Button = styled.button`
     color: var(--text-primary);
 `;
 
+const Wrapper = styled.div`
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--text-secondary);
+        border-bottom: solid 1px var(--msr-line-color);
+        padding: 0 0 0.15em;
+        margin: 0 0 0.6em 0;
+    }
+
+    p {
+        margin: 0 0 0.75em 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+`;
+
 export function Fn({ num, children }) {
     return (
         <Tippy
@@ -38,7 +59,8 @@ export function Tln({ children }) {
     return (
         <>
             <hr id="tln"></hr>
-            {children}
+            {/* <h2>Translator's Notes</h2> */}
+            <Wrapper>{children}</Wrapper>
         </>
     );
 }

@@ -318,9 +318,7 @@ Until you grow to become a prince that can rescue all the Cinderellas in the wor
 
 <Tln>
 
-<div className="tln">
-
-### Title Breakdown
+## Title Breakdown
 
 Jeanne d'Arc was a French soldier that received visions from saints to recover France from England. The royal court was drawn to her possibly due to viewing her as a beacon of hope. She appeared to them during a time the French was defeated numerous of times and were desperate. She led a number of successful military campaigns and boosted French morale. On May 23, 1430, d'Arc was captured by the Burgundian faction and put on trial. After being declared guilty by Pierre Cauchon, she was burned at the stake on May 30, 1431. She was around nineteen years old. d'Arc was canonized as a saint on May 16, 1920.
 
@@ -328,7 +326,7 @@ Based on Charles Perrault's version, Cinderella, a girl with immense kindness, l
 
 Jeanne d'Arc was a peasant and Cinderella was treated as a servant. However, Cinderella had a happily ever after, while d'Arc died at the stake.
 
-#### Analysis
+### Analysis
 
 Jeanne d'Arc (Cinderella) is a parallel of Wataru (particularly from his childhood). The "prince" that saved him were his inherent talents. However, as a result of his immense talent, people moved away from him. The "tragedy" Wataru speaks of is what happened to himself, and tells Tomoya to not end up like him. This is also noted in _Phantom Thieves vs. Detectives,_ as he warns Tomoya that becoming "extraordinary" can cause him to be disconnected from others—he doesn't want Tomoya to become one of "those who don't fit in."
 
@@ -337,8 +335,6 @@ Additionally, the real Jeanne d'Arc was burned at the stake by her own people: t
 Tl;dr: Jeanne d'Arc = Cinderella = Wataru.
 
 <!-- The Cinderella of _Ensemble Stars_ was Wataru all along, not Tomoya (despite him getting the role). It's kinda like a subtle way of Wataru asking Tomoya to become a prince that can save him (which he ends up becoming in _Transparency and Masks_)—the prince that will follow him to the end of the world and beyond. -->
-
-</div>
 
 </Tln>
 

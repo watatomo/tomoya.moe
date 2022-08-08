@@ -91,3 +91,19 @@
 .selected {
     display: block;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    // gap: 8px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    > div:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}

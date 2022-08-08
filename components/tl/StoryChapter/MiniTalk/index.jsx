@@ -89,3 +89,7 @@ export function Possibility({ normal, rare }) {
         </Tabs>
     );
 }
+
+export function Mt({ children }) {
+    return <div className={styles.wrapper}>{children}</div>;
+}

@@ -12,7 +12,7 @@ import Season from "../../Mashiro/Season";
 import Thought from "../../Mashiro/Thought";
 import Toolbar from "./Toolbar";
 import Credits from "./Credits";
-import { MiniTalk, MiniTalkType, Possibility } from "./MiniTalk";
+import { MiniTalk, MiniTalkType, Possibility, Mt } from "./MiniTalk";
 import ChapterMeta from "./ChapterMeta";
 import Choice from "../../Mashiro/Choice";
 import Footer from "../../footer";
@@ -45,7 +45,8 @@ function StoryChapter({ post }) {
                                     MiniTalk,
                                     MiniTalkType,
                                     Possibility,
-                                    Choice
+                                    Choice,
+                                    Mt
                                 }}
                             />
                         </div>
