@@ -117,7 +117,7 @@
 
         [character] {
             // lightened. og: hsl(223, 16%, 83%)
-            --bubble-bg: hsl(var(--hue), 22%, 88%); // hsl(224, 17%, 88%)
+            --bubble-bg: hsl(var(--hue), 20%, 88%); // hsl(224, 17%, 88%)
             --bubble-bg-default: #dbdee5;
         }
     } @else if $theme == frappe {
@@ -125,7 +125,7 @@
         --img-filter: brightness(0.9) contrast(0.9);
 
         [character] {
-            --bubble-bg: hsl(var(--hue), 21%, 30%); // hsl(230, 16%, 30%)
+            --bubble-bg: hsl(var(--hue), 19%, 30%); // hsl(230, 16%, 30%)
             --bubble-bg-default: #{$surface0};
         }
     } @else if $theme == macchiato {
@@ -133,7 +133,7 @@
         --img-filter: brightness(0.85) contrast(0.9);
 
         [character] {
-            --bubble-bg: hsl(var(--hue), 24%, 26%); // hsl(230, 19%, 26%)
+            --bubble-bg: hsl(var(--hue), 21%, 26%); // hsl(230, 19%, 26%)
             --bubble-bg-default: #{$surface0};
         }
     } @else if $theme == mocha {
@@ -141,7 +141,7 @@
         --img-filter: brightness(0.85) contrast(0.9);
 
         [character] {
-            --bubble-bg: hsl(var(--hue), 21%, 23%); // hsl(237, 16%, 23%)
+            --bubble-bg: hsl(var(--hue), 19%, 23%); // hsl(237, 16%, 23%)
             --bubble-bg-default: #{$surface0};
         }
     }
