@@ -8,16 +8,6 @@ function actualSlug({ slug }) {
 }
 
 function IndexMeta({ post }) {
-    // const storyColorStyle = `
-    //     :root {
-    //         --storycolor: ${post.storyColor};
-    //         --storycolor-rgb: ${post.storyColorRGB};
-    //         --storycolor-h: ${post.storyColorH};
-    //         --storycolor-s: ${post.storyColorS};
-    //         --storycolor-l: ${post.storyColorL};
-    //     }
-    // `;
-
     return (
         <Head>
             <title>{post.title}</title>
@@ -83,7 +73,6 @@ function IndexMeta({ post }) {
             />
             <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             <link href={`/css/${post.series}.css`} rel="stylesheet" />
-            {/* <style>{storyColorStyle}</style> */}
         </Head>
     );
 }

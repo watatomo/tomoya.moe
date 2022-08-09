@@ -17,6 +17,7 @@ import ChapterMeta from "./ChapterMeta";
 import Choice from "../../Mashiro/Choice";
 import Footer from "../../footer";
 import Header from "../../header";
+// import Sidebar from "./Sidebar";
 import styles from "./StoryChapter.module.scss";
 
 function StoryChapter({ post }) {
@@ -26,29 +27,32 @@ function StoryChapter({ post }) {
             <article>
                 <ChapterMeta post={post} />
                 <div className={styles.wrapper}>
+                    {/* <Sidebar post={post} /> */}
                     <div className={styles.mashiro__wrapper}>
-                        <div className={styles.mashiro}>
-                            <MDXRemote
-                                {...post.content}
-                                components={{
-                                    Bubble,
-                                    Fn,
-                                    Tln,
-                                    Thought,
-                                    Action,
-                                    Season,
-                                    Location,
-                                    Narration,
-                                    Cw,
-                                    Image,
-                                    Credits,
-                                    MiniTalk,
-                                    MiniTalkType,
-                                    Possibility,
-                                    Choice,
-                                    Mt
-                                }}
-                            />
+                        <div className={styles.container}>
+                            <div className={styles.mashiro}>
+                                <MDXRemote
+                                    {...post.content}
+                                    components={{
+                                        Bubble,
+                                        Fn,
+                                        Tln,
+                                        Thought,
+                                        Action,
+                                        Season,
+                                        Location,
+                                        Narration,
+                                        Cw,
+                                        Image,
+                                        Credits,
+                                        MiniTalk,
+                                        MiniTalkType,
+                                        Possibility,
+                                        Choice,
+                                        Mt
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

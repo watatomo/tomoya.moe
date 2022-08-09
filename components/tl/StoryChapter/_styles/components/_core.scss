@@ -1,25 +1,15 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     color: var(--text-primary);
     background: var(--background-secondary);
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
 
     hr {
         border: 1px solid var(--msr-line-color);
         width: 100%;
         margin: 0.5em 0;
     }
-
-    // hr#tln + ol,
-    // hr#tln + ul {
-    //     p {
-    //         margin: 0.35em 0 0;
-    //     }
-    // }
 
     ol:last-of-type:not([role="tablist"]),
     ul:last-of-type:not([role="tablist"]) {
@@ -72,55 +62,51 @@
             }
         }
     }
+}
 
-    .mashiro__wrapper {
-        background: var(--background-primary);
-        max-width: 58ch;
-    }
+.mashiro {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        // flex-grow: 1;
 
-    .mashiro {
-        margin: 2em 1.5em;
-        display: grid;
-        grid-row-gap: 1em;
-        row-gap: 1em;
-
-        // > div:not(:last-child),
-        // > img:not(:last-child),
-        // > hr:not(:last-child),
-        // > ol:not(:last-child) {
-        //     margin-bottom: 1em;
-        // }
-
-        img {
-            border-radius: 5px;
-            transition: filter 0.2s ease;
-            filter: var(--img-filter);
-
-            &:hover {
-                filter: unset;
-            }
-        }
-
-        .footnotes > ol {
-            margin: 1em 1em 0;
-
-            > li:not(:last-of-type) {
-                margin-bottom: 0.5em;
-            }
+        .container {
+            position: relative;
+            flex-grow: 1;
+            max-width: 58ch;
+            background: var(--background-primary);
         }
     }
 
-    // .msr-unit {
-    //     sup {
-    //         vertical-align: unset;
-    //         font-size: unset;
-    //         top: 0;
-    //     }
+    margin: 2em 1.5em;
+    display: grid;
+    grid-row-gap: 1em;
+    row-gap: 1em;
+
+    // > div:not(:last-child),
+    // > img:not(:last-child),
+    // > hr:not(:last-child),
+    // > ol:not(:last-child) {
+    //     margin-bottom: 1em;
     // }
 
-    blockquote {
-        margin: 0.5em 0;
-        padding: 0 0.5em;
-        border-left: solid 2px var(--blockquote-color);
+    img {
+        border-radius: 5px;
+        transition: filter 0.2s ease;
+        filter: var(--img-filter);
+
+        &:hover {
+            filter: unset;
+        }
+    }
+
+    .footnotes > ol {
+        margin: 1em 1em 0;
+
+        > li:not(:last-of-type) {
+            margin-bottom: 0.5em;
+        }
     }
 }

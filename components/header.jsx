@@ -4,7 +4,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import {
+    faSun,
+    faMoon,
+    faCloudMoon,
+    faCloudSun,
+    faCircleXmark
+} from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
     height: var(--header-height);
@@ -78,7 +84,30 @@ const HeaderSpacing = styled.div`
 
 function Header({ toolbar }) {
     const [mounted, setMounted] = useState(false);
-    const { setTheme, theme, resolvedTheme } = useTheme();
+    const { setTheme, resolvedTheme } = useTheme();
+
+    const themes = {
+        dark: {
+            next: "light",
+            name: "dark",
+            icon: faMoon
+        },
+        light: {
+            next: "frappe",
+            name: "light",
+            icon: faSun
+        },
+        frappe: {
+            next: "macchiato",
+            name: "frappe",
+            icon: faCloudSun
+        },
+        macchiato: {
+            next: "dark",
+            name: "macchiato",
+            icon: faCloudMoon
+        }
+    };
 
     useEffect(() => {
         setMounted(true);
@@ -89,8 +118,10 @@ function Header({ toolbar }) {
     }
 
     const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+        setTheme(themes?.[resolvedTheme]?.next || "dark");
     };
+
+    // console.log(resolvedTheme);
 
     return (
         <>
@@ -103,10 +134,12 @@ function Header({ toolbar }) {
                 <div className="header-toolbar">{toolbar}</div>
                 <div className="mode-toggle">
                     <button onClick={toggleTheme}>
-                        {resolvedTheme === "dark" ? (
-                            <FontAwesomeIcon icon={faMoon} />
+                        {resolvedTheme === themes[resolvedTheme].name ? (
+                            <FontAwesomeIcon
+                                icon={themes[resolvedTheme].icon}
+                            />
                         ) : (
-                            <FontAwesomeIcon icon={faSun} />
+                            <FontAwesomeIcon icon={faCircleXmark} />
                         )}
                     </button>
                 </div>
