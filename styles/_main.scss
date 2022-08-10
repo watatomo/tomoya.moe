@@ -87,7 +87,7 @@ h6 {
     blockquote {
         margin: 0.5em 0;
         padding: 0 0.5em;
-        border-left: solid 2px var(--msr-tippy-color);
+        border-left: solid 2px rgba(var(--msr-tippy-color), 0.75);
 
         + figcaption {
             text-align: right;
@@ -126,7 +126,7 @@ h6 {
 
 .tippy-box[data-theme~="translucent"] {
     background-color: var(--msr-tippy-bg);
-    color: var(--msr-tippy-color);
+    color: rgb(var(--msr-tippy-color));
     font-family: "Inter var", "M PLUS Rounded 1c", sans-serif;
     font-size: 0.85em;
 

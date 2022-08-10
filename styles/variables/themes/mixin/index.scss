@@ -11,7 +11,7 @@
 
     --msr-line-color: #{$surface1};
     --msr-tippy-bg: rgba(17, 17, 27, 0.9);
-    --msr-tippy-color: #d9e0ee;
+    --msr-tippy-color: 217, 224, 238; // rgba
 
     @if $mode == light {
         $surface0-alt: fade-out($surface0, 0.4);
