@@ -32,7 +32,7 @@ extra:
     - label: "Event Duration"
       value: "9/15/2021 (15:00 JST) - 9/23/2021 (22:00 JST)"
     - label: "Related Stories"
-      value: "Phantom Thieves vs. Detectives, Transparency and Masks"
+      value: "_Phantom Thieves vs. Detectives, Transparency and Masks_"
     - label: "Special Thanks"
       value: "[Ciel](https://twitter.com/bluefilaments), [Simon](https://twitter.com/dapporock): Moral support and other members of the Sanctuary GC! You can read their translation of the story [here](https://twitter.com/bluefilaments/status/1439284645657448456).<br>[Koi](https://twitter.com/kogadouVEVO), [Lala](https://twitter.com/milkyshiffon): For helping me out with phrasing and smoothing things out! And extra moral support."
 

@@ -88,6 +88,14 @@
         --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/hiyori.png");
     }
 
+    [character="Hitsugi"],
+    [character="NEGI"] {
+        --color: #a66d75;
+        --hue: 352;
+        --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/hitsugi.png");
+        --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/hitsugi.png");
+    }
+
     [character="Hokuto"] {
         --color: #0068b7;
         --hue: 205.9;
@@ -147,9 +155,6 @@
     [character="Koga"] {
         --color: #c9caca;
         --hue: 180;
-        --bubble-latte: hsl(var(--hue), 9%, 92%) !important;
-        --bubble-mocha: hsl(var(--hue), 5%, 20%) !important;
-        --bubble-fill-mode: hsl(var(--hue), 5%, 45%) !important;
         --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/koga.png");
         --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/koga.png");
     }
@@ -325,9 +330,6 @@
     [character="Tetora"] {
         --color: #302833;
         --hue: 283.6;
-        --bubble-latte: hsl(var(--hue), 9%, 92%) !important;
-        --bubble-mocha: hsl(var(--hue), 5%, 20%) !important;
-        --bubble-fill-mode: hsl(var(--hue), 5%, 45%) !important;
         --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/tetora.png");
         --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/tetora.png");
     }

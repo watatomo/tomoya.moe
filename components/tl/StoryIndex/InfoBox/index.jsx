@@ -28,7 +28,12 @@ function InfoBox({ post }) {
                 <div className={styles.label}>Characters</div>
                 <div className={styles.value}>
                     {characters.map((chara) => (
-                        <span character={chara} key={chara} />
+                        <span
+                            character={chara}
+                            title={chara}
+                            aira-label={chara}
+                            key={chara}
+                        />
                     ))}
                 </div>
             </div>

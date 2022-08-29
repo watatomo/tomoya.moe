@@ -1,5 +1,5 @@
 ---
-title: "Animals"
+title: "ANIMALS"
 description: 'Tomoya says he''s still on the fence about getting a pet. But one night, the words "Hokutosenpai" and "Don''t get food all over the place!" are heard from his room...'
 descSource: "https://twitter.com/ensemble_stars/status/1552534322392866816"
 story: "animals"
@@ -27,6 +27,11 @@ extra:
       value: "Scout! Animals"
     - label: "Gacha Duration"
       value: "7/30/2022 (15:00 JST) - 8/14/2022 (15:00 JST)"
+
+commentWriter:
+    - comment: >
+          I was in charge of writing _ANIMALS!_ I reread the stories about these creatures before getting down to work. The leads, Subaru and Daikichi, alongside the other ANIMALS members really care for their pets, so this story was born.<br>Anyway, a penguin suddenly showed up... 🐧
+      source: "[Seitaro Kino [@kinosei]. August 14, 2022.](https://twitter.com/kinosei/status/1558703838055792640)"
 
 images:
     - src: "card_still_full1_3204_normal.webp"

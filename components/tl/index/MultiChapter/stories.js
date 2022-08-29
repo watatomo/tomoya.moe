@@ -49,8 +49,18 @@ export const storyListMulti = [
         cover: "cover.webp"
     }
     // {
+    //     story: "grand_slam",
+    //     title: "Grand Slam",
+    //     writer: "Akira",
+    //     series: "EnSt",
+    //     chapters: 42,
+    //     description:
+    //         'A three-day long "old-fashioned sports festival" is to be held. Unlike past festivals, the students will represent their agencies. Aira is the leader of Team StarPro, but he feels crushed under all the pressure...',
+    //     cover: "card_rectangle4_3212_evolution.webp"
+    // }
+    // {
     //     story: "animals",
-    //     title: "Animals",
+    //     title: "ANIMALS",
     //     writer: "Seitaro Kino",
     //     series: "EnSt",
     //     chapters: 8,

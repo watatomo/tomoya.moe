@@ -87,6 +87,14 @@
     --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/hiyori.png");
 }
 
+:root [character="Hitsugi"],
+:root [character="NEGI"] {
+    --color: #a66d75;
+    --hue: 352;
+    --icon: url("https://cdn.jsdelivr.net/gh/enstars/img/icon/hitsugi.png");
+    --charahead: url("https://cdn.jsdelivr.net/gh/enstars/img/charahead/hitsugi.png");
+}
+
 :root [character="Hokuto"] {
     --color: #0068b7;
     --hue: 205.9;
