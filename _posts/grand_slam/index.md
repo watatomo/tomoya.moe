@@ -141,7 +141,7 @@ chapterSections:
             href: 1
             none: true
     - chapters:
-          - name: "School Ghost Stories"
+          - name: "The School's Ghost Story"
           - label: 1
             href: 2
             none: true
@@ -167,7 +167,7 @@ chapterSections:
             href: 9
             none: true
     - chapters:
-          - name: "Old-Fashioned Sports Festival"
+          - name: "The Sports Festival of Old"
           - label: 1
             href: 10
             none: true
@@ -193,7 +193,7 @@ chapterSections:
             href: 17
             none: true
     - chapters:
-          - name: "Blood-Vomiting Beast"
+          - name: "The Beasts Vomiting Blood"
           - label: 1
             href: 18
             none: true
@@ -225,7 +225,7 @@ chapterSections:
             href: 27
             none: true
     - chapters:
-          - name: "Blue Requiem"
+          - name: "Azure Requiem"
           - label: 1
             href: 28
             none: true
