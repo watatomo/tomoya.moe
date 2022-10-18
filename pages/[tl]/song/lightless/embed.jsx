@@ -7,7 +7,7 @@ const Lyrics = dynamic(() => import("./../../../../components/tl/song"), {
     ssr: false
 });
 
-function Abwy() {
+function Music() {
     return (
         <Wrapper style={{ "--yk-song-background-color": SONG_INFO?.BG_COLOR }}>
             <Lyrics SONG_INFO={SONG_INFO} SITE_INFO={SITE_INFO} />
@@ -23,4 +23,4 @@ const Wrapper = styled.div`
     position: relative;
 `;
 
-export default Abwy;
+export default Music;

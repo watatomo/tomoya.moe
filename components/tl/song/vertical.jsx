@@ -188,8 +188,9 @@ const Wrapper = styled.div`
         color: black;
         background: white;
 
-        font-family: "DM Sans", "Noto Sans JP", sans-serif;
+        font-family: "Inter", "Noto Sans JP", sans-serif;
         // font-weight: 500;
+        font-smooth: always;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -222,7 +223,7 @@ const Wrapper = styled.div`
     .yuukun-lyrics__line {
         margin: 0.3em 0;
         display: block;
-        font-weight: 500;
+        font-weight: 400;
         /* opacity: 0.5; */
         display: grid;
         grid-template-columns: 5px 1fr;
@@ -269,7 +270,7 @@ const Wrapper = styled.div`
     .yuukun-lyrics__translatedLine {
         display: block;
         transition: all 0.6s cubic-bezier(0, 1, 0, 1), transform 0.2s ease;
-        line-height: 1.2;
+        line-height: 1.3;
 
         &:hover {
             transform: translate(0.05em, 0);
@@ -546,7 +547,7 @@ const Wrapper = styled.div`
         display: none;
     }
 
-    .abwybg {
+    .music-bg {
         height: 250%;
         aspect-ratio: 1/1;
         position: absolute;
@@ -555,12 +556,12 @@ const Wrapper = styled.div`
         // animation: rotate 35s linear infinite;
     }
 
-    .abwybg[data-singer="0"] {
+    .music-bg[data-singer="0"] {
         top: 0px;
         left: 0px;
     }
 
-    .abwybg[data-singer="3"] {
+    .music-bg[data-singer="3"] {
         bottom: 0px;
         right: 0px;
         mix-blend-mode: luminosity;

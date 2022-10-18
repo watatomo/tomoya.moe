@@ -65,7 +65,7 @@ function Song({ SITE_INFO, SONG_INFO }) {
                                     <div
                                         data-singer={e.id}
                                         key={i}
-                                        className="abwybg"
+                                        className="music-bg"
                                     >
                                         <Image
                                             key={e.id}
@@ -232,7 +232,7 @@ const Wrapper = styled.div`
             rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
             rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
-        font-family: "DM Sans", "Noto Sans JP", sans-serif;
+        font-family: "Inter", "Noto Sans JP", sans-serif;
         // font-weight: 500;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -563,7 +563,7 @@ const Wrapper = styled.div`
         display: none;
     }
 
-    .abwybg {
+    .music-bg {
         height: 250%;
         aspect-ratio: 1/1;
         position: absolute;
@@ -572,12 +572,12 @@ const Wrapper = styled.div`
         // animation: rotate 35s linear infinite;
     }
 
-    .abwybg[data-singer="0"] {
+    .music-bg[data-singer="0"] {
         top: 0px;
         left: 0px;
     }
 
-    .abwybg[data-singer="3"] {
+    .music-bg[data-singer="3"] {
         bottom: 0px;
         right: 0px;
         mix-blend-mode: luminosity;

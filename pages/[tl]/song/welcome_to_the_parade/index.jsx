@@ -4,7 +4,7 @@ import Head from "next/head";
 // import "react-tabber/dist/theme/gray.css";
 // import { singers, lines2 } from "../../../components/Tl/Song/lines";
 import { SONG_INFO } from "./SONG_INFO";
-import SITE_INFO from "../SITE_INFO.json";
+import { TL_URL } from "./../../../../lib/constants";
 
 const Lyrics = dynamic(
     () => import("./../../../../components/tl/song/vertical"),
@@ -31,7 +31,7 @@ function Song() {
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:url"
-                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}`}
+                    content={`${TL_URL}${SONG_INFO?.SLUG}`}
                 />
                 <meta
                     property="og:title"
@@ -55,32 +55,36 @@ function Song() {
                 <meta name="twitter:image" content={SONG_INFO?.COVER.src} />
                 <meta
                     name="twitter:player"
-                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}/embed`}
+                    content={`${TL_URL}${SONG_INFO?.SLUG}/embed`}
                 />
                 <meta name="twitter:player:width" content="480" />
                 <meta name="twitter:player:height" content="240" />
                 <style>{`
-        
-        html body { 
-          background: white;
-          color: black;
-          padding: 0 40px;
-        }
-        @media only screen and (max-width: 500px) {
-          html body { 
-            padding: 0px;
-          }
-        }
-        @media only screen and (max-width: 400px) {
-          .rhap_controls-section {
-            min-width: unset !important;
-            flex: 0 0 auto !important;
-          }
-          .rhap_volume-controls {
-            display: none !important;
-          }
-        }
-        `}</style>
+                    html body { 
+                      background: white;
+                      color: black;
+                      padding: 0 40px;
+                    }
+                    @media only screen and (max-width: 500px) {
+                      html body { 
+                        padding: 0px;
+                      }
+                    }
+                    @media only screen and (max-width: 400px) {
+                      .rhap_controls-section {
+                        min-width: unset !important;
+                        flex: 0 0 auto !important;
+                      }
+                      .rhap_volume-controls {
+                        display: none !important;
+                      }
+                    }
+                `}</style>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+                    rel="stylesheet"
+                />
+                <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
             <Wrapper
                 className="pagewrapper"
@@ -93,20 +97,34 @@ function Song() {
                     <h1>{SONG_INFO?.NAME}</h1>
                     <h2>{SONG_INFO?.ARTIST}</h2>
                     <h3>
-                        Translated and proofread by{" "}
-                        {SONG_INFO?.TLPR.map((t, i) => (
+                        Lyrics: {SONG_INFO?.LYRICS}
+                        <br />
+                        Composition: {SONG_INFO?.COMPOSITION}
+                        <br />
+                        Arrangement: {SONG_INFO?.ARRANGEMENT}
+                        <br />
+                    </h3>
+                    <h4>
+                        Translation:{" "}
+                        {SONG_INFO?.TL.map((t, i) => (
                             <a key={t} href={`https://twitter.com/${t}`}>
                                 @{t}
-                                {`${
-                                    i + 1 !== SONG_INFO?.TLPR.length ? " " : ""
-                                }${
-                                    i + 2 === SONG_INFO?.TLPR.length
-                                        ? "and "
-                                        : ""
+                                {`${i + 1 !== SONG_INFO?.TL.length ? " " : ""}${
+                                    i + 2 === SONG_INFO?.TL.length ? "and " : ""
                                 }`}
                             </a>
                         ))}
-                    </h3>
+                        <br />
+                        Proofreading:{" "}
+                        {SONG_INFO?.PR.map((t, i) => (
+                            <a key={t} href={`https://twitter.com/${t}`}>
+                                @{t}
+                                {`${i + 1 !== SONG_INFO?.PR.length ? " " : ""}${
+                                    i + 2 === SONG_INFO?.PR.length ? "and " : ""
+                                }`}
+                            </a>
+                        ))}
+                    </h4>
                     <Lyrics SONG_INFO={SONG_INFO} />
                 </article>
             </Wrapper>
@@ -119,11 +137,11 @@ const Wrapper = styled.div`
 
     .background {
         background: center / cover
-            var(
-                --yk-song-background-image,
-                url("/tl/welcome_to_the_parade/background.png")
-            )
-            #dcc5ca;
+                var(
+                    --yk-song-background-image,
+                    url("/tl/welcome_to_the_parade/background.png")
+                ),
+            linear-gradient(#4d8dc7, #f7fbfd);
         width: 100%;
         height: 100vh;
         position: fixed;
@@ -141,7 +159,8 @@ const Wrapper = styled.div`
         opacity: 0.8;
     }
 
-    h3 {
+    h3,
+    h4 {
         color: white;
         font-size: 1em;
         margin-bottom: 0.75em;
@@ -149,7 +168,7 @@ const Wrapper = styled.div`
         font-weight: 500;
 
         a {
-            color: #f54f73;
+            color: inherit;
         }
     }
 

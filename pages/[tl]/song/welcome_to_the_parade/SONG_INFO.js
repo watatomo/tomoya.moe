@@ -10,15 +10,19 @@ export const SONG_INFO = {
     ARTIST: "Vikala (CV: Atsumi Tanezaki)",
     ALBUM_COVER: Cover,
     DESCRIPTION:
-        "You've made it to a land where everyone can grasp their hopes, dreams, and aspirations; welcome to utopia!",
+        "You've made it to a land where everyone can grasp their hopes, dreams, and aspirations; welcome to Utopia!",
     SLUG: "song/welcome_to_the_parade",
     COVER: Cover,
     OG_COLOR: "#f54f73",
-    BG_COLOR: "#f54f73",
+    BG_COLOR: "#4d8dc7",
     BG_IMAGE: Background,
     TWITTER: "@riamuyumemi",
     // YOUTUBE: "IkkwBYUtQl0",
-    TLPR: ["riamuyumemi", "milkyshiffon"],
+    LYRICS: "maimie",
+    COMPOSITION: "Nobuo Uematsu, Atelier LadyBird",
+    ARRANGEMENT: "Atelier LadyBird",
+    TL: ["riamuyumemi"],
+    PR: ["milkyshiffon"],
     SINGERS: [
         {
             name: "Vikala",

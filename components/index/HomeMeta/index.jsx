@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {
     TWITTER_UN,
-    SITE_URL,
+    BASE_URL,
     SITE_TITLE,
     META_DESC
 } from "../../../lib/constants";
@@ -13,20 +13,20 @@ function HomeMeta() {
             <meta name="title" content={SITE_TITLE} />
             <meta name="description" content={META_DESC} />
             <meta property="og:type" content="profile" />
-            <meta property="og:url" content={SITE_URL} />
+            <meta property="og:url" content={BASE_URL} />
             <meta property="og:title" content={SITE_TITLE} />
             <meta property="og:description" content={META_DESC} />
             <meta
                 property="og:image"
-                content={`${SITE_URL}img/home_banner.png`}
+                content={`${BASE_URL}img/home_banner.png`}
             />
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content={SITE_URL} />
+            <meta property="twitter:url" content={BASE_URL} />
             <meta property="twitter:title" content={SITE_TITLE} />
             <meta property="twitter:description" content={META_DESC} />
             <meta
                 property="twitter:image"
-                content={`${SITE_URL}img/home_banner.png`}
+                content={`${BASE_URL}img/home_banner.png`}
             />
             <meta property="twitter:creator" content={TWITTER_UN} />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
