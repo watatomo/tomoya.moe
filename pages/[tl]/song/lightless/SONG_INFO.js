@@ -17,7 +17,10 @@ export const SONG_INFO = {
     BG_IMAGE: Background,
     TWITTER: "@riamuyumemi",
     // YOUTUBE: "IkkwBYUtQl0",
-    TLPR: ["riamuyumemi", "morichiichan"],
+    LYRICS: "TAKU INOUE",
+    COMPOSITION: "TAKU INOUE",
+    TL: ["riamuyumemi"],
+    PR: ["moricchiichan"],
     SINGERS: [
         {
             name: "Agnes Tachyon",

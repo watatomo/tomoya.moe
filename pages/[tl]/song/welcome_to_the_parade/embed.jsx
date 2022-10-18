@@ -1,10 +1,7 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import { SONG_INFO } from "./SONG_INFO";
-import {
-    BASE_URL as SITE_INFO,
-    TL_URL as SITE_INFO
-} from "./../../../../lib/constants";
+import SITE_INFO from "../SITE_INFO.json";
 
 const Lyrics = dynamic(() => import("./../../../../components/tl/song"), {
     ssr: false

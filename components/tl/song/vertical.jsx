@@ -178,18 +178,11 @@ const Wrapper = styled.div`
     /* user-select: none; */
 
     .yuukun-song__wrapper {
-        /* min-height: 550px; */
-        /* height: 240px;
-        width: 480px; */
-        /* max-height: 100vh; */
-        /* overflow: hidden; */
         border-radius: 10px;
         position: relative;
         color: black;
         background: white;
-
         font-family: "Inter", "Noto Sans JP", sans-serif;
-        // font-weight: 500;
         font-smooth: always;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -197,34 +190,19 @@ const Wrapper = styled.div`
 
     .yuukun-song {
         width: 100%;
-        /* height: 100%; */
-        /* max-height: 100vh; */
-        /* padding: 15px; */
-        /* display: grid;
-    grid-template-columns: 140px auto;
-    grid-template-rows: 1fr auto; */
         gap: 10px;
     }
 
     .yuukun-lyrics {
         grid-row: 1/2;
         grid-column: 2/3;
-        /* height: 100%; */
         padding: 15px 15px 100px;
-        /* mask-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      black 10%,
-      black 90%,
-      transparent 100%
-    ); */
     }
 
     .yuukun-lyrics__line {
         margin: 0.3em 0;
         display: block;
         font-weight: 400;
-        /* opacity: 0.5; */
         display: grid;
         grid-template-columns: 5px 1fr;
         gap: 10px;
@@ -250,14 +228,12 @@ const Wrapper = styled.div`
         height: 100%;
         display: block;
         background: white;
-        // border: solid 2px white;
         border-radius: 10px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: stretch;
-        // box-shadow: 0px 0px 2px #fff;
 
         span {
             display: block;
@@ -288,8 +264,6 @@ const Wrapper = styled.div`
     .yuukun-songInfo {
         grid-row: 1/3;
         grid-column: 1/2;
-        /* display: grid; */
-        /* grid-template-rows: 60px 1fr auto; */
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -308,8 +282,6 @@ const Wrapper = styled.div`
         position: relative;
         flex-grow: 1;
         width: 140px;
-        /* height: */
-        /* aspect-ratio: 1/1; */
         border-radius: 10px;
         overflow: hidden;
     }
@@ -333,30 +305,20 @@ const Wrapper = styled.div`
     }
 
     .yuukun-lyricsLanguage {
-        /* display: grid; */
-        /* place-items: center; */
         width: 100%;
 
         .MuiToggleButtonGroup-root {
             width: 100%;
             display: flex;
-            /* background: white; */
         }
 
         button.MuiButtonBase-root.MuiToggleButton-root {
             flex-grow: 1;
             border: 0;
-            /* border-radius: 99px; */
-            /* width: 35px; */
-            /* height: 25px; */
             padding: 0.5em 1em;
-            /* background: rgba(255, 255, 255, 0.2);
-      color: #fff; */
             font-size: 0.8em;
             font-weight: 800;
             font-family: inherit;
-            /* padding: 0 0 1px 1px; */
-            /* transform: scale(0.9); */
             transition: all 1s cubic-bezier(0, 1, 0, 1);
             box-shadow: inset 0 -3px #000;
             opacity: 0.2;
@@ -370,17 +332,12 @@ const Wrapper = styled.div`
     }
 
     .yuukun-audioPlayer {
-        /* grid-row: 2/3;
-    grid-column: 2/3; */
         display: flex;
         flex-direction: row;
         gap: 10px;
         position: sticky;
         bottom: 0px;
         justify-content: center;
-        /* font-family: "DM Mono";
-         */
-        font-variant-numeric: tabular-nums;
         background: black;
         padding: 10px 0px;
 
@@ -429,7 +386,7 @@ const Wrapper = styled.div`
     }
 
     .yuukun-audioControls.rhap_container {
-        font-family: "DM Mono";
+        font-family: "Inter";
         background: none;
         padding: 0;
         box-shadow: none;

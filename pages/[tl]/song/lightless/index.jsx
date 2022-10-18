@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Head from "next/head";
-// import "react-tabber/dist/theme/gray.css";
-// import { singers, lines2 } from "../../../components/Tl/Song/lines";
 import { SONG_INFO } from "./SONG_INFO";
 import SITE_INFO from "../SITE_INFO.json";
 
@@ -60,27 +58,31 @@ function Song() {
                 <meta name="twitter:player:width" content="480" />
                 <meta name="twitter:player:height" content="240" />
                 <style>{`
-        
-        html body { 
-          background: white;
-          color: black;
-          padding: 0 40px;
-        }
-        @media only screen and (max-width: 500px) {
-          html body { 
-            padding: 0px;
-          }
-        }
-        @media only screen and (max-width: 400px) {
-          .rhap_controls-section {
-            min-width: unset !important;
-            flex: 0 0 auto !important;
-          }
-          .rhap_volume-controls {
-            display: none !important;
-          }
-        }
-        `}</style>
+                    html body { 
+                      background: white;
+                      color: black;
+                      padding: 0 40px;
+                    }
+                    @media only screen and (max-width: 500px) {
+                      html body { 
+                        padding: 0px;
+                      }
+                    }
+                    @media only screen and (max-width: 400px) {
+                      .rhap_controls-section {
+                        min-width: unset !important;
+                        flex: 0 0 auto !important;
+                      }
+                      .rhap_volume-controls {
+                        display: none !important;
+                      }
+                    }
+                `}</style>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+                    rel="stylesheet"
+                />
+                <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
             <Wrapper
                 className="pagewrapper"
@@ -93,20 +95,31 @@ function Song() {
                     <h1>{SONG_INFO?.NAME}</h1>
                     <h2>{SONG_INFO?.ARTIST}</h2>
                     <h3>
-                        Translated and proofread by{" "}
-                        {SONG_INFO?.TLPR.map((t, i) => (
+                        Lyrics: {SONG_INFO?.LYRICS}
+                        <br />
+                        Composition: {SONG_INFO?.COMPOSITION}
+                    </h3>
+                    <h4>
+                        Translation:{" "}
+                        {SONG_INFO?.TL.map((t, i) => (
                             <a key={t} href={`https://twitter.com/${t}`}>
                                 @{t}
-                                {`${
-                                    i + 1 !== SONG_INFO?.TLPR.length ? " " : ""
-                                }${
-                                    i + 2 === SONG_INFO?.TLPR.length
-                                        ? "and "
-                                        : ""
+                                {`${i + 1 !== SONG_INFO?.TL.length ? " " : ""}${
+                                    i + 2 === SONG_INFO?.TL.length ? "and " : ""
                                 }`}
                             </a>
                         ))}
-                    </h3>
+                        <br />
+                        Proofreading:{" "}
+                        {SONG_INFO?.PR.map((t, i) => (
+                            <a key={t} href={`https://twitter.com/${t}`}>
+                                @{t}
+                                {`${i + 1 !== SONG_INFO?.PR.length ? " " : ""}${
+                                    i + 2 === SONG_INFO?.PR.length ? "and " : ""
+                                }`}
+                            </a>
+                        ))}
+                    </h4>
                     {/* {SONG_INFO.YOUTUBE && (
                         <iframe
                             className="youtube"
@@ -151,12 +164,17 @@ const Wrapper = styled.div`
         opacity: 0.8;
     }
 
-    h3 {
+    h3,
+    h4 {
         color: white;
         font-size: 1em;
         margin-bottom: 0.75em;
         line-height: 1.4;
         font-weight: 500;
+
+        a {
+            color: inherit;
+        }
     }
 
     .youtube {

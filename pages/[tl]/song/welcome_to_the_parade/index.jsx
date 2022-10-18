@@ -4,7 +4,7 @@ import Head from "next/head";
 // import "react-tabber/dist/theme/gray.css";
 // import { singers, lines2 } from "../../../components/Tl/Song/lines";
 import { SONG_INFO } from "./SONG_INFO";
-import { TL_URL } from "./../../../../lib/constants";
+import SITE_INFO from "../SITE_INFO.json";
 
 const Lyrics = dynamic(
     () => import("./../../../../components/tl/song/vertical"),
@@ -31,7 +31,7 @@ function Song() {
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:url"
-                    content={`${TL_URL}${SONG_INFO?.SLUG}`}
+                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}`}
                 />
                 <meta
                     property="og:title"
@@ -55,7 +55,7 @@ function Song() {
                 <meta name="twitter:image" content={SONG_INFO?.COVER.src} />
                 <meta
                     name="twitter:player"
-                    content={`${TL_URL}${SONG_INFO?.SLUG}/embed`}
+                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}/embed`}
                 />
                 <meta name="twitter:player:width" content="480" />
                 <meta name="twitter:player:height" content="240" />

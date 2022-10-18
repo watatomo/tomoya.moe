@@ -286,7 +286,7 @@ const Wrapper = styled.div`
     .yuukun-lyrics__line {
         margin: 0.3em 0;
         display: block;
-        font-weight: 500;
+        font-weight: 400;
         opacity: 0.5;
         display: grid;
         grid-template-columns: 5px 1fr;
