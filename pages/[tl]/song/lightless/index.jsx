@@ -1,82 +1,61 @@
-/* eslint-disable react/jsx-key */
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Head from "next/head";
-import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
-import { lines2 } from "../../../../components/tl/song/Lightless/lines";
+// import "react-tabber/dist/theme/gray.css";
+// import { singers, lines2 } from "../../../components/Tl/Song/lines";
+import { SONG_INFO } from "./SONG_INFO";
+import SITE_INFO from "../SITE_INFO.json";
 
 const Lyrics = dynamic(
-    () => import("../../../../components/tl/song/Lightless/vertical"),
+    () => import("../../../../components/Tl/Song/vertical"),
     {
         ssr: false
     }
 );
 
-function LightlessPage() {
-    const entries = [
-        { lang: "jp", name: "Japanese" },
-        { lang: "rm", name: "Romaji" },
-        { lang: "en", name: "English" }
-    ].map((v) => ({
-        label: v.name,
-        panel: (
-            <div>
-                {lines2.map((l) => {
-                    if (!l.lines[v.lang]) {
-                        return <hr />;
-                    }
-                    return <p>{l.lines[v.lang]}</p>;
-                })}
-            </div>
-        ),
-        key: v.lang
-    }));
+function Song() {
     return (
         <>
             <Head>
-                <title>Lightless | Lyrics</title>
+                <title>{SONG_INFO?.NAME} | Translation</title>
 
-                <meta
-                    name="description"
-                    content="Lightless (ライトレス) - Agnes Tachyon (CV: Sumire Uesaka)"
-                />
+                <meta name="description" content={SONG_INFO?.DESCRIPTION} />
                 {/* <!-- Primary Meta Tags --> */}
-                <meta name="title" content="Lightless | Lyrics" />
                 <meta
-                    name="description"
-                    content="Lightless (ライトレス) - Agnes Tachyon (CV: Sumire Uesaka)"
+                    name="title"
+                    content={`${SONG_INFO?.NAME} | Translation`}
                 />
+                <meta name="description" content={SONG_INFO?.DESCRIPTION} />
 
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:url"
-                    content={`${SITE_URL}tl/song/lightless`}
+                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}`}
                 />
-                <meta property="og:title" content="Lightless | Lyrics" />
+                <meta
+                    property="og:title"
+                    content={`${SONG_INFO?.NAME} | Translation`}
+                />
                 <meta
                     property="og:description"
-                    content="Lightless (ライトレス) - Agnes Tachyon (CV: Sumire Uesaka)"
+                    content={SONG_INFO?.DESCRIPTION}
                 />
-                <meta
-                    property="og:image"
-                    content={`${SITE_URL}img/tl/song/lightless/cover.png`}
-                />
+                <meta property="og:image" content={SONG_INFO?.COVER.src} />
+
+                <meta name="theme-color" content={SONG_INFO?.OG_COLOR} />
 
                 <meta name="twitter:card" content="player" />
-                <meta name="twitter:site" content={TWITTER_UN} />
-                <meta name="twitter:title" content="Lightless | Lyrics" />
+                <meta name="twitter:site" content={SONG_INFO?.TWITTER} />
+                <meta name="twitter:title" content={SONG_INFO?.NAME} />
                 <meta
                     name="twitter:description"
                     content="Click on the play button to start listening along with the translation!"
                 />
-                <meta
-                    name="twitter:image"
-                    content={`${SITE_URL}img/tl/song/lightless/cover.png`}
-                />
+                <meta name="twitter:image" content={SONG_INFO?.COVER.src} />
                 <meta
                     name="twitter:player"
-                    content={`${SITE_URL}tl/song/lightless/embed`}
+                    content={`${SITE_INFO?.TL_URL}${SONG_INFO?.SLUG}/embed`}
                 />
                 <meta name="twitter:player:width" content="480" />
                 <meta name="twitter:player:height" content="240" />
@@ -91,15 +70,6 @@ function LightlessPage() {
           html body { 
             padding: 0px;
           }
-          h1, h2, h3 {
-              padding: 0 10px 0;
-          }
-          .yuukun-audioControls.rhap_container .rhap_main {
-              padding: 0 15px 0 5px !important;
-          }
-          .yuukun-lyrics {
-              padding: 15px 15px 100px !important;
-          }
         }
         @media only screen and (max-width: 400px) {
           .rhap_controls-section {
@@ -111,26 +81,44 @@ function LightlessPage() {
           }
         }
         `}</style>
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin="anonymous"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Quicksand:wght@300..700&display=swap"
-                    rel="stylesheet"
-                />
-                <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
-            <Wrapper className="pagewrapper">
+            <Wrapper
+                className="pagewrapper"
+                style={{
+                    "--yk-song-background-image": `url(${SONG_INFO?.BG_IMAGE.src})`
+                }}
+            >
                 <div className="background" />
                 <article>
-                    <h1>Lightless</h1>
-                    <h2>Agnes Tachyon (CV: Sumire Uesaka)</h2>
+                    <h1>{SONG_INFO?.NAME}</h1>
+                    <h2>{SONG_INFO?.ARTIST}</h2>
                     <h3>
-                        <b>Lyricist, composer, arranger:</b> TAKU INOUE
+                        Translated and proofread by{" "}
+                        {SONG_INFO?.TLPR.map((t, i) => (
+                            <a key={t} href={`https://twitter.com/${t}`}>
+                                @{t}
+                                {`${
+                                    i + 1 !== SONG_INFO?.TLPR.length ? ", " : ""
+                                }${
+                                    i + 2 === SONG_INFO?.TLPR.length
+                                        ? "and "
+                                        : ""
+                                }`}
+                            </a>
+                        ))}
                     </h3>
-                    <Lyrics />
+                    {SONG_INFO.YOUTUBE && (
+                        <iframe
+                            className="youtube"
+                            width="100%"
+                            src={`https://www.youtube.com/embed/${SONG_INFO.YOUTUBE}`}
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    )}
+                    <Lyrics SONG_INFO={SONG_INFO} />
                 </article>
             </Wrapper>
         </>
@@ -140,12 +128,9 @@ function LightlessPage() {
 const Wrapper = styled.div`
     --yk-song-text-color: hsl(160, 21%, 95%);
 
-    /* width: 100%;
-  height: 100vh;
-  overflow-y: scroll; */
-
     .background {
-        background: 100% / cover url("/img/tl/song/lightless/background.png");
+        background: left center / cover
+            var(--yk-song-background-image, url("/tl/lightless/background.png"));
         width: 100%;
         height: 100vh;
         position: fixed;
@@ -171,22 +156,18 @@ const Wrapper = styled.div`
         font-weight: 500;
     }
 
-    h1,
-    h2,
-    h3 {
-        font-family: "Quicksand", "M PLUS Rounded 1c";
+    .youtube {
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin: 0.75em 0;
+        border-radius: 10px;
     }
-
     article {
         position: relative;
         max-width: 500px;
-        /* margin: auto; */
-        margin-top: max(50vh, 300px);
+        margin-top: max(20vh, 100px);
         margin-right: auto;
         margin-bottom: 20px;
-        /* background: hsla(0, 0%, 100%, 1); */
-        /* border-radius: 7.5px; */
-        /* border: solid 1px #d3d3d3ff; */
         line-height: 1.2em;
 
         p {
@@ -229,11 +210,7 @@ const Wrapper = styled.div`
         position: sticky;
         top: 0px;
         background: hsla(0, 0%, 100%, 1);
-        /* color: white; */
         display: flex;
-        /* border-bottom: solid 1px hsla(0, 0%, 0%, 0.3); */
-        /* margin: 5px; */
-        /* border-radius: 5px; */
     }
 
     /* label item */
@@ -251,8 +228,8 @@ const Wrapper = styled.div`
 
     .tab-container .label-container .label-item-active {
         opacity: 1;
-        /* transform: scale(1.05); */
     }
+
     /* panel container */
     .tab-container .panel-container {
         padding: 10px 10px;
@@ -270,8 +247,6 @@ const Wrapper = styled.div`
         display: block;
         visibility: hidden;
     }
-    .tab-container .panel-container {
-    }
 `;
 
-export default LightlessPage;
+export default Song;
