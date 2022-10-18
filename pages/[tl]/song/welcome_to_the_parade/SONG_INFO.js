@@ -1,4 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
+/* eslint-disable quotes */
 import Background from "./assets/background.png";
 import Cover from "./assets/cover.jpg";
 import singer0 from "./assets/singer0.png";
@@ -10,19 +11,19 @@ export const SONG_INFO = {
     ALBUM_COVER: Cover,
     DESCRIPTION:
         "You've made it to a land where everyone can grasp their hopes, dreams, and aspirations; welcome to utopia!",
-    SLUG: "welcome_to_the_parade",
+    SLUG: "song/welcome_to_the_parade",
     COVER: Cover,
-    OG_COLOR: "#5480f8",
-    BG_COLOR: "#470c33",
+    OG_COLOR: "#f54f73",
+    BG_COLOR: "#f54f73",
     BG_IMAGE: Background,
     TWITTER: "@riamuyumemi",
     // YOUTUBE: "IkkwBYUtQl0",
-    TLPR: ["Ren", "Lala"],
+    TLPR: ["riamuyumemi", "milkyshiffon"],
     SINGERS: [
         {
             name: "Vikala",
             id: 0,
-            color: "F65C81",
+            color: "f54f73",
             image: singer0
         }
     ],

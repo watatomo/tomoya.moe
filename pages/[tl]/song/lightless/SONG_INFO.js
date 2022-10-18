@@ -1,23 +1,23 @@
 /* eslint-disable no-irregular-whitespace */
+/* eslint-disable quotes */
 import Background from "./assets/background.png";
 import Cover from "./assets/cover.jpg";
 import singer0 from "./assets/singer0.png";
 import Song from "./assets/song.mp3";
 
 export const SONG_INFO = {
-    NAME: "Unstoppable Love! (En Ver.)",
-    ARTIST: "Trickstar",
+    NAME: "Lightless",
+    ARTIST: "Agnes Tachyon (CV: Sumire Uesaka)",
     ALBUM_COVER: Cover,
-    DESCRIPTION:
-        "But I want to stay right by your side forever, listening to the sound of our harmonised laughter—There’s no mistaking it: I love you!; Unstoppable Love! Translation Project — En Version!",
-    SLUG: "lightless",
+    DESCRIPTION: "An endless story where imaginary numbers flutter about",
+    SLUG: "song/lightless",
     COVER: Cover,
     OG_COLOR: "#36b2b6",
     BG_COLOR: "#36b2b6",
     BG_IMAGE: Background,
     TWITTER: "@riamuyumemi",
-    YOUTUBE: "IkkwBYUtQl0",
-    TLPR: ["Ren", "morichiichan"],
+    // YOUTUBE: "IkkwBYUtQl0",
+    TLPR: ["riamuyumemi", "morichiichan"],
     SINGERS: [
         {
             name: "Agnes Tachyon",

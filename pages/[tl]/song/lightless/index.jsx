@@ -7,7 +7,7 @@ import { SONG_INFO } from "./SONG_INFO";
 import SITE_INFO from "../SITE_INFO.json";
 
 const Lyrics = dynamic(
-    () => import("../../../../components/Tl/Song/vertical"),
+    () => import("./../../../../components/tl/song/vertical"),
     {
         ssr: false
     }
@@ -98,7 +98,7 @@ function Song() {
                             <a key={t} href={`https://twitter.com/${t}`}>
                                 @{t}
                                 {`${
-                                    i + 1 !== SONG_INFO?.TLPR.length ? ", " : ""
+                                    i + 1 !== SONG_INFO?.TLPR.length ? " " : ""
                                 }${
                                     i + 2 === SONG_INFO?.TLPR.length
                                         ? "and "
@@ -107,7 +107,7 @@ function Song() {
                             </a>
                         ))}
                     </h3>
-                    {SONG_INFO.YOUTUBE && (
+                    {/* {SONG_INFO.YOUTUBE && (
                         <iframe
                             className="youtube"
                             width="100%"
@@ -117,7 +117,7 @@ function Song() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                         ></iframe>
-                    )}
+                    )} */}
                     <Lyrics SONG_INFO={SONG_INFO} />
                 </article>
             </Wrapper>
@@ -130,7 +130,10 @@ const Wrapper = styled.div`
 
     .background {
         background: left center / cover
-            var(--yk-song-background-image, url("/tl/lightless/background.png"));
+            var(
+                --yk-song-background-image,
+                url("/tl/song/lightless/background.png")
+            );
         width: 100%;
         height: 100vh;
         position: fixed;

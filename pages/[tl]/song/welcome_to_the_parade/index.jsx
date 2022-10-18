@@ -7,7 +7,7 @@ import { SONG_INFO } from "./SONG_INFO";
 import SITE_INFO from "../SITE_INFO.json";
 
 const Lyrics = dynamic(
-    () => import("../../../../components/Tl/Song/vertical"),
+    () => import("./../../../../components/tl/song/vertical"),
     {
         ssr: false
     }
@@ -98,7 +98,7 @@ function Song() {
                             <a key={t} href={`https://twitter.com/${t}`}>
                                 @{t}
                                 {`${
-                                    i + 1 !== SONG_INFO?.TLPR.length ? ", " : ""
+                                    i + 1 !== SONG_INFO?.TLPR.length ? " " : ""
                                 }${
                                     i + 2 === SONG_INFO?.TLPR.length
                                         ? "and "
@@ -107,17 +107,6 @@ function Song() {
                             </a>
                         ))}
                     </h3>
-                    {SONG_INFO.YOUTUBE && (
-                        <iframe
-                            className="youtube"
-                            width="100%"
-                            src={`https://www.youtube.com/embed/${SONG_INFO.YOUTUBE}`}
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                    )}
                     <Lyrics SONG_INFO={SONG_INFO} />
                 </article>
             </Wrapper>
@@ -129,11 +118,12 @@ const Wrapper = styled.div`
     --yk-song-text-color: hsl(160, 21%, 95%);
 
     .background {
-        background: left center / cover
+        background: center / cover
             var(
                 --yk-song-background-image,
                 url("/tl/welcome_to_the_parade/background.png")
-            );
+            )
+            #dcc5ca;
         width: 100%;
         height: 100vh;
         position: fixed;
@@ -157,6 +147,10 @@ const Wrapper = styled.div`
         margin-bottom: 0.75em;
         line-height: 1.4;
         font-weight: 500;
+
+        a {
+            color: #f54f73;
+        }
     }
 
     .youtube {
