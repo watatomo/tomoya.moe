@@ -471,7 +471,7 @@ export const SONG_INFO = {
             lines: {
                 jp: `笑顔が似合うきみ`,
                 rm: `Egao ga niau kimi`,
-                en: `Wearing a smile on your face`
+                en: `That smile you're wearing right now`
             }
         },
         {
@@ -498,7 +498,7 @@ export const SONG_INFO = {
             lines: {
                 jp: `生まれ変わっていく奇跡の波を`,
                 rm: `Umarekawatte iku kiseki no nami o`,
-                en: `The wave of miraculous rebirth`
+                en: `The wave of miraculous rebirth!`
             }
         },
         {
