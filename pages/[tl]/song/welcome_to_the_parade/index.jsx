@@ -136,11 +136,7 @@ const Wrapper = styled.div`
     --yk-song-text-color: hsl(160, 21%, 95%);
 
     .background {
-        background: center / cover
-                var(
-                    --yk-song-background-image,
-                    url("/tl/welcome_to_the_parade/background.png")
-                ),
+        background: center / cover var(--yk-song-background-image),
             linear-gradient(#4d8dc7, #f7fbfd);
         width: 100%;
         height: 100vh;

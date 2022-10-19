@@ -1,6 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable quotes */
-import Background from "./assets/background.png";
+import Background from "./assets/background.jpg";
 import Cover from "./assets/cover.jpg";
 import singer0 from "./assets/singer0.png";
 import Song from "./assets/song.mp3";
@@ -13,7 +13,7 @@ export const SONG_INFO = {
     SLUG: "song/lightless",
     COVER: Cover,
     OG_COLOR: "#36b2b6",
-    BG_COLOR: "#36b2b6",
+    BG_COLOR: "#202d74",
     BG_IMAGE: Background,
     TWITTER: "@riamuyumemi",
     // YOUTUBE: "IkkwBYUtQl0",
@@ -45,7 +45,7 @@ export const SONG_INFO = {
             singer: [0],
             lines: {
                 jp: `虚数が舞う無限のストーリー`,
-                rm: `Kyosuu ga mau mugen no SUTORII`,
+                rm: `Kyosuu ga mau mugen no SUTOORII`,
                 en: `An endless story where imaginary numbers flutter about`
             }
         },
@@ -405,7 +405,7 @@ export const SONG_INFO = {
             singer: [0],
             lines: {
                 jp: `消えない光探して`,
-                rm: `Keinai hikari sagashite`,
+                rm: `Kienai hikari sagashite`,
                 en: `Searching for a never-fading light`
             }
         },

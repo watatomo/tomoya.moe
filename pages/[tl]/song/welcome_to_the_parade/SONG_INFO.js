@@ -174,7 +174,7 @@ export const SONG_INFO = {
             lines: {
                 jp: `嘘じゃないよ確かめてみよう`,
                 rm: `Uso janai yo tashikamete miyou`,
-                en: `isn't fake; wanna see for yourself?`
+                en: `Isn't fake; wanna see for yourself?`
             }
         },
         {
@@ -693,7 +693,11 @@ export const SONG_INFO = {
         {
             timestamp: "03:15.66",
             singer: [0],
-            lines: { jp: `ご覧よ`, rm: `Goran yo`, en: `Look!` }
+            lines: {
+                jp: `ご覧よ`,
+                rm: `Goran yo`,
+                en: `Look!`
+            }
         },
         {
             timestamp: "03:17.22",
