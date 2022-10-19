@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { TWITTER_UN, SITE_URL } from "../../../../lib/constants";
+import { TWITTER_UN, BASE_URL } from "../../../../lib/constants";
 
 function actualSlug({ slug }) {
     const slugSegments = slug.split("/");
@@ -26,7 +26,7 @@ function ChapterMeta({ post }) {
             <meta property="og:type" content="article" />
             <meta
                 property="og:url"
-                content={`${SITE_URL}tl/${actualSlug(post)}`}
+                content={`${BASE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="og:title" content={post.title} />
             {post.description ? (
@@ -38,20 +38,20 @@ function ChapterMeta({ post }) {
             {post.previewImg ? (
                 <meta
                     property="og:image"
-                    content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${
+                    content={`${BASE_URL}img/tl/${getPreviewImage(post)}/${
                         post.previewImg
                     }`}
                 />
             ) : (
                 <meta
                     property="og:image"
-                    content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`}
+                    content={`${BASE_URL}img/tl/${actualSlug(post)}/1.jpg`}
                 />
             )}
             <meta property="twitter:card" content="summary" />
             <meta
                 property="twitter:url"
-                content={`${SITE_URL}tl/${actualSlug(post)}`}
+                content={`${BASE_URL}tl/${actualSlug(post)}`}
             />
             <meta property="twitter:title" content={post.title} />
             {post.description ? (
@@ -63,14 +63,14 @@ function ChapterMeta({ post }) {
             {post.previewImg ? (
                 <meta
                     property="twitter:image"
-                    content={`${SITE_URL}img/tl/${getPreviewImage(post)}/${
+                    content={`${BASE_URL}img/tl/${getPreviewImage(post)}/${
                         post.previewImg
                     }`}
                 />
             ) : (
                 <meta
                     property="twitter:image"
-                    content={`${SITE_URL}img/tl/${actualSlug(post)}/1.jpg`}
+                    content={`${BASE_URL}img/tl/${actualSlug(post)}/1.jpg`}
                 />
             )}
             <meta property="twitter:creator" content={TWITTER_UN} />

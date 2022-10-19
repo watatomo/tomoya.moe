@@ -1,17 +1,16 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
+import { SONG_INFO } from "./SONG_INFO";
+import SITE_INFO from "../SITE_INFO.json";
 
-const Lyrics = dynamic(
-    () => import("../../../../components/tl/song/Lightless"),
-    {
-        ssr: false
-    }
-);
+const Lyrics = dynamic(() => import("./../../../../components/tl/song"), {
+    ssr: false
+});
 
-function LightlessPage() {
+function Music() {
     return (
-        <Wrapper>
-            <Lyrics />
+        <Wrapper style={{ "--yk-song-background-color": SONG_INFO?.BG_COLOR }}>
+            <Lyrics SONG_INFO={SONG_INFO} SITE_INFO={SITE_INFO} />
         </Wrapper>
     );
 }
@@ -24,4 +23,4 @@ const Wrapper = styled.div`
     position: relative;
 `;
 
-export default LightlessPage;
+export default Music;
