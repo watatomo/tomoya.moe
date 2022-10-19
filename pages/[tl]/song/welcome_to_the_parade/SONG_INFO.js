@@ -252,7 +252,11 @@ export const SONG_INFO = {
         {
             timestamp: "01:10.34",
             singer: [0],
-            lines: { jp: `ご覧よ`, rm: `Goran yo`, en: `Look!` }
+            lines: {
+                jp: `ご覧よ`,
+                rm: `Goran yo`,
+                en: `Look!`
+            }
         },
         {
             timestamp: "01:11.92",
@@ -482,7 +486,11 @@ export const SONG_INFO = {
         {
             timestamp: "02:12.08",
             singer: [0],
-            lines: { jp: `ご覧よ`, rm: `Goran yo`, en: `Look!` }
+            lines: {
+                jp: `ご覧よ`,
+                rm: `Goran yo`,
+                en: `Look!`
+            }
         },
         {
             timestamp: "02:13.64",
@@ -613,7 +621,11 @@ export const SONG_INFO = {
         {
             timestamp: "02:58.60",
             singer: [0],
-            lines: { jp: `ありがとう`, rm: `Arigatou`, en: `Thank you` }
+            lines: {
+                jp: `ありがとう`,
+                rm: `Arigatou`,
+                en: `Thank you`
+            }
         },
         {
             timestamp: "03:00.26",
@@ -757,7 +769,7 @@ export const SONG_INFO = {
         },
         {
             timestamp: "03:33.68",
-            singer: [0],
+            singer: [],
             lines: {
                 jp: ``,
                 rm: ``,
@@ -798,6 +810,15 @@ export const SONG_INFO = {
                 jp: `きみとぼくを繋ぐゆ～とぴあ`,
                 rm: `Kimi to boku o tsunagu yuutopia`,
                 en: `In this utopia connecting you and me...`
+            }
+        },
+        {
+            timestamp: "03:50.14",
+            singer: [],
+            lines: {
+                jp: ``,
+                rm: ``,
+                en: ``
             }
         }
     ],
@@ -889,6 +910,7 @@ export const SONG_INFO = {
 [03:38.10]鳴り止まぬカーテンコール
 [03:41.20]またここで会おう　約束さ
 [03:45.24]きみとぼくを繋ぐゆ～とぴあ
+[03:50.14]
 `,
     SONG: Song
 };
