@@ -142,7 +142,7 @@ const Wrapper = styled.div`
     --yk-song-text-color: hsl(160, 21%, 95%);
 
     .background {
-        background: left center / cover var(--yk-song-background-image);
+        background: right center / cover var(--yk-song-background-image);
         width: 100%;
         height: 100vh;
         position: fixed;

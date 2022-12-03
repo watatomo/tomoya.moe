@@ -7,9 +7,7 @@ import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import PauseRoundedIcon from "@mui/icons-material/PauseRounded";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-// import Parallax from "parallax-js";
 import "react-h5-audio-player/lib/styles.css";
-// import { singers, lines } from "./lines";
 
 function Song({ SONG_INFO }) {
     const [currentTime, setCurrentTime] = useState(0);
@@ -21,7 +19,7 @@ function Song({ SONG_INFO }) {
     const lrcRef = useRef();
     const songElement = useRef();
 
-    const handleLanguage = (event, newLanguage) => {
+    const handleLanguage = (newLanguage) => {
         if (newLanguage !== null) {
             setCurrentLanguage(newLanguage);
         }
