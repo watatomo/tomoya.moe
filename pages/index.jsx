@@ -92,10 +92,14 @@ const StyledWrapper = styled.article`
     }
     .home__wrapper .container01 .icon > div .wrapper img {
         transition: all 0.2s linear;
+        height: auto;
         filter: saturate(75%);
     }
     .home__wrapper .container01 .icon > div .wrapper img:hover {
         filter: saturate(100%);
+    }
+    .home__wrapper .container01 .text {
+        flex-grow: 1;
     }
     .home__wrapper .container01 .text .section01 h1 {
         font-size: 1.7em;
@@ -238,7 +242,7 @@ export default function Home() {
                                 i'm not so sure what to put here, but i can just
                                 be summed up as just{" "}
                                 <Link href="https://ensemble-stars.jp/characters/mashiro_tomoya/">
-                                    <a>Some Guy</a>
+                                    Some Guy
                                 </Link>
                                 . tomowata runs in my blood and soul
                                 <p />
@@ -252,10 +256,7 @@ export default function Home() {
                                 <p />
                                 this page is still a wip bc i have no ideas. you
                                 can find my translations{" "}
-                                <Link href="/tl">
-                                    <a>here</a>
-                                </Link>
-                                .
+                                <Link href="/tl">here</Link>.
                             </div>
                         </Collapse>
                     </div>

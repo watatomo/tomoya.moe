@@ -7,7 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { TextSize } from "../../../svgicon";
-import config from "../../../../mako.config";
 import styles from "./Toolbar.module.scss";
 
 function derivePreviousNextURL({ slug, tl, newSegment }) {
@@ -31,7 +30,7 @@ function deriveIndexURLMT({ slug, tl }) {
 }
 
 function Toolbar({ post }) {
-    const tl = config.translationsPath || "tl";
+    const tl = "tl";
     const isStandaloneChapter = !post.previous && !post.next && !post.miniTalk;
 
     return (
@@ -49,9 +48,7 @@ function Toolbar({ post }) {
                                 newSegment: post.previous
                             })}
                         >
-                            <a>
-                                <FontAwesomeIcon icon={faChevronLeft} />
-                            </a>
+                            <FontAwesomeIcon icon={faChevronLeft} />
                         </Link>
                     ) : null}
                 </div>
@@ -72,9 +69,7 @@ function Toolbar({ post }) {
                                     tl
                                 })}
                             >
-                                <a>
-                                    <FontAwesomeIcon icon={faStar} />
-                                </a>
+                                <FontAwesomeIcon icon={faStar} />
                             </Link>
                         </div>
                     ) : (
@@ -88,9 +83,7 @@ function Toolbar({ post }) {
                                     tl
                                 })}
                             >
-                                <a>
-                                    <FontAwesomeIcon icon={faStar} />
-                                </a>
+                                <FontAwesomeIcon icon={faStar} />
                             </Link>
                         </div>
                     ))}
@@ -109,9 +102,7 @@ function Toolbar({ post }) {
                                 newSegment: post.next
                             })}
                         >
-                            <a>
-                                <FontAwesomeIcon icon={faChevronRight} />
-                            </a>
+                            <FontAwesomeIcon icon={faChevronRight} />
                         </Link>
                     ) : null}
                 </div>

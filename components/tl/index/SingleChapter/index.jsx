@@ -15,11 +15,9 @@ function SingleChapter() {
                             alt={single.title}
                         />
                     </div>
-                    <Link href={`/tl/${single.story}`}>
-                        <a className={styles.title}>
-                            <span>{single.title}</span>
-                            <button type="button">Read</button>
-                        </a>
+                    <Link href={`/tl/${single.story}`} className={styles.title}>
+                        <span>{single.title}</span>
+                        <button type="button">Read</button>
                     </Link>
                 </div>
             ))}

@@ -127,8 +127,8 @@ function Header({ toolbar }) {
         <>
             <StyledHeader>
                 <span>
-                    <Link href="/tl">
-                        <a className="site-name">tomoya.moe</a>
+                    <Link href="/tl" className="site-name">
+                        tomoya.moe
                     </Link>
                 </span>
                 <div className="header-toolbar">{toolbar}</div>

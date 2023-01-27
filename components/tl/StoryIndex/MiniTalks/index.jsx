@@ -64,7 +64,7 @@ function MiniTalks({ post }) {
                                             section.name
                                         }/${minitalk.href}`}
                                     >
-                                        <a>{minitalk.label}</a>
+                                        {minitalk.label}
                                     </Link>
                                 )
                             )}
