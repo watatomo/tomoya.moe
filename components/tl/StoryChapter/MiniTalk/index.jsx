@@ -18,7 +18,6 @@ export function MiniTalk({ speaker, response, children }) {
     const handleClick = () => {
         setVisible(!visible);
     };
-
     return (
         <div className={styles.option} character={speaker}>
             <button

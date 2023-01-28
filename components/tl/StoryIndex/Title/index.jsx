@@ -15,9 +15,7 @@ function Title({ post }) {
                 <h2 className={styles.jp}>{post.titleJp}</h2>
             ) : null}
             <div className={styles.start}>
-                <Link href={deriveFirstChapter(post)}>
-                    <a>Start Reading</a>
-                </Link>
+                <Link href={deriveFirstChapter(post)}>Start Reading</Link>
             </div>
         </div>
     );

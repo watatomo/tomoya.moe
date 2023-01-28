@@ -28,7 +28,7 @@ function Chapters({ post }) {
                                             chapter.href
                                         }`}
                                     >
-                                        <a>{chapter.label}</a>
+                                        {chapter.label}
                                     </Link>
                                 )
                             ) : (

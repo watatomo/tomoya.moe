@@ -10,7 +10,6 @@ import {
     getPostFieldsByPath,
     getActualFilePathForSlug
 } from "../../lib/api";
-import config from "../../mako.config";
 import StoryChapter from "../../components/tl/StoryChapter";
 import StoryIndex from "../../components/tl/StoryIndex";
 
@@ -91,6 +90,7 @@ export async function getStaticProps({ params }) {
         ? PostType.Index
         : PostType.Chapter;
     const post = getPostFieldsByPath(postPath, PostFieldsForPostType[postType]);
+    console.log("post", postPath, postType, post);
     const content = await serialize(post.content || "");
     return {
         props: {
@@ -114,7 +114,7 @@ export async function getStaticPaths() {
         }
         return {
             params: {
-                tl: config.translationsPath || "tl",
+                tl: "tl",
                 slug: slugSegments
             }
         };
