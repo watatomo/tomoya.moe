@@ -1,4 +1,5 @@
 {
+    "name": "mashiro",
     "private": true,
     "version": "2.0.0",
     "builds": [
