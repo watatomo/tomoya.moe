@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import Link from "next/link";
 import HomeMeta from "../components/index/HomeMeta";
-import StarBG from "../components/index/StarBG";
+// import StarBG from "../components/index/StarBG";
 import { Container01 } from "../components/index/Container";
 
 const StyledWrapper = styled.article`
@@ -13,10 +13,9 @@ const StyledWrapper = styled.article`
         overflow: hidden;
         min-height: 100vh;
         min-width: 100vw;
-        background: radial-gradient(ellipse at bottom, #21294c 0%, #090a0f 100%)
-            no-repeat;
+        background: #1e1e2e;
         font-family: "Quicksand", "M PLUS Rounded 1c", sans-serif;
-        color: #f1f3f7;
+        color: #cdd6f4;
     }
     .home__wrapper .width-wrapper {
         display: flex;
@@ -29,7 +28,7 @@ const StyledWrapper = styled.article`
         font-family: "M PLUS Rounded 1c";
     }
     .home__wrapper .highlight {
-        color: #f2dea8;
+        color: #89b4fa;
     }
     .home__wrapper .home-content {
         display: flex;
@@ -50,7 +49,7 @@ const StyledWrapper = styled.article`
         gap: 1.5625em;
     }
     .home__wrapper .container01 hr {
-        border: 1px solid #f1f3f7;
+        border: 1px solid #6c7086;
     }
     .home__wrapper .container01 .icon {
         -webkit-touch-callout: none;
@@ -65,7 +64,7 @@ const StyledWrapper = styled.article`
         width: 7.8125em;
         height: 7.8125em;
         border-radius: 50%;
-        border: 1px solid #f1f3f7;
+        border: 1px solid #7f849c;
         padding: 0.5em;
         transition: all 0.2s linear;
     }
@@ -118,11 +117,11 @@ const StyledWrapper = styled.article`
     }
     .home__wrapper .home__links a {
         display: inline-block;
-        color: #fff;
+        color: #cdd6f4;
         transition: all 0.15s linear;
     }
     .home__wrapper .home__links a:hover {
-        color: #f2dea8;
+        color: #89b4fa;
     }
     .home__wrapper .home__links .svg-inline--fa {
         vertical-align: -0.125em;
@@ -145,12 +144,13 @@ const StyledWrapper = styled.article`
         border: unset;
         padding: 0.5px;
         cursor: pointer;
-        color: #f1f3f7;
+        color: #cdd6f4;
         text-decoration: none;
         line-height: 1.35;
+        transition: color 0.35s ease;
     }
     .home__wrapper .home__nav button:hover {
-        color: #fff;
+        color: #89b4fa;
     }
     .home__wrapper .home__nav button:hover::before {
         transform: scaleX(1);
@@ -163,7 +163,7 @@ const StyledWrapper = styled.article`
         height: 1px;
         bottom: 0;
         left: 0;
-        background-color: #fff;
+        background-color: #89b4fa;
         transform: scaleX(0);
         transition: transform 0.2s ease;
     }
@@ -214,7 +214,7 @@ export default function Home() {
         <StyledWrapper>
             <HomeMeta />
             <div className="home__wrapper">
-                <StarBG />
+                {/* <StarBG /> */}
                 <div className="home-content">
                     <div className="width-wrapper">
                         <Container01 />
@@ -246,17 +246,11 @@ export default function Home() {
                                 </Link>
                                 . tomowata runs in my blood and soul
                                 <p />
-                                tomoya, wataru, hokuto (enst); ena, akito
-                                (prsk); riamu, akari, akira (imas cg); kaoru,
-                                teru, tsubasa (imas sm); anna, matsuri (imas
-                                ml); nichika (imas sc); shizuku (ll nijigaku);
-                                sumire (ll superstar); hikari, karen (revstar);
-                                agnes tachyon, manhattan cafe (umamusu); saori,
-                                rika (d4dj); aoi (priconne)
+                                my main interests are <Link href="https://anilist.co/user/tomoya">bl</Link>, enstars (drama club), prsk (ena), and imas (riamu, drastars), but i really tweet about whatever
                                 <p />
                                 this page is still a wip bc i have no ideas. you
                                 can find my translations{" "}
-                                <Link href="/tl">here</Link>.
+                                <Link href="/tl">here</Link>
                             </div>
                         </Collapse>
                     </div>
